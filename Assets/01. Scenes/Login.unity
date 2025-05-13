@@ -3369,7 +3369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.747}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 260, y: 83}
+  m_AnchoredPosition: {x: 276, y: 92}
   m_SizeDelta: {x: 200, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1409305224
@@ -3421,6 +3421,7 @@ GameObject:
   - component: {fileID: 1438258168}
   - component: {fileID: 1438258170}
   - component: {fileID: 1438258169}
+  - component: {fileID: 1438258171}
   m_Layer: 5
   m_Name: Touch Label
   m_TagString: Untagged
@@ -3469,8 +3470,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uAC8C\uC784\uC744 \uC2DC\uC791\uD558\uB824\uBA74 \uD130\uCE58\uD558\uC138\uC694."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5dddd121e51136f929d028d9d217dbd5, type: 2}
-  m_sharedMaterial: {fileID: -2307919904762657964, guid: 5dddd121e51136f929d028d9d217dbd5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ebb6e506aa3f418db39c7495d641d44, type: 2}
+  m_sharedMaterial: {fileID: 9127515198531146076, guid: 8ebb6e506aa3f418db39c7495d641d44, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3546,6 +3547,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1438258167}
   m_CullTransparentMesh: 1
+--- !u!95 &1438258171
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438258167}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5cf71ac77e2c92e5ca721e97d513072a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1616804279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3765,7 +3788,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<size=275>\uB358</size>\uC804 \n <size=275>\uD0D0</size>\uD5D8\uAC00"
+  m_text: "<size=275>\uB358</size>\uC804 \n <size=275>\uD0D0</size>\uD5D8\uB300"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5dddd121e51136f929d028d9d217dbd5, type: 2}
   m_sharedMaterial: {fileID: -2307919904762657964, guid: 5dddd121e51136f929d028d9d217dbd5, type: 2}
