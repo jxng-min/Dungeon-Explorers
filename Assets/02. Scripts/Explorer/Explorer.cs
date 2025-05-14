@@ -15,6 +15,14 @@ public class Explorer : ScriptableObject
     [SerializeField] private ExplorerGrade m_explorer_grade;
     public ExplorerGrade Grade { get => m_explorer_grade; }
 
+    [Header("탐험가의 기본 훈련 비용")]
+    [SerializeField] private int m_upgrade_cost;
+    public int UpgradeCost { get => m_upgrade_cost; } 
+
+    [Header("탐험가의 최대 훈련 가능 횟수")]
+    [SerializeField] private int m_max_upgrade_count;
+    public int MaxUpgrade { get => m_max_upgrade_count; }
+
     [Header("탐험가의 특성")]
     [SerializeField] private ExplorerType m_explorer_type;
     public ExplorerType Type { get => m_explorer_type; }

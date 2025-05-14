@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrainingStation : MonoBehaviour
 {
     [Header("탐험가의 슬롯")]
-    [SerializeField] private TraningCenterSlot m_explorer_slot;
+    [SerializeField] private TrainingCenterSlot m_explorer_slot;
 
     [Header("탐험가의 이름 라벨")]
     [SerializeField] private TMP_Text m_name_label;
@@ -53,6 +53,7 @@ public class TrainingStation : MonoBehaviour
         m_name_label.text = explorer.Name;
         m_hp_label.text = $"체력: {explorer.HP}";
         m_atk_label.text = $"공격력: {explorer.ATK}";
-        // TODO: 업그레이드 단계 출력
+        m_upgrade_label.text = $"강화: {Inventory.Instance.GetItem(id).Upgrade} / {explorer.MaxUpgrade}";
+        m_cost_label.text = $"훈련에 필요한 비용:\t\t{explorer.UpgradeCost + ((Inventory.Instance.GetItem(id).Upgrade - 1) * 0.2 * explorer.UpgradeCost)}";
     }
 }

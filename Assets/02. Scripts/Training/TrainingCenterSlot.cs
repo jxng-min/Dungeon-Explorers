@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TraningCenterSlot : MonoBehaviour
+public class TrainingCenterSlot : MonoBehaviour
 {
     [Header("탐험가의 이미지")]
     [SerializeField] private Image m_explorer_image;

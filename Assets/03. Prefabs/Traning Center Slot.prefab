@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 2751947534078031977}
   - component: {fileID: 1989427513624525975}
   - component: {fileID: 6802185458981414135}
+  - component: {fileID: 3739916937826635422}
   m_Layer: 5
   m_Name: Traning Center Slot
   m_TagString: Untagged
@@ -258,6 +259,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3739916937826635422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7871182779395535301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba12be79717fda8f3a3dc6ac96581b63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_explorer_image: {fileID: 2782441526914444681}
+  m_explorer_cost: {fileID: 382595994971605144}
 --- !u!1 &8023965378640612935
 GameObject:
   m_ObjectHideFlags: 0

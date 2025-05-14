@@ -730,6 +730,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1730863181699088267, guid: fc95a30ac13f692879c87f68c51c6035, type: 3}
   m_PrefabInstance: {fileID: 120213853}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &120213855 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3739916937826635422, guid: fc95a30ac13f692879c87f68c51c6035, type: 3}
+  m_PrefabInstance: {fileID: 120213853}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba12be79717fda8f3a3dc6ac96581b63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &131558570
 GameObject:
   m_ObjectHideFlags: 0
@@ -3764,6 +3775,8 @@ GameObject:
   - component: {fileID: 228970492}
   - component: {fileID: 228970494}
   - component: {fileID: 228970493}
+  - component: {fileID: 228970496}
+  - component: {fileID: 228970495}
   m_Layer: 5
   m_Name: Traing UI
   m_TagString: Untagged
@@ -3830,6 +3843,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228970491}
   m_CullTransparentMesh: 1
+--- !u!114 &228970495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228970491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e91e6fcd20c3f50a97a33e28937cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_explorer_slot: {fileID: 120213855}
+  m_name_label: {fileID: 480038069}
+  m_hp_label: {fileID: 985871917}
+  m_atk_label: {fileID: 1865818667}
+  m_upgrade_label: {fileID: 1763961092}
+  m_cost_label: {fileID: 515449480}
+--- !u!95 &228970496
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228970491}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4bcaa925470bc9a08bac3efd1e8512ae, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &237337177
 GameObject:
   m_ObjectHideFlags: 0
@@ -10491,6 +10544,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1738530468}
   m_CullTransparentMesh: 1
+--- !u!1 &1759748682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1759748684}
+  - component: {fileID: 1759748683}
+  m_Layer: 0
+  m_Name: Inventory Manger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1759748683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759748682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3607bdf0f4b15aa41952860c37dfec89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1759748684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759748682}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1763961090
 GameObject:
   m_ObjectHideFlags: 0
@@ -12953,3 +13050,4 @@ SceneRoots:
   - {fileID: 480857010}
   - {fileID: 237337180}
   - {fileID: 1321333650}
+  - {fileID: 1759748684}
