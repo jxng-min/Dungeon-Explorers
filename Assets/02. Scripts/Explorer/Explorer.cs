@@ -35,6 +35,10 @@ public class Explorer : ScriptableObject
     [SerializeField] private float m_atk_range;
     public float Range { get => m_atk_range; }
 
+    [Header("탐험가의 소환 비용")]
+    [SerializeField] private int m_cost;
+    public int Cost { get => m_cost; }
+
     [Header("탐험가의 이미지")]
     [SerializeField] private Sprite m_explorer_sprite;
     public Sprite Image { get => m_explorer_sprite; }
