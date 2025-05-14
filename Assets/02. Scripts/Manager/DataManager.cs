@@ -42,7 +42,7 @@ public class DataManager : Singleton<DataManager>
 
     public void SaveJson()
     {
-        var json_data = JsonUtility.ToJson(Data);
-        File.ReadAllText(json_data);
+        var json_data = JsonUtility.ToJson(Data, true);
+        File.WriteAllText(m_data_file_path, json_data);
     }
 }
