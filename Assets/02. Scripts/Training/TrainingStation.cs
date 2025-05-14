@@ -50,7 +50,7 @@ public class TrainingStation : MonoBehaviour
         }
 
         m_explorer_slot.Initialize(id);
-        m_name_label.text = explorer.Name;
+        m_name_label.text = $"<color=green>{explorer.Name}</color>";
         m_hp_label.text = $"체력: {explorer.HP}";
         m_atk_label.text = $"공격력: {explorer.ATK}";
         m_upgrade_label.text = $"강화: {Inventory.Instance.GetItem(id).Upgrade} / {explorer.MaxUpgrade}";

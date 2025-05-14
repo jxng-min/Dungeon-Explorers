@@ -14,9 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_private_id: 1
   m_explorer_name: "\uBBF8\uCE74\uC5D8"
+  m_explorer_grade: 0
+  m_upgrade_cost: 100
+  m_max_upgrade_count: 20
   m_explorer_type: 1
   m_explorer_price: 100
   m_explorer_hp: 50
+  m_growth_hp: 5
   m_explorer_atk: 10
+  m_growth_atk: 2
   m_atk_range: 2
+  m_cost: 45
   m_explorer_sprite: {fileID: 5420657165879536120, guid: c77da0f0034c99b0eb8fea58cdf38c58, type: 3}

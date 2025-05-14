@@ -37,7 +37,7 @@ public class Shop : MonoBehaviour
         }
     }
 
-    private void UpdateSlots()
+    public void UpdateSlots()
     {
         foreach(var slot in m_slots)
         {
