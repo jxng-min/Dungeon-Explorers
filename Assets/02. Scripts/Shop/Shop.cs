@@ -14,6 +14,10 @@ public class Shop : MonoBehaviour
     private void Awake()
     {
         m_slots = m_slot_root.GetComponentsInChildren<ShopSlot>();
+    }
+
+    private void Start()
+    {
         InitializeSlots();
     }
 

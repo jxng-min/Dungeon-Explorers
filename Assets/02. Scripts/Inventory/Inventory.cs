@@ -15,6 +15,11 @@ public class Inventory : Singleton<Inventory>
         m_item_list = new();
     }
 
+    private void Start()
+    {
+        LoadInventory();
+    }
+
     public bool CheckHasItem(int explorer_id)
     {
         foreach(var item in m_item_list)
@@ -49,5 +54,18 @@ public class Inventory : Singleton<Inventory>
         }
 
         return null;
+    }
+
+    private void LoadInventory()
+    {
+        foreach(var item in DataManager.Instance.Data.Inventory)
+        {
+            m_item_list.Add(item);
+        }
+    }
+
+    public void SaveInventory()
+    {
+        DataManager.Instance.Data.Inventory = m_item_list.ToArray();
     }
 }

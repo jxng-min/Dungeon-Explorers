@@ -34,17 +34,17 @@ public class ShopSlot : MonoBehaviour
         m_mask.SetActive(false);
         m_price_label.color = Color.white;
 
-        if(DataManager.Instance.Data.Money < m_explorer.Price)
-        {
-            m_purchase_button.interactable = false;
-            m_price_label.color = Color.red;
-            return;
-        }
-
         if(Inventory.Instance.CheckHasItem(m_explorer.ID))
         {
             m_purchase_button.interactable = false;
             m_mask.SetActive(true);
+            return;
+        }
+
+        if(DataManager.Instance.Data.Money < m_explorer.Price)
+        {
+            m_purchase_button.interactable = false;
+            m_price_label.color = Color.red;
             return;
         }
 

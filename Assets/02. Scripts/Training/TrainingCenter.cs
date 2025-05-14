@@ -25,30 +25,32 @@ public class TrainingCenter : MonoBehaviour
     public void BUTTON_Close()
     {
         m_traninging_center_animator.SetBool("Open", false);
+        Reset();
     }
 
     private void Initialize()
     {
-        Reset();
-
         foreach(var item in Inventory.Instance.List)
         {
             var explorer = ExplorerDataManager.Instance.GetExplorer(item.ID);
         
-            var obj = Instantiate(m_slot_prefab, m_slot_root);
+            var obj = ObjectManager.Instance.GetObject(ObjectType.TRAIN_SLOT);
+            obj.transform.SetParent(m_slot_root);
+
             var slot = obj.GetComponent<TrainingCenterSlot>();
             slot.Initialize(item.ID);
         }
     }
 
-    // TODO: 오브젝트 풀링
     private void Reset()
     {
         TrainingCenterSlot[] slots = m_slot_root.GetComponentsInChildren<TrainingCenterSlot>();
 
+        Transform pool_container = GameObject.Find("[Training Center Slot] Container").transform;
         foreach(var slot in slots)
         {
-            Destroy(slot);
+            slot.transform.SetParent(pool_container);
+            ObjectManager.Instance.ReturnObject(slot.gameObject, ObjectType.TRAIN_SLOT);
         }
     }
 }
