@@ -11,6 +11,10 @@ public class Explorer : ScriptableObject
     [SerializeField] private string m_explorer_name;
     public string Name { get => m_explorer_name; }
 
+    [Header("탐험가의 등급")]
+    [SerializeField] private ExplorerGrade m_explorer_grade;
+    public ExplorerGrade Grade { get => m_explorer_grade; }
+
     [Header("탐험가의 특성")]
     [SerializeField] private ExplorerType m_explorer_type;
     public ExplorerType Type { get => m_explorer_type; }
