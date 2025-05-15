@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 3adbc4a6c3503d1a0836d4a425faf4de
+guid: 8200e6efdabc0e511890bebb2cc4b2a0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5908238798454654921
-    second: Wizard-Idle_0
+      213: 3465079563596065642
+    second: Lancer-Idle_0
   - first:
-      213: -8063396620519384718
-    second: Wizard-Idle_1
+      213: -528580022642928756
+    second: Lancer-Idle_1
   - first:
-      213: -2049506161387598549
-    second: Wizard-Idle_2
+      213: 5665906590587508757
+    second: Lancer-Idle_2
   - first:
-      213: 8664839956357517539
-    second: Wizard-Idle_3
+      213: 8502715288272964498
+    second: Lancer-Idle_3
   - first:
-      213: -5703199372606414648
-    second: Wizard-Idle_4
+      213: 6256610846622465417
+    second: Lancer-Idle_4
   - first:
-      213: -8514182677760930749
-    second: Wizard-Idle_5
+      213: -1146278007973776045
+    second: Lancer-Idle_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -141,133 +141,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wizard-Idle_0
+      name: Lancer-Idle_0
       rect:
         serializedVersion: 2
-        x: 42
-        y: 41
-        width: 19
-        height: 21
+        x: 30
+        y: 38
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 738fde1bd18b10ea0800000000000000
-      internalID: -5908238798454654921
+      spriteID: a6beb9a118f661030800000000000000
+      internalID: 3465079563596065642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wizard-Idle_1
+      name: Lancer-Idle_1
       rect:
         serializedVersion: 2
-        x: 142
-        y: 41
-        width: 19
-        height: 21
+        x: 129
+        y: 38
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2795bdece7f091090800000000000000
-      internalID: -8063396620519384718
+      spriteID: c83100b154b1aa8f0800000000000000
+      internalID: -528580022642928756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wizard-Idle_2
+      name: Lancer-Idle_2
       rect:
         serializedVersion: 2
-        x: 242
+        x: 232
         y: 42
-        width: 19
-        height: 21
+        width: 37
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2d84854101be83e0800000000000000
-      internalID: -2049506161387598549
+      spriteID: 518538e560851ae40800000000000000
+      internalID: 5665906590587508757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wizard-Idle_3
+      name: Lancer-Idle_3
       rect:
         serializedVersion: 2
-        x: 342
+        x: 332
         y: 42
-        width: 19
-        height: 21
+        width: 37
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e01d423802bf3870800000000000000
-      internalID: 8664839956357517539
+      spriteID: 29b0bcf5186bff570800000000000000
+      internalID: 8502715288272964498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wizard-Idle_4
+      name: Lancer-Idle_4
       rect:
         serializedVersion: 2
-        x: 442
+        x: 432
         y: 42
-        width: 19
-        height: 20
+        width: 37
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c06090336a2ad0b0800000000000000
-      internalID: -5703199372606414648
+      spriteID: 98db9c28a62f3d650800000000000000
+      internalID: 6256610846622465417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wizard-Idle_5
+      name: Lancer-Idle_5
       rect:
         serializedVersion: 2
-        x: 542
+        x: 532
         y: 42
-        width: 19
-        height: 20
+        width: 37
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34c8643f6fb87d980800000000000000
-      internalID: -8514182677760930749
+      spriteID: 35571e8993a9710f0800000000000000
+      internalID: -1146278007973776045
       vertices: []
       indices: 
       edges: []
@@ -276,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7f0e729be70bfb4da80c8097e74ee26c
     internalID: 0
     vertices: []
     indices: 
@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lancer-Idle_0: 3465079563596065642
+      Lancer-Idle_1: -528580022642928756
+      Lancer-Idle_2: 5665906590587508757
+      Lancer-Idle_3: 8502715288272964498
+      Lancer-Idle_4: 6256610846622465417
+      Lancer-Idle_5: -1146278007973776045
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

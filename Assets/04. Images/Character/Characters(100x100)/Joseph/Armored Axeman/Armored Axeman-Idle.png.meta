@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 69e5b05fa41683972925292540498b8c
+guid: cc0d1136dc044a60897d05e71065179b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -663804655798916631
-    second: Priest-Idle_0
+      213: -2178845191466743114
+    second: Armored Axeman-Idle_0
   - first:
-      213: -2566524390928899737
-    second: Priest-Idle_1
+      213: 1078176968670180239
+    second: Armored Axeman-Idle_1
   - first:
-      213: -6762606957532240787
-    second: Priest-Idle_2
+      213: 3578214576522449303
+    second: Armored Axeman-Idle_2
   - first:
-      213: -8571151364460497435
-    second: Priest-Idle_3
+      213: -2650580695442245663
+    second: Armored Axeman-Idle_3
   - first:
-      213: 1629379577001740549
-    second: Priest-Idle_4
+      213: -6657341236057548433
+    second: Armored Axeman-Idle_4
   - first:
-      213: 7521909360438926110
-    second: Priest-Idle_5
+      213: 6468876805276884591
+    second: Armored Axeman-Idle_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -141,133 +141,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Priest-Idle_0
+      name: Armored Axeman-Idle_0
       rect:
         serializedVersion: 2
-        x: 43
-        y: 41
-        width: 18
-        height: 22
+        x: 36
+        y: 37
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e9eadabe21b9c6f0800000000000000
-      internalID: -663804655798916631
+      spriteID: 6ba8e06a7df23c1e0800000000000000
+      internalID: -2178845191466743114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Priest-Idle_1
+      name: Armored Axeman-Idle_1
       rect:
         serializedVersion: 2
         x: 143
-        y: 41
-        width: 18
-        height: 22
+        y: 42
+        width: 21
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 761ae4b1aafd16cd0800000000000000
-      internalID: -2566524390928899737
+      spriteID: f83f7969d3476fe00800000000000000
+      internalID: 1078176968670180239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Priest-Idle_2
+      name: Armored Axeman-Idle_2
       rect:
         serializedVersion: 2
         x: 243
         y: 42
-        width: 18
+        width: 21
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d64a4bc4dc46622a0800000000000000
-      internalID: -6762606957532240787
+      spriteID: 791debbf23f58a130800000000000000
+      internalID: 3578214576522449303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Priest-Idle_3
+      name: Armored Axeman-Idle_3
       rect:
         serializedVersion: 2
         x: 343
         y: 42
-        width: 18
+        width: 21
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e53a35fe372d0980800000000000000
-      internalID: -8571151364460497435
+      spriteID: 1e738af96ee373bd0800000000000000
+      internalID: -2650580695442245663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Priest-Idle_4
+      name: Armored Axeman-Idle_4
       rect:
         serializedVersion: 2
         x: 443
         y: 42
-        width: 18
-        height: 21
+        width: 21
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 509077ba718bc9610800000000000000
-      internalID: 1629379577001740549
+      spriteID: f69da3cfa6f5c93a0800000000000000
+      internalID: -6657341236057548433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Priest-Idle_5
+      name: Armored Axeman-Idle_5
       rect:
         serializedVersion: 2
         x: 543
         y: 42
-        width: 18
-        height: 21
+        width: 21
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1bd5a5e5b0336860800000000000000
-      internalID: 7521909360438926110
+      spriteID: f6eda4a4e2116c950800000000000000
+      internalID: 6468876805276884591
       vertices: []
       indices: 
       edges: []
@@ -276,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7e279b6fcb85b1fc6ab754557d3ecd9e
     internalID: 0
     vertices: []
     indices: 
@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Armored Axeman-Idle_0: -2178845191466743114
+      Armored Axeman-Idle_1: 1078176968670180239
+      Armored Axeman-Idle_2: 3578214576522449303
+      Armored Axeman-Idle_3: -2650580695442245663
+      Armored Axeman-Idle_4: -6657341236057548433
+      Armored Axeman-Idle_5: 6468876805276884591
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
