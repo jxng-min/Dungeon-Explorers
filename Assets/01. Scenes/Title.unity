@@ -703,7 +703,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1809369380}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.669967
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5209,6 +5209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_shop_animator: {fileID: 272654836}
   m_slot_root: {fileID: 1038593691}
+  m_scroll_bar: {fileID: 80988470}
 --- !u!95 &272654836
 Animator:
   serializedVersion: 7
@@ -8817,6 +8818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_slot_root: {fileID: 1647750969}
   m_slot_prefab: {fileID: 7871182779395535301, guid: fc95a30ac13f692879c87f68c51c6035, type: 3}
+  m_scroll_bar: {fileID: 67575589}
 --- !u!95 &839022923
 Animator:
   serializedVersion: 7
@@ -10084,7 +10086,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 459059004}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.669967
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13852,6 +13854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_elected_slot_root: {fileID: 1023796527}
   m_candidate_slot_root: {fileID: 1568792979}
+  m_scroll_bar: {fileID: 61987595}
 --- !u!95 &1617419505
 Animator:
   serializedVersion: 7
@@ -16689,6 +16692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_slot_root: {fileID: 1045006760}
   m_slot_prefab: {fileID: 6075645490933064748, guid: e3fc22915bcce4734aa092bcf9f45f9b, type: 3}
+  m_scroll_bar: {fileID: 988026805}
 --- !u!95 &1918861768
 Animator:
   serializedVersion: 7

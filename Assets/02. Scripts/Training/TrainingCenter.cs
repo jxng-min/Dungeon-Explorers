@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Animator))]
 public class TrainingCenter : MonoBehaviour
@@ -8,6 +9,9 @@ public class TrainingCenter : MonoBehaviour
 
     [Header("훈련 슬롯의 프리펩")]
     [SerializeField] private GameObject m_slot_prefab;
+
+    [Header("훈련소 UI 스크롤 뷰의 바 오브젝트")]
+    [SerializeField] private Scrollbar m_scroll_bar;
 
     private Animator m_traninging_center_animator;
 
@@ -25,7 +29,7 @@ public class TrainingCenter : MonoBehaviour
     public void BUTTON_Close()
     {
         m_traninging_center_animator.SetBool("Open", false);
-        Reset();
+        Invoke("Reset", 0.5f);
     }
 
     private void Initialize()
@@ -52,5 +56,11 @@ public class TrainingCenter : MonoBehaviour
             slot.transform.SetParent(pool_container);
             ObjectManager.Instance.ReturnObject(slot.gameObject, ObjectType.TRAIN_SLOT);
         }
+
+        ResetScrollBar();
+    }
+    private void ResetScrollBar()
+    {
+        m_scroll_bar.value = 0f;
     }
 }

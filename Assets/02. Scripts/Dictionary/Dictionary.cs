@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Animator))]
 public class Dictionary : MonoBehaviour
@@ -8,6 +9,9 @@ public class Dictionary : MonoBehaviour
 
     [Header("도감 슬롯의 프리펩")]
     [SerializeField] private GameObject m_slot_prefab;
+
+    [Header("도감 UI 스크롤 뷰의 바 오브젝트")]
+    [SerializeField] private Scrollbar m_scroll_bar;
 
     private Animator m_dictionary_animator;
 
@@ -40,5 +44,11 @@ public class Dictionary : MonoBehaviour
     public void BUTTON_Close()
     {
         m_dictionary_animator.SetBool("Open", false);
+        Invoke("ResetScrollBar", 0.5f);
+    }
+
+    private void ResetScrollBar()
+    {
+        m_scroll_bar.value = 0f;
     }
 }

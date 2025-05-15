@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Data.Common;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Animator))]
 public class Putter : MonoBehaviour
@@ -14,6 +15,9 @@ public class Putter : MonoBehaviour
     [SerializeField] private Transform m_candidate_slot_root;
     private List<PuttingSlot> m_candidate_slots;
     public List<PuttingSlot> CandidateSlots { get => m_candidate_slots; }
+
+    [Header("편성 UI 스크롤 뷰의 바 오브젝트")]
+    [SerializeField] private Scrollbar m_scroll_bar;
 
     private Animator m_putter_animator;
 
@@ -36,7 +40,7 @@ public class Putter : MonoBehaviour
         m_putter_animator.SetBool("Open", false);
 
         SaveElectedData();
-        ReturnCandidateSlots();
+        Invoke("Reset", 0.5f);
     }
 
     private void Initialize()
@@ -160,5 +164,11 @@ public class Putter : MonoBehaviour
         }
         
         return null;
+    }
+
+    private void Reset()
+    {
+        ReturnCandidateSlots();
+        m_scroll_bar.value = 0f;
     }
 }

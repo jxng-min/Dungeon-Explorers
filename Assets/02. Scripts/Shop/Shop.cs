@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Animator))]
 public class Shop : MonoBehaviour
@@ -8,6 +9,9 @@ public class Shop : MonoBehaviour
 
     [Header("상점 슬롯들의 부모 트랜스폼")]
     [SerializeField] private Transform m_slot_root;
+
+    [Header("상점 스크롤 뷰의 바 오브젝트")]
+    [SerializeField] private Scrollbar m_scroll_bar;
 
     private ShopSlot[] m_slots;
 
@@ -31,6 +35,8 @@ public class Shop : MonoBehaviour
     public void BUTTON_Close()
     {
         m_shop_animator.SetBool("Open", false);
+
+        Invoke("ResetScrollBar", 0.5f);
     }
 
     private void InitializeSlots()
@@ -47,5 +53,10 @@ public class Shop : MonoBehaviour
         {
             slot.UpdateSlot();
         }
+    }
+
+    private void ResetScrollBar()
+    {
+        m_scroll_bar.value = 0f;
     }
 }
