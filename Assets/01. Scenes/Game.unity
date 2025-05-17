@@ -119,6 +119,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &85990329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 85990330}
+  - component: {fileID: 85990331}
+  m_Layer: 0
+  m_Name: Caller Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &85990330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85990329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1607920206}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &85990331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85990329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d3d2b5f4ea7df81a89578eef49971d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_stage_ctrl: {fileID: 506571725}
+  m_caller_root: {fileID: 1729422440}
 --- !u!1 &202470924
 GameObject:
   m_ObjectHideFlags: 0
@@ -4641,12 +4687,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1262c267992f242baf9e330be0f9abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_character_slot_root: {fileID: 1729422440}
+  m_build_ctrl: {fileID: 2113938583}
   m_cost_state_label: {fileID: 1300218647}
-  m_tower_button: {fileID: 1197046800}
-  m_tower_label: {fileID: 2087699035}
-  m_skill_button: {fileID: 1968019346}
-  m_skill_filed_image: {fileID: 1698894789}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -7603,9 +7645,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 506571725}
-        m_TargetAssemblyTypeName: StageCtrl, Assembly-CSharp
-        m_MethodName: BUTTON_UpgradeTower
+      - m_Target: {fileID: 2113938583}
+        m_TargetAssemblyTypeName: BuildCtrl, Assembly-CSharp
+        m_MethodName: BUTTON_Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8239,6 +8281,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441770735}
   m_CullTransparentMesh: 1
+--- !u!1 &1573867814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1573867815}
+  - component: {fileID: 1573867816}
+  m_Layer: 0
+  m_Name: Salvation Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1573867815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573867814}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1607920206}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1573867816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573867814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca457c06270b8daa98d75269cc819e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_salvation_button: {fileID: 1968019346}
+  m_cooltime_image: {fileID: 1698894789}
 --- !u!1 &1595376841
 GameObject:
   m_ObjectHideFlags: 0
@@ -8302,6 +8390,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 506571724}
+  - {fileID: 1573867815}
+  - {fileID: 2113938582}
+  - {fileID: 85990330}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1644823135
@@ -8987,9 +9078,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 506571725}
-        m_TargetAssemblyTypeName: StageCtrl, Assembly-CSharp
-        m_MethodName: BUTTON_Skill
+      - m_Target: {fileID: 1573867816}
+        m_TargetAssemblyTypeName: SalvationCtrl, Assembly-CSharp
+        m_MethodName: BUTTON_Use
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9723,6 +9814,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087699033}
   m_CullTransparentMesh: 1
+--- !u!1 &2113938581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2113938582}
+  - component: {fileID: 2113938583}
+  m_Layer: 0
+  m_Name: Build Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2113938582
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113938581}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1607920206}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2113938583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113938581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f594a87bf1e9c7eb978b6e3155b5e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_stage_ctrl: {fileID: 506571725}
+  m_upgrade_button: {fileID: 1197046800}
+  m_cost_label: {fileID: 2087699035}
 --- !u!1 &2142490296
 GameObject:
   m_ObjectHideFlags: 0
