@@ -5040,6 +5040,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_joystick: {fileID: 857763204}
+  m_speed: 5
+  m_min_x: 0
+  m_max_x: 26
 --- !u!1 &548091736
 GameObject:
   m_ObjectHideFlags: 0
@@ -5057,7 +5060,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &548091737
 RectTransform:
   m_ObjectHideFlags: 0

@@ -3636,10 +3636,10 @@ TextureImporter:
       name: BlackandWhiteUI_126
       rect:
         serializedVersion: 2
-        x: 82
-        y: 193
-        width: 10
-        height: 14
+        x: 83
+        y: 194
+        width: 8
+        height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3658,10 +3658,10 @@ TextureImporter:
       name: BlackandWhiteUI_127
       rect:
         serializedVersion: 2
-        x: 100
-        y: 193
-        width: 10
-        height: 14
+        x: 101
+        y: 194
+        width: 8
+        height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
