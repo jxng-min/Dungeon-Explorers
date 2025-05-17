@@ -51,9 +51,17 @@ public class Explorer : ScriptableObject
     [SerializeField] private float m_atk_range;
     public float Range { get => m_atk_range; }
 
+    [Header("탐험가의 공격 쿨타임")]
+    [SerializeField] private float m_atk_cooltime;
+    public float ATKCool { get => m_atk_cooltime; }
+
     [Header("탐험가의 소환 비용")]
     [SerializeField] private int m_cost;
     public int Cost { get => m_cost; }
+
+    [Header("탐험가의 소환 쿨타임")]
+    [SerializeField] private float m_cooltime;
+    public float CoolTime { get => m_cooltime; }
 
     [Header("탐험가의 이미지")]
     [SerializeField] private Sprite m_explorer_sprite;

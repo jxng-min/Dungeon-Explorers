@@ -15,7 +15,7 @@ public class UserData
         Money = 0;
         Stage = 1;
         Inventory = new InventoryItem[] { new InventoryItem(0, 1) };
-        Party = new int[] { -1, -1, -1, -1, -1 };
+        Party = new int[] { 0, -1, -1, -1, -1 };
     }
 
     public UserData(int lv, int exp, int money, int stage, InventoryItem[] inventory, int[] party)
