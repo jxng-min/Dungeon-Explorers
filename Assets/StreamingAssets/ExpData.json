@@ -1,0 +1,40 @@
+{
+  "Exps": [
+    {
+      "m_to_level": 2,
+      "m_to_exp": 500
+    },
+    {
+      "m_to_level": 3,
+      "m_to_exp": 700
+    },
+    {
+      "m_to_level": 4,
+      "m_to_exp": 900
+    },
+    {
+      "m_to_level": 5,
+      "m_to_exp": 1200
+    },
+    {
+      "m_to_level": 6,
+      "m_to_exp": 1500
+    },
+    {
+      "m_to_level": 7,
+      "m_to_exp": 1700
+    },
+    {
+      "m_to_level": 8,
+      "m_to_exp": 1900
+    },
+    {
+      "m_to_level": 9,
+      "m_to_exp": 2100
+    },
+    {
+      "m_to_level": 10,
+      "m_to_exp": 2300
+    }
+  ]
+}

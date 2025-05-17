@@ -65,7 +65,7 @@ public class LoadingManager : MonoBehaviour
 
     private IEnumerator LoadSceneProcess()
     {
-        m_loading_label.text = "0f";
+        m_loading_label.text = "0%";
 
         yield return StartCoroutine(Fade(true));
 

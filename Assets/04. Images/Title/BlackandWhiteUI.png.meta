@@ -1,0 +1,7019 @@
+fileFormatVersion: 2
+guid: a30936d8995c5bc5a8881f5150b0b312
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2414468624541125402
+    second: BlackandWhiteUI_0
+  - first:
+      213: -396348601145527058
+    second: BlackandWhiteUI_1
+  - first:
+      213: 3334075360592902811
+    second: BlackandWhiteUI_2
+  - first:
+      213: -8264466294707291396
+    second: BlackandWhiteUI_3
+  - first:
+      213: -2756080672573042881
+    second: BlackandWhiteUI_4
+  - first:
+      213: -8804638882180532616
+    second: BlackandWhiteUI_5
+  - first:
+      213: 8593726507335485553
+    second: BlackandWhiteUI_6
+  - first:
+      213: -8423210857977765230
+    second: BlackandWhiteUI_7
+  - first:
+      213: -4477676267439665319
+    second: BlackandWhiteUI_8
+  - first:
+      213: -7457339838543033525
+    second: BlackandWhiteUI_9
+  - first:
+      213: -5800299392744944173
+    second: BlackandWhiteUI_10
+  - first:
+      213: -2156451996448462201
+    second: BlackandWhiteUI_11
+  - first:
+      213: -6088956800011552103
+    second: BlackandWhiteUI_12
+  - first:
+      213: -11818461697170138
+    second: BlackandWhiteUI_13
+  - first:
+      213: -5869161575717466654
+    second: BlackandWhiteUI_14
+  - first:
+      213: 4115354815526593921
+    second: BlackandWhiteUI_15
+  - first:
+      213: -2038085482900040610
+    second: BlackandWhiteUI_16
+  - first:
+      213: 5576550919733645166
+    second: BlackandWhiteUI_17
+  - first:
+      213: -8827633411267712933
+    second: BlackandWhiteUI_18
+  - first:
+      213: 5214964044350792088
+    second: BlackandWhiteUI_19
+  - first:
+      213: -1742076186533526922
+    second: BlackandWhiteUI_20
+  - first:
+      213: -7131468534802565685
+    second: BlackandWhiteUI_21
+  - first:
+      213: -7508167919489587279
+    second: BlackandWhiteUI_22
+  - first:
+      213: -2506001339114582275
+    second: BlackandWhiteUI_23
+  - first:
+      213: 6715686438653733285
+    second: BlackandWhiteUI_24
+  - first:
+      213: -8939315179791112045
+    second: BlackandWhiteUI_25
+  - first:
+      213: -3742163662965596019
+    second: BlackandWhiteUI_26
+  - first:
+      213: 3983706305685600840
+    second: BlackandWhiteUI_27
+  - first:
+      213: 3468632726360731539
+    second: BlackandWhiteUI_28
+  - first:
+      213: 498200881219200104
+    second: BlackandWhiteUI_29
+  - first:
+      213: -8535691885759339052
+    second: BlackandWhiteUI_30
+  - first:
+      213: 468014099732803232
+    second: BlackandWhiteUI_31
+  - first:
+      213: -4008730991336099521
+    second: BlackandWhiteUI_32
+  - first:
+      213: 2070296844504320103
+    second: BlackandWhiteUI_33
+  - first:
+      213: -6876268294476727003
+    second: BlackandWhiteUI_34
+  - first:
+      213: -2981624233012796472
+    second: BlackandWhiteUI_35
+  - first:
+      213: 4430283554889909317
+    second: BlackandWhiteUI_36
+  - first:
+      213: -2961144084750058237
+    second: BlackandWhiteUI_37
+  - first:
+      213: 6332818668639368212
+    second: BlackandWhiteUI_38
+  - first:
+      213: 6120222071889341827
+    second: BlackandWhiteUI_39
+  - first:
+      213: 7524349693878907077
+    second: BlackandWhiteUI_40
+  - first:
+      213: 2787310619658193131
+    second: BlackandWhiteUI_41
+  - first:
+      213: 9010240054718039138
+    second: BlackandWhiteUI_42
+  - first:
+      213: 8194673875897135485
+    second: BlackandWhiteUI_43
+  - first:
+      213: 3291811445775890831
+    second: BlackandWhiteUI_44
+  - first:
+      213: -8932503864117710706
+    second: BlackandWhiteUI_45
+  - first:
+      213: -1366712899747442743
+    second: BlackandWhiteUI_46
+  - first:
+      213: 1590312298659797253
+    second: BlackandWhiteUI_47
+  - first:
+      213: -4955978933937724582
+    second: BlackandWhiteUI_48
+  - first:
+      213: 8378155875430664530
+    second: BlackandWhiteUI_49
+  - first:
+      213: 8234374503496841504
+    second: BlackandWhiteUI_50
+  - first:
+      213: -8603955436357403486
+    second: BlackandWhiteUI_51
+  - first:
+      213: -6558199592721767077
+    second: BlackandWhiteUI_52
+  - first:
+      213: 2684806377109455527
+    second: BlackandWhiteUI_53
+  - first:
+      213: 8556037986181760962
+    second: BlackandWhiteUI_54
+  - first:
+      213: 4451673664311668289
+    second: BlackandWhiteUI_55
+  - first:
+      213: -8168355494994200971
+    second: BlackandWhiteUI_56
+  - first:
+      213: -3069411249481494114
+    second: BlackandWhiteUI_57
+  - first:
+      213: 1264169069802424629
+    second: BlackandWhiteUI_58
+  - first:
+      213: -5636621533009773404
+    second: BlackandWhiteUI_59
+  - first:
+      213: 4454498343246879269
+    second: BlackandWhiteUI_60
+  - first:
+      213: 8954621117905211764
+    second: BlackandWhiteUI_61
+  - first:
+      213: 8970527485394340519
+    second: BlackandWhiteUI_62
+  - first:
+      213: 1999634928658416357
+    second: BlackandWhiteUI_63
+  - first:
+      213: -2089985889648975169
+    second: BlackandWhiteUI_64
+  - first:
+      213: -2225740528246617284
+    second: BlackandWhiteUI_65
+  - first:
+      213: -6956275727323899227
+    second: BlackandWhiteUI_66
+  - first:
+      213: -6216236523573576459
+    second: BlackandWhiteUI_67
+  - first:
+      213: -2890528221198818991
+    second: BlackandWhiteUI_68
+  - first:
+      213: 6305404488208773397
+    second: BlackandWhiteUI_69
+  - first:
+      213: 4143024069138929773
+    second: BlackandWhiteUI_70
+  - first:
+      213: 5602522411975988820
+    second: BlackandWhiteUI_71
+  - first:
+      213: 7264849181795514082
+    second: BlackandWhiteUI_72
+  - first:
+      213: -1210697650493207821
+    second: BlackandWhiteUI_73
+  - first:
+      213: -8594176705752748262
+    second: BlackandWhiteUI_74
+  - first:
+      213: -4280885904110313613
+    second: BlackandWhiteUI_75
+  - first:
+      213: 192511626798236588
+    second: BlackandWhiteUI_76
+  - first:
+      213: 3886997041583098793
+    second: BlackandWhiteUI_77
+  - first:
+      213: 6756647516896651547
+    second: BlackandWhiteUI_78
+  - first:
+      213: 1580745674459127392
+    second: BlackandWhiteUI_79
+  - first:
+      213: 6900769081277133513
+    second: BlackandWhiteUI_80
+  - first:
+      213: 1265046555961631250
+    second: BlackandWhiteUI_81
+  - first:
+      213: -4188809911170848776
+    second: BlackandWhiteUI_82
+  - first:
+      213: 2905395325475754249
+    second: BlackandWhiteUI_83
+  - first:
+      213: 522795973618435562
+    second: BlackandWhiteUI_84
+  - first:
+      213: -6803146580328987548
+    second: BlackandWhiteUI_85
+  - first:
+      213: -7997549113955103739
+    second: BlackandWhiteUI_86
+  - first:
+      213: 6151643104536867964
+    second: BlackandWhiteUI_87
+  - first:
+      213: 4503646397700207326
+    second: BlackandWhiteUI_88
+  - first:
+      213: 6577257434004414992
+    second: BlackandWhiteUI_89
+  - first:
+      213: -481955922926126205
+    second: BlackandWhiteUI_90
+  - first:
+      213: 2410270298863610271
+    second: BlackandWhiteUI_91
+  - first:
+      213: -5342581677774300690
+    second: BlackandWhiteUI_92
+  - first:
+      213: -4673799478777088521
+    second: BlackandWhiteUI_93
+  - first:
+      213: -8121336186128926232
+    second: BlackandWhiteUI_94
+  - first:
+      213: -1114426422235993999
+    second: BlackandWhiteUI_95
+  - first:
+      213: 8989993103635957652
+    second: BlackandWhiteUI_96
+  - first:
+      213: -2156551448056821416
+    second: BlackandWhiteUI_97
+  - first:
+      213: 3580229498036254099
+    second: BlackandWhiteUI_98
+  - first:
+      213: 4420665039793650722
+    second: BlackandWhiteUI_99
+  - first:
+      213: -8115837097500895401
+    second: BlackandWhiteUI_100
+  - first:
+      213: 6049789268047612432
+    second: BlackandWhiteUI_101
+  - first:
+      213: 3492547300166598303
+    second: BlackandWhiteUI_102
+  - first:
+      213: -2200489710343267774
+    second: BlackandWhiteUI_103
+  - first:
+      213: -5203778596147900390
+    second: BlackandWhiteUI_104
+  - first:
+      213: 3476116972321405828
+    second: BlackandWhiteUI_105
+  - first:
+      213: 5079133628447295781
+    second: BlackandWhiteUI_106
+  - first:
+      213: -3857273027446710821
+    second: BlackandWhiteUI_107
+  - first:
+      213: -3817016443189595973
+    second: BlackandWhiteUI_108
+  - first:
+      213: -8753993817074464145
+    second: BlackandWhiteUI_109
+  - first:
+      213: 7790536038204514818
+    second: BlackandWhiteUI_110
+  - first:
+      213: -3243570370254623862
+    second: BlackandWhiteUI_111
+  - first:
+      213: 8210962876134759387
+    second: BlackandWhiteUI_112
+  - first:
+      213: -6381788463461524109
+    second: BlackandWhiteUI_113
+  - first:
+      213: -9149307154015864178
+    second: BlackandWhiteUI_114
+  - first:
+      213: -3102430921710814052
+    second: BlackandWhiteUI_115
+  - first:
+      213: -375816567127231645
+    second: BlackandWhiteUI_116
+  - first:
+      213: -1996124173069587685
+    second: BlackandWhiteUI_117
+  - first:
+      213: -1807695052377958707
+    second: BlackandWhiteUI_118
+  - first:
+      213: 2838215691902113407
+    second: BlackandWhiteUI_119
+  - first:
+      213: -5352119951073962425
+    second: BlackandWhiteUI_120
+  - first:
+      213: -7333990530563837551
+    second: BlackandWhiteUI_121
+  - first:
+      213: -4427461111733611013
+    second: BlackandWhiteUI_122
+  - first:
+      213: -4551284105603699197
+    second: BlackandWhiteUI_123
+  - first:
+      213: -6980321858054290393
+    second: BlackandWhiteUI_124
+  - first:
+      213: 915014198046347049
+    second: BlackandWhiteUI_125
+  - first:
+      213: -7476124097679672570
+    second: BlackandWhiteUI_126
+  - first:
+      213: 4540369600484155719
+    second: BlackandWhiteUI_127
+  - first:
+      213: 4707590819550273303
+    second: BlackandWhiteUI_128
+  - first:
+      213: -8772030044428969386
+    second: BlackandWhiteUI_129
+  - first:
+      213: -1565608049425575264
+    second: BlackandWhiteUI_130
+  - first:
+      213: -432953624362816248
+    second: BlackandWhiteUI_131
+  - first:
+      213: -1894430079587859357
+    second: BlackandWhiteUI_132
+  - first:
+      213: 899155487659747575
+    second: BlackandWhiteUI_133
+  - first:
+      213: 8509255370121590644
+    second: BlackandWhiteUI_134
+  - first:
+      213: 4954899019727964660
+    second: BlackandWhiteUI_135
+  - first:
+      213: -4807984137281312319
+    second: BlackandWhiteUI_136
+  - first:
+      213: 450071390830566612
+    second: BlackandWhiteUI_137
+  - first:
+      213: -2671811019732449365
+    second: BlackandWhiteUI_138
+  - first:
+      213: -9092431291582183536
+    second: BlackandWhiteUI_139
+  - first:
+      213: -2845549169071921883
+    second: BlackandWhiteUI_140
+  - first:
+      213: 3780124093945111559
+    second: BlackandWhiteUI_141
+  - first:
+      213: 7940998726657236927
+    second: BlackandWhiteUI_142
+  - first:
+      213: -1966647175010945169
+    second: BlackandWhiteUI_143
+  - first:
+      213: -2564230578732823844
+    second: BlackandWhiteUI_144
+  - first:
+      213: -6618112991117931662
+    second: BlackandWhiteUI_145
+  - first:
+      213: 7225086458565568871
+    second: BlackandWhiteUI_146
+  - first:
+      213: -7218417871314311821
+    second: BlackandWhiteUI_147
+  - first:
+      213: 7879752998191435241
+    second: BlackandWhiteUI_148
+  - first:
+      213: -3485966484624721795
+    second: BlackandWhiteUI_149
+  - first:
+      213: 9006746052077024906
+    second: BlackandWhiteUI_150
+  - first:
+      213: -5111818044379297807
+    second: BlackandWhiteUI_151
+  - first:
+      213: 6409989386457234416
+    second: BlackandWhiteUI_152
+  - first:
+      213: 7208518394952394624
+    second: BlackandWhiteUI_153
+  - first:
+      213: 1978681992649126158
+    second: BlackandWhiteUI_154
+  - first:
+      213: 5916794046516342871
+    second: BlackandWhiteUI_155
+  - first:
+      213: 2031088035590812118
+    second: BlackandWhiteUI_156
+  - first:
+      213: -2973950069757801972
+    second: BlackandWhiteUI_157
+  - first:
+      213: 8172344391929509788
+    second: BlackandWhiteUI_158
+  - first:
+      213: 3310404198387539871
+    second: BlackandWhiteUI_159
+  - first:
+      213: 7933656139909756915
+    second: BlackandWhiteUI_160
+  - first:
+      213: -2516714682211991285
+    second: BlackandWhiteUI_161
+  - first:
+      213: 7967230072916562024
+    second: BlackandWhiteUI_162
+  - first:
+      213: -5809274167947772213
+    second: BlackandWhiteUI_163
+  - first:
+      213: 2891782287262927492
+    second: BlackandWhiteUI_164
+  - first:
+      213: 3753584664984158142
+    second: BlackandWhiteUI_165
+  - first:
+      213: 1457886099328792442
+    second: BlackandWhiteUI_166
+  - first:
+      213: -2231536368239891533
+    second: BlackandWhiteUI_167
+  - first:
+      213: -4586029378300145633
+    second: BlackandWhiteUI_168
+  - first:
+      213: -1284599194770854389
+    second: BlackandWhiteUI_169
+  - first:
+      213: 8897640650891759168
+    second: BlackandWhiteUI_170
+  - first:
+      213: -7757238898822311691
+    second: BlackandWhiteUI_171
+  - first:
+      213: 1554009381666501375
+    second: BlackandWhiteUI_172
+  - first:
+      213: 4679789217417236632
+    second: BlackandWhiteUI_173
+  - first:
+      213: -4413544341196456839
+    second: BlackandWhiteUI_174
+  - first:
+      213: 7825009211568744518
+    second: BlackandWhiteUI_175
+  - first:
+      213: 5782637286280022142
+    second: BlackandWhiteUI_176
+  - first:
+      213: 2440382179135606197
+    second: BlackandWhiteUI_177
+  - first:
+      213: 8252387812534589674
+    second: BlackandWhiteUI_178
+  - first:
+      213: -3715061558213598472
+    second: BlackandWhiteUI_179
+  - first:
+      213: 7230711231291020287
+    second: BlackandWhiteUI_180
+  - first:
+      213: -3654337516288589447
+    second: BlackandWhiteUI_181
+  - first:
+      213: -2013508817391145003
+    second: BlackandWhiteUI_182
+  - first:
+      213: 9084038056465033952
+    second: BlackandWhiteUI_183
+  - first:
+      213: 8631937638009596939
+    second: BlackandWhiteUI_184
+  - first:
+      213: 8053441284663005559
+    second: BlackandWhiteUI_185
+  - first:
+      213: -881771238970554591
+    second: BlackandWhiteUI_186
+  - first:
+      213: 2522499814860759798
+    second: BlackandWhiteUI_187
+  - first:
+      213: -5515600857227489794
+    second: BlackandWhiteUI_188
+  - first:
+      213: -965659635318266158
+    second: BlackandWhiteUI_189
+  - first:
+      213: -7289769478561143831
+    second: BlackandWhiteUI_190
+  - first:
+      213: 573871667695602984
+    second: BlackandWhiteUI_191
+  - first:
+      213: -4208384068430548071
+    second: BlackandWhiteUI_192
+  - first:
+      213: -758347088145401633
+    second: BlackandWhiteUI_193
+  - first:
+      213: 5625697572976255373
+    second: BlackandWhiteUI_194
+  - first:
+      213: -8154696488101520036
+    second: BlackandWhiteUI_195
+  - first:
+      213: -6659035827453751929
+    second: BlackandWhiteUI_196
+  - first:
+      213: 4602782875738161219
+    second: BlackandWhiteUI_197
+  - first:
+      213: 7692369138708973074
+    second: BlackandWhiteUI_198
+  - first:
+      213: -3678568635797223456
+    second: BlackandWhiteUI_199
+  - first:
+      213: 2030015386612130921
+    second: BlackandWhiteUI_200
+  - first:
+      213: -8110992045435499057
+    second: BlackandWhiteUI_201
+  - first:
+      213: 5240498033368867094
+    second: BlackandWhiteUI_202
+  - first:
+      213: 8265205336706110065
+    second: BlackandWhiteUI_203
+  - first:
+      213: -7717262569933186713
+    second: BlackandWhiteUI_204
+  - first:
+      213: -5033942017974863989
+    second: BlackandWhiteUI_205
+  - first:
+      213: 2380826143434705588
+    second: BlackandWhiteUI_206
+  - first:
+      213: -5538900731391156804
+    second: BlackandWhiteUI_207
+  - first:
+      213: -4882495075958246240
+    second: BlackandWhiteUI_208
+  - first:
+      213: 7646098515222800904
+    second: BlackandWhiteUI_209
+  - first:
+      213: 5955071075463461984
+    second: BlackandWhiteUI_210
+  - first:
+      213: -9072127308395310663
+    second: BlackandWhiteUI_211
+  - first:
+      213: 5827434589987934117
+    second: BlackandWhiteUI_212
+  - first:
+      213: -4911116856336547750
+    second: BlackandWhiteUI_213
+  - first:
+      213: 1635977523261778932
+    second: BlackandWhiteUI_214
+  - first:
+      213: -7962012116677963408
+    second: BlackandWhiteUI_215
+  - first:
+      213: 6462944260967524575
+    second: BlackandWhiteUI_216
+  - first:
+      213: -8812347533194716890
+    second: BlackandWhiteUI_217
+  - first:
+      213: -5697068222852944566
+    second: BlackandWhiteUI_218
+  - first:
+      213: 8429520622954694790
+    second: BlackandWhiteUI_219
+  - first:
+      213: -7092098694607647732
+    second: BlackandWhiteUI_220
+  - first:
+      213: -553901710928630460
+    second: BlackandWhiteUI_221
+  - first:
+      213: 6222720945507105637
+    second: BlackandWhiteUI_222
+  - first:
+      213: 2603473014690699321
+    second: BlackandWhiteUI_223
+  - first:
+      213: -3951316170498489816
+    second: BlackandWhiteUI_224
+  - first:
+      213: 3426925922498879538
+    second: BlackandWhiteUI_225
+  - first:
+      213: -8342610780088838478
+    second: BlackandWhiteUI_226
+  - first:
+      213: 5161394144978996423
+    second: BlackandWhiteUI_227
+  - first:
+      213: 5456497129158668053
+    second: BlackandWhiteUI_228
+  - first:
+      213: 4935002259456681529
+    second: BlackandWhiteUI_229
+  - first:
+      213: -8981448729683407402
+    second: BlackandWhiteUI_230
+  - first:
+      213: -9034713904061922104
+    second: BlackandWhiteUI_231
+  - first:
+      213: 8279647248793651329
+    second: BlackandWhiteUI_232
+  - first:
+      213: -3642642673931652378
+    second: BlackandWhiteUI_233
+  - first:
+      213: -7001283033804039355
+    second: BlackandWhiteUI_234
+  - first:
+      213: 5266039061489443732
+    second: BlackandWhiteUI_235
+  - first:
+      213: 2410181501704991693
+    second: BlackandWhiteUI_236
+  - first:
+      213: -884328753150166976
+    second: BlackandWhiteUI_237
+  - first:
+      213: 6030363753623358189
+    second: BlackandWhiteUI_238
+  - first:
+      213: 7129369108247552436
+    second: BlackandWhiteUI_239
+  - first:
+      213: -49959866242889485
+    second: BlackandWhiteUI_240
+  - first:
+      213: 3649287200384448024
+    second: BlackandWhiteUI_241
+  - first:
+      213: -5697445299694484141
+    second: BlackandWhiteUI_242
+  - first:
+      213: -8672326216154280015
+    second: BlackandWhiteUI_243
+  - first:
+      213: 5583517119031962039
+    second: BlackandWhiteUI_244
+  - first:
+      213: 6087476796562006558
+    second: BlackandWhiteUI_245
+  - first:
+      213: -32587633293534155
+    second: BlackandWhiteUI_246
+  - first:
+      213: -955586875311400575
+    second: BlackandWhiteUI_247
+  - first:
+      213: 4142561753640219602
+    second: BlackandWhiteUI_248
+  - first:
+      213: 4139035916715793081
+    second: BlackandWhiteUI_249
+  - first:
+      213: 351399632201642008
+    second: BlackandWhiteUI_250
+  - first:
+      213: -6697854014501551076
+    second: BlackandWhiteUI_251
+  - first:
+      213: -6391660539361114190
+    second: BlackandWhiteUI_252
+  - first:
+      213: 3859254534202396159
+    second: BlackandWhiteUI_253
+  - first:
+      213: 2827555767938511177
+    second: BlackandWhiteUI_254
+  - first:
+      213: -2748773198001004638
+    second: BlackandWhiteUI_255
+  - first:
+      213: -7903511978622997359
+    second: BlackandWhiteUI_256
+  - first:
+      213: 8252435454251082999
+    second: BlackandWhiteUI_257
+  - first:
+      213: 1528299514662153282
+    second: BlackandWhiteUI_258
+  - first:
+      213: -2248008507465761157
+    second: BlackandWhiteUI_259
+  - first:
+      213: 5273967041817418192
+    second: BlackandWhiteUI_260
+  - first:
+      213: 1365819485027609360
+    second: BlackandWhiteUI_261
+  - first:
+      213: 1207386394257920200
+    second: BlackandWhiteUI_262
+  - first:
+      213: 8851619889013721757
+    second: BlackandWhiteUI_263
+  - first:
+      213: 805100651702624552
+    second: BlackandWhiteUI_264
+  - first:
+      213: -8504192858066639990
+    second: BlackandWhiteUI_265
+  - first:
+      213: -4166131514634257854
+    second: BlackandWhiteUI_266
+  - first:
+      213: 8337630417753969095
+    second: BlackandWhiteUI_267
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlackandWhiteUI_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 401
+        width: 92
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee47f751c03ef7af0800000000000000
+      internalID: -396348601145527058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_2
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 402
+        width: 92
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ab58230e3054e20800000000000000
+      internalID: 3334075360592902811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa78c521b7be4d80800000000000000
+      internalID: -8264466294707291396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_4
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3fc6fa0b3f60c9d0800000000000000
+      internalID: -2756080672573042881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 416
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876790ce593afc580800000000000000
+      internalID: -8804638882180532616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17807961abc034770800000000000000
+      internalID: 8593726507335485553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_7
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292a50e4a5eba1b80800000000000000
+      internalID: -8423210857977765230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_8
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 416
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95fcf0498291cd1c0800000000000000
+      internalID: -4477676267439665319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_9
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 416
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b06427de4328890800000000000000
+      internalID: -7457339838543033525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_10
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 400
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd06800f62318fa0800000000000000
+      internalID: -5800299392744944173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_11
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 416
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ae188a55eb212e0800000000000000
+      internalID: -2156451996448462201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_12
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 416
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99abc921d0eaf7ba0800000000000000
+      internalID: -6088956800011552103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_13
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 400
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625afb4fb2306dff0800000000000000
+      internalID: -11818461697170138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_14
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 416
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed0dfd94ac8c8ea0800000000000000
+      internalID: -5869161575717466654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_15
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 407
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 185e720966dac1930800000000000000
+      internalID: 4115354815526593921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_16
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 407
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54dcd13d0447b3e0800000000000000
+      internalID: -2038085482900040610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_17
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 407
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f0a920483e36d40800000000000000
+      internalID: 5576550919733645166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58a40aee22fd7580800000000000000
+      internalID: -8827633411267712933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_19
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 400
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891a6f31b264f5840800000000000000
+      internalID: 5214964044350792088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 672800230f6e2d7e0800000000000000
+      internalID: -1742076186533526922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 400
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5b738d62fe70d90800000000000000
+      internalID: -7131468534802565685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_22
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 384
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7e6d4ae01adc790800000000000000
+      internalID: -7508167919489587279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_23
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 400
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe0c673f05e83dd0800000000000000
+      internalID: -2506001339114582275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_24
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 384
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a92dd61c39e23d50800000000000000
+      internalID: 6715686438653733285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_25
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 400
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3982b4dd43c21f380800000000000000
+      internalID: -8939315179791112045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_27
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 369
+        width: 92
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84abfd747c7f84730800000000000000
+      internalID: 3983706305685600840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_28
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 371
+        width: 90
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39fa607461f032030800000000000000
+      internalID: 3468632726360731539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_29
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 384
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8646bd7df07f9e600800000000000000
+      internalID: 498200881219200104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_30
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 384
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5612534712b8980800000000000000
+      internalID: -8535691885759339052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_31
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 384
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aea2741858be7600800000000000000
+      internalID: 468014099732803232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_32
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 384
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31ff4d07602e58c0800000000000000
+      internalID: -4008730991336099521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_33
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 375
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768ca4cd20c2bbc10800000000000000
+      internalID: 2070296844504320103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_34
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 375
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52dfe6f0b669290a0800000000000000
+      internalID: -6876268294476727003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_35
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 375
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c36391be842f96d0800000000000000
+      internalID: -2981624233012796472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_36
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 370
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 544c777ab678b7d30800000000000000
+      internalID: 4430283554889909317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_37
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 370
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d39bbc427e7e6d0800000000000000
+      internalID: -2961144084750058237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_38
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 370
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4143633c601b2e750800000000000000
+      internalID: 6332818668639368212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_39
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 370
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38d287d4c856fe450800000000000000
+      internalID: 6120222071889341827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_40
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 370
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0b87d4e2cdb6860800000000000000
+      internalID: 7524349693878907077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_41
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 370
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be88663ad348ea620800000000000000
+      internalID: 2787310619658193131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 370
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 264077a679dca0d70800000000000000
+      internalID: 9010240054718039138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_43
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 370
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71b50f097459b170800000000000000
+      internalID: 8194673875897135485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_44
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 237
+        width: 89
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f897905b11ddead20800000000000000
+      internalID: 3291811445775890831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_45
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 354
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e80b570ef0f590480800000000000000
+      internalID: -8932503864117710706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_46
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 354
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf0c9cdbd5780de0800000000000000
+      internalID: -1366712899747442743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_47
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 353
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5095d8b1c9ce11610800000000000000
+      internalID: 1590312298659797253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_48
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 353
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a53a250ea63d83bb0800000000000000
+      internalID: -4955978933937724582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_49
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 354
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25985eb1160354470800000000000000
+      internalID: 8378155875430664530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_50
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 354
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 029767cbbff564270800000000000000
+      internalID: 8234374503496841504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_51
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 354
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac30a8cd1c989880800000000000000
+      internalID: -8603955436357403486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_52
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 354
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5525bd97389cf4a0800000000000000
+      internalID: -6558199592721767077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_53
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 354
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2005edc29524520800000000000000
+      internalID: 2684806377109455527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_54
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 354
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7cc1377372db670800000000000000
+      internalID: 8556037986181760962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_55
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 354
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e22499c9587cd30800000000000000
+      internalID: 4451673664311668289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_56
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 354
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576b2c184fb24ae80800000000000000
+      internalID: -8168355494994200971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_57
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 343
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9151152bb24765d0800000000000000
+      internalID: -3069411249481494114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_58
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 343
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5390c95321b3b8110800000000000000
+      internalID: 1264169069802424629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_59
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 239
+        width: 89
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac72af6492b6c1b0800000000000000
+      internalID: -5636621533009773404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_60
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 338
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52adbc964ae81dd30800000000000000
+      internalID: 4454498343246879269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_61
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 338
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47193fe8674354c70800000000000000
+      internalID: 8954621117905211764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_62
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 339
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aacec65837bd7c70800000000000000
+      internalID: 8970527485394340519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_63
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 339
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e206238f5120cb10800000000000000
+      internalID: 1999634928658416357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_64
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 338
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2e4e518e0eef2e0800000000000000
+      internalID: -2089985889648975169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_65
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 338
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b8ba338c49c11e0800000000000000
+      internalID: -2225740528246617284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_66
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 336
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aadf29f418567f90800000000000000
+      internalID: -6956275727323899227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_67
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 336
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc769c11dd7bb9a0800000000000000
+      internalID: -6216236523573576459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_68
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 338
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151e332c5e7c2e7d0800000000000000
+      internalID: -2890528221198818991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_69
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 338
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51176dc79fb418750800000000000000
+      internalID: 6305404488208773397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_70
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 338
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d685be0b07afe7930800000000000000
+      internalID: 4143024069138929773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_71
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 338
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4565ef3437820cd40800000000000000
+      internalID: 5602522411975988820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_72
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 321
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e675bb07dde1d460800000000000000
+      internalID: 7264849181795514082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_73
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 305
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fac3f3c6ecb23fe0800000000000000
+      internalID: -1210697650493207821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_74
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 289
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1fabace1d95bb880800000000000000
+      internalID: -8594176705752748262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_75
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 321
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f178983fc3794c0800000000000000
+      internalID: -4280885904110313613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_76
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 305
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3017afd40fba200800000000000000
+      internalID: 192511626798236588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_77
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 289
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ab0e82173361f530800000000000000
+      internalID: 3886997041583098793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_78
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 320
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19662d4e1f64cd50800000000000000
+      internalID: 6756647516896651547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_79
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 306
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e1f56d0dfefe510800000000000000
+      internalID: 1580745674459127392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_80
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 288
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2b586eae474cf50800000000000000
+      internalID: 6900769081277133513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_81
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 320
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212ac60e3295e8110800000000000000
+      internalID: 1265046555961631250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_82
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 306
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7a60d349b5ed5c0800000000000000
+      internalID: -4188809911170848776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_83
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 288
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9011013b7a9025820800000000000000
+      internalID: 2905395325475754249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_84
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 291
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae508890b28514700800000000000000
+      internalID: 522795973618435562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_85
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 307
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 464c394da3e5691a0800000000000000
+      internalID: -6803146580328987548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_86
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 291
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c47f4247ff20190800000000000000
+      internalID: -7997549113955103739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_87
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 304
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74b6ee8fc60f5550800000000000000
+      internalID: 6151643104536867964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_88
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 288
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed273e0998a208e30800000000000000
+      internalID: 4503646397700207326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_89
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 304
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0126126d9cc174b50800000000000000
+      internalID: 6577257434004414992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_90
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 288
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38bb79044afbf49f0800000000000000
+      internalID: -481955922926126205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_91
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 304
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99a0701110037120800000000000000
+      internalID: 2410270298863610271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_92
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 288
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee990c035465bd5b0800000000000000
+      internalID: -5342581677774300690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_93
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 304
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5f51c0324532fb0800000000000000
+      internalID: -4673799478777088521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_94
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 288
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9724474c73b4f80800000000000000
+      internalID: -8121336186128926232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_95
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 225
+        width: 46
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178605ec213c880f0800000000000000
+      internalID: -1114426422235993999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_96
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 256
+        width: 94
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497ce63c81fd2cc70800000000000000
+      internalID: 8989993103635957652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_97
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 311
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85908b642e36212e0800000000000000
+      internalID: -2156551448056821416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_98
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 311
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39573d472c78fa130800000000000000
+      internalID: 3580229498036254099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_99
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 273
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c73e79e6b595d30800000000000000
+      internalID: 4420665039793650722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_100
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 273
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757958cc821ce5f80800000000000000
+      internalID: -8115837097500895401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_101
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 274
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ac2ff394b25f350800000000000000
+      internalID: 6049789268047612432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_102
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 274
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9efda3e345087030800000000000000
+      internalID: 3492547300166598303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_103
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 280
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a5613644a4671e0800000000000000
+      internalID: -2200489710343267774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_104
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 272
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10d2d600f678c7b0800000000000000
+      internalID: -5203778596147900390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_105
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 280
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b7ce418f5ad3030800000000000000
+      internalID: 3476116972321405828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_106
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 272
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 529875aef15bc7640800000000000000
+      internalID: 5079133628447295781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_107
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 255
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bddd7554e96387ac0800000000000000
+      internalID: -3857273027446710821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_108
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 255
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0fbd1b4cb370bc0800000000000000
+      internalID: -3817016443189595973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_109
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 229
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 9, y: 10, z: 9, w: 9}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a8f470101938680800000000000000
+      internalID: -8753993817074464145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_110
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 228
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2022f0f204b8d1c60800000000000000
+      internalID: 7790536038204514818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_111
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 211
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8badf4fee58cf2d0800000000000000
+      internalID: -3243570370254623862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_112
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 209
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb9ee77b3333f170800000000000000
+      internalID: 8210962876134759387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_113
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 211
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d90b364355f67a0800000000000000
+      internalID: -6381788463461524109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_114
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 210
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ab1f75e91270180800000000000000
+      internalID: -9149307154015864178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_115
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 211
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c3d3b9383f1f4d0800000000000000
+      internalID: -3102430921710814052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_116
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 210
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 363bca7c2d4d8caf0800000000000000
+      internalID: -375816567127231645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_117
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 219
+        width: 56
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1bed98f3a75c44e0800000000000000
+      internalID: -1996124173069587685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_118
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 189
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6d7cc6de6c9e6e0800000000000000
+      internalID: -1807695052377958707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_119
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 177
+        width: 90
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76d3cf522e536720800000000000000
+      internalID: 2838215691902113407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_121
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 175
+        width: 89
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191f9a7387e683a90800000000000000
+      internalID: -7333990530563837551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_122
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 193
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5134a939f7e82c0800000000000000
+      internalID: -4427461111733611013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_123
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 193
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e2c9d383796d0c0800000000000000
+      internalID: -4551284105603699197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_124
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 193
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72487c0e04ae02f90800000000000000
+      internalID: -6980321858054290393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_125
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 193
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92fcdfea098c2bc00800000000000000
+      internalID: 915014198046347049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_126
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 194
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60bb01d4eb87f3890800000000000000
+      internalID: -7476124097679672570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_127
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 194
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74127d18812a20f30800000000000000
+      internalID: 4540369600484155719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_128
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 199
+        width: 56
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f1f2398e8b45140800000000000000
+      internalID: 4707590819550273303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_129
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 180
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ad1ca962d734680800000000000000
+      internalID: -8772030044428969386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_130
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 178
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a21f7426c7d54ae0800000000000000
+      internalID: -1565608049425575264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_131
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 179
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80de2a7f8f6ddf9f0800000000000000
+      internalID: -432953624362816248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_132
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 177
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364c95631e1a5b5e0800000000000000
+      internalID: -1894430079587859357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_133
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 180
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f86dcfe6217a7c00800000000000000
+      internalID: 899155487659747575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_134
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 178
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477be27dca2f61670800000000000000
+      internalID: 8509255370121590644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_135
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 179
+        width: 56
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f901d0086653c440800000000000000
+      internalID: 4954899019727964660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_137
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc950e9b89fe3600800000000000000
+      internalID: 450071390830566612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_138
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba78fdd8802dbead0800000000000000
+      internalID: -2671811019732449365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_139
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 160
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09709900ae131d180800000000000000
+      internalID: -9092431291582183536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_140
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5256f8a6b149288d0800000000000000
+      internalID: -2845549169071921883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_141
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7046e72e5d2b57430800000000000000
+      internalID: 3780124093945111559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_142
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbfdb38c448143e60800000000000000
+      internalID: 7940998726657236927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_143
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6772f660d015b4e0800000000000000
+      internalID: -1966647175010945169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_144
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda8f60efd50a6cd0800000000000000
+      internalID: -2564230578732823844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_145
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 160
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b84018c4db724a0800000000000000
+      internalID: -6618112991117931662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_146
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769294a9ad9a44460800000000000000
+      internalID: 7225086458565568871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_147
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375aafbd03703db90800000000000000
+      internalID: -7218417871314311821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_148
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 160
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed05076a918a5d60800000000000000
+      internalID: 7879752998191435241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_149
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 110
+        width: 90
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78b601a3fb5f9fc0800000000000000
+      internalID: -3485966484624721795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_150
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86f33880d36efc70800000000000000
+      internalID: 9006746052077024906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_151
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 144
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7075c729c2f09b0800000000000000
+      internalID: -5111818044379297807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_152
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fbbec9a26bd4f850800000000000000
+      internalID: 6409989386457234416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_153
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 144
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087a100b94dc90460800000000000000
+      internalID: 7208518394952394624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_154
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01305fe9c0b57b10800000000000000
+      internalID: 1978681992649126158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_155
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 144
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750b0c736dcac1250800000000000000
+      internalID: 5916794046516342871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_156
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1bfe4aecfdf2c10800000000000000
+      internalID: 2031088035590812118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_157
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 144
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a86501b286ab6d0800000000000000
+      internalID: -2973950069757801972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_158
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c973d1feceff96170800000000000000
+      internalID: 8172344391929509788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_159
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 128
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9fd9d3441be0fd20800000000000000
+      internalID: 3310404198387539871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_160
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7fa6599320a1e60800000000000000
+      internalID: 7933656139909756915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_161
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b018eb5a455d21dd0800000000000000
+      internalID: -2516714682211991285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_162
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86050040a89419e60800000000000000
+      internalID: 7967230072916562024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_163
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 128
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcebe905cef416fa0800000000000000
+      internalID: -5809274167947772213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_164
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ac2104baca12820800000000000000
+      internalID: 2891782287262927492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_165
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 128
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebffbbe8d59671430800000000000000
+      internalID: 3753584664984158142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_166
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77f871eea37b3410800000000000000
+      internalID: 1457886099328792442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_167
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 112
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb22bb0f7df701e0800000000000000
+      internalID: -2231536368239891533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_168
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 112
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f101ae804962b50c0800000000000000
+      internalID: -4586029378300145633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_169
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 112
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e2ee4a6df2c2ee0800000000000000
+      internalID: -1284599194770854389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_170
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 82
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e8a7fb705ca7b70800000000000000
+      internalID: 8897640650891759168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_171
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 83
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f09ad53250c85490800000000000000
+      internalID: -7757238898822311691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_172
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 82
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff23bd39c43f09510800000000000000
+      internalID: 1554009381666501375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_173
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 81
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8909bd7af73f1f040800000000000000
+      internalID: 4679789217417236632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_174
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 82
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97cbc8e3ec0ffb2c0800000000000000
+      internalID: -4413544341196456839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_175
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 83
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648e6b35b64089c60800000000000000
+      internalID: 7825009211568744518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_176
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 82
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7846a169fd004050800000000000000
+      internalID: 5782637286280022142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_177
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 81
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd429789aafdd120800000000000000
+      internalID: 2440382179135606197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_178
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 83
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae813e21efe568270800000000000000
+      internalID: 8252387812534589674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_179
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 84
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f228ff2233717cc0800000000000000
+      internalID: -3715061558213598472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_180
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 83
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3578e0e85a85460800000000000000
+      internalID: 7230711231291020287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_181
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 82
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9714c34f36f294dc0800000000000000
+      internalID: -3654337516288589447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_182
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 83
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfa84b06649e04e0800000000000000
+      internalID: -2013508817391145003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_183
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 84
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea6ab9ab7cf01e70800000000000000
+      internalID: 9084038056465033952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_184
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 83
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ce2ec3c8dcac770800000000000000
+      internalID: 8631937638009596939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_185
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 82
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771ddcfed2293cf60800000000000000
+      internalID: 8053441284663005559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_186
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 80
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1270100eab153c3f0800000000000000
+      internalID: -881771238970554591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_187
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 79
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2a3c28738b10320800000000000000
+      internalID: 2522499814860759798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_188
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd8d164e36a473b0800000000000000
+      internalID: -5515600857227489794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_189
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 21
+        width: 90
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6ebee8da94992f0800000000000000
+      internalID: -965659635318266158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_190
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 66
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3e0e7384985da90800000000000000
+      internalID: -7289769478561143831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_191
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 66
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d48a3cd3dc6f700800000000000000
+      internalID: 573871667695602984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_192
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 65
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993b8ca9cf0d895c0800000000000000
+      internalID: -4208384068430548071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_193
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 66
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd834aa575fc975f0800000000000000
+      internalID: -758347088145401633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_194
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 66
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81e60be22e721e40800000000000000
+      internalID: 5625697572976255373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_195
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 66
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d559fdfb2b4de80800000000000000
+      internalID: -8154696488101520036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_196
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 65
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d050e223a5693a0800000000000000
+      internalID: -6659035827453751929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_197
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 66
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340cf9e83ae50ef30800000000000000
+      internalID: 4602782875738161219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_198
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 67
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2160de9c9f8c0ca60800000000000000
+      internalID: 7692369138708973074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_199
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 67
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e7c96dc05913fcc0800000000000000
+      internalID: -3678568635797223456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_200
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 66
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964e7971d301c2c10800000000000000
+      internalID: 2030015386612130921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_201
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 51
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd4cc365b7ff6f80800000000000000
+      internalID: -8110992045435499057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_202
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 67
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611a51d223df9b840800000000000000
+      internalID: 5240498033368867094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_203
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 67
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 172d70a7678e3b270800000000000000
+      internalID: 8265205336706110065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_204
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 66
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769d6b89496c6e490800000000000000
+      internalID: -7717262569933186713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_205
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 51
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87f1b6d768d32ab0800000000000000
+      internalID: -5033942017974863989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_206
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 53
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba836763c46a0120800000000000000
+      internalID: 2380826143434705588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_207
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd5743912fd123b0800000000000000
+      internalID: -5538900731391156804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_208
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a43ae3d894ed3cb0800000000000000
+      internalID: -4882495075958246240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_209
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 50
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a2f7db6166c1a60800000000000000
+      internalID: 7646098515222800904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_210
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 53
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06cf3318799a4a250800000000000000
+      internalID: 5955071075463461984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_211
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b11af97744591280800000000000000
+      internalID: -9072127308395310663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_212
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af0e0072e43fd050800000000000000
+      internalID: 5827434589987934117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_213
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 50
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5080a74d3538dbb0800000000000000
+      internalID: -4911116856336547750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_214
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 49
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fbaa8eb3e824b610800000000000000
+      internalID: 1635977523261778932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_215
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 49
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071dd081a20418190800000000000000
+      internalID: -7962012116677963408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_216
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 49
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd86e1e209df0b950800000000000000
+      internalID: 6462944260967524575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_217
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 49
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62993aebb9044b580800000000000000
+      internalID: -8812347533194716890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_218
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 48
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 6, z: 7, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d2fabb2a2ffe0b0800000000000000
+      internalID: -5697068222852944566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_219
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 47
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6884b06585cabf470800000000000000
+      internalID: 8429520622954694790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_220
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c46e310ddc39d90800000000000000
+      internalID: -7092098694607647732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_221
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 34
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44d2e9f14552058f0800000000000000
+      internalID: -553901710928630460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_222
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 35
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b75550bbb8b5650800000000000000
+      internalID: 6222720945507105637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_223
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 34
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93854feb9e4612420800000000000000
+      internalID: 2603473014690699321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_224
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 33
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8224e2eb0ea1a29c0800000000000000
+      internalID: -3951316170498489816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_225
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 34
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 230af1a48f2ee8f20800000000000000
+      internalID: 3426925922498879538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_226
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 35
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b6d57152b7193c80800000000000000
+      internalID: -8342610780088838478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_227
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 34
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc014de0a4f0a740800000000000000
+      internalID: 5161394144978996423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_228
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 33
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51fe07daa3f59bb40800000000000000
+      internalID: 5456497129158668053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_229
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 35
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9366aa08866ac7440800000000000000
+      internalID: 4935002259456681529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_230
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 36
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd46d257fb7b5380800000000000000
+      internalID: -8981448729683407402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_231
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 35
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c44b1d729f3e9280800000000000000
+      internalID: -9034713904061922104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_232
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 34
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188c2e92e4737e270800000000000000
+      internalID: 8279647248793651329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_233
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 35
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2ff90a9cbb27dc0800000000000000
+      internalID: -3642642673931652378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_234
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 36
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b1426dc2276de90800000000000000
+      internalID: -7001283033804039355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_235
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 35
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493e86130aab41940800000000000000
+      internalID: 5266039061489443732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_236
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 34
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3f75d5e4fa27120800000000000000
+      internalID: 2410181501704991693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_237
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 18
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048f1d33fab3ab3f0800000000000000
+      internalID: -884328753150166976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_238
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 18
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea8c1932e720b350800000000000000
+      internalID: 6030363753623358189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_239
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 17
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b12db15e6b90f260800000000000000
+      internalID: 7129369108247552436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_240
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 18
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8019f24c18e4ff0800000000000000
+      internalID: -49959866242889485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_241
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 18
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8167b4ebf5fd4a230800000000000000
+      internalID: 3649287200384448024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_242
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 18
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355cd70bfab9ee0b0800000000000000
+      internalID: -5697445299694484141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_243
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 17
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf01dd1145b5a780800000000000000
+      internalID: -8672326216154280015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_244
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 18
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9663dac33ac7d40800000000000000
+      internalID: 5583517119031962039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_245
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 19
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12e285c4ef0b7450800000000000000
+      internalID: 6087476796562006558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_246
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 19
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cd77d58b93c8ff0800000000000000
+      internalID: -32587633293534155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_247
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 18
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 189d901ccc21db2f0800000000000000
+      internalID: -955586875311400575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_248
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 3
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d338d977f55d7930800000000000000
+      internalID: 4142561753640219602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_249
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 19
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba9d689c3fc07930800000000000000
+      internalID: 4139035916715793081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_250
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 19
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810f49b8a1c60e400800000000000000
+      internalID: 351399632201642008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_251
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 18
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c140634b2417c03a0800000000000000
+      internalID: -6697854014501551076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_252
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 3
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7cf7a9a924c47a0800000000000000
+      internalID: -6391660539361114190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_253
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 15
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd03f83d83de8530800000000000000
+      internalID: 3859254534202396159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_254
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 15
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941f49a6dfe7d3720800000000000000
+      internalID: 2827555767938511177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_255
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af190d07556ad9d0800000000000000
+      internalID: -2748773198001004638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_256
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 5
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ca124eab5115290800000000000000
+      internalID: -7903511978622997359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_257
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4a976825a868270800000000000000
+      internalID: 8252435454251082999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_258
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ce6d1bf4c953510800000000000000
+      internalID: 1528299514662153282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_259
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 2
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e72744c287dc0e0800000000000000
+      internalID: -2248008507465761157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_260
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 5
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d915a4f415e03940800000000000000
+      internalID: 5273967041817418192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_261
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ba060d59d54f210800000000000000
+      internalID: 1365819485027609360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_262
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c01260578f71c010800000000000000
+      internalID: 1207386394257920200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_263
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 2
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a0273246547da70800000000000000
+      internalID: 8851619889013721757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_264
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 821ab21f6ca4c2b00800000000000000
+      internalID: 805100651702624552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_265
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83268917a90bf980800000000000000
+      internalID: -8504192858066639990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_266
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a3aa6e57dee26c0800000000000000
+      internalID: -4166131514634257854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackandWhiteUI_267
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c197b6b0b635b370800000000000000
+      internalID: 8337630417753969095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1843c03e9719a0038b9d0d253bfb2342
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BlackandWhiteUI_1: -396348601145527058
+      BlackandWhiteUI_10: -5800299392744944173
+      BlackandWhiteUI_100: -8115837097500895401
+      BlackandWhiteUI_101: 6049789268047612432
+      BlackandWhiteUI_102: 3492547300166598303
+      BlackandWhiteUI_103: -2200489710343267774
+      BlackandWhiteUI_104: -5203778596147900390
+      BlackandWhiteUI_105: 3476116972321405828
+      BlackandWhiteUI_106: 5079133628447295781
+      BlackandWhiteUI_107: -3857273027446710821
+      BlackandWhiteUI_108: -3817016443189595973
+      BlackandWhiteUI_109: -8753993817074464145
+      BlackandWhiteUI_11: -2156451996448462201
+      BlackandWhiteUI_110: 7790536038204514818
+      BlackandWhiteUI_111: -3243570370254623862
+      BlackandWhiteUI_112: 8210962876134759387
+      BlackandWhiteUI_113: -6381788463461524109
+      BlackandWhiteUI_114: -9149307154015864178
+      BlackandWhiteUI_115: -3102430921710814052
+      BlackandWhiteUI_116: -375816567127231645
+      BlackandWhiteUI_117: -1996124173069587685
+      BlackandWhiteUI_118: -1807695052377958707
+      BlackandWhiteUI_119: 2838215691902113407
+      BlackandWhiteUI_12: -6088956800011552103
+      BlackandWhiteUI_121: -7333990530563837551
+      BlackandWhiteUI_122: -4427461111733611013
+      BlackandWhiteUI_123: -4551284105603699197
+      BlackandWhiteUI_124: -6980321858054290393
+      BlackandWhiteUI_125: 915014198046347049
+      BlackandWhiteUI_126: -7476124097679672570
+      BlackandWhiteUI_127: 4540369600484155719
+      BlackandWhiteUI_128: 4707590819550273303
+      BlackandWhiteUI_129: -8772030044428969386
+      BlackandWhiteUI_13: -11818461697170138
+      BlackandWhiteUI_130: -1565608049425575264
+      BlackandWhiteUI_131: -432953624362816248
+      BlackandWhiteUI_132: -1894430079587859357
+      BlackandWhiteUI_133: 899155487659747575
+      BlackandWhiteUI_134: 8509255370121590644
+      BlackandWhiteUI_135: 4954899019727964660
+      BlackandWhiteUI_137: 450071390830566612
+      BlackandWhiteUI_138: -2671811019732449365
+      BlackandWhiteUI_139: -9092431291582183536
+      BlackandWhiteUI_14: -5869161575717466654
+      BlackandWhiteUI_140: -2845549169071921883
+      BlackandWhiteUI_141: 3780124093945111559
+      BlackandWhiteUI_142: 7940998726657236927
+      BlackandWhiteUI_143: -1966647175010945169
+      BlackandWhiteUI_144: -2564230578732823844
+      BlackandWhiteUI_145: -6618112991117931662
+      BlackandWhiteUI_146: 7225086458565568871
+      BlackandWhiteUI_147: -7218417871314311821
+      BlackandWhiteUI_148: 7879752998191435241
+      BlackandWhiteUI_149: -3485966484624721795
+      BlackandWhiteUI_15: 4115354815526593921
+      BlackandWhiteUI_150: 9006746052077024906
+      BlackandWhiteUI_151: -5111818044379297807
+      BlackandWhiteUI_152: 6409989386457234416
+      BlackandWhiteUI_153: 7208518394952394624
+      BlackandWhiteUI_154: 1978681992649126158
+      BlackandWhiteUI_155: 5916794046516342871
+      BlackandWhiteUI_156: 2031088035590812118
+      BlackandWhiteUI_157: -2973950069757801972
+      BlackandWhiteUI_158: 8172344391929509788
+      BlackandWhiteUI_159: 3310404198387539871
+      BlackandWhiteUI_16: -2038085482900040610
+      BlackandWhiteUI_160: 7933656139909756915
+      BlackandWhiteUI_161: -2516714682211991285
+      BlackandWhiteUI_162: 7967230072916562024
+      BlackandWhiteUI_163: -5809274167947772213
+      BlackandWhiteUI_164: 2891782287262927492
+      BlackandWhiteUI_165: 3753584664984158142
+      BlackandWhiteUI_166: 1457886099328792442
+      BlackandWhiteUI_167: -2231536368239891533
+      BlackandWhiteUI_168: -4586029378300145633
+      BlackandWhiteUI_169: -1284599194770854389
+      BlackandWhiteUI_17: 5576550919733645166
+      BlackandWhiteUI_170: 8897640650891759168
+      BlackandWhiteUI_171: -7757238898822311691
+      BlackandWhiteUI_172: 1554009381666501375
+      BlackandWhiteUI_173: 4679789217417236632
+      BlackandWhiteUI_174: -4413544341196456839
+      BlackandWhiteUI_175: 7825009211568744518
+      BlackandWhiteUI_176: 5782637286280022142
+      BlackandWhiteUI_177: 2440382179135606197
+      BlackandWhiteUI_178: 8252387812534589674
+      BlackandWhiteUI_179: -3715061558213598472
+      BlackandWhiteUI_18: -8827633411267712933
+      BlackandWhiteUI_180: 7230711231291020287
+      BlackandWhiteUI_181: -3654337516288589447
+      BlackandWhiteUI_182: -2013508817391145003
+      BlackandWhiteUI_183: 9084038056465033952
+      BlackandWhiteUI_184: 8631937638009596939
+      BlackandWhiteUI_185: 8053441284663005559
+      BlackandWhiteUI_186: -881771238970554591
+      BlackandWhiteUI_187: 2522499814860759798
+      BlackandWhiteUI_188: -5515600857227489794
+      BlackandWhiteUI_189: -965659635318266158
+      BlackandWhiteUI_19: 5214964044350792088
+      BlackandWhiteUI_190: -7289769478561143831
+      BlackandWhiteUI_191: 573871667695602984
+      BlackandWhiteUI_192: -4208384068430548071
+      BlackandWhiteUI_193: -758347088145401633
+      BlackandWhiteUI_194: 5625697572976255373
+      BlackandWhiteUI_195: -8154696488101520036
+      BlackandWhiteUI_196: -6659035827453751929
+      BlackandWhiteUI_197: 4602782875738161219
+      BlackandWhiteUI_198: 7692369138708973074
+      BlackandWhiteUI_199: -3678568635797223456
+      BlackandWhiteUI_2: 3334075360592902811
+      BlackandWhiteUI_20: -1742076186533526922
+      BlackandWhiteUI_200: 2030015386612130921
+      BlackandWhiteUI_201: -8110992045435499057
+      BlackandWhiteUI_202: 5240498033368867094
+      BlackandWhiteUI_203: 8265205336706110065
+      BlackandWhiteUI_204: -7717262569933186713
+      BlackandWhiteUI_205: -5033942017974863989
+      BlackandWhiteUI_206: 2380826143434705588
+      BlackandWhiteUI_207: -5538900731391156804
+      BlackandWhiteUI_208: -4882495075958246240
+      BlackandWhiteUI_209: 7646098515222800904
+      BlackandWhiteUI_21: -7131468534802565685
+      BlackandWhiteUI_210: 5955071075463461984
+      BlackandWhiteUI_211: -9072127308395310663
+      BlackandWhiteUI_212: 5827434589987934117
+      BlackandWhiteUI_213: -4911116856336547750
+      BlackandWhiteUI_214: 1635977523261778932
+      BlackandWhiteUI_215: -7962012116677963408
+      BlackandWhiteUI_216: 6462944260967524575
+      BlackandWhiteUI_217: -8812347533194716890
+      BlackandWhiteUI_218: -5697068222852944566
+      BlackandWhiteUI_219: 8429520622954694790
+      BlackandWhiteUI_22: -7508167919489587279
+      BlackandWhiteUI_220: -7092098694607647732
+      BlackandWhiteUI_221: -553901710928630460
+      BlackandWhiteUI_222: 6222720945507105637
+      BlackandWhiteUI_223: 2603473014690699321
+      BlackandWhiteUI_224: -3951316170498489816
+      BlackandWhiteUI_225: 3426925922498879538
+      BlackandWhiteUI_226: -8342610780088838478
+      BlackandWhiteUI_227: 5161394144978996423
+      BlackandWhiteUI_228: 5456497129158668053
+      BlackandWhiteUI_229: 4935002259456681529
+      BlackandWhiteUI_23: -2506001339114582275
+      BlackandWhiteUI_230: -8981448729683407402
+      BlackandWhiteUI_231: -9034713904061922104
+      BlackandWhiteUI_232: 8279647248793651329
+      BlackandWhiteUI_233: -3642642673931652378
+      BlackandWhiteUI_234: -7001283033804039355
+      BlackandWhiteUI_235: 5266039061489443732
+      BlackandWhiteUI_236: 2410181501704991693
+      BlackandWhiteUI_237: -884328753150166976
+      BlackandWhiteUI_238: 6030363753623358189
+      BlackandWhiteUI_239: 7129369108247552436
+      BlackandWhiteUI_24: 6715686438653733285
+      BlackandWhiteUI_240: -49959866242889485
+      BlackandWhiteUI_241: 3649287200384448024
+      BlackandWhiteUI_242: -5697445299694484141
+      BlackandWhiteUI_243: -8672326216154280015
+      BlackandWhiteUI_244: 5583517119031962039
+      BlackandWhiteUI_245: 6087476796562006558
+      BlackandWhiteUI_246: -32587633293534155
+      BlackandWhiteUI_247: -955586875311400575
+      BlackandWhiteUI_248: 4142561753640219602
+      BlackandWhiteUI_249: 4139035916715793081
+      BlackandWhiteUI_25: -8939315179791112045
+      BlackandWhiteUI_250: 351399632201642008
+      BlackandWhiteUI_251: -6697854014501551076
+      BlackandWhiteUI_252: -6391660539361114190
+      BlackandWhiteUI_253: 3859254534202396159
+      BlackandWhiteUI_254: 2827555767938511177
+      BlackandWhiteUI_255: -2748773198001004638
+      BlackandWhiteUI_256: -7903511978622997359
+      BlackandWhiteUI_257: 8252435454251082999
+      BlackandWhiteUI_258: 1528299514662153282
+      BlackandWhiteUI_259: -2248008507465761157
+      BlackandWhiteUI_260: 5273967041817418192
+      BlackandWhiteUI_261: 1365819485027609360
+      BlackandWhiteUI_262: 1207386394257920200
+      BlackandWhiteUI_263: 8851619889013721757
+      BlackandWhiteUI_264: 805100651702624552
+      BlackandWhiteUI_265: -8504192858066639990
+      BlackandWhiteUI_266: -4166131514634257854
+      BlackandWhiteUI_267: 8337630417753969095
+      BlackandWhiteUI_27: 3983706305685600840
+      BlackandWhiteUI_28: 3468632726360731539
+      BlackandWhiteUI_29: 498200881219200104
+      BlackandWhiteUI_3: -8264466294707291396
+      BlackandWhiteUI_30: -8535691885759339052
+      BlackandWhiteUI_31: 468014099732803232
+      BlackandWhiteUI_32: -4008730991336099521
+      BlackandWhiteUI_33: 2070296844504320103
+      BlackandWhiteUI_34: -6876268294476727003
+      BlackandWhiteUI_35: -2981624233012796472
+      BlackandWhiteUI_36: 4430283554889909317
+      BlackandWhiteUI_37: -2961144084750058237
+      BlackandWhiteUI_38: 6332818668639368212
+      BlackandWhiteUI_39: 6120222071889341827
+      BlackandWhiteUI_4: -2756080672573042881
+      BlackandWhiteUI_40: 7524349693878907077
+      BlackandWhiteUI_41: 2787310619658193131
+      BlackandWhiteUI_42: 9010240054718039138
+      BlackandWhiteUI_43: 8194673875897135485
+      BlackandWhiteUI_44: 3291811445775890831
+      BlackandWhiteUI_45: -8932503864117710706
+      BlackandWhiteUI_46: -1366712899747442743
+      BlackandWhiteUI_47: 1590312298659797253
+      BlackandWhiteUI_48: -4955978933937724582
+      BlackandWhiteUI_49: 8378155875430664530
+      BlackandWhiteUI_5: -8804638882180532616
+      BlackandWhiteUI_50: 8234374503496841504
+      BlackandWhiteUI_51: -8603955436357403486
+      BlackandWhiteUI_52: -6558199592721767077
+      BlackandWhiteUI_53: 2684806377109455527
+      BlackandWhiteUI_54: 8556037986181760962
+      BlackandWhiteUI_55: 4451673664311668289
+      BlackandWhiteUI_56: -8168355494994200971
+      BlackandWhiteUI_57: -3069411249481494114
+      BlackandWhiteUI_58: 1264169069802424629
+      BlackandWhiteUI_59: -5636621533009773404
+      BlackandWhiteUI_6: 8593726507335485553
+      BlackandWhiteUI_60: 4454498343246879269
+      BlackandWhiteUI_61: 8954621117905211764
+      BlackandWhiteUI_62: 8970527485394340519
+      BlackandWhiteUI_63: 1999634928658416357
+      BlackandWhiteUI_64: -2089985889648975169
+      BlackandWhiteUI_65: -2225740528246617284
+      BlackandWhiteUI_66: -6956275727323899227
+      BlackandWhiteUI_67: -6216236523573576459
+      BlackandWhiteUI_68: -2890528221198818991
+      BlackandWhiteUI_69: 6305404488208773397
+      BlackandWhiteUI_7: -8423210857977765230
+      BlackandWhiteUI_70: 4143024069138929773
+      BlackandWhiteUI_71: 5602522411975988820
+      BlackandWhiteUI_72: 7264849181795514082
+      BlackandWhiteUI_73: -1210697650493207821
+      BlackandWhiteUI_74: -8594176705752748262
+      BlackandWhiteUI_75: -4280885904110313613
+      BlackandWhiteUI_76: 192511626798236588
+      BlackandWhiteUI_77: 3886997041583098793
+      BlackandWhiteUI_78: 6756647516896651547
+      BlackandWhiteUI_79: 1580745674459127392
+      BlackandWhiteUI_8: -4477676267439665319
+      BlackandWhiteUI_80: 6900769081277133513
+      BlackandWhiteUI_81: 1265046555961631250
+      BlackandWhiteUI_82: -4188809911170848776
+      BlackandWhiteUI_83: 2905395325475754249
+      BlackandWhiteUI_84: 522795973618435562
+      BlackandWhiteUI_85: -6803146580328987548
+      BlackandWhiteUI_86: -7997549113955103739
+      BlackandWhiteUI_87: 6151643104536867964
+      BlackandWhiteUI_88: 4503646397700207326
+      BlackandWhiteUI_89: 6577257434004414992
+      BlackandWhiteUI_9: -7457339838543033525
+      BlackandWhiteUI_90: -481955922926126205
+      BlackandWhiteUI_91: 2410270298863610271
+      BlackandWhiteUI_92: -5342581677774300690
+      BlackandWhiteUI_93: -4673799478777088521
+      BlackandWhiteUI_94: -8121336186128926232
+      BlackandWhiteUI_95: -1114426422235993999
+      BlackandWhiteUI_96: 8989993103635957652
+      BlackandWhiteUI_97: -2156551448056821416
+      BlackandWhiteUI_98: 3580229498036254099
+      BlackandWhiteUI_99: 4420665039793650722
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
