@@ -93,12 +93,12 @@ public class TrainingStation : MonoBehaviour
             if (DataManager.Instance.Data.Money < m_cost)
             {
                 m_upgrade_button.interactable = false;
-                m_cost_label.text = $"훈련에 필요한 비용:\t\t<color=red>{m_cost}</color>";
+                m_cost_label.text = $"훈련에 필요한 비용:\t\t<color=red>{NumberFormatter.FormatNumber(m_cost)}</color>";
             }
             else
             {
                 m_upgrade_button.interactable = true;
-                m_cost_label.text = $"훈련에 필요한 비용:\t\t{m_cost}";
+                m_cost_label.text = $"훈련에 필요한 비용:\t\t{NumberFormatter.FormatNumber(m_cost)}";
             }
         }
         else

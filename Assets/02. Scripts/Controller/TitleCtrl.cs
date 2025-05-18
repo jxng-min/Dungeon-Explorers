@@ -28,6 +28,6 @@ public class TitleCtrl : MonoBehaviour
             DataManager.Instance.Data.LV++;
         }
 
-        m_money_label.text = DataManager.Instance.Data.Money.ToString();
+        m_money_label.text = NumberFormatter.FormatNumber(DataManager.Instance.Data.Money);
     }
 }

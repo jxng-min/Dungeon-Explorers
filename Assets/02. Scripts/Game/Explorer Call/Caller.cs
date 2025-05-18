@@ -58,7 +58,7 @@ public class Caller : MonoBehaviour
         m_explorer_image.sprite = m_explorer.Image;
 
         m_cost_frame.gameObject.SetActive(true);
-        m_cost_label.text = m_explorer.Cost.ToString();
+        m_cost_label.text = NumberFormatter.FormatNumber(m_explorer.Cost);
 
         m_cooltime_image.fillAmount = 1f;
         m_cooltime_image.gameObject.SetActive(false);
@@ -96,14 +96,14 @@ public class Caller : MonoBehaviour
 
     private void Block()
     {
-        m_cost_label.text = $"<color=red>{m_explorer.Cost}</color>";
+        m_cost_label.text = $"<color=red>{NumberFormatter.FormatNumber(m_explorer.Cost)}</color>";
 
         m_button.interactable = false;
     }
 
     private void NonBlock()
     {
-        m_cost_label.text = $"<color=white>{m_explorer.Cost}</color>";
+        m_cost_label.text = $"<color=white>{NumberFormatter.FormatNumber(m_explorer.Cost)}</color>";
 
         if (m_cooldown_coroutine == null)
         {

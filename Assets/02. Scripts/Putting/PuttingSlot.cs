@@ -63,7 +63,7 @@ public class PuttingSlot : MonoBehaviour, IPointerClickHandler
 
         m_explorer_image.sprite = m_explorer.Image;
 
-        m_cost_label.text = m_explorer.Cost.ToString();
+        m_cost_label.text = NumberFormatter.FormatNumber(m_explorer.Cost);
         m_cost_frame.SetActive(true);
 
         m_elected_label.gameObject.SetActive(false);

@@ -26,7 +26,7 @@ public class ShopSlot : MonoBehaviour
     {
         m_slot_image.sprite = m_explorer.Image;
         m_name_label.text = m_explorer.Name;
-        m_price_label.text = m_explorer.Price.ToString();
+        m_price_label.text = NumberFormatter.FormatNumber(m_explorer.Price);
     }
 
     public void UpdateSlot()

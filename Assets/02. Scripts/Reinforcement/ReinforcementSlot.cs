@@ -83,11 +83,11 @@ public class ReinforcementSlot : MonoBehaviour
 
         if (m_current_cost > DataManager.Instance.Data.Money)
         {
-            m_reinforcement_label.text = $"<color=red>강화 비용: {m_current_cost}</color>";
+            m_reinforcement_label.text = $"<color=red>강화 비용: {NumberFormatter.FormatNumber(m_current_cost)}</color>";
         }
         else
         {
-            m_reinforcement_label.text = $"<color=white>강화 비용: {m_current_cost}</color>";
+            m_reinforcement_label.text = $"<color=white>강화 비용: {NumberFormatter.FormatNumber(m_current_cost)}</color>";
         }
     }
 

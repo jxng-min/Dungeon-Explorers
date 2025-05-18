@@ -46,12 +46,12 @@ public class BuildCtrl : MonoBehaviour
         if (m_stage_ctrl.Cost >= m_upgrade_cost)
         {
             m_upgrade_button.interactable = true;
-            m_cost_label.text = $"<color=green>{m_upgrade_cost}</color>";
+            m_cost_label.text = $"<color=green>{NumberFormatter.FormatNumber(m_upgrade_cost)}</color>";
         }
         else
         {
             m_upgrade_button.interactable = false;
-            m_cost_label.text = $"<color=red>{m_upgrade_cost}</color>";
+            m_cost_label.text = $"<color=red>{NumberFormatter.FormatNumber(m_upgrade_cost)}</color>";
         }
     }
 }

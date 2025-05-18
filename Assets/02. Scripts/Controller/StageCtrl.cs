@@ -69,7 +69,7 @@ public class StageCtrl : MonoBehaviour
 
     private void UpdateUI()
     {
-        m_cost_state_label.text = $"{m_current_cost}/{m_current_max_cost}";
+        m_cost_state_label.text = $"{NumberFormatter.FormatNumber(m_current_cost)}/{NumberFormatter.FormatNumber(m_current_max_cost)}";
     }
 
     private void InitializeCost()
