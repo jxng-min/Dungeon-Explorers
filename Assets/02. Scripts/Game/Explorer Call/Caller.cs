@@ -28,9 +28,12 @@ public class Caller : MonoBehaviour
 
     private Coroutine m_cooldown_coroutine;
 
+    private ExplorerFactory m_factory;
+
     private void Awake()
     {
         m_stage_ctrl = FindFirstObjectByType<StageCtrl>();
+        m_factory = FindFirstObjectByType<ExplorerFactory>();
     }
 
     private void SetAlpha(float alpha)
@@ -147,8 +150,8 @@ public class Caller : MonoBehaviour
     {
         Cooling();
 
-        // TODO: 탐험가 소환
+        m_factory.Instantiate(m_explorer.ID);
 
-        m_stage_ctrl.UpdateCurrentCost(m_explorer.Cost);
+        m_stage_ctrl.UpdateCurrentCost(-m_explorer.Cost);
     }
 }

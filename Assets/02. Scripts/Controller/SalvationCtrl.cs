@@ -15,7 +15,7 @@ public class SalvationCtrl : MonoBehaviour
     private float m_default_damage = 100f;
     private float m_default_duration = 10f;
     private float m_default_interval = 1f;
-    private float m_default_cooltime = 40f;
+    private float m_default_cooltime = 60f;
 
     private float m_current_damage;
     private float m_current_duration;
@@ -69,7 +69,7 @@ public class SalvationCtrl : MonoBehaviour
                 obj.transform.position = GetMeteorPosition();
 
                 var meteor = obj.GetComponent<Meteor>();
-                meteor.Initialize(random_atk, 7f);
+                meteor.Initialize(random_atk, 10f);
 
                 spawn_timer = 0f;
             }

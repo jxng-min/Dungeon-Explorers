@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 12057a711348f0b87b8bf9a3bcb6725f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7604130918659086260
+    second: Swordsman-Walk_0
+  - first:
+      213: -7443691771893393131
+    second: Swordsman-Walk_1
+  - first:
+      213: 2226601912628179809
+    second: Swordsman-Walk_2
+  - first:
+      213: -2155442161167370524
+    second: Swordsman-Walk_3
+  - first:
+      213: -2799789011364502902
+    second: Swordsman-Walk_4
+  - first:
+      213: 5873752323562812573
+    second: Swordsman-Walk_5
+  - first:
+      213: 5687147656099317281
+    second: Swordsman-Walk_6
+  - first:
+      213: 2983154578964088267
+    second: Swordsman-Walk_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gabriel Move_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 40
+        width: 24
+        height: 21
+      alignment: 9
+      pivot: {x: 0.4, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d9268f08d4ba93bad5c5bfa1308426
+      internalID: -1005546393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gabriel Move_1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 41
+        width: 24
+        height: 21
+      alignment: 9
+      pivot: {x: 0.4, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4984e2e8c93da8de38c7424fe01e656d
+      internalID: 712420849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gabriel Move_2
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 40
+        width: 24
+        height: 21
+      alignment: 9
+      pivot: {x: 0.4, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b970ca2f495d619589ec76451e23472
+      internalID: -1847584701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gabriel Move_3
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 39
+        width: 24
+        height: 21
+      alignment: 9
+      pivot: {x: 0.4, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe976e0e591b35fdb0fca45b7f41aa6
+      internalID: 1252506384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gabriel Move_4
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 40
+        width: 24
+        height: 21
+      alignment: 9
+      pivot: {x: 0.4, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daca3085a1fbfd5748683c640f3c9762
+      internalID: -887211033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gabriel Move_5
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 42
+        width: 24
+        height: 20
+      alignment: 9
+      pivot: {x: 0.4, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6556a53684125fbe49f6a51bccc54d95
+      internalID: -710599474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gabriel Move_6
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 41
+        width: 24
+        height: 20
+      alignment: 9
+      pivot: {x: 0.4, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572f419ee7179aba09b8be9cd5c92223
+      internalID: -1725970070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gabriel Move_7
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 39
+        width: 24
+        height: 21
+      alignment: 9
+      pivot: {x: 0.4, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6374bec745be92c9a844b090241fdef2
+      internalID: -911821558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e99b79c09bb4a30dab976dbb33fbc6ba
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gabriel Move_0: -1005546393
+      Gabriel Move_1: 712420849
+      Gabriel Move_2: -1847584701
+      Gabriel Move_3: 1252506384
+      Gabriel Move_4: -887211033
+      Gabriel Move_5: -710599474
+      Gabriel Move_6: -1725970070
+      Gabriel Move_7: -911821558
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

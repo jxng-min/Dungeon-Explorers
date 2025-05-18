@@ -5,4 +5,6 @@ public enum ObjectType
     PUTTING_SLOT,
     METEOR,
     EXPLOSION,
+    EXPLORER,
+    ENEMY,
 }

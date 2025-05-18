@@ -47,6 +47,10 @@ public class Explorer : ScriptableObject
     [SerializeField] private float m_growth_atk;
     public float GrowthATK { get => m_growth_atk; }
 
+    [Header("탐험가의 이동 속도")]
+    [SerializeField] private float m_spd;
+    public float SPD { get => m_spd; }
+
     [Header("탐험가의 사거리")]
     [SerializeField] private float m_atk_range;
     public float Range { get => m_atk_range; }
