@@ -88,15 +88,23 @@ public class TrainingStation : MonoBehaviour
 
         m_cost = explorer.UpgradeCost + (int)((Inventory.Instance.GetItem(m_explorer_id).Upgrade - 1) * 0.2 * explorer.UpgradeCost);
 
-        if(DataManager.Instance.Data.Money < m_cost)
+        if (Inventory.Instance.GetItem(m_explorer_id).Upgrade < explorer.MaxUpgrade)
         {
-            m_upgrade_button.interactable = false;
-            m_cost_label.text = $"훈련에 필요한 비용:\t\t<color=red>{m_cost}</color>";
+            if (DataManager.Instance.Data.Money < m_cost)
+            {
+                m_upgrade_button.interactable = false;
+                m_cost_label.text = $"훈련에 필요한 비용:\t\t<color=red>{m_cost}</color>";
+            }
+            else
+            {
+                m_upgrade_button.interactable = true;
+                m_cost_label.text = $"훈련에 필요한 비용:\t\t{m_cost}";
+            }
         }
         else
         {
-            m_upgrade_button.interactable = true;
-            m_cost_label.text = $"훈련에 필요한 비용:\t\t{m_cost}";
+            m_upgrade_button.interactable = false;
+            m_cost_label.text = $"<color=yellow>모든 강화 완료</color>";
         }
     }
 }
