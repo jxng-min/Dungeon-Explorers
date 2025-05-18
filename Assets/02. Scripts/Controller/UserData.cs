@@ -7,6 +7,7 @@ public class UserData
     public int Stage;
     public InventoryItem[] Inventory;
     public int[] Party;
+    public ReinforcementData Reinforcement;
 
     public UserData()
     {
@@ -16,9 +17,10 @@ public class UserData
         Stage = 1;
         Inventory = new InventoryItem[] { new InventoryItem(0, 1) };
         Party = new int[] { 0, -1, -1, -1, -1 };
+        Reinforcement = new ReinforcementData();
     }
 
-    public UserData(int lv, int exp, int money, int stage, InventoryItem[] inventory, int[] party)
+    public UserData(int lv, int exp, int money, int stage, InventoryItem[] inventory, int[] party, ReinforcementData reinforcement)
     {
         LV = lv;
         EXP = exp;
@@ -26,5 +28,6 @@ public class UserData
         Stage = stage;
         Inventory = inventory;
         Party = party;
+        Reinforcement = reinforcement;
     }
 }

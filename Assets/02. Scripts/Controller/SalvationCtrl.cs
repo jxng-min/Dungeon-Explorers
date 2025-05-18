@@ -24,10 +24,10 @@ public class SalvationCtrl : MonoBehaviour
 
     private void Awake()
     {
-        m_current_damage = m_default_damage /* + 업그레이드 레벨 */;
-        m_current_duration = m_default_duration /* + 0.1 * 업그레이드 레벨 */;
-        m_current_interval = m_default_interval /* -0.25 * 업그레이드 레벨 */;
-        m_current_cooltime = m_default_cooltime /* -0.25 * 업그레이드 레벨 */;
+        m_current_damage = m_default_damage + (DataManager.Instance.Data.Reinforcement.SkillDamage - 1);
+        m_current_duration = m_default_duration;
+        m_current_interval = m_default_interval - 0.25f * (DataManager.Instance.Data.Reinforcement.SkillInterval - 1);
+        m_current_cooltime = m_default_cooltime - 0.25f * (DataManager.Instance.Data.Reinforcement.SkillCooltime - 1);
     }
 
     public void BUTTON_Use()
