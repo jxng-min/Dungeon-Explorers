@@ -9017,6 +9017,9 @@ MonoBehaviour:
   - {fileID: 9100000, guid: c0531f71a4b7e82dc90fbbc0d1e88f4e, type: 2}
   - {fileID: 9100000, guid: 89f5993f59c081897a68e4c2c348d225, type: 2}
   - {fileID: 9100000, guid: 62cce6b5afe85997abf8cde91618afdf, type: 2}
+  - {fileID: 9100000, guid: 591b112ae720c3160ae2cd2142b726c9, type: 2}
+  - {fileID: 9100000, guid: a350ac0a451ce9ca7bb547fa33e821cb, type: 2}
+  - {fileID: 9100000, guid: 2bea00805e75fd1ff9e9ef8389c07996, type: 2}
   m_spawn_root: {fileID: 2142490298}
 --- !u!1 &1896037949
 GameObject:

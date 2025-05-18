@@ -23,7 +23,7 @@ MonoBehaviour:
   m_growth_hp: 10
   m_explorer_atk: 15
   m_growth_atk: 1
-  m_spd: 1
+  m_spd: 1.25
   m_atk_range: 0.9
   m_atk_cooltime: 1.5
   m_cost: 10
