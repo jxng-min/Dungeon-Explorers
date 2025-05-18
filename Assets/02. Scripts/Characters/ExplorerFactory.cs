@@ -58,6 +58,18 @@ public class ExplorerFactory : MonoBehaviour
                 break;
 
             case ExplorerType.WIZARD:
+            {
+                switch (explorer_id)
+                {
+                    case 6:
+                        character = exp_obj.AddComponent<Nimmia>();
+                        break;
+
+                    case 7:
+                        character = exp_obj.AddComponent<Lelia>();
+                        break;    
+                }    
+            }
                 break;
         }
 

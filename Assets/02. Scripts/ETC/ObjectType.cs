@@ -8,4 +8,6 @@ public enum ObjectType
     EXPLORER,
     ENEMY,
     ARROW,
+    HOLY_SHIELD,
+    HOLY_CROSS,
 }
