@@ -10,4 +10,5 @@ public enum ObjectType
     ARROW,
     HOLY_SHIELD,
     HOLY_CROSS,
+    DAMAGE_INDICATOR,
 }

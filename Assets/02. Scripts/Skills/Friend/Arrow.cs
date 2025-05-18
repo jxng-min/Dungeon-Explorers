@@ -2,16 +2,9 @@ using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Arrow : MonoBehaviour
+public class Arrow : Skill
 {
     [field: SerializeField] public Rigidbody2D Rigidbody { get; private set; }
-
-    private float m_atk;
-    public float ATK
-    {
-        get => m_atk;
-        set => m_atk = value;
-    }
 
     private float m_speed;
     public float SPD
@@ -45,12 +38,12 @@ public class Arrow : MonoBehaviour
         RotateTowardsDirection(m_origin_direction);
     }
 
-    public void Stop()
+    public override void Stop()
     {
         SPD = 0;
     }
 
-    public void Resume()
+    public override void Resume()
     {
         SPD = m_origin_speed;
 
@@ -58,7 +51,8 @@ public class Arrow : MonoBehaviour
     }
 
     public void MoveTowardsTarget()
-    {;
+    {
+        ;
         m_origin_direction = Vector2.right;
 
         MoveTowardsTarget(Vector2.right);
@@ -92,7 +86,7 @@ public class Arrow : MonoBehaviour
         ObjectManager.Instance.ReturnObject(gameObject, ObjectType.ARROW);
     }
 
-    private void Return()
+    protected override void Return()
     {
         ObjectManager.Instance.ReturnObject(gameObject, ObjectType.ARROW);
     }
@@ -101,6 +95,7 @@ public class Arrow : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
+            CreateDamageIndicator(collision.transform.position);
             // TODO: 데미지를 입히는 로직
             Invoke("Return", 0.1f);
         }

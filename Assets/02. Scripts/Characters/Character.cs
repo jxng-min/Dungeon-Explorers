@@ -47,7 +47,7 @@ public abstract class Character : MonoBehaviour
             }
 
             Attack();
-        }        
+        }
     }
 
     private void Awake()
@@ -201,5 +201,15 @@ public abstract class Character : MonoBehaviour
 
         Animator.speed = 1f;
         m_knockback_coroutine = null;
+    }
+
+    protected void CreateDamageIndicator(Vector3 position)
+    {
+        var obj = ObjectManager.Instance.GetObject(ObjectType.DAMAGE_INDICATOR);
+        obj.transform.position = position + Vector3.up * 0.4f;
+
+
+        var damage_indicator = obj.GetComponent<DamageIndicator>();
+        damage_indicator.Initialize($"<color=#F6BB43>{NumberFormatter.FormatNumber(m_current_atk)}</color>");
     }
 }

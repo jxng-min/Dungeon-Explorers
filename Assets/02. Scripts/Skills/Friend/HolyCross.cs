@@ -2,17 +2,10 @@ using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
-public class HolyCross : MonoBehaviour
+public class HolyCross : Skill
 {
     [field: SerializeField] public Rigidbody2D Rigidbody { get; private set; }
     [field: SerializeField] public Animator Animator { get; private set; }
-
-    private float m_atk;
-    public float ATK
-    {
-        get => m_atk;
-        set => m_atk = value;
-    }
 
     private float m_speed;
     public float SPD
@@ -49,13 +42,13 @@ public class HolyCross : MonoBehaviour
         MoveTowardsTarget();
     }
 
-    public void Stop()
+    public override void Stop()
     {
         SPD = 0;
         Animator.speed = 0f;
     }
 
-    public void Resume()
+    public override void Resume()
     {
         SPD = m_origin_speed;
         Animator.speed = 1f;
@@ -64,7 +57,8 @@ public class HolyCross : MonoBehaviour
     }
 
     public void MoveTowardsTarget()
-    {;
+    {
+        ;
         m_origin_direction = Vector2.right;
 
         MoveTowardsTarget(Vector2.right);
@@ -92,7 +86,7 @@ public class HolyCross : MonoBehaviour
         ObjectManager.Instance.ReturnObject(gameObject, ObjectType.HOLY_CROSS);
     }
 
-    private void Return()
+    protected override void Return()
     {
         ObjectManager.Instance.ReturnObject(gameObject, ObjectType.HOLY_CROSS);
     }
@@ -108,6 +102,7 @@ public class HolyCross : MonoBehaviour
         {
             m_elastic_count++;
             // TODO: 데미지를 입히는 로직
+            CreateDamageIndicator(collision.transform.position);
 
             if (m_elastic_count == 5)
             {

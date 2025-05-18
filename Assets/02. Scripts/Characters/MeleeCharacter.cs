@@ -52,6 +52,8 @@ public class MeleeCharacter : Character
         float elapsed_time = 0f;
 
         Animator.SetTrigger("Attack");
+        StartCoroutine(Co_CreateDamageIndicator(enemy.transform.position, 0.5f));
+
         while (enemy != null)
         {
             while (elapsed_time <= m_current_cooltime)
@@ -63,10 +65,18 @@ public class MeleeCharacter : Character
             }
 
             Animator.SetTrigger("Attack");
+            StartCoroutine(Co_CreateDamageIndicator(enemy.transform.position, 0.5f));
+
             elapsed_time = 0f;
         }
 
         m_attack_coroutine = null;
+    }
+
+    private IEnumerator Co_CreateDamageIndicator(Vector3 position, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        CreateDamageIndicator(position);
     }
     
     private void OnDrawGizmosSelected()
