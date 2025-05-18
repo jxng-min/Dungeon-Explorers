@@ -62,11 +62,21 @@ public class RangedCharacter : Character
             }
 
             Animator.SetTrigger("Attack");
-            // TODO: 발사 로직 추가 필요
+            Invoke("CreateArrow", 0.8f);
+
             elapsed_time = 0f;
         }
 
         m_attack_coroutine = null;
+    }
+
+    public void CreateArrow()
+    {
+        var arrow_obj = ObjectManager.Instance.GetObject(ObjectType.ARROW);
+        arrow_obj.transform.position = transform.position + Vector3.up * 0.25f;
+
+        var arrow = arrow_obj.GetComponent<Arrow>();
+        arrow.Initialize(m_current_atk, 8f);
     }
     
     private void OnDrawGizmosSelected()

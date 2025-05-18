@@ -7,4 +7,5 @@ public enum ObjectType
     EXPLOSION,
     EXPLORER,
     ENEMY,
+    ARROW,
 }
