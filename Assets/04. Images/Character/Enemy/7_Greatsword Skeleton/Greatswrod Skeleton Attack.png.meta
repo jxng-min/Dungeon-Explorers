@@ -1,0 +1,479 @@
+fileFormatVersion: 2
+guid: c0de6cd63cb8678f197270b52ad8af50
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 927360332485938838
+    second: Greatsword Skeleton-Attack02_0
+  - first:
+      213: -7277744865043229210
+    second: Greatsword Skeleton-Attack02_1
+  - first:
+      213: 8936567366031344445
+    second: Greatsword Skeleton-Attack02_2
+  - first:
+      213: 5039528978129295877
+    second: Greatsword Skeleton-Attack02_3
+  - first:
+      213: 8800460226854289968
+    second: Greatsword Skeleton-Attack02_4
+  - first:
+      213: 170769846889858129
+    second: Greatsword Skeleton-Attack02_5
+  - first:
+      213: 786702109089999689
+    second: Greatsword Skeleton-Attack02_6
+  - first:
+      213: 7635502010734008299
+    second: Greatsword Skeleton-Attack02_7
+  - first:
+      213: 8628112074573656460
+    second: Greatsword Skeleton-Attack02_8
+  - first:
+      213: 6475226690905467476
+    second: Greatsword Skeleton-Attack02_9
+  - first:
+      213: 85067558378926377
+    second: Greatsword Skeleton-Attack02_10
+  - first:
+      213: -5864307165115557782
+    second: Greatsword Skeleton-Attack02_11
+  - first:
+      213: -186301200928796000
+    second: Greatsword Skeleton-Attack02_12
+  - first:
+      213: 6272818144793376373
+    second: Greatsword Skeleton-Attack02_13
+  - first:
+      213: -2541496089976469969
+    second: Greatsword Skeleton-Attack02_14
+  - first:
+      213: -2261044636303580947
+    second: Greatsword Skeleton-Attack02_15
+  - first:
+      213: 7469913578203003452
+    second: Greatsword Skeleton-Attack02_16
+  - first:
+      213: 2317213391398280902
+    second: Greatsword Skeleton-Attack02_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Greatswrod Skeleton Attack_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 43
+        width: 31
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bae02b671f1d7fed8c408ad0389f334
+      internalID: 1743091225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greatswrod Skeleton Attack_1
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 43
+        width: 30
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697962f22c0b4a82fb57890f44d89df4
+      internalID: 1727934515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greatswrod Skeleton Attack_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 43
+        width: 30
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09385457e1b7795bb4077a6c971749e
+      internalID: -1317276302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greatswrod Skeleton Attack_3
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 43
+        width: 19
+        height: 28
+      alignment: 9
+      pivot: {x: 0.2, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3d24c751dae5899b43ada49c130fb9
+      internalID: -1732029874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greatswrod Skeleton Attack_4
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 43
+        width: 14
+        height: 29
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04b741f7399c1c91bb0af70efc0e9d1
+      internalID: -1609941713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greatswrod Skeleton Attack_8
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 41
+        width: 50
+        height: 24
+      alignment: 9
+      pivot: {x: 0, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73011b89ec45df3a0b17844b34bd122d
+      internalID: -2096595714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greatswrod Skeleton Attack_9
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 43
+        width: 31
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8995102c23e331b819d172c75da2000a
+      internalID: 389392930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greatswrod Skeleton Attack_10
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 42
+        width: 45
+        height: 36
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da6508684b25fa7298787e3acbaf8f9
+      internalID: -1843443204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greatswrod Skeleton Attack_13
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 42
+        width: 49
+        height: 19
+      alignment: 9
+      pivot: {x: 0, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a9ddb4fc49ed479a1b2237541a95b6
+      internalID: -1887954809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greatswrod Skeleton Attack_14
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 41
+        width: 49
+        height: 20
+      alignment: 9
+      pivot: {x: 0, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d830fcc965b80c48bee5ca2ca1303c8
+      internalID: -554468079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greatswrod Skeleton Attack_15
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 41
+        width: 30
+        height: 20
+      alignment: 9
+      pivot: {x: 0, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e8b41cbd8c1e8c19b405dc68eb0e0c
+      internalID: -1613631898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greatswrod Skeleton Attack_16
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 43
+        width: 23
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240254d512c942b97924564d3d2c4b11
+      internalID: 571222747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0a4c7877f69464b5bb63aabe64e468ad
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Greatswrod Skeleton Attack_0: 1743091225
+      Greatswrod Skeleton Attack_1: 1727934515
+      Greatswrod Skeleton Attack_10: -1843443204
+      Greatswrod Skeleton Attack_11: 944606141
+      Greatswrod Skeleton Attack_12: -915957621
+      Greatswrod Skeleton Attack_13: -1887954809
+      Greatswrod Skeleton Attack_14: -554468079
+      Greatswrod Skeleton Attack_15: -1613631898
+      Greatswrod Skeleton Attack_16: 571222747
+      Greatswrod Skeleton Attack_17: -219212698
+      Greatswrod Skeleton Attack_2: -1317276302
+      Greatswrod Skeleton Attack_3: -1732029874
+      Greatswrod Skeleton Attack_4: -1609941713
+      Greatswrod Skeleton Attack_5: 430393771
+      Greatswrod Skeleton Attack_6: -362600648
+      Greatswrod Skeleton Attack_7: -382296181
+      Greatswrod Skeleton Attack_8: -2096595714
+      Greatswrod Skeleton Attack_9: 389392930
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

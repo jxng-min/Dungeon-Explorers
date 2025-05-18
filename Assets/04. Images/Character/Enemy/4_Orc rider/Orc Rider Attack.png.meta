@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: aefc0fb132e5eb2e5b8264814aa3d885
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6549746726921669976
+    second: Orc rider-Attack03_0
+  - first:
+      213: -2429595495566164877
+    second: Orc rider-Attack03_1
+  - first:
+      213: -2054752136767863809
+    second: Orc rider-Attack03_2
+  - first:
+      213: 3623559604838057650
+    second: Orc rider-Attack03_3
+  - first:
+      213: -7626613711287710157
+    second: Orc rider-Attack03_4
+  - first:
+      213: -4809687614703928280
+    second: Orc rider-Attack03_5
+  - first:
+      213: -8455166663617238693
+    second: Orc rider-Attack03_6
+  - first:
+      213: 6086544248654583641
+    second: Orc rider-Attack03_7
+  - first:
+      213: -5714832754859823296
+    second: Orc rider-Attack03_8
+  - first:
+      213: -2144791821532700930
+    second: Orc rider-Attack03_9
+  - first:
+      213: 2999843205620421482
+    second: Orc rider-Attack03_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Orc Rider Attack_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 43
+        width: 32
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398f24b9523e45fa88738c07fde9acc1
+      internalID: 457107557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Rider Attack_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 43
+        width: 31
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb70c0934fe5889ca9f6c9ade6b2b1e
+      internalID: -909831101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Rider Attack_2
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 43
+        width: 31
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db46c327e426475c59ee7eb5a5e369f2
+      internalID: 967650364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Rider Attack_3
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 43
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99eae1eb60dce18d6970decbf7a97122
+      internalID: 1091410754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Rider Attack_4
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 43
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c296396f141e67439c7d639368c73d0
+      internalID: 1611411081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Rider Attack_5
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 43
+        width: 57
+        height: 27
+      alignment: 9
+      pivot: {x: 0.275, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bea40df73d3b7eeb6a6cf1531010ca
+      internalID: -1096582515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Rider Attack_6
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 43
+        width: 85
+        height: 27
+      alignment: 9
+      pivot: {x: 0.52, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1c09b25d7c1c255ae6e187a30c2bcd
+      internalID: -1384136951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Rider Attack_7
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 43
+        width: 59
+        height: 27
+      alignment: 9
+      pivot: {x: 0.75, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d10817c83832d2b8ba3c6a93c1a3ce
+      internalID: 232061860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Rider Attack_8
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 43
+        width: 58
+        height: 27
+      alignment: 9
+      pivot: {x: 0.7, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594432d9e5b8d2ca3a0fb071fedfceb2
+      internalID: -910483889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Rider Attack_9
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 43
+        width: 57
+        height: 27
+      alignment: 9
+      pivot: {x: 0.275, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be31c6ca34a0bdc63936f142a31e0586
+      internalID: -2109136807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Rider Attack_10
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 43
+        width: 31
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0945f64ac4bd2501ea32c8fc4925a302
+      internalID: 1990123086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: da2a69cfbb1fba8009740d1344484c9e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Orc Rider Attack_0: 457107557
+      Orc Rider Attack_1: -909831101
+      Orc Rider Attack_10: 1990123086
+      Orc Rider Attack_2: 967650364
+      Orc Rider Attack_3: 1091410754
+      Orc Rider Attack_4: 1611411081
+      Orc Rider Attack_5: -1096582515
+      Orc Rider Attack_6: -1384136951
+      Orc Rider Attack_7: 232061860
+      Orc Rider Attack_8: -910483889
+      Orc Rider Attack_9: -2109136807
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
