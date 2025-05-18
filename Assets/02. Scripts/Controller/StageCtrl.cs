@@ -32,6 +32,24 @@ public class StageCtrl : MonoBehaviour
         set => m_current_cost_interval = value;
     }
 
+    private void OnEnable()
+    {
+        GameEventBus.Subscribe(GameEventType.PLAYING, GameManager.Instance.Playing);
+        GameEventBus.Subscribe(GameEventType.PAUSE, GameManager.Instance.Pause);
+        GameEventBus.Subscribe(GameEventType.GAMEOVER, GameManager.Instance.GameOver);
+        GameEventBus.Subscribe(GameEventType.GAMECLEAR, GameManager.Instance.GameClear);
+
+        GameEventBus.Publish(GameEventType.PLAYING);
+    }
+
+    private void OnDisable()
+    {
+        GameEventBus.Unsubscribe(GameEventType.PLAYING, GameManager.Instance.Playing);
+        GameEventBus.Unsubscribe(GameEventType.PAUSE, GameManager.Instance.Pause);
+        GameEventBus.Unsubscribe(GameEventType.GAMEOVER, GameManager.Instance.GameOver);
+        GameEventBus.Unsubscribe(GameEventType.GAMECLEAR, GameManager.Instance.GameClear);        
+    }
+
     private void Start()
     {
         InitializeCost();
@@ -41,7 +59,11 @@ public class StageCtrl : MonoBehaviour
 
     private void Update()
     {
-        // TODO: PLAYING이 아니면 업데이트 안함.
+        if (GameManager.Instance.GameState != GameEventType.PLAYING)
+        {
+            return;
+        }
+
         UpdateUI();   
     }
 

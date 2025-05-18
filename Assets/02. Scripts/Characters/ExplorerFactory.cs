@@ -54,6 +54,9 @@ public class ExplorerFactory : MonoBehaviour
                 break;
 
             case ExplorerType.RANGED:
+                character = exp_obj.AddComponent<RangedCharacter>();
+                break;
+
             case ExplorerType.WIZARD:
                 break;
         }

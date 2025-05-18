@@ -54,6 +54,8 @@ public class LoadingManager : MonoBehaviour
 
     public void LoadScene(string scene_name)
     {
+        GameEventBus.Publish(GameEventType.LOADING);
+
         gameObject.SetActive(true);
 
         SceneManager.sceneLoaded += OnSceneLoaded;

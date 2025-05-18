@@ -25,7 +25,11 @@ public class CallerCtrl : MonoBehaviour
 
     private void Update()
     {
-        // TODO: PLAYING이 아니면 업데이트 안함.
+        if (GameManager.Instance.GameState != GameEventType.PLAYING)
+        {
+            return;
+        }
+        
         UpdateCaller();
     }
 

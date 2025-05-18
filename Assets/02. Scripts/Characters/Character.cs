@@ -32,7 +32,23 @@ public abstract class Character : MonoBehaviour
     protected Coroutine m_attack_coroutine;
     protected Coroutine m_knockback_coroutine;
 
-    protected abstract void FixedUpdate();
+    protected void FixedUpdate()
+    {
+        if (GameManager.Instance.GameState != GameEventType.PLAYING)
+        {
+            return;
+        }
+
+        if (!m_is_dead && m_knockback_coroutine == null)
+        {
+            if (!m_is_attack)
+            {
+                MoveTowardsTower();
+            }
+
+            Attack();
+        }        
+    }
 
     private void Awake()
     {
@@ -41,7 +57,7 @@ public abstract class Character : MonoBehaviour
         Renderer = GetComponent<SpriteRenderer>();
         Animator = GetComponent<Animator>();
 
-        m_enemy_layer = LayerMask.GetMask("ENEMY");    
+        m_enemy_layer = LayerMask.GetMask("ENEMY");
     }
 
     public virtual void Initialize()
@@ -53,7 +69,7 @@ public abstract class Character : MonoBehaviour
 
         Collider.enabled = true;
 
-        Renderer.sortingOrder = 2;
+        Renderer.sortingOrder = 10 + Script.ID;
 
         m_current_hp = Script.HP;
         m_current_atk = Script.ATK;
@@ -128,7 +144,7 @@ public abstract class Character : MonoBehaviour
         Animator.speed = 1f;
         Animator.SetTrigger("Death");
 
-        Renderer.sortingOrder = 0;
+        Renderer.sortingOrder = 9;
 
         Collider.enabled = false;
 
@@ -168,7 +184,7 @@ public abstract class Character : MonoBehaviour
         {
             while (elapsed_time <= target_time)
             {
-                // TODO: WaitUntil을 이용하여 게임 상태가 PLAYING일 때까지 대기
+                yield return new WaitUntil(() => GameManager.Instance.GameState == GameEventType.PLAYING);
 
                 if (m_is_dead)
                 {

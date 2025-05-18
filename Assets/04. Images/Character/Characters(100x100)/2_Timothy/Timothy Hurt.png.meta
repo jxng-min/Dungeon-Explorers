@@ -135,89 +135,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Knight Templar-Hurt_0
+      name: Timothy Hurt_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 42
-        width: 30
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 40
+        y: 43
+        width: 28
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f975ffcc4b4224370800000000000000
-      internalID: 8305241021776615327
+      spriteID: bddef0d0fad464ea18b4732a005348f2
+      internalID: 1397605565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight Templar-Hurt_1
+      name: Timothy Hurt_1
       rect:
         serializedVersion: 2
-        x: 139
-        y: 42
-        width: 30
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 140
+        y: 43
+        width: 28
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9d8deb5b9d49044d0800000000000000
-      internalID: -3152356076381349671
+      spriteID: e14679d56317021c0954759df474577d
+      internalID: 920177071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight Templar-Hurt_2
+      name: Timothy Hurt_2
       rect:
         serializedVersion: 2
-        x: 239
-        y: 42
-        width: 30
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 240
+        y: 43
+        width: 28
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5c415437c99aafb20800000000000000
-      internalID: 3169031777222464709
+      spriteID: b2e742138f01f43f486b1509e74d36de
+      internalID: 225845341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight Templar-Hurt_3
+      name: Timothy Hurt_3
       rect:
         serializedVersion: 2
-        x: 339
-        y: 42
-        width: 30
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 340
+        y: 43
+        width: 28
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6169325e4ae940a00800000000000000
-      internalID: 721876271342261782
+      spriteID: fda34aff30d37e47d844b19647da82a9
+      internalID: -1393701491
       vertices: []
       indices: 
       edges: []
@@ -226,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2c46e5082dbc534e08ab812167435cc0
     internalID: 0
     vertices: []
     indices: 
@@ -236,10 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Knight Templar-Hurt_0: 8305241021776615327
-      Knight Templar-Hurt_1: -3152356076381349671
-      Knight Templar-Hurt_2: 3169031777222464709
-      Knight Templar-Hurt_3: 721876271342261782
+      Timothy Hurt_0: 1397605565
+      Timothy Hurt_1: 920177071
+      Timothy Hurt_2: 225845341
+      Timothy Hurt_3: -1393701491
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

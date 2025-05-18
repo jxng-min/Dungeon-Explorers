@@ -33,6 +33,11 @@ public class GameManager : Singleton<GameManager>
         GameState = GameEventType.WAITING;
     }
 
+    public void Playing()
+    {
+        GameState = GameEventType.PLAYING;
+    }
+
     public void Pause()
     {
         GameState = GameEventType.PAUSE;

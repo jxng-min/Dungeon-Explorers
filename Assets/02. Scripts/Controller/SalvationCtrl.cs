@@ -56,7 +56,7 @@ public class SalvationCtrl : MonoBehaviour
 
         while (elapsed_time <= target_time)
         {
-            // TODO: WaitUntil()로 PLAYING일 때까지 대기
+            yield return new WaitUntil(() => GameManager.Instance.GameState == GameEventType.PLAYING);
 
             elapsed_time += Time.deltaTime;
             spawn_timer += Time.deltaTime;

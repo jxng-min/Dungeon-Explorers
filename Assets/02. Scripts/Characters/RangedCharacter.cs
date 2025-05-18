@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class MeleeCharacter : Character
+public class RangedCharacter : Character
 {
     protected override void Attack()
     {
@@ -51,7 +51,6 @@ public class MeleeCharacter : Character
     {
         float elapsed_time = 0f;
 
-        Animator.SetTrigger("Attack");
         while (enemy != null)
         {
             while (elapsed_time <= m_current_cooltime)
@@ -63,6 +62,7 @@ public class MeleeCharacter : Character
             }
 
             Animator.SetTrigger("Attack");
+            // TODO: 발사 로직 추가 필요
             elapsed_time = 0f;
         }
 
@@ -71,7 +71,7 @@ public class MeleeCharacter : Character
     
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, m_current_radius);
     }
 }

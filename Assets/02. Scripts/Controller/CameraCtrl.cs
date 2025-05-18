@@ -21,6 +21,11 @@ public class CameraCtrl : MonoBehaviour
 
     private void Update()
     {
+        if(GameManager.Instance.GameState != GameEventType.PLAYING)
+        {
+            return;
+        }
+
         Vector2 input = m_joystick.GetInput();
 
         float delta_x = input.x * m_speed * Time.deltaTime;
