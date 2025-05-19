@@ -29,7 +29,7 @@ public class HolyShield : Skill
 
     private void SetPosition(Vector3 target_position)
     {
-        transform.position = target_position + Vector3.up * 0.25f;
+        transform.position = target_position + Vector3.up * 1.1f;
     }
 
     public void Attack()
@@ -38,6 +38,7 @@ public class HolyShield : Skill
 
         foreach (var hit in hits)
         {
+            hit.GetComponent<EnemyCtrl>().UpdateHP(-ATK);
             CreateDamageIndicator(hit.transform.position);
         }
     }

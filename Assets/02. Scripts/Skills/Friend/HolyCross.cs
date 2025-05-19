@@ -101,7 +101,7 @@ public class HolyCross : Skill
         if (collision.CompareTag("Enemy"))
         {
             m_elastic_count++;
-            // TODO: 데미지를 입히는 로직
+            collision.GetComponent<EnemyCtrl>().UpdateHP(-ATK);
             CreateDamageIndicator(collision.transform.position);
 
             if (m_elastic_count == 5)

@@ -46,7 +46,13 @@ public abstract class WizardCharacter : Character
     {
         float elapsed_time = 0f;
 
-        while (m_target != null)
+        var enemy_ctrl = m_target.GetComponent<EnemyCtrl>();
+        if (enemy_ctrl == null)
+        {
+            yield break;
+        }
+
+        while (!enemy_ctrl.IsDead)
         {
             while (elapsed_time <= m_current_cooltime)
             {
@@ -56,12 +62,16 @@ public abstract class WizardCharacter : Character
                 yield return null;
             }
 
-            Animator.SetTrigger("Attack");
-            Invoke("Magic", 1f);
+            if (!enemy_ctrl.IsDead)
+            {
+                Animator.SetTrigger("Attack");
+                Invoke("Magic", 1f);
+            }
 
             elapsed_time = 0f;
         }
 
+        m_is_attack = false;
         m_attack_coroutine = null;
     }
 
