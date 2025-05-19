@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8787918026291692301}
   - component: {fileID: 1996453827102737130}
   - component: {fileID: 7867118174054294315}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Holy Cross
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6789463135701507377}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -198,5 +198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf575abbef9bc04abd2f8ae6c3b094e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_enemy_layer:
+    serializedVersion: 2
+    m_Bits: 0
   <Rigidbody>k__BackingField: {fileID: 8787918026291692301}
   <Animator>k__BackingField: {fileID: 6439736389627897424}

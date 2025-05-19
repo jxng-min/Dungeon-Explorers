@@ -44,7 +44,13 @@ public class RangedCharacter : Character
     {
         float elapsed_time = 0f;
 
-        while (enemy != null)
+        var enemy_ctrl = enemy.GetComponent<EnemyCtrl>();
+        if (enemy_ctrl == null)
+        {
+            yield break;
+        }
+
+        while (!enemy_ctrl.IsDead)
         {
             while (elapsed_time <= m_current_cooltime)
             {
@@ -54,22 +60,31 @@ public class RangedCharacter : Character
                 yield return null;
             }
 
-            Animator.SetTrigger("Attack");
-            Invoke("CreateArrow", 0.8f);
+            if (!enemy_ctrl.IsDead)
+            {
+                Animator.SetTrigger("Attack");
+                Invoke("CreateArrow", 0.8f);
+            }
 
             elapsed_time = 0f;
         }
 
+        m_is_attack = false;
         m_attack_coroutine = null;
     }
 
     public void CreateArrow()
     {
+        if (!m_is_attack)
+        {
+            return;
+        }
+
         var arrow_obj = ObjectManager.Instance.GetObject(ObjectType.ARROW);
         arrow_obj.transform.position = transform.position + Vector3.up * 0.25f;
 
         var arrow = arrow_obj.GetComponent<Arrow>();
-        arrow.Initialize(m_current_atk, 8f, 6, Vector2.right);
+        arrow.Initialize(m_current_atk, 8f, LayerMask.GetMask("ENEMY"), Vector2.right);
     }
     
     private void OnDrawGizmosSelected()

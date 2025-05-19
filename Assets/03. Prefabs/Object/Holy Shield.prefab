@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3951807138194997062}
   - component: {fileID: 3434083750887905250}
   - component: {fileID: 5337322668402990181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Holy Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}

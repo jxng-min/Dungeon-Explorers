@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -44,7 +45,13 @@ public class RangedEnemyCtrl : EnemyCtrl
     {
         float elapsed_time = 0f;
 
-        while (enemy != null)
+        var explorer = enemy.GetComponent<Character>();
+        if (explorer == null)
+        {
+            yield break;
+        }        
+
+        while (!explorer.IsDead)
         {
             while (elapsed_time <= m_current_cooltime)
             {
@@ -54,22 +61,31 @@ public class RangedEnemyCtrl : EnemyCtrl
                 yield return null;
             }
 
-            Animator.SetTrigger("Attack");
-            Invoke("CreateBullet", 0.8f);
+            if (!explorer.IsDead)
+            {
+                Animator.SetTrigger("Attack");
+                Invoke("CreateBullet", 0.8f);
+            }
 
             elapsed_time = 0f;
         }
 
+        m_is_attack = false;
         m_attack_coroutine = null;
     }
 
-    public void CreateArrow()
+    public void CreateBullet()
     {
+        if (!m_is_attack)
+        {
+            return;
+        }
+
         var bullet_obj = ObjectManager.Instance.GetObject((Script as RangedEnemy).Bullet);
         bullet_obj.transform.position = transform.position + Vector3.up * 0.25f;
 
         var arrow = bullet_obj.GetComponent<Arrow>();
-        arrow.Initialize(m_current_atk, 8f, 7, Vector2.left);
+        arrow.Initialize(m_current_atk, 8f, LayerMask.GetMask("EXPLORER"), Vector2.left);
     }
     
     private void OnDrawGizmosSelected()

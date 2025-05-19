@@ -17,6 +17,6 @@ MonoBehaviour:
   m_hp: 250
   m_atk: 50
   m_range: 1.25
-  m_interval: 4
+  m_interval: 3
   m_speed: 0.75
   m_animator: {fileID: 9100000, guid: 6f053a673277fc24281facc74146ac30, type: 2}

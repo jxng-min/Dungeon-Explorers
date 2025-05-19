@@ -89,17 +89,17 @@ public class Arrow : Skill
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Layer == collision.gameObject.layer)
+        if (((1 << collision.gameObject.layer) & Layer) != 0)
         {
             CreateDamageIndicator(collision.transform.position);
 
-            if (Layer == LayerMask.NameToLayer("ENEMY"))
+            if (Layer == LayerMask.GetMask("ENEMY"))
             {
-                collision.GetComponent<EnemyCtrl>().UpdateHP(ATK);
+                collision.GetComponent<EnemyCtrl>().UpdateHP(-ATK);
             }
             else
             {
-                collision.GetComponent<Character>().UpdateHP(ATK);
+                collision.GetComponent<Character>().UpdateHP(-ATK);
             }
             
             Invoke("Return", 0.1f);
