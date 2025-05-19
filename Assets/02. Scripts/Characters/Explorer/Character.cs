@@ -214,7 +214,7 @@ public abstract class Character : MonoBehaviour
     protected void CreateDamageIndicator(Vector3 position)
     {
         var obj = ObjectManager.Instance.GetObject(ObjectType.DAMAGE_INDICATOR);
-        obj.transform.position = position + Vector3.up * 0.25f;
+        obj.transform.position = position;
 
         var damage_indicator = obj.GetComponent<DamageIndicator>();
         damage_indicator.Initialize($"<color=#F6BB43>{NumberFormatter.FormatNumber(m_current_atk)}</color>");

@@ -80,7 +80,7 @@ public class Meteor : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            // TODO: 몬스터 데미지 로직
+            collision.GetComponent<EnemyCtrl>().UpdateHP(-ATK);
         }
 
         if (collision.CompareTag("Ground"))
