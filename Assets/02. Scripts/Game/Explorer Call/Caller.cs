@@ -24,7 +24,7 @@ public class Caller : MonoBehaviour
     private Explorer m_explorer;
     private int m_upgrade_count;
 
-    private StageCtrl m_stage_ctrl;
+    private CostCtrl m_cost_ctrl;
 
     private Coroutine m_cooldown_coroutine;
 
@@ -32,7 +32,7 @@ public class Caller : MonoBehaviour
 
     private void Awake()
     {
-        m_stage_ctrl = FindFirstObjectByType<StageCtrl>();
+        m_cost_ctrl = FindFirstObjectByType<CostCtrl>();
         m_factory = FindFirstObjectByType<ExplorerFactory>();
     }
 
@@ -152,6 +152,6 @@ public class Caller : MonoBehaviour
 
         m_factory.Instantiate(m_explorer.ID);
 
-        m_stage_ctrl.UpdateCurrentCost(-m_explorer.Cost);
+        m_cost_ctrl.UpdateCurrentCost(-m_explorer.Cost);
     }
 }

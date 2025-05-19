@@ -14,7 +14,7 @@ public class StageSelector : MonoBehaviour
 
     private Animator m_stage_animator;
 
-    private int m_current_stage = 0;
+    private int m_current_stage = 1;
 
     private void Awake()
     {
@@ -82,6 +82,8 @@ public class StageSelector : MonoBehaviour
     public void BUTTON_Start()
     {
         StageManager.Instance.SetParty(DataManager.Instance.Data.Party);
+        StageManager.Instance.Current = StageManager.Instance.GetStage(m_current_stage);
+
         LoadingManager.Instance.LoadScene("Game");
     }
 }

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96d443015f4a8b73b44b8e46d6239cb, type: 3}
+  m_Name: 0_Slime
+  m_EditorClassIdentifier: 
+  m_id: 0
+  m_type: 0
+  m_hp: 100
+  m_atk: 30
+  m_range: 0.7
+  m_interval: 2
+  m_speed: 0.75
+  m_animator: {fileID: 9100000, guid: 35bf53582df60e8e1aed11c00f4e2afa, type: 2}

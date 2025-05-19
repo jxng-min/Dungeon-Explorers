@@ -28,13 +28,15 @@ public class Arrow : Skill
         m_return_coroutine = StartCoroutine(Co_Return());
     }
 
-    public void Initialize(float atk, float speed)
+    public void Initialize(float atk, float speed, LayerMask layer, Vector2 direction)
     {
         ATK = atk;
         SPD = speed;
         m_origin_speed = speed;
 
-        MoveTowardsTarget();
+        Layer = layer;
+
+        MoveTowardsTarget(direction);
         RotateTowardsDirection(m_origin_direction);
     }
 
@@ -50,16 +52,10 @@ public class Arrow : Skill
         MoveTowardsTarget(m_origin_direction);
     }
 
-    public void MoveTowardsTarget()
-    {
-        ;
-        m_origin_direction = Vector2.right;
-
-        MoveTowardsTarget(Vector2.right);
-    }
-
     public void MoveTowardsTarget(Vector2 direction)
     {
+        m_origin_direction = direction;
+
         Rigidbody.linearVelocity = direction * SPD;
     }
 
@@ -93,10 +89,19 @@ public class Arrow : Skill
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (Layer == collision.gameObject.layer)
         {
             CreateDamageIndicator(collision.transform.position);
-            // TODO: 데미지를 입히는 로직
+
+            if (Layer == LayerMask.NameToLayer("ENEMY"))
+            {
+                collision.GetComponent<EnemyCtrl>().UpdateHP(ATK);
+            }
+            else
+            {
+                collision.GetComponent<Character>().UpdateHP(ATK);
+            }
+            
             Invoke("Return", 0.1f);
         }
     }

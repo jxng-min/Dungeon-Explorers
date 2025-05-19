@@ -69,7 +69,7 @@ public class RangedCharacter : Character
         arrow_obj.transform.position = transform.position + Vector3.up * 0.25f;
 
         var arrow = arrow_obj.GetComponent<Arrow>();
-        arrow.Initialize(m_current_atk, 8f);
+        arrow.Initialize(m_current_atk, 8f, 6, Vector2.right);
     }
     
     private void OnDrawGizmosSelected()

@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class BuildCtrl : MonoBehaviour
 {
     #region 컴포넌트 관련 필드
-    [Header("스테이지 컨트롤러")]
-    [SerializeField] StageCtrl m_stage_ctrl;
+    [Header("코스트 컨트롤러")]
+    [SerializeField] CostCtrl m_cost_ctrl;
 
     [Space(30)]
     [Header("건물 업그레이드 버튼")]
@@ -33,17 +33,17 @@ public class BuildCtrl : MonoBehaviour
 
     public void BUTTON_Upgrade()
     {
-        m_stage_ctrl.UpdateCurrentCost(-m_upgrade_cost);
+        m_cost_ctrl.UpdateCurrentCost(-m_upgrade_cost);
         m_upgrade_level++;
 
-        m_stage_ctrl.Interval -= StageCtrl.INTERVAL_UPGRADE;
+        m_cost_ctrl.Interval -= CostCtrl.INTERVAL_UPGRADE;
     }
 
     private void UpdateUI()
     {
         m_upgrade_cost = m_default_upgrade_cost + (m_default_upgrade_cost * m_upgrade_level);
 
-        if (m_stage_ctrl.Cost >= m_upgrade_cost)
+        if (m_cost_ctrl.Cost >= m_upgrade_cost)
         {
             m_upgrade_button.interactable = true;
             m_cost_label.text = $"<color=green>{NumberFormatter.FormatNumber(m_upgrade_cost)}</color>";

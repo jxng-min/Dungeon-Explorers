@@ -37,13 +37,6 @@ public class MeleeCharacter : Character
             }
 
             m_attack_coroutine = StartCoroutine(Co_Attack(closest));
-            // Enemy target = closest.GetComponent<Enemy>();
-            // if (target != null)
-            // {
-            //     target.UpdateHP(m_current_atk);
-
-            //     Animator.SetTrigger("Attack");
-            // }
         }
     }
 
@@ -51,10 +44,13 @@ public class MeleeCharacter : Character
     {
         float elapsed_time = 0f;
 
-        Animator.SetTrigger("Attack");
-        StartCoroutine(Co_CreateDamageIndicator(enemy.transform.position, 0.5f));
+        var enemy_ctrl = enemy.GetComponent<EnemyCtrl>();
+        if (enemy_ctrl == null)
+        {
+            yield break;
+        }
 
-        while (enemy != null)
+        while (!enemy_ctrl.IsDead)
         {
             while (elapsed_time <= m_current_cooltime)
             {
@@ -64,19 +60,30 @@ public class MeleeCharacter : Character
                 yield return null;
             }
 
-            Animator.SetTrigger("Attack");
-            StartCoroutine(Co_CreateDamageIndicator(enemy.transform.position, 0.5f));
+            if (!enemy_ctrl.IsDead)
+            {
+                Animator.SetTrigger("Attack");
+                StartCoroutine(Co_Damage(enemy_ctrl, 0.5f));
+            }
 
             elapsed_time = 0f;
         }
 
+        m_is_attack = false;
         m_attack_coroutine = null;
     }
 
-    private IEnumerator Co_CreateDamageIndicator(Vector3 position, float delay)
+    private IEnumerator Co_Damage(EnemyCtrl enemy_ctrl, float delay)
     {
         yield return new WaitForSeconds(delay);
-        CreateDamageIndicator(position);
+
+        if (enemy_ctrl.IsDead || !m_is_attack)
+        {
+            yield break;
+        }
+
+        enemy_ctrl.UpdateHP(-m_current_atk);
+        CreateDamageIndicator(enemy_ctrl.transform.position);
     }
     
     private void OnDrawGizmosSelected()

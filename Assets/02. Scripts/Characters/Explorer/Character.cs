@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.Mathematics;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D), typeof(Animator))]
@@ -28,9 +29,12 @@ public abstract class Character : MonoBehaviour
 
     protected bool m_is_attack;
     protected bool m_is_dead;
+    public bool IsDead { get => m_is_dead; }
 
     protected Coroutine m_attack_coroutine;
     protected Coroutine m_knockback_coroutine;
+
+    private bool m_was_knockbacked;
 
     protected void FixedUpdate()
     {
@@ -77,6 +81,8 @@ public abstract class Character : MonoBehaviour
         m_current_spd = Script.SPD;
         m_current_radius = Script.Range;
 
+        m_was_knockbacked = false;
+
         if (m_attack_coroutine != null)
         {
             StopCoroutine(m_attack_coroutine);
@@ -105,12 +111,23 @@ public abstract class Character : MonoBehaviour
             return;
         }
 
-        if (amount < 0)
-        {
-            Animator.SetTrigger("Hurt");
-        }
-
         m_current_hp += amount;
+        if (!m_was_knockbacked && m_current_hp / Script.HP <= 0.4f)
+        {
+            m_was_knockbacked = true;
+            m_is_attack = false;
+
+            Animator.SetTrigger("Hurt");
+
+            if (m_attack_coroutine != null)
+            {
+                StopCoroutine(m_attack_coroutine);
+                m_attack_coroutine = null;
+            }
+
+            KnockBack(new Vector2(-1, 1));
+        }
+        
         if (m_current_hp <= 0f)
         {
             Death();
@@ -151,7 +168,7 @@ public abstract class Character : MonoBehaviour
         Invoke("Return", 2.5f);
     }
 
-    protected void ReturnEnemy()
+    protected void Return()
     {
         var character = GetComponent<Character>();
         if (character != null)
@@ -162,7 +179,7 @@ public abstract class Character : MonoBehaviour
         ObjectManager.Instance.ReturnObject(gameObject, ObjectType.EXPLORER);
     }
 
-    public void KnockBack(Vector2 direction, float amount = 0.2f)
+    public void KnockBack(Vector2 direction, float amount = 0.4f)
     {
         if (m_knockback_coroutine != null)
         {
@@ -174,8 +191,6 @@ public abstract class Character : MonoBehaviour
 
     private IEnumerator Co_KnockBack(Vector2 direction, float amount)
     {
-        Animator.speed = 0f;
-
         float elapsed_time = 0f;
         float target_time = 0.15f;
 
@@ -186,12 +201,6 @@ public abstract class Character : MonoBehaviour
             {
                 yield return new WaitUntil(() => GameManager.Instance.GameState == GameEventType.PLAYING);
 
-                if (m_is_dead)
-                {
-                    Animator.speed = 1f;
-                    yield break;
-                }
-
                 elapsed_time += Time.deltaTime;
                 Rigidbody.MovePosition(Rigidbody.position + kps * Time.deltaTime);
 
@@ -199,15 +208,13 @@ public abstract class Character : MonoBehaviour
             }
         }
 
-        Animator.speed = 1f;
         m_knockback_coroutine = null;
     }
 
     protected void CreateDamageIndicator(Vector3 position)
     {
         var obj = ObjectManager.Instance.GetObject(ObjectType.DAMAGE_INDICATOR);
-        obj.transform.position = position + Vector3.up * 0.4f;
-
+        obj.transform.position = position + Vector3.up * 0.25f;
 
         var damage_indicator = obj.GetComponent<DamageIndicator>();
         damage_indicator.Initialize($"<color=#F6BB43>{NumberFormatter.FormatNumber(m_current_atk)}</color>");

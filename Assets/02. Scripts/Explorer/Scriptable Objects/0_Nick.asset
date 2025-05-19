@@ -21,7 +21,7 @@ MonoBehaviour:
   m_explorer_price: 50
   m_explorer_hp: 100
   m_growth_hp: 10
-  m_explorer_atk: 10
+  m_explorer_atk: 30
   m_growth_atk: 1
   m_spd: 1
   m_atk_range: 0.8

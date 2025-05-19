@@ -3,8 +3,8 @@ using UnityEngine;
 public class CallerCtrl : MonoBehaviour
 {
     #region 컴포넌트 관련 필드
-    [Header("스테이지 컨트롤러")]
-    [SerializeField] private StageCtrl m_stage_ctrl;
+    [Header("코스트 컨트롤러")]
+    [SerializeField] private CostCtrl m_cost_ctrl;
 
     [Space(30)]
     [Header("콜러들의 부모 트랜스폼")]
@@ -47,7 +47,7 @@ public class CallerCtrl : MonoBehaviour
         {
             if (StageManager.Instance.Party[i].ID >= 0)
             {
-                m_callers[i].UpdateState(m_stage_ctrl.Cost);
+                m_callers[i].UpdateState(m_cost_ctrl.Cost);
             }
         }
     }
