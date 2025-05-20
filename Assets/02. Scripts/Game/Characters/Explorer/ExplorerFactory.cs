@@ -5,9 +5,6 @@ public class ExplorerFactory : MonoBehaviour
 {
     #region 컴포넌트 관련 필드
     [Header("참조 컴포넌트")]
-    [Header("스테이지 컨트롤러")]
-    [SerializeField] private StageCtrl m_stage_ctrl;
-
     [Header("콜러 컨트롤러")]
     [SerializeField] private CallerCtrl m_caller_ctrl;
 

@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class GameManager : Singleton<GameManager>
 {
     public GameEventType GameState { get; set; }
@@ -26,6 +24,8 @@ public class GameManager : Singleton<GameManager>
     public void Loading()
     {
         GameState = GameEventType.LOADING;
+
+        ObjectManager.Instance.ReturnRangeObject(ObjectType.METEOR, ObjectType.DAMAGE_INDICATOR);
     }
 
     public void Waiting()
@@ -46,11 +46,26 @@ public class GameManager : Singleton<GameManager>
     public void GameOver()
     {
         GameState = GameEventType.GAMEOVER;
+
+        OpenResult();
     }
 
     public void GameClear()
     {
         GameState = GameEventType.GAMECLEAR;
+
+        OpenResult();
+    }
+
+    private void OpenResult()
+    {
+        var result_ui = FindFirstObjectByType<ResultCtrl>();
+        if (result_ui == null)
+        {
+            return;
+        }
+
+        result_ui.Open();
     }
 
     private void OnApplicationPause(bool pause)

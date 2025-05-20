@@ -11,12 +11,6 @@ public class EnemyFactory : MonoBehaviour
 
     [Header("적 스폰 위치")]
     [SerializeField] private Transform m_base_transform;
-
-    [Header("현재 HP 라벨")]
-    [SerializeField] private TMP_Text m_current_hp_label;
-
-    [Header("최대 HP 라벨")]
-    [SerializeField] private TMP_Text m_max_hp_label;
     private Vector3 m_base_position;
     #endregion
 
