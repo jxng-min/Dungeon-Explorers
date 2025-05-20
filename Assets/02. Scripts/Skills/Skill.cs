@@ -10,8 +10,8 @@ public abstract class Skill : MonoBehaviour
         set => m_enemy_layer = value;
     }
 
-    private float m_atk;
-    protected float ATK
+    private int m_atk;
+    protected int ATK
     {
         get => m_atk;
         set => m_atk = value;
@@ -20,7 +20,7 @@ public abstract class Skill : MonoBehaviour
     protected virtual void CreateDamageIndicator(Vector3 position)
     {
         var obj = ObjectManager.Instance.GetObject(ObjectType.DAMAGE_INDICATOR);
-        obj.transform.position = position;
+        obj.transform.position = position + Vector3.up * 0.5f;
 
 
         var damage_indicator = obj.GetComponent<DamageIndicator>();

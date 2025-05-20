@@ -10,7 +10,7 @@ public class HolyShield : Skill
         m_animator = GetComponent<Animator>();
     }
 
-    public void Initialize(float atk, Vector3 position)
+    public void Initialize(int atk, Vector3 position)
     {
         ATK = atk;
 
@@ -38,8 +38,9 @@ public class HolyShield : Skill
 
         foreach (var hit in hits)
         {
-            hit.GetComponent<EnemyCtrl>().UpdateHP(-ATK);
             CreateDamageIndicator(hit.transform.position);
+
+            hit.GetComponent<EnemyCtrl>().UpdateHP(-ATK);
         }
     }
 

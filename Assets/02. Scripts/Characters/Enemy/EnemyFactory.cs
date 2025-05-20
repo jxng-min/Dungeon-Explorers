@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class EnemyFactory : MonoBehaviour
@@ -6,14 +7,24 @@ public class EnemyFactory : MonoBehaviour
     #region 적 생성 관련
     [Header("스테이지 데이터")]
     [SerializeField] private Stage m_stage;
+    public Stage Stage { get => m_stage; }
 
     [Header("적 스폰 위치")]
     [SerializeField] private Transform m_base_transform;
+
+    [Header("현재 HP 라벨")]
+    [SerializeField] private TMP_Text m_current_hp_label;
+
+    [Header("최대 HP 라벨")]
+    [SerializeField] private TMP_Text m_max_hp_label;
     private Vector3 m_base_position;
     #endregion
 
     private float m_timer;
     private int m_wave_index = 0;
+
+    private bool m_is_dead = false;
+    public bool IsDead { get => m_is_dead; }
 
     private void Awake()
     {

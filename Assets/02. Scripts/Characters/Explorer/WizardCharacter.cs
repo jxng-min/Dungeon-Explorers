@@ -5,6 +5,24 @@ public abstract class WizardCharacter : Character
 {
     protected Collider2D m_target;
 
+    protected void FixedUpdate()
+    {
+        if (GameManager.Instance.GameState != GameEventType.PLAYING)
+        {
+            return;
+        }
+
+        if (!m_is_dead && m_knockback_coroutine == null)
+        {
+            if (!m_is_attack)
+            {
+                MoveTowardsTower();
+            }
+
+            Attack();
+        }
+    }
+
     protected override void Attack()
     {
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, m_current_radius, m_enemy_layer);

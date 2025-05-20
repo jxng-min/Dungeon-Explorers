@@ -16,8 +16,8 @@ public class Enemy : ScriptableObject
     public float HP { get => m_hp; }
 
     [Header("몬스터의 공격력")]
-    [SerializeField] private float m_atk;
-    public float ATK { get => m_atk; }
+    [SerializeField] private int m_atk;
+    public int ATK { get => m_atk; }
 
     [Header("몬스터의 사거리")]
     [SerializeField] private float m_range;

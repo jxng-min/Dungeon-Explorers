@@ -6,8 +6,8 @@ public class Meteor : MonoBehaviour
     [field: SerializeField] public Rigidbody2D Rigidbody { get; private set; }
     [field: SerializeField] public Animator Animator { get; private set; }
 
-    private float m_atk;
-    public float ATK
+    private int m_atk;
+    public int ATK
     {
         get => m_atk;
         set => m_atk = value;
@@ -23,7 +23,7 @@ public class Meteor : MonoBehaviour
     private float m_origin_speed;
     private Vector2 m_origin_direction;
 
-    public void Initialize(float atk, float spd)
+    public void Initialize(int atk, float spd)
     {
         ATK = atk;
         SPD = spd;

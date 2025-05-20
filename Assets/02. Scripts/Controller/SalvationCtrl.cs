@@ -12,12 +12,12 @@ public class SalvationCtrl : MonoBehaviour
     [SerializeField] private Image m_cooltime_image;
     #endregion
 
-    private float m_default_damage = 100f;
+    private int m_default_damage = 100;
     private float m_default_duration = 10f;
     private float m_default_interval = 1f;
     private float m_default_cooltime = 60f;
 
-    private float m_current_damage;
+    private int m_current_damage;
     private float m_current_duration;
     private float m_current_interval;
     private float m_current_cooltime;
@@ -63,13 +63,11 @@ public class SalvationCtrl : MonoBehaviour
 
             if (spawn_timer >= spawn_time)
             {
-                float random_atk = Random.Range(m_current_damage - 10f, m_current_damage + 10f);
-
                 var obj = ObjectManager.Instance.GetObject(ObjectType.METEOR);
                 obj.transform.position = GetMeteorPosition();
 
                 var meteor = obj.GetComponent<Meteor>();
-                meteor.Initialize(random_atk, 10f);
+                meteor.Initialize(m_current_damage, 10f);
 
                 spawn_timer = 0f;
             }
@@ -86,7 +84,7 @@ public class SalvationCtrl : MonoBehaviour
 
         while (elapsed_time <= cooltime)
         {
-            // TODO: WaitUntil()로 PLAYING일 때까지 대기
+            yield return new WaitUntil(() => GameManager.Instance.GameState == GameEventType.PLAYING);
 
             elapsed_time += Time.deltaTime;
             yield return null;

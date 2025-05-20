@@ -40,12 +40,12 @@ public class Explorer : ScriptableObject
     public float GrowthHP { get => m_growth_hp; }
 
     [Header("탐험가의 공격력")]
-    [SerializeField] private float m_explorer_atk;
-    public float ATK { get => m_explorer_atk; }
+    [SerializeField] private int m_explorer_atk;
+    public int ATK { get => m_explorer_atk; }
 
     [Header("탐험가의 성장 공격력")]
-    [SerializeField] private float m_growth_atk;
-    public float GrowthATK { get => m_growth_atk; }
+    [SerializeField] private int m_growth_atk;
+    public int GrowthATK { get => m_growth_atk; }
 
     [Header("탐험가의 이동 속도")]
     [SerializeField] private float m_spd;

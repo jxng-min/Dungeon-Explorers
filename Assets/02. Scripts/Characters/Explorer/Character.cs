@@ -22,7 +22,7 @@ public abstract class Character : MonoBehaviour
     [SerializeField] protected LayerMask m_enemy_layer;
 
     protected float m_current_hp;
-    protected float m_current_atk;
+    protected int m_current_atk;
     protected float m_current_cooltime;
     protected float m_current_spd;
     protected float m_current_radius;
@@ -35,24 +35,6 @@ public abstract class Character : MonoBehaviour
     protected Coroutine m_knockback_coroutine;
 
     private bool m_was_knockbacked;
-
-    protected void FixedUpdate()
-    {
-        if (GameManager.Instance.GameState != GameEventType.PLAYING)
-        {
-            return;
-        }
-
-        if (!m_is_dead && m_knockback_coroutine == null)
-        {
-            if (!m_is_attack)
-            {
-                MoveTowardsTower();
-            }
-
-            Attack();
-        }
-    }
 
     private void Awake()
     {
@@ -104,7 +86,7 @@ public abstract class Character : MonoBehaviour
 
     protected abstract void Attack();
 
-    public void UpdateHP(float amount)
+    public virtual void UpdateHP(int amount)
     {
         if (m_is_dead)
         {
@@ -134,7 +116,7 @@ public abstract class Character : MonoBehaviour
         }
     }
 
-    public void Death()
+    public virtual void Death()
     {
         if (m_is_dead)
         {
@@ -158,7 +140,6 @@ public abstract class Character : MonoBehaviour
             m_knockback_coroutine = null;
         }
 
-        Animator.speed = 1f;
         Animator.SetTrigger("Death");
 
         Renderer.sortingOrder = 9;
@@ -214,7 +195,7 @@ public abstract class Character : MonoBehaviour
     protected void CreateDamageIndicator(Vector3 position)
     {
         var obj = ObjectManager.Instance.GetObject(ObjectType.DAMAGE_INDICATOR);
-        obj.transform.position = position;
+        obj.transform.position = position + Vector3.up * 0.5f;
 
         var damage_indicator = obj.GetComponent<DamageIndicator>();
         damage_indicator.Initialize($"<color=#F6BB43>{NumberFormatter.FormatNumber(m_current_atk)}</color>");

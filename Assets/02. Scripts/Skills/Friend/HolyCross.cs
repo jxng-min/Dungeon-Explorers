@@ -31,7 +31,7 @@ public class HolyCross : Skill
         m_return_coroutine = StartCoroutine(Co_Return());
     }
 
-    public void Initialize(float atk, float speed)
+    public void Initialize(int atk, float speed)
     {
         ATK = atk;
         SPD = speed;
@@ -100,9 +100,11 @@ public class HolyCross : Skill
 
         if (collision.CompareTag("Enemy"))
         {
+            CreateDamageIndicator(collision.transform.position); 
+
             m_elastic_count++;
-            collision.GetComponent<EnemyCtrl>().UpdateHP(-ATK);
-            CreateDamageIndicator(collision.transform.position);
+
+            collision.GetComponent<EnemyCtrl>().UpdateHP(-ATK); 
 
             if (m_elastic_count == 5)
             {

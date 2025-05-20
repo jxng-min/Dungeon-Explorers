@@ -28,7 +28,7 @@ public class Arrow : Skill
         m_return_coroutine = StartCoroutine(Co_Return());
     }
 
-    public void Initialize(float atk, float speed, LayerMask layer, Vector2 direction)
+    public void Initialize(int atk, float speed, LayerMask layer, Vector2 direction)
     {
         ATK = atk;
         SPD = speed;

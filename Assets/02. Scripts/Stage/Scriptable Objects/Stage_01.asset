@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Stage_01
   m_EditorClassIdentifier: 
   m_id: 1
-  m_enemy_base_hp: 1000
+  m_enemy_base_hp: 500
   m_enemy_waves:
   - m_enemy: {fileID: 11400000, guid: 39bea71f0e42f524c9a581375802cd6f, type: 2}
     m_spawn_time: 5
