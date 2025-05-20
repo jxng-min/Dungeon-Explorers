@@ -88,7 +88,7 @@ public class Putter : MonoBehaviour
         foreach(var item in Inventory.Instance.List)
         {
             var slot = ObjectManager.Instance.GetObject(ObjectType.PUTTING_SLOT).GetComponent<PuttingSlot>();
-            slot.transform.SetParent(m_candidate_slot_root);
+            slot.transform.SetParent(m_candidate_slot_root, false);
             m_candidate_slots.Add(slot);
 
             var explorer = ExplorerDataManager.Instance.GetExplorer(item.ID);
@@ -102,8 +102,10 @@ public class Putter : MonoBehaviour
 
     private void ReturnCandidateSlots()
     {
-        foreach(var item in m_candidate_slots)
+        Transform pool_container = GameObject.Find("[Putting Slot] Container").transform;
+        foreach (var item in m_candidate_slots)
         {
+            item.transform.SetParent(pool_container, false);
             ObjectManager.Instance.ReturnObject(item.gameObject, ObjectType.PUTTING_SLOT);
         }
 

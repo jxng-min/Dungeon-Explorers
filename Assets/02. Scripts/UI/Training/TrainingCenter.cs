@@ -39,7 +39,7 @@ public class TrainingCenter : MonoBehaviour
             var explorer = ExplorerDataManager.Instance.GetExplorer(item.ID);
         
             var obj = ObjectManager.Instance.GetObject(ObjectType.TRAIN_SLOT);
-            obj.transform.SetParent(m_slot_root);
+            obj.transform.SetParent(m_slot_root, false);
 
             var slot = obj.GetComponent<TrainingCenterSlot>();
             slot.Initialize(item.ID);
@@ -53,7 +53,7 @@ public class TrainingCenter : MonoBehaviour
         Transform pool_container = GameObject.Find("[Training Center Slot] Container").transform;
         foreach(var slot in slots)
         {
-            slot.transform.SetParent(pool_container);
+            slot.transform.SetParent(pool_container, false);
             ObjectManager.Instance.ReturnObject(slot.gameObject, ObjectType.TRAIN_SLOT);
         }
 
