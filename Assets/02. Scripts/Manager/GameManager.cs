@@ -19,6 +19,8 @@ public class GameManager : Singleton<GameManager>
     public void Login()
     {
         GameState = GameEventType.LOGIN;
+
+        SoundManager.Instance.PlayBGM("Login");
     }
 
     public void Loading()
@@ -31,11 +33,15 @@ public class GameManager : Singleton<GameManager>
     public void Waiting()
     {
         GameState = GameEventType.WAITING;
+
+        SoundManager.Instance.PlayBGM("Title");
     }
 
     public void Playing()
     {
         GameState = GameEventType.PLAYING;
+
+        SoundManager.Instance.PlayBGM("Game");
     }
 
     public void Pause()
