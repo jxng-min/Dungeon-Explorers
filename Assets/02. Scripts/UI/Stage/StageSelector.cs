@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Animator))]
 public class StageSelector : MonoBehaviour
@@ -11,6 +12,9 @@ public class StageSelector : MonoBehaviour
 
     [Header("현재 토벌 상태를 나타내는 라벨")]
     [SerializeField] private TMP_Text m_clear_state_label;
+
+    [Header("게임 시작 버튼")]
+    [SerializeField] private Button m_start_button;
 
     private Animator m_stage_animator;
 
@@ -35,14 +39,17 @@ public class StageSelector : MonoBehaviour
         if (m_current_stage < mark_stage)
         {
             m_clear_state_label.text = $"<color=green>토벌 완료</color>";
+            m_start_button.interactable = true;
         }
         else if (m_current_stage == mark_stage)
         {
             m_clear_state_label.text = $"<color=yellow>토벌 미완료</color>";
+            m_start_button.interactable = true;
         }
         else
         {
             m_clear_state_label.text = "<color=red>토벌 불가능</color>";
+            m_start_button.interactable = false;
         }
     }
 

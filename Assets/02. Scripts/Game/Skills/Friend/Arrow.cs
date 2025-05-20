@@ -15,18 +15,6 @@ public class Arrow : Skill
 
     private float m_origin_speed;
     private Vector2 m_origin_direction;
-    private Coroutine m_return_coroutine;
-
-    private void OnEnable()
-    {
-        if (m_return_coroutine != null)
-        {
-            StopCoroutine(m_return_coroutine);
-            m_return_coroutine = null;
-        }
-
-        m_return_coroutine = StartCoroutine(Co_Return());
-    }
 
     public void Initialize(int atk, float speed, LayerMask layer, Vector2 direction)
     {
@@ -65,23 +53,6 @@ public class Arrow : Skill
     {
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-    }
-
-    private IEnumerator Co_Return()
-    {
-        float elapsed_time = 0f;
-        float target_time = 5f;
-
-        while (elapsed_time <= target_time)
-        {
-            yield return new WaitUntil(() => GameManager.Instance.GameState == GameEventType.PLAYING);
-
-            elapsed_time += Time.deltaTime;
-            yield return null;
-        }
-
-        m_return_coroutine = null;
-        ObjectManager.Instance.ReturnObject(gameObject, ObjectType.ARROW);
     }
 
     protected override void Return()

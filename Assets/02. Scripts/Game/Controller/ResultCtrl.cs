@@ -48,6 +48,8 @@ public class ResultCtrl : MonoBehaviour
             
         }
 
+        Debug.Log("돈" + money + ", 경험치" + exp);
+
         DataManager.Instance.Data.Money += money;
         DataManager.Instance.Data.EXP += exp;
 

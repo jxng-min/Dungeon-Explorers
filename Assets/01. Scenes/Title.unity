@@ -12626,6 +12626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_floor_label: {fileID: 1043134828}
   m_clear_state_label: {fileID: 1633644546}
+  m_start_button: {fileID: 495677419}
 --- !u!95 &963296447
 Animator:
   serializedVersion: 7
@@ -14817,6 +14818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_stages:
   - {fileID: 11400000, guid: 1eb0227b232cbca309e86fcc9229ab07, type: 2}
+  - {fileID: 11400000, guid: e1c9889e3fbb46ceea7feac9e041bc86, type: 2}
 --- !u!1 &1272396975
 GameObject:
   m_ObjectHideFlags: 0
