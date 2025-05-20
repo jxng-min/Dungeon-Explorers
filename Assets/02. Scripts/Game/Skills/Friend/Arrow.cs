@@ -43,6 +43,8 @@ public class Arrow : Skill
     public override void Stop()
     {
         SPD = 0;
+        Rigidbody.linearVelocity = Vector2.zero;
+        Debug.Log(Rigidbody.linearVelocity);
     }
 
     public override void Resume()

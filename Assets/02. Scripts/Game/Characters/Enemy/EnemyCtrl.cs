@@ -47,6 +47,7 @@ public abstract class EnemyCtrl : MonoBehaviour
     {
         Rigidbody.simulated = true;
 
+        Animator.speed = 1f;
         Animator.ResetTrigger("Death");
         m_is_dead = false;
 

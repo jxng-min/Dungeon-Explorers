@@ -31,18 +31,28 @@ public class ResultCtrl : MonoBehaviour
 
     private void Initialize()
     {
+        int money = 0;
+        int exp = 0;
+
         if (GameManager.Instance.GameState == GameEventType.GAMECLEAR)
         {
             m_result_label.text = $"토벌 결과: <color=green>성공</color>";
-            m_gold_label.text = $"골드 보상: {NumberFormatter.FormatNumber(m_factory.Stage.Gold)}";
-            m_exp_label.text = $"경험치 보상: {NumberFormatter.FormatNumber(m_factory.Stage.EXP)}";
+            money = m_factory.Stage.Gold;
+            exp = m_factory.Stage.EXP;
         }
         else
         {
             m_result_label.text = $"토벌 결과: <color=red>실패</color>";
-            m_gold_label.text = $"골드 보상: {NumberFormatter.FormatNumber(m_factory.Stage.Gold / 4)}";
-            m_exp_label.text = $"경험치 보상: {NumberFormatter.FormatNumber(m_factory.Stage.EXP / 4)}";
+            money = m_factory.Stage.Gold / 4;
+            exp = m_factory.Stage.EXP / 4;
+            
         }
+
+        DataManager.Instance.Data.Money += money;
+        DataManager.Instance.Data.EXP += exp;
+
+        m_gold_label.text = $"골드 보상: {NumberFormatter.FormatNumber(money)}";
+        m_exp_label.text = $"경험치 보상: {NumberFormatter.FormatNumber(exp)}";
     }
 
     public void BUTTON_Retry()

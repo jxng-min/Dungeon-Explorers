@@ -26,6 +26,6 @@ MonoBehaviour:
   m_spd: 1
   m_atk_range: 0.8
   m_atk_cooltime: 1
-  m_cost: 20
+  m_cost: 35
   m_cooltime: 3
   m_explorer_sprite: {fileID: -2875184811977189179, guid: 882a0489f684c82c09fe18e4cd2727aa, type: 3}

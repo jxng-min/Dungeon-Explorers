@@ -21,7 +21,7 @@ public class FriendlyBase : Character
 
     public override void Initialize()
     {
-        m_max_hp = m_default_hp + GROWTH * DataManager.Instance.Data.Reinforcement.TowerHP;
+        m_max_hp = m_default_hp + GROWTH * (DataManager.Instance.Data.Reinforcement.TowerHP - 1);
         m_current_hp = m_max_hp;
 
         UpdateUI();
