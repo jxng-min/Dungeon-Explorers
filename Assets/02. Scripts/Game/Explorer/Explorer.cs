@@ -23,10 +23,6 @@ public class Explorer : ScriptableObject
     [SerializeField] private int m_max_upgrade_count;
     public int MaxUpgrade { get => m_max_upgrade_count; }
 
-    [Header("탐험가의 특성")]
-    [SerializeField] private ExplorerType m_explorer_type;
-    public ExplorerType Type { get => m_explorer_type; }
-
     [Header("탐험가의 구매가")]
     [SerializeField] private int m_explorer_price;
     public int Price { get => m_explorer_price; }

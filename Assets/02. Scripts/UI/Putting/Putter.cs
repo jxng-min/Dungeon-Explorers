@@ -60,7 +60,7 @@ public class Putter : MonoBehaviour
             }
             else
             {
-                m_elected_slots[i].Add(ExplorerDataManager.Instance.GetExplorer(party[i]));
+                //m_elected_slots[i].Add(ExplorerDataManager.Instance.GetExplorer(party[i]));
             }
         }
     }
@@ -87,16 +87,16 @@ public class Putter : MonoBehaviour
     {
         foreach(var item in Inventory.Instance.List)
         {
-            var slot = ObjectManager.Instance.GetObject(ObjectType.PUTTING_SLOT).GetComponent<PuttingSlot>();
-            slot.transform.SetParent(m_candidate_slot_root, false);
-            m_candidate_slots.Add(slot);
+            // var slot = ObjectManager.Instance.GetObject(ObjectType.PUTTING_SLOT).GetComponent<PuttingSlot>();
+            // slot.transform.SetParent(m_candidate_slot_root, false);
+            // m_candidate_slots.Add(slot);
 
-            var explorer = ExplorerDataManager.Instance.GetExplorer(item.ID);
-            slot.Add(explorer);
-            if(IsAlreadyElected(explorer, out int index))
-            {
-                slot.Equipped();
-            }
+            // var explorer = ExplorerDataManager.Instance.GetExplorer(item.ID);
+            // slot.Add(explorer);
+            // if(IsAlreadyElected(explorer, out int index))
+            // {
+            //     slot.Equipped();
+            // }
         }
     }
 

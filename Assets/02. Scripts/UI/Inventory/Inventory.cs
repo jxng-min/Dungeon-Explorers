@@ -43,11 +43,11 @@ public class Inventory : Singleton<Inventory>
         m_item_list.Add(new InventoryItem(explorer_id, upgrade));
     }
 
-    public InventoryItem GetItem(int explorer_id)
+    public InventoryItem GetItem(UnitCode explorer_id)
     {
         foreach(var item in m_item_list)
         {
-            if(item.ID == explorer_id)
+            if(item.ID == (int)explorer_id)
             {
                 return item;
             }

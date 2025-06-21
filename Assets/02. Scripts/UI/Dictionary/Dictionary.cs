@@ -1,9 +1,16 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Units;
 
 [RequireComponent(typeof(Animator))]
 public class Dictionary : MonoBehaviour
 {
+    #region Variables
+    [Header("의존성 관련 컴포넌트")]
+    [SerializeField] private UnitDataBase m_unit_db;
+
+    [Space(50f)]
+    [Header("UI 관련 컴포넌트")]
     [Header("도감 슬롯들의 부모 트랜스폼")]
     [SerializeField] private Transform m_slot_root;
 
@@ -14,6 +21,7 @@ public class Dictionary : MonoBehaviour
     [SerializeField] private Scrollbar m_scroll_bar;
 
     private Animator m_dictionary_animator;
+    #endregion Variables
 
     private void Awake()
     {
@@ -27,27 +35,26 @@ public class Dictionary : MonoBehaviour
 
     private void Initialize()
     {
-        for(int i = 0; i < ExplorerDataManager.Instance.GetSize(); i++)
+        for(int i = 0; i < m_unit_db.Count; i++)
         {
             var obj = Instantiate(m_slot_prefab, m_slot_root);
 
             var dictionary_slot = obj.GetComponent<DictionarySlot>();
-            dictionary_slot.Initialize(ExplorerDataManager.Instance.GetExplorer(i));
+            dictionary_slot.Initialize(m_unit_db.GetUnit((UnitCode)i));
         }
     }
 
-    public void BUTTON_Open()
+    public void OpenUI()
     {
         m_dictionary_animator.SetBool("Open", true);
     }
 
-    public void BUTTON_Close()
+    public void CloseUI()
     {
         m_dictionary_animator.SetBool("Open", false);
-        Invoke("ResetScrollBar", 0.5f);
     }
 
-    private void ResetScrollBar()
+    public void ResetScrollBar()
     {
         m_scroll_bar.value = 0f;
     }

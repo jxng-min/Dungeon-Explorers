@@ -1,12 +1,19 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Units;
 
 [RequireComponent(typeof(Animator))]
 public class Information : MonoBehaviour
 {
+    #region Variables
+    [Header("의존성 관련 컴포넌트")]
+    [SerializeField] UnitDataBase m_unit_db;
+
+    [Space(50f)]
+    [Header("UI 관련 컴포넌트")]
     [Header("탐험가의 이미지")]
-    [SerializeField] private Image m_explorer_image;
+    [SerializeField] private Image m_unit_image;
 
     [Header("탐험가의 이름 라벨")]
     [SerializeField] private TMP_Text m_name_label;
@@ -15,34 +22,41 @@ public class Information : MonoBehaviour
     [SerializeField] private TMP_Text m_description_label;
 
     private Animator m_information_animator;
+    #endregion Variables
 
     private void Awake()
     {
         m_information_animator = GetComponent<Animator>();
     }
 
-    private void Initialize(int id)
+    #region Helper Methods
+    private void Initialize(UnitCode code)
     {
-        var explorer = ExplorerDataManager.Instance.GetExplorer(id);
-        if(explorer == null)
+        var unit = m_unit_db.GetUnit(code);
+        if (unit == null)
         {
             return;
         }
 
-        m_explorer_image.sprite = explorer.Image;
-        m_name_label.text = explorer.Name;
-        m_description_label.text = ExplorerDataManager.Instance.GetDescription(id);
+        UpdateUI(unit, code);
     }
 
-    public void Open(int explorer_id)
+    private void UpdateUI(Unit unit, UnitCode code)
+    {
+        m_unit_image.sprite = unit.Image;
+        m_name_label.text = ServiceLocator.Instance.UnitRepoService.GetName(code);
+        m_description_label.text = ServiceLocator.Instance.UnitRepoService.GetDescription(code);
+    }
+
+    public void OpenUI(UnitCode code)
     {
         m_information_animator.SetBool("Open", true);
-
-        Initialize(explorer_id);
+        Initialize(code);
     }
 
-    public void BUTTON_Close()
+    public void CloseUI()
     {
         m_information_animator.SetBool("Open", false);
     }
+    #endregion Helper Methods
 }
