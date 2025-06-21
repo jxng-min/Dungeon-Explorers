@@ -654,7 +654,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 661759872}
   m_HandleRect: {fileID: 661759871}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -907,7 +907,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 922279993}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.6690197
+  m_Size: 0.5212766
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -11615,7 +11615,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2019334966}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.6355562
+  m_Size: 0.510158
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15086,59 +15086,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1321333648
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1321333650}
-  - component: {fileID: 1321333649}
-  m_Layer: 0
-  m_Name: '[Singleton] Explorer Data Manager'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1321333649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321333648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7c2574f07d251a42b4a26fb22a6be39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_explorer_list:
-  - {fileID: 11400000, guid: 321bc44aea6d0193abb52491790f7907, type: 2}
-  - {fileID: 11400000, guid: a3366bd2b2e35af3e93ae7e95b6e3c78, type: 2}
-  - {fileID: 11400000, guid: 683fce66e4675070ab1b1b033be51265, type: 2}
-  - {fileID: 11400000, guid: 866950bf1cfcbcebc9f3ba1d797990f4, type: 2}
-  - {fileID: 11400000, guid: 331d00c00083124d981afdff1f1476e7, type: 2}
-  - {fileID: 11400000, guid: 0c2820f9c0443fd6eb817465fa4bd867, type: 2}
-  - {fileID: 11400000, guid: 293f5095f618a3724acefe87b09ddb1b, type: 2}
-  - {fileID: 11400000, guid: 9dbf9fca09132ba49a70e119de1f5a0c, type: 2}
---- !u!4 &1321333650
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321333648}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1333477778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17952,7 +17899,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00012207031}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1647750970
@@ -22640,5 +22587,4 @@ SceneRoots:
   - {fileID: 414088286}
   - {fileID: 1598920400}
   - {fileID: 1759748684}
-  - {fileID: 1321333650}
   - {fileID: 1259053055}
