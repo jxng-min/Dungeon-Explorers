@@ -1,9 +1,15 @@
+using Units;
 using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Animator))]
 public class TrainingCenter : MonoBehaviour
 {
+    [Header("의존성 관련 컴포넌트")]
+    [SerializeField] private UnitDataBase m_unit_db;
+
+    [Space(50f)]
+    [Header("UI 관련 컴포넌트")]
     [Header("훈련 슬롯의 부모 트랜스폼")]
     [SerializeField] private Transform m_slot_root;
 
@@ -13,22 +19,22 @@ public class TrainingCenter : MonoBehaviour
     [Header("훈련소 UI 스크롤 뷰의 바 오브젝트")]
     [SerializeField] private Scrollbar m_scroll_bar;
 
-    private Animator m_traninging_center_animator;
+    private Animator m_animator;
 
     private void Awake()
     {
-        m_traninging_center_animator = GetComponent<Animator>();
+        m_animator = GetComponent<Animator>();
     }
 
-    public void BUTTON_Open()
+    public void OpenUI()
     {
-        m_traninging_center_animator.SetBool("Open", true);
+        m_animator.SetBool("Open", true);
         Initialize();
     }
 
-    public void BUTTON_Close()
+    public void CloseUI()
     {
-        m_traninging_center_animator.SetBool("Open", false);
+        m_animator.SetBool("Open", false);
         Invoke("Reset", 0.5f);
     }
 

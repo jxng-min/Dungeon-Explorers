@@ -1,33 +1,42 @@
-[System.Serializable]
-public class UserData
+using InventoryService;
+
+namespace UserDataService
 {
-    public int LV;
-    public int EXP;
-    public int Money;
-    public int Stage;
-    public InventoryItem[] Inventory;
-    public int[] Party;
-    public ReinforcementData Reinforcement;
-
-    public UserData()
+    [System.Serializable]
+    public class UserData
     {
-        LV = 1;
-        EXP = 0;
-        Money = 0;
-        Stage = 1;
-        Inventory = new InventoryItem[] { new InventoryItem(0, 1) };
-        Party = new int[] { 0, -1, -1, -1, -1 };
-        Reinforcement = new ReinforcementData();
-    }
+        public int LV;
+        public int EXP;
+        public int Stage;
+        public int Money;
+        public Unit[] Inventory;
+        public UnitCode[] Deck;
+        public ReinforcementData Reinforcement;
 
-    public UserData(int lv, int exp, int money, int stage, InventoryItem[] inventory, int[] party, ReinforcementData reinforcement)
-    {
-        LV = lv;
-        EXP = exp;
-        Money = money;
-        Stage = stage;
-        Inventory = inventory;
-        Party = party;
-        Reinforcement = reinforcement;
+        public UserData()
+        {
+            LV = 1;
+            EXP = 0;
+            Stage = 1;
+            
+            Money = 0;
+            Inventory = new Unit[] { new Unit(0, 1) };
+            Deck = new UnitCode[] { 0, -1, -1, -1, -1 };
+
+            Reinforcement = new ReinforcementData();
+        }
+
+        public UserData(int lv, int exp, int money, int stage, Unit[] inventory, UnitCode[] deck, ReinforcementData reinforcement)
+        {
+            LV = lv;
+            EXP = exp;
+            Stage = stage;
+
+            Money = money;
+            Inventory = inventory;
+            Deck = deck;
+            
+            Reinforcement = reinforcement;
+        }
     }
 }
