@@ -22,7 +22,7 @@ public class EnemyFactory : MonoBehaviour
 
     private void Awake()
     {
-        m_stage = StageManager.Instance.Current;
+        //m_stage = StageManager.Instance.Current;
     }
 
     private void Start()

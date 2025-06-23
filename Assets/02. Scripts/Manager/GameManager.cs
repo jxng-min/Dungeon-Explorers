@@ -76,22 +76,22 @@ public class GameManager : Singleton<GameManager>
 
         ControlAnimation(false);
 
-        if (DataManager.Instance.Data.Stage == StageManager.Instance.Current.ID)
-        {
-            DataManager.Instance.Data.Stage++;
-        }
+        // if (DataManager.Instance.Data.Stage == StageManager.Instance.Current.ID)
+        // {
+        //     DataManager.Instance.Data.Stage++;
+        // }
         OpenResult();
     }
 
     private void OpenResult()
     {
-        var result_ui = FindFirstObjectByType<ResultCtrl>();
-        if (result_ui == null)
-        {
-            return;
-        }
+        // var result_ui = FindFirstObjectByType<ResultCtrl>();
+        // if (result_ui == null)
+        // {
+        //     return;
+        // }
 
-        result_ui.Open();
+        // result_ui.Open();
     }
 
     public void ControlAnimation(bool is_play)
@@ -168,7 +168,7 @@ public class GameManager : Singleton<GameManager>
 
     private void SaveData()
     {
-        Inventory.Instance.SaveInventory();
-        DataManager.Instance.SaveJson();
+        // Inventory.Instance.SaveInventory();
+        // DataManager.Instance.SaveJson();
     }
 }

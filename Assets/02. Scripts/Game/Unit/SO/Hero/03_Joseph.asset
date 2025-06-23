@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18cae87942bd57a4db478f7ad1f8ab15, type: 3}
+  m_Name: 03_Joseph
+  m_EditorClassIdentifier: 
+  m_unit_code: 3
+  m_unit_type: 0
+  m_unit_team: 0
+  m_unit_sprite: {fileID: -2178845191466743114, guid: cc0d1136dc044a60897d05e71065179b, type: 3}
+  m_unit_hp: 250
+  m_unit_atk: 25
+  m_unit_spd: 0.75
+  m_atk_range: 0.8
+  m_atk_cool: 2
+  m_max_upgrade_count: 20
+  m_upgrade_cost: 100
+  m_explorer_price: 300
+  m_growth_hp: 25
+  m_growth_atk: 1
+  m_cost: 45
+  m_cooltime: 8

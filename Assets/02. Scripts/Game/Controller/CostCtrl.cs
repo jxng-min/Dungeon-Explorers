@@ -74,7 +74,7 @@ public class CostCtrl : MonoBehaviour
 
     private void InitializeCost()
     {
-        m_current_max_cost = m_default_max_cost + 10 * (DataManager.Instance.Data.Reinforcement.MaxCost - 1);
+        //m_current_max_cost = m_default_max_cost + 10 * (DataManager.Instance.Data.Reinforcement.MaxCost - 1);
         m_current_cost = 0;
         m_current_cost_interval = m_default_cost_interval;
     }
