@@ -2,6 +2,7 @@ using UnitRepository;
 using EXPService;
 using InventoryService;
 using UserDataService;
+using UnityEngine;
 
 public class ServiceLocator : Singleton<ServiceLocator>
 {

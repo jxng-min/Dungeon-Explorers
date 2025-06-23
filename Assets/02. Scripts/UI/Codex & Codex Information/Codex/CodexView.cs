@@ -30,13 +30,13 @@ public class CodexView : MonoBehaviour, ICodexView
     [Header("CondexInfo 컴포넌트")]
     [SerializeField] private CodexInfo m_codex_info; 
 
-    private Animator m_dictionary_animator;
+    private Animator m_animator;
     private CodexPresenter m_presenter;
     #endregion Variables
 
     private void Awake()
     {
-        m_dictionary_animator = GetComponent<Animator>();
+        m_animator = GetComponent<Animator>();
 
         m_presenter = new CodexPresenter(this, m_unit_db);
         
@@ -60,15 +60,15 @@ public class CodexView : MonoBehaviour, ICodexView
 
     public void OpenUI()
     {
-        m_dictionary_animator.SetBool("Open", true);
+        m_animator.SetBool("Open", true);
     }
 
     public void CloseUI()
     {
-        m_dictionary_animator.SetBool("Open", false);
+        m_animator.SetBool("Open", false);
     }
 
-    public void Reset()
+    public void ResetUI()
     {
         m_scroll_bar.value = 0f;
     }

@@ -14,6 +14,7 @@ namespace Units
         #endregion Variables
 
         #region Properties
+        public List<Unit> List { get => m_unit_list; }
         public int Count { get => m_unit_list.Count; }
         #endregion Properties
 

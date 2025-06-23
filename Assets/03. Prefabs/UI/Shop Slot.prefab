@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 6123428553332284750}
   - component: {fileID: 5903168113761735977}
   - component: {fileID: 331190967489932574}
-  - component: {fileID: 1877356703941728614}
+  - component: {fileID: 5069764002582414613}
   m_Layer: 5
   m_Name: Shop Slot
   m_TagString: Untagged
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1877356703941728614
+--- !u!114 &5069764002582414613
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,15 +164,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 798632789265168021}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb4f9b6746cb113c893137545d963d86, type: 3}
+  m_Script: {fileID: 11500000, guid: 0fa4feedd8700924ea470421dade108d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_slot_image: {fileID: 9167494644966616480}
-  m_name_label: {fileID: 9122659511446857153}
-  m_price_label: {fileID: 4537830961055919002}
+  m_unit_image: {fileID: 9167494644966616480}
+  m_unit_name: {fileID: 9122659511446857153}
+  m_unit_cost: {fileID: 4537830961055919002}
   m_purchase_button: {fileID: 7768109459528223261}
-  m_mask: {fileID: 2766522487726363926}
-  m_explorer: {fileID: 0}
+  m_disabled_object: {fileID: 2766522487726363926}
 --- !u!1 &1256884711574393318
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,7 +184,7 @@ GameObject:
   - component: {fileID: 7802521642402726294}
   - component: {fileID: 9167494644966616480}
   m_Layer: 5
-  m_Name: Explorer Image
+  m_Name: Unit Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -370,7 +369,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1877356703941728614}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShopSlot, Assembly-CSharp
         m_MethodName: BUTTON_Purchase
         m_Mode: 1
@@ -742,7 +741,7 @@ GameObject:
   - component: {fileID: 6189572695395792686}
   - component: {fileID: 9122659511446857153}
   m_Layer: 5
-  m_Name: Explorer Name Label
+  m_Name: Unit Name Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -5,5 +5,5 @@ public interface ICodexView
     void Initialize(Unit unit);
     void OpenUI();
     void CloseUI();
-    void Reset();
+    void ResetUI();
 }
