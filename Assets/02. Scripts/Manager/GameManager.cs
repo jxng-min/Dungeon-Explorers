@@ -96,12 +96,12 @@ public class GameManager : Singleton<GameManager>
 
     public void ControlAnimation(bool is_play)
     {
-        var explorers = ObjectManager.Instance.GetActiveObjects(ObjectType.EXPLORER);
-        foreach (var explorer in explorers)
-        {
-            var character = explorer.GetComponent<Character>();
-            character.Animator.speed = is_play ? 1f : 0f;
-        }
+        // var explorers = ObjectManager.Instance.GetActiveObjects(ObjectType.EXPLORER);
+        // foreach (var explorer in explorers)
+        // {
+        //     var character = explorer.GetComponent<Character>();
+        //     character.Animator.speed = is_play ? 1f : 0f;
+        // }
 
         var enemys = ObjectManager.Instance.GetActiveObjects(ObjectType.ENEMY);
         foreach (var enemy in enemys)
@@ -110,19 +110,19 @@ public class GameManager : Singleton<GameManager>
             enemy_ctrl.Animator.speed = is_play ? 1f : 0f;
         }
 
-        var arrow_objs = ObjectManager.Instance.GetActiveObjects(ObjectType.ARROW);
-        foreach (var arrow_obj in arrow_objs)
-        {
-            var arrow = arrow_obj.GetComponent<Arrow>();
-            if (is_play)
-            {
-                arrow.Resume();
-            }
-            else
-            {
-                arrow.Stop();
-            }
-        }
+        // var arrow_objs = ObjectManager.Instance.GetActiveObjects(ObjectType.ARROW);
+        // foreach (var arrow_obj in arrow_objs)
+        // {
+        //     var arrow = arrow_obj.GetComponent<Arrow>();
+        //     if (is_play)
+        //     {
+        //         arrow.Resume();
+        //     }
+        //     else
+        //     {
+        //         arrow.Stop();
+        //     }
+        // }
 
         var shield_objs = ObjectManager.Instance.GetActiveObjects(ObjectType.HOLY_SHIELD);
         foreach (var shield_obj in shield_objs)

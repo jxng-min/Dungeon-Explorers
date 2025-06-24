@@ -120,19 +120,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5613699727178254242}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5608333197561632203}
-        m_TargetAssemblyTypeName: ReinforcementSlot, Assembly-CSharp
-        m_MethodName: BUTTON_Reinforcement
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1832912158644832297
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,7 +132,7 @@ GameObject:
   - component: {fileID: 7876422677980989269}
   - component: {fileID: 3068264073646848208}
   - component: {fileID: 3630800835017773801}
-  - component: {fileID: 5608333197561632203}
+  - component: {fileID: 2754678025506891022}
   m_Layer: 5
   m_Name: Reinforcement Slot
   m_TagString: Untagged
@@ -213,7 +201,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5608333197561632203
+--- !u!114 &2754678025506891022
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -222,21 +210,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1832912158644832297}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f65cc39d0548514338023e3738f0ade6, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bc3eae263828a1419219e0220324eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_reinforcer: {fileID: 0}
-  m_title_label: {fileID: 3327609082761778182}
-  m_reinforcement_image: {fileID: 396899920492267950}
-  m_level_label: {fileID: 7955020276892243633}
-  m_reinforcement_label: {fileID: 4759724194822778680}
-  m_reinforcement_button: {fileID: 7434333075292559420}
-  m_button_label: {fileID: 5636144428899831417}
-  m_title_string: 
-  m_slot_sprite: {fileID: 0}
-  m_default_cost: 0
-  m_increase_cost: 0
-  m_type: 0
+  m_element_name: {fileID: 3327609082761778182}
+  m_element_image: {fileID: 396899920492267950}
+  m_element_level: {fileID: 7955020276892243633}
+  m_upgrade_cost: {fileID: 4759724194822778680}
+  m_upgrade_button_label: {fileID: 5636144428899831417}
+  m_upgrade_button: {fileID: 7434333075292559420}
 --- !u!1 &2644388860999275060
 GameObject:
   m_ObjectHideFlags: 0

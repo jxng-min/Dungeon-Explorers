@@ -2,7 +2,7 @@ using UnitRepository;
 using EXPService;
 using InventoryService;
 using UserDataService;
-using UnityEngine;
+using ReinforcementService;
 
 public class ServiceLocator : Singleton<ServiceLocator>
 {
@@ -10,6 +10,7 @@ public class ServiceLocator : Singleton<ServiceLocator>
     public IEXPService EXPService { get; private set; }
     public IInventoryService InvenService { get; private set; }
     public IUserDataService UserDataService { get; private set; }
+    public IReinforcementService ReinforceService { get; private set; }
 
     private void OnEnable()
     {
@@ -17,6 +18,7 @@ public class ServiceLocator : Singleton<ServiceLocator>
         EXPService = new LocalEXPSystem();
         InvenService = new LocalInventory();
         UserDataService = new LocalUserDataSystem();
+        ReinforceService = new LocalReinforcementSystem();
     }
 
     private void OnDisable()
@@ -25,5 +27,6 @@ public class ServiceLocator : Singleton<ServiceLocator>
         EXPService = null;
         InvenService = null;
         UserDataService = null;
+        ReinforceService = null;
     }
 }

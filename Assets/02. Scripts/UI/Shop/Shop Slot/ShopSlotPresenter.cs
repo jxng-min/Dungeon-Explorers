@@ -31,6 +31,6 @@ public class ShopSlotPresenter
         m_model.AddUnit();
 
         m_view.Purchase();
-        m_view.UpdateUI(m_model.HasUnit(), m_model.GetMoney(), m_model.GetCost());
+        UpdateView();
     }
 }
