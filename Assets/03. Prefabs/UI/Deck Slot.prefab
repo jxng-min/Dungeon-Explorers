@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4935768484973813967}
   - component: {fileID: 8859046238235618483}
   - component: {fileID: 8102229943605610797}
-  - component: {fileID: 7363972259242482995}
   - component: {fileID: 7329320800707106953}
+  - component: {fileID: 9181312870285067300}
   m_Layer: 5
-  m_Name: Putting Slot
+  m_Name: Deck Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,22 +80,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7363972259242482995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 303644966135761578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1495258616d8e0e09ad6fdf5f62246f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_explorer_image: {fileID: 8988501760155545744}
-  m_cost_frame: {fileID: 8105864392690543171}
-  m_cost_label: {fileID: 8148946268299723563}
-  m_elected_label: {fileID: 323283578720944800}
 --- !u!95 &7329320800707106953
 Animator:
   serializedVersion: 7
@@ -118,6 +102,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &9181312870285067300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303644966135761578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e86a21a9758723e43bc51ae9ab4258a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_unit_image: {fileID: 8988501760155545744}
+  m_cost_frame: {fileID: 8105864392690543171}
+  m_cost_label: {fileID: 8148946268299723563}
+  m_selected_object: {fileID: 3050833372965811210}
 --- !u!1 &790762634839761260
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 7306947843013541464}
   - component: {fileID: 8148946268299723563}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Cost Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 8888067603395601575}
   - component: {fileID: 8988501760155545744}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Unit Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

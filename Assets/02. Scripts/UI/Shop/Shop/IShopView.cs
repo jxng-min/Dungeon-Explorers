@@ -7,4 +7,5 @@ public interface IShopView
     void OpenUI();
     void CloseUI();
     void ResetUI();
+    void UpdateUI();
 }

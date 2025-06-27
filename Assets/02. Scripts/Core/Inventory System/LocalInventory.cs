@@ -114,6 +114,7 @@ namespace InventoryService
 #if UNITY_EDITOR
                     Debug.LogWarning($"{m_local_data_path}의 형식에 오류가 있습니다.");
 #endif
+                    return;
                 }
 
                 m_money = inven_data.Money;

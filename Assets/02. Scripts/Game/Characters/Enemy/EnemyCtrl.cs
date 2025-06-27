@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using ObjectPool;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D), typeof(Animator))]
 public abstract class EnemyCtrl : MonoBehaviour

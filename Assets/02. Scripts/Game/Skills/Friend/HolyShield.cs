@@ -1,4 +1,5 @@
 using UnityEngine;
+using ObjectPool;
 
 [RequireComponent(typeof(Animator), typeof(BoxCollider2D))]
 public class HolyShield : Skill

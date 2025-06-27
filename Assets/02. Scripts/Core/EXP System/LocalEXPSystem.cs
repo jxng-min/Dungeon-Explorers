@@ -46,6 +46,7 @@ namespace EXPService
 #if UNITY_EDITOR
                     Debug.LogWarning($"{local_data_path}의 형식에 오류가 있습니다.");
 #endif
+                    return;
                 }
 
                 foreach (var data in exp_data.Data)

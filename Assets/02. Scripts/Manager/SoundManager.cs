@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using ObjectPool;
 
 [RequireComponent(typeof(AudioSource))]
 public class SoundManager : Singleton<SoundManager>
@@ -26,10 +27,10 @@ public class SoundManager : Singleton<SoundManager>
 
     public void PlayBGM(string clip_name)
     {
-        if (!SettingManager.Instance.Data.BGM)
-        {
-            return;
-        }
+        // if (!SettingManager.Instance.Data.BGM)
+        // {
+        //     return;
+        // }
 
         StartCoroutine(ChangeBGM(clip_name));
     }
@@ -113,15 +114,15 @@ public class SoundManager : Singleton<SoundManager>
         {
             var effect_source = ObjectManager.Instance.GetObject(ObjectType.SFX).GetComponent<AudioSource>();
 
-            if (SettingManager.Instance.Data.SFX)
-            {
-                effect_source.volume = Random.Range(0.7f, 1.0f);
-                effect_source.pitch = Random.Range(0.8f, 1.1f);
-            }
-            else
-            {
-                effect_source.volume = 0f;
-            }
+            // if (SettingManager.Instance.Data.SFX)
+            // {
+            //     effect_source.volume = Random.Range(0.7f, 1.0f);
+            //     effect_source.pitch = Random.Range(0.8f, 1.1f);
+            // }
+            // else
+            // {
+            //     effect_source.volume = 0f;
+            // }
 
             effect_source.clip = m_sfx_list[target_index];
             effect_source.Play();

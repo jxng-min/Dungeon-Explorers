@@ -8,23 +8,27 @@ public class ShopSlotModel
     private Units.Unit m_unit;
     private IInventoryService m_inventory;
     private IUnitRepository m_unit_repo;
+    private IShopView m_shop_view;
     #endregion Variables
 
-    public void Initialize(IUnitRepository unit_repo, IInventoryService inventory, Units.Unit unit)
+    #region Properties
+    public IShopView ShopView { get => m_shop_view; }
+    public int Money
     {
+        get => m_inventory.Money;
+        set => m_inventory.Money = value;
+    }
+    public bool HasUnit { get => m_inventory.HasUnit(m_unit.Code); }
+    public int Cost { get => (m_unit as Hero).Price; }
+    #endregion Properties
+
+    #region Helper Methods
+    public void Initialize(IShopView shop_view, IUnitRepository unit_repo, IInventoryService inventory, Units.Unit unit)
+    {
+        m_shop_view = shop_view;
         m_unit = unit;
         m_inventory = inventory;
         m_unit_repo = unit_repo;
-    }
-
-    public int GetMoney()
-    {
-        return m_inventory.Money;
-    }
-
-    public void UpdateMoney(int amount)
-    {
-        m_inventory.Money += amount;
     }
 
     public void AddUnit()
@@ -36,24 +40,5 @@ public class ShopSlotModel
 #endif
         }
     }
-
-    public bool HasUnit()
-    {
-        return m_inventory.HasUnit(m_unit.Code);
-    }
-
-    public Hero GetUnit()
-    {
-        return m_unit as Hero;
-    }
-
-    public string GetName(UnitCode code)
-    {
-        return m_unit_repo.GetName(code);
-    }
-
-    public int GetCost()
-    {
-        return (m_unit as Hero).Price;
-    }
+    #endregion Helper Methods
 }

@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using ObjectPool;
 
 [RequireComponent(typeof(Animator))]
 public class DamageIndicator : MonoBehaviour

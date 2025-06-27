@@ -13,24 +13,25 @@ public class ShopSlotPresenter
         m_model = new ShopSlotModel();
     }
 
-    public void Initialize(IUnitRepository unit_repo, IInventoryService inventory, Units.Unit unit)
+    public void Initialize(IShopView shop_view, IUnitRepository unit_repo, IInventoryService inventory, Units.Unit unit)
     {
-        m_model.Initialize(unit_repo, inventory, unit);
+        m_model.Initialize(shop_view, unit_repo, inventory, unit);
         
         UpdateView();
     }
 
     public void UpdateView()
     {
-        m_view.UpdateUI(m_model.HasUnit(), m_model.GetMoney(), m_model.GetCost());
+        m_view.UpdateUI(m_model.HasUnit, m_model.Money, m_model.Cost);
     }
 
     public void OnClickedPurchase()
     {
-        m_model.UpdateMoney(-m_model.GetCost());
+        m_model.Money -= m_model.Cost;
         m_model.AddUnit();
 
         m_view.Purchase();
-        UpdateView();
+        m_model.ShopView.UpdateUI();
+        
     }
 }

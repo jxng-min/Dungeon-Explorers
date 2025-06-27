@@ -36,7 +36,7 @@ namespace UserDataService
             else
             {
 #if UNITY_EDITOR
-                Debug.Log($"<color=green>로컬 경로에 유저 정보가 없어서 새로 생성합니다.</color>");
+                Debug.Log($"<color=green>{m_local_data_path}가 없으므로 유저 정보가 없어서 새로 생성합니다.</color>");
 #endif
                 m_user_data = new UserData();
             }

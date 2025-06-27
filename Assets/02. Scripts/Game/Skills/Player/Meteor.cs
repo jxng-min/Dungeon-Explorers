@@ -1,4 +1,5 @@
 using UnityEngine;
+using ObjectPool;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class Meteor : MonoBehaviour

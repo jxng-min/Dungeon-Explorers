@@ -63,7 +63,7 @@ public class ShopView : MonoBehaviour, IShopView
             var shop_slot = Instantiate(m_slot_prefab, m_slot_root).GetComponent<ShopSlotView>();
             m_slots.Add(shop_slot);
 
-            shop_slot.Initialize(m_unit_repo, m_inventory, unit);
+            shop_slot.Initialize(this, m_unit_repo, m_inventory, unit);
         }
     }
 
@@ -83,7 +83,7 @@ public class ShopView : MonoBehaviour, IShopView
         m_scroll_bar.value = 0f;
     }
 
-    private void UpdateUI()
+    public void UpdateUI()
     {
         foreach (var slot in m_slots)
         {

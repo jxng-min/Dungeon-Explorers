@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using ObjectPool;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class HolyCross : Skill

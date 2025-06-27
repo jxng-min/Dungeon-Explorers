@@ -23,7 +23,6 @@ public class ShopSlotView : MonoBehaviour, IShopSlotView
     [SerializeField] private GameObject m_disabled_object;
 
     private ShopSlotPresenter m_presenter;
-
     #endregion Variables
 
     private void Awake()
@@ -33,9 +32,9 @@ public class ShopSlotView : MonoBehaviour, IShopSlotView
         m_purchase_button.onClick.AddListener(m_presenter.OnClickedPurchase);
     }
 
-    public void Initialize(IUnitRepository unit_repo, IInventoryService inventory, Units.Unit unit)
+    public void Initialize(IShopView shop_view, IUnitRepository unit_repo, IInventoryService inventory, Units.Unit unit)
     {
-        m_presenter.Initialize(unit_repo, inventory, unit);
+        m_presenter.Initialize(shop_view, unit_repo, inventory, unit);
 
         m_unit_image.sprite = unit.Image;
         m_unit_name.text = unit_repo.GetName(unit.Code);
