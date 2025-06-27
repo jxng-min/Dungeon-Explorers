@@ -4,6 +4,7 @@ using InventoryService;
 using UserDataService;
 using ReinforcementService;
 using DeckService;
+using SettingService;
 
 public class ServiceLocator : Singleton<ServiceLocator>
 {
@@ -13,6 +14,7 @@ public class ServiceLocator : Singleton<ServiceLocator>
     public IUserDataService UserDataService { get; private set; }
     public IReinforcementService ReinforceService { get; private set; }
     public IDeckService DeckService { get; private set; }
+    public ISettingService SettingService { get; private set; }
 
     private void OnEnable()
     {
@@ -22,6 +24,7 @@ public class ServiceLocator : Singleton<ServiceLocator>
         UserDataService = new LocalUserDataSystem();
         ReinforceService = new LocalReinforcementSystem();
         DeckService = new LocalDeckSystem();
+        SettingService = new LocalSettingSystem();
     }
 
     private void OnDisable()
@@ -32,5 +35,6 @@ public class ServiceLocator : Singleton<ServiceLocator>
         UserDataService = null;
         ReinforceService = null;
         DeckService = null;
+        SettingService = null;
     }
 }

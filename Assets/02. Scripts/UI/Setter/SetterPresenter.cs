@@ -2,10 +2,10 @@ public class SetterPresenter
 {
     #region Variables
     private readonly ISetterView m_view;
-    private SettingDataBase m_model;
+    private ISettingService m_model;
     #endregion Variables
 
-    public SetterPresenter(ISetterView view, SettingDataBase model)
+    public SetterPresenter(ISetterView view, ISettingService model)
     {
         m_view = view;
         m_model = model;

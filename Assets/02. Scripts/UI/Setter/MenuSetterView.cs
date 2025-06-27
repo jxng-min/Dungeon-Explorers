@@ -5,11 +5,6 @@ using UnityEngine.UI;
 public class MenuSetterView : MonoBehaviour, ISetterView
 {
     #region Variables
-    [Header("의존성 관련 컴포넌트")]
-    [Header("설정 데이터베이스")]
-    [SerializeField] private SettingDataBase m_setting_db;
-
-    [Space(50f)]
     [Header("UI 관련 컴포넌트")]
     [Header("UI 열기 버튼")]
     [SerializeField] private Button m_open_button;
@@ -34,13 +29,16 @@ public class MenuSetterView : MonoBehaviour, ISetterView
 
     private Animator m_animator;
     private SetterPresenter m_presenter;
+    private ISettingService m_setting_system;
     #endregion Variables
 
     private void Awake()
     {
         m_animator = GetComponent<Animator>();
 
-        m_presenter = new SetterPresenter(this, m_setting_db);
+        m_setting_system = ServiceLocator.Instance.SettingService;
+
+        m_presenter = new SetterPresenter(this, m_setting_system);
 
         m_open_button.onClick.AddListener(m_presenter.OnClickedOpenUI);
         m_close_button.onClick.AddListener(m_presenter.OnClickedCloseUI);
