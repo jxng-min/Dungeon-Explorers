@@ -13,6 +13,7 @@ public class ShopPresenter
         m_model = model;
     }
 
+    #region Helper Methods
     public void Initialize()
     {
         m_view.Initialize(m_model.List);
@@ -27,4 +28,5 @@ public class ShopPresenter
     {
         m_view.CloseUI();
     }
+    #endregion Helper Methods
 }

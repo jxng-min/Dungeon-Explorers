@@ -56,6 +56,7 @@ public class ShopView : MonoBehaviour, IShopView
         m_presenter.Initialize();
     }
 
+    #region Helper Methods
     public void Initialize(List<Units.Unit> units)
     {
         foreach (var unit in units)
@@ -90,4 +91,5 @@ public class ShopView : MonoBehaviour, IShopView
             slot.Updates();
         }
     }
+    #endregion Helper Methods
 }

@@ -10416,6 +10416,7 @@ GameObject:
   - component: {fileID: 794563732}
   - component: {fileID: 794563734}
   - component: {fileID: 794563733}
+  - component: {fileID: 794563735}
   m_Layer: 5
   m_Name: Status Panel
   m_TagString: Untagged
@@ -10483,6 +10484,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794563731}
   m_CullTransparentMesh: 1
+--- !u!114 &794563735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794563731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 345c4528a4b22794c915e3898aeca439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_level_label: {fileID: 1240499877}
+  m_exp_slider: {fileID: 359089108}
+  m_money_label: {fileID: 945879213}
 --- !u!1 &814600620
 GameObject:
   m_ObjectHideFlags: 0

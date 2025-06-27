@@ -11,6 +11,7 @@ public class SetterPresenter
         m_model = model;
     }
 
+    #region Helper Methods
     public void Updates()
     {
         m_view.UpdateUI(m_model.BGM, m_model.BGMRate, m_model.SFX, m_model.SFXRate);
@@ -64,4 +65,5 @@ public class SetterPresenter
         Application.Quit();
 #endif
     }
+    #endregion Helper Methods
 }

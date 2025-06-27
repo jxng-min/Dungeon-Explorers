@@ -11,10 +11,22 @@ namespace UserDataService
         #endregion Variables
 
         #region Properties
-        public UserData UserData
+        public int Level
         {
-            get => m_user_data;
-            set => m_user_data = value;
+            get => m_user_data.LV;
+            set => m_user_data.LV = value;
+        }
+
+        public int EXP
+        {
+            get => m_user_data.EXP;
+            set => m_user_data.EXP = value;
+        }
+
+        public int Stage
+        {
+            get => m_user_data.Stage;
+            set => m_user_data.Stage = value;
         }
         #endregion Properties
 

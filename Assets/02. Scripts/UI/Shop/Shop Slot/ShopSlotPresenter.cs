@@ -13,10 +13,11 @@ public class ShopSlotPresenter
         m_model = new ShopSlotModel();
     }
 
+    #region Helper Methods
     public void Initialize(IShopView shop_view, IUnitRepository unit_repo, IInventoryService inventory, Units.Unit unit)
     {
         m_model.Initialize(shop_view, unit_repo, inventory, unit);
-        
+
         UpdateView();
     }
 
@@ -32,6 +33,6 @@ public class ShopSlotPresenter
 
         m_view.Purchase();
         m_model.ShopView.UpdateUI();
-        
     }
+    #endregion Helper Methods
 }

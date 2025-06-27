@@ -54,6 +54,7 @@ public class MenuSetterView : MonoBehaviour, ISetterView
         m_exit_button.onClick.AddListener(m_presenter.OnClickedGameExit);
     }
 
+    #region Helper Methods
     public void OpenUI()
     {
         m_animator.SetBool("Open", true);
@@ -86,4 +87,5 @@ public class MenuSetterView : MonoBehaviour, ISetterView
     {
         m_sfx_slider.interactable = interactable;
     }
+    #endregion Helper Methods
 }

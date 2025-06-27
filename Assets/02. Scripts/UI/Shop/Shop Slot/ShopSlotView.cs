@@ -32,6 +32,7 @@ public class ShopSlotView : MonoBehaviour, IShopSlotView
         m_purchase_button.onClick.AddListener(m_presenter.OnClickedPurchase);
     }
 
+    #region Helper Methods
     public void Initialize(IShopView shop_view, IUnitRepository unit_repo, IInventoryService inventory, Units.Unit unit)
     {
         m_presenter.Initialize(shop_view, unit_repo, inventory, unit);
@@ -69,4 +70,5 @@ public class ShopSlotView : MonoBehaviour, IShopSlotView
     {
         m_disabled_object.SetActive(true);
     }
+    #endregion Helper Methods
 }

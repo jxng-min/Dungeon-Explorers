@@ -34,6 +34,7 @@ public class ReinforcementSlotView : MonoBehaviour, IReinforcementSlotView
         m_presenter = new ReinforcementSlotPresenter(this);
     }
 
+    #region Helper Methods
     public void Initialize(ReinforceDataBase db, IReinforcementService reinforce_service, IInventoryService inventory_service, ReinforcementType type)
     {
         m_presenter.Initialize(reinforce_service, inventory_service, type);
@@ -68,4 +69,5 @@ public class ReinforcementSlotView : MonoBehaviour, IReinforcementSlotView
             m_upgrade_button.interactable = false;
         }
     }
+    #endregion Helper Methods
 }
