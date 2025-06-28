@@ -1313,7 +1313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7871182779395535301, guid: fc95a30ac13f692879c87f68c51c6035, type: 3}
       propertyPath: m_Name
-      value: Traning Center Slot
+      value: Trainer Slot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1325,6 +1325,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1730863181699088267, guid: fc95a30ac13f692879c87f68c51c6035, type: 3}
   m_PrefabInstance: {fileID: 120213853}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &120213855 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3153244585733487532, guid: fc95a30ac13f692879c87f68c51c6035, type: 3}
+  m_PrefabInstance: {fileID: 120213853}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd830f0d466fd042ab6dd53542904f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &131558570
 GameObject:
   m_ObjectHideFlags: 0
@@ -4730,7 +4741,7 @@ GameObject:
   - component: {fileID: 228970494}
   - component: {fileID: 228970493}
   - component: {fileID: 228970496}
-  - component: {fileID: 228970495}
+  - component: {fileID: 228970497}
   m_Layer: 5
   m_Name: Training UI
   m_TagString: Untagged
@@ -4797,18 +4808,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228970491}
   m_CullTransparentMesh: 1
---- !u!114 &228970495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 228970491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79e91e6fcd20c3f50a97a33e28937cb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &228970496
 Animator:
   serializedVersion: 7
@@ -4831,6 +4830,28 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &228970497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228970491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf055b1672aa104d8df8682089ba4d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_unit_db: {fileID: 11400000, guid: eea4ac5f03b6f8b41805b25ecd0a04f6, type: 2}
+  m_slot: {fileID: 120213855}
+  m_unit_name: {fileID: 480038069}
+  m_unit_hp: {fileID: 985871917}
+  m_unit_atk: {fileID: 1865818667}
+  m_upgrade_label: {fileID: 1763961092}
+  m_cost_label: {fileID: 515449480}
+  m_training_button: {fileID: 1575854100}
+  m_button_label: {fileID: 2097333418}
+  m_close_button: {fileID: 1652222350}
 --- !u!1 &230169420
 GameObject:
   m_ObjectHideFlags: 0
@@ -7074,7 +7095,7 @@ GameObject:
   - component: {fileID: 439012056}
   - component: {fileID: 439012055}
   m_Layer: 5
-  m_Name: Expedition Upgrade Button
+  m_Name: Trainer Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7143,19 +7164,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 439012056}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 839022922}
-        m_TargetAssemblyTypeName: TrainingCenter, Assembly-CSharp
-        m_MethodName: BUTTON_Open
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &439012056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8716,7 +8725,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d047001a781458e46bda179766eefa5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_setting_db: {fileID: 11400000, guid: 1dd45b1007d4f26449b0954766654579, type: 2}
   m_open_button: {fileID: 528423308}
   m_close_button: {fileID: 1604679583}
   m_bgm_toggle: {fileID: 341600994}
@@ -10779,9 +10787,9 @@ GameObject:
   - component: {fileID: 839022921}
   - component: {fileID: 839022920}
   - component: {fileID: 839022923}
-  - component: {fileID: 839022922}
+  - component: {fileID: 839022924}
   m_Layer: 5
-  m_Name: Training Center UI
+  m_Name: Trainer UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10847,18 +10855,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839022918}
   m_CullTransparentMesh: 1
---- !u!114 &839022922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 839022918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 436901e1b54d47584b6f65d0aa5d50f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &839022923
 Animator:
   serializedVersion: 7
@@ -10881,6 +10877,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &839022924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839022918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8c518de7d6feb4c8b97142f1879042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_unit_db: {fileID: 11400000, guid: eea4ac5f03b6f8b41805b25ecd0a04f6, type: 2}
+  m_trainer_info_view: {fileID: 228970497}
+  m_slot_root: {fileID: 1647750969}
+  m_slot_prefab: {fileID: 7871182779395535301, guid: fc95a30ac13f692879c87f68c51c6035, type: 3}
+  m_scroll_bar: {fileID: 67575589}
+  m_open_button: {fileID: 439012055}
+  m_close_button: {fileID: 2043123036}
 --- !u!1 &844315065
 GameObject:
   m_ObjectHideFlags: 0
@@ -16510,7 +16525,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 228970495}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TrainingStation, Assembly-CSharp
         m_MethodName: BUTTON_Upgrade
         m_Mode: 1
@@ -17642,19 +17657,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1652222351}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 228970495}
-        m_TargetAssemblyTypeName: TrainingStation, Assembly-CSharp
-        m_MethodName: BUTTON_Close
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1652222351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21154,19 +21157,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2043123037}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 839022922}
-        m_TargetAssemblyTypeName: TrainingCenter, Assembly-CSharp
-        m_MethodName: BUTTON_Close
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2043123037
 MonoBehaviour:
   m_ObjectHideFlags: 0

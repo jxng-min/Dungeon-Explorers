@@ -3529,6 +3529,10 @@ MonoBehaviour:
     Count: 10
     Prefab: {fileID: 303644966135761578, guid: 65fe402ab998a06bcad314fe5c02e931, type: 3}
     Container: {fileID: 1467423615}
+  - Type: 2
+    Count: 10
+    Prefab: {fileID: 7871182779395535301, guid: fc95a30ac13f692879c87f68c51c6035, type: 3}
+    Container: {fileID: 1467114959}
   m_hero_pool_list: []
   m_enemy_pool_list: []
   m_skill_pool_list: []
@@ -4091,7 +4095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1467114959}
   m_Layer: 0
-  m_Name: '[Training Center Slot] Container'
+  m_Name: '[Trainer Slot] Container'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
