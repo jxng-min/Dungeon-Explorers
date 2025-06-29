@@ -12,10 +12,13 @@ public class DeckView : MonoBehaviour, IDeckView
     #region Variables
     [Header("의존성 관련 컴포넌트")]
     [Header("유닛 데이터베이스")]
-    [SerializeField] UnitDataBase m_unit_db;
+    [SerializeField] private UnitDataBase m_unit_db;
+
+    [Header("스테이지 데이터베이스")]
+    [SerializeField] private StageDataBase m_stage_db;
 
     [Header("덱 편성 도우미")]
-    [SerializeField] SelectorView m_selector_view;
+    [SerializeField] private SelectorView m_selector_view;
 
     [Space(50f)]
     [Header("UI 관련 컴포넌트")]
@@ -49,12 +52,13 @@ public class DeckView : MonoBehaviour, IDeckView
         m_deck_system = ServiceLocator.Instance.DeckService;
         m_inven_system = ServiceLocator.Instance.InvenService;
 
-        m_presenter = new DeckPresenter(this, m_deck_system);
+        m_presenter = new DeckPresenter(this, m_deck_system, m_stage_db);
 
         m_open_button.onClick.AddListener(m_presenter.OnClickedOpenUI);
         m_close_button.onClick.AddListener(m_presenter.OnClickedCloseUI);
     }
 
+    #region Helper Methods
     public void Initialize()
     {
         ConfigureSelecteds();
@@ -68,7 +72,7 @@ public class DeckView : MonoBehaviour, IDeckView
         var deck = m_deck_system.GetDeck();
         for (int i = 0; i < m_selected_slots.Length; i++)
         {
-            m_selected_slots[i].Initialize(m_unit_db, m_deck_system, m_selector_view, deck[i], false);
+            m_selected_slots[i].Initialize(m_unit_db, m_deck_system, this, m_selector_view, deck[i]);
         }
     }
 
@@ -83,7 +87,7 @@ public class DeckView : MonoBehaviour, IDeckView
             deck_slot_obj.transform.SetParent(m_candidate_slot_root, false);
 
             var deck_slot = deck_slot_obj.GetComponent<IDeckSlotView>();
-            deck_slot.Initialize(m_unit_db, m_deck_system, m_selector_view, deck[i].Code, true);
+            deck_slot.Initialize(m_unit_db, m_deck_system, this, m_selector_view, deck[i].Code);
 
             m_candidate_slots.Add(deck_slot_obj);
         }
@@ -140,4 +144,10 @@ public class DeckView : MonoBehaviour, IDeckView
             slot.SetHighlight(flag);
         }
     }
+
+    public IDeckSlotView GetSlotView(int index)
+    {
+        return m_selected_slots[index];
+    }
+    #endregion Helper Methods
 }

@@ -36,10 +36,15 @@ public class DeckSlotView : MonoBehaviour, IDeckSlotView
     }
 
     #region Helper Methods
-    public void Initialize(UnitDataBase unit_db, IDeckService deck_system, ISelectorView selector_view, UnitCode code, bool is_candidate)
+    public void Initialize(UnitDataBase unit_db, IDeckService deck_system, IDeckView deck_view, ISelectorView selector_view, UnitCode code)
     {
-        m_presenter.Initialize(unit_db, deck_system, selector_view, code, is_candidate);
-        Clear();
+        m_presenter.Initialize(unit_db, deck_system, deck_view, selector_view, code);
+        ClearUI();
+    }
+
+    public void Swap(UnitCode code)
+    {
+        m_presenter.Swap(code);
     }
 
     public void Clear()
@@ -84,7 +89,11 @@ public class DeckSlotView : MonoBehaviour, IDeckSlotView
     public void SetHighlight(bool flag)
     {
         m_animator.SetBool("Glow", flag);
-        Debug.Log($"{(flag ? "켬" : "끔")}");
+    }
+
+    public UnitCode GetCode()
+    {
+        return m_presenter.GetCode();
     }
     #endregion Helper Methods
 

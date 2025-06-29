@@ -1,3 +1,4 @@
+using DeckService;
 using Units;
 using UnityEngine;
 
@@ -16,17 +17,20 @@ public class SelectorPresenter
 
     public void OpenSelector(IDeckSlotView deck_slot, Unit unit, Vector2 touch_position, bool is_candidate)
     {
-        m_model.Unit = unit;
-
         if (m_model.Mode == SelectorWorkingMode.EQUIPPING)
         {
             m_view.SetHightlightSlots(false);
+
+            deck_slot.Swap(m_model.Unit == null ? UnitCode.EMPTY : m_model.Unit.Code);
+
+            m_model.DeckView.UpdateUI();
 
             CloseSelector();
 
             return;
         }
 
+        m_model.Unit = unit;
         m_model.DeckSlot = deck_slot;
 
         if (m_model.Unit != null)

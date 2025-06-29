@@ -52,6 +52,11 @@ public class SetterPresenter
         m_model.SFXRate = value;
     }
 
+    public void OnClickedRetry()
+    {
+        LoadingManager.Instance.LoadScene("Game");
+    }
+
     public void OnClickedLoadTitle()
     {
         LoadingManager.Instance.LoadScene("Title");

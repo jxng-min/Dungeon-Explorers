@@ -14,13 +14,13 @@ public class TrainerInfoModel
     public float HP
     {
         get => m_unit_db.GetUnit(m_unit.Code).HP
-                + (m_unit_db.GetUnit(m_unit.Code) as Hero).GrowthHP * m_inventory_system.GetUnit(m_unit.Code).Upgrade;
+                + (m_unit_db.GetUnit(m_unit.Code) as Hero).GrowthHP * (m_inventory_system.GetUnit(m_unit.Code).Upgrade - 1);
     }
 
     public int ATK
     {
         get => m_unit_db.GetUnit(m_unit.Code).ATK
-                + (m_unit_db.GetUnit(m_unit.Code) as Hero).GrowthATK * m_inventory_system.GetUnit(m_unit.Code).Upgrade;
+                + (m_unit_db.GetUnit(m_unit.Code) as Hero).GrowthATK * (m_inventory_system.GetUnit(m_unit.Code).Upgrade - 1);
     }
 
     public int MaxUpgrade { get => (m_unit_db.GetUnit(m_unit.Code) as Hero).MaxUpgrade; }
@@ -28,7 +28,7 @@ public class TrainerInfoModel
     public int Cost
     {
         get => (m_unit_db.GetUnit(m_unit.Code) as Hero).UpgradeCost
-                + 20 * m_inventory_system.GetUnit(m_unit.Code).Upgrade;
+                + 20 * (m_inventory_system.GetUnit(m_unit.Code).Upgrade - 1);
     }
 
     public string Name

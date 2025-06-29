@@ -15,15 +15,31 @@ public class DeckSlotPresenter
         m_model = new DeckSlotModel();
     }
 
-    public void Initialize(UnitDataBase unit_db, IDeckService deck_system, ISelectorView selector_view, UnitCode code, bool is_candidate)
+    public void Initialize(UnitDataBase unit_db, IDeckService deck_system, IDeckView deck_view, ISelectorView selector_view, UnitCode code)
     {
-        m_model.Initialize(unit_db, deck_system, selector_view, code, is_candidate);
+        m_model.Initialize(unit_db, deck_system, deck_view, selector_view, code);
+    }
+
+    public void Swap(UnitCode code)
+    {
+        m_model.Code = code;
+        Debug.Log("설정함");
+
+        for (int i = 0; i < m_model.Deck.Count; i++)
+        {
+            if (m_model.Code == m_model.DeckView.GetSlotView(i).GetCode())
+            {
+                m_model.DeckSystem.SetDeck(i, m_model.Code);
+                Debug.Log($"들어옴: {i}");
+            }
+        }
     }
 
     public void UpdateView()
     {
         if (m_model.Unit == null || m_model.Unit.Code == UnitCode.EMPTY)
         {
+            m_view.ClearUI();
             return;
         }
 
@@ -39,6 +55,7 @@ public class DeckSlotPresenter
         {
             if (m_model.Unit != null && m_model.Deck[i] == m_model.Unit.Code)
             {
+                m_model.Code = UnitCode.EMPTY;
                 m_model.DeckSystem.SetDeck(i, UnitCode.EMPTY);
                 break;
             }
@@ -49,6 +66,20 @@ public class DeckSlotPresenter
 
     public void OnClickedSlot(Vector2 touch_position)
     {
-        m_model.SelectorView.Initialize(m_view, m_model.Unit, touch_position, m_model.IsCandidate);
+        for (int i = 0; i < m_model.Deck.Count; i++)
+        {
+            if (m_model.Unit != null && m_model.Deck[i] == m_model.Unit.Code)
+            {
+                m_model.SelectorView.Initialize(m_model.DeckView.GetSlotView(i), m_model.Unit, touch_position, false);
+                return;
+            }
+        }
+
+        m_model.SelectorView.Initialize(m_view, m_model.Unit, touch_position, true);
+    }
+
+    public UnitCode GetCode()
+    {
+        return m_model.Code;
     }
 }
