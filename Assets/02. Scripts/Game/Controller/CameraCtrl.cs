@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CameraCtrl : MonoBehaviour
 {
+    #region Variables
     [Header("조이스틱")]
     [SerializeField] private JoystickCtrl m_joystick;
 
@@ -12,7 +13,8 @@ public class CameraCtrl : MonoBehaviour
     [Range(0f, 100f)][SerializeField] private float m_min_x = 0f;
 
     [Header("X축의 최대 범위")]
-    [Range(0f, 100f)][SerializeField] private float m_max_x = 100f; 
+    [Range(0f, 100f)][SerializeField] private float m_max_x = 100f;
+    #endregion Variables 
 
     private void Start()
     {

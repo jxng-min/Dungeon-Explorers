@@ -148,9 +148,9 @@ GameObject:
   - component: {fileID: 4350881052287971931}
   - component: {fileID: 7917643117017923908}
   - component: {fileID: 2272040128715364660}
-  - component: {fileID: 3661806032929070678}
+  - component: {fileID: 4608857681020725797}
   m_Layer: 5
-  m_Name: Call Button
+  m_Name: Instantiator Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -259,20 +259,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7917643117017923908}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3661806032929070678}
-        m_TargetAssemblyTypeName: Caller, Assembly-CSharp
-        m_MethodName: BUTTON_Call
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &3661806032929070678
+      m_Calls: []
+--- !u!114 &4608857681020725797
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -281,14 +269,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5220153913484308548}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 490ef161d9f5f94f5b7077dfa98df856, type: 3}
+  m_Script: {fileID: 11500000, guid: 99d7f52aafccbb94ba7cb3b8e8616f21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_button: {fileID: 2272040128715364660}
-  m_explorer_image: {fileID: 9087281846810811258}
-  m_cost_frame: {fileID: 4884819388535893943}
+  m_instantiation_button: {fileID: 2272040128715364660}
+  m_unit_image: {fileID: 9087281846810811258}
+  m_cooldown_image: {fileID: 3301576289803635357}
+  m_cost_frame: {fileID: 5456023379899612320}
   m_cost_label: {fileID: 1697437892729374103}
-  m_cooltime_image: {fileID: 3301576289803635357}
 --- !u!1 &5456023379899612320
 GameObject:
   m_ObjectHideFlags: 0
