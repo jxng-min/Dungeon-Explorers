@@ -3,7 +3,7 @@ using UnityEngine;
 
 public interface IInstantiatorSlotView
 {
-    void Initialize(UnitCode code, UnitDataBase unit_db);
+    void Initialize(UnitCode code, UnitDataBase unit_db, ICostView cost_view);
 
     void ClearUI();
     void InitUI(Sprite unit_sprite, int cost);

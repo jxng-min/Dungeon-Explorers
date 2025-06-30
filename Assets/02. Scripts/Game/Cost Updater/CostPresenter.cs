@@ -29,5 +29,10 @@ public class CostPresenter
     {
         m_view.UpdateUI(m_model.Cost, m_model.MaxCost);
     }
+
+    public int GetCost()
+    {
+        return m_model.Cost;
+    }
     #endregion Helper Methods
 }

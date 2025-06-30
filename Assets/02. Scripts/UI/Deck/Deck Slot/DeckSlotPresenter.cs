@@ -23,14 +23,12 @@ public class DeckSlotPresenter
     public void Swap(UnitCode code)
     {
         m_model.Code = code;
-        Debug.Log("설정함");
 
         for (int i = 0; i < m_model.Deck.Count; i++)
         {
             if (m_model.Code == m_model.DeckView.GetSlotView(i).GetCode())
             {
                 m_model.DeckSystem.SetDeck(i, m_model.Code);
-                Debug.Log($"들어옴: {i}");
             }
         }
     }

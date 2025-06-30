@@ -1,6 +1,6 @@
 public interface ICostView
 {
-    void Updates();
+    int GetCost();
 
     void StartUI(float interval);
     void UpdateUI(float current_cost, float max_cost);

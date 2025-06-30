@@ -34,9 +34,9 @@ public class InstantiatorSlotView : MonoBehaviour, IInstantiatorSlotView
         m_instantiation_button.onClick.AddListener(m_presenter.OnClickedInstantiation);
     }
 
-    public void Initialize(UnitCode code, UnitDataBase unit_db)
+    public void Initialize(UnitCode code, UnitDataBase unit_db, ICostView cost_view)
     {
-        m_presenter.Initialize(code, unit_db);
+        m_presenter.Initialize(code, unit_db, cost_view);
     }
 
     public void ClearUI()
@@ -97,10 +97,7 @@ public class InstantiatorSlotView : MonoBehaviour, IInstantiatorSlotView
         {
             m_cost_label.text = $"<color=red>{NumberFormatter.FormatNumber(unit_cost)}</color>";
 
-            if (m_cool_coroutine == null)
-            {
-                m_instantiation_button.interactable = true;
-            }
+            m_instantiation_button.interactable = false;
         }
     }
 

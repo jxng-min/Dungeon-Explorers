@@ -3,12 +3,18 @@ public class InstantiatorPresenter
     #region Variables
     private readonly IInstantiatorView m_view;
     private StageDataBase m_model;
+    private ICostView m_cost_view;
     #endregion Variables
 
-    public InstantiatorPresenter(IInstantiatorView view, StageDataBase model)
+    #region Properties
+    public ICostView CostView { get => m_cost_view; }
+    #endregion Properties
+
+    public InstantiatorPresenter(IInstantiatorView view, StageDataBase model, ICostView cost_view)
     {
         m_view = view;
         m_model = model;
+        m_cost_view = cost_view;
     }
 
     #region Helper Methods

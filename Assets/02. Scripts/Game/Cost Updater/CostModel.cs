@@ -31,7 +31,7 @@ public class CostModel
     {
         // TODO: 타워 레벨에 따라 수정 필요
         get => DEFAULT_INTERVAL
-                + GROWTH_INTERVAL + 1;
+                - GROWTH_INTERVAL * 0;
     }
     #endregion Properties
 

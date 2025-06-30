@@ -26,6 +26,8 @@ public class CostView : MonoBehaviour, ICostView
         GameEventBus.Subscribe(GameEventType.PAUSE, GameManager.Instance.Pause);
         GameEventBus.Subscribe(GameEventType.GAMEOVER, GameManager.Instance.GameOver);
         GameEventBus.Subscribe(GameEventType.GAMECLEAR, GameManager.Instance.GameClear);
+
+        GameEventBus.Publish(GameEventType.PLAYING);
     }
 
     private void OnDisable()
@@ -41,12 +43,15 @@ public class CostView : MonoBehaviour, ICostView
         m_presenter.Initialize();
     }
 
-    #region Helper Methods
-    public void Updates()
+    private void Update()
     {
-        m_presenter.UpdateView();
+        if (GameManager.Instance.GameState == GameEventType.PLAYING)
+        {
+            m_presenter.UpdateView();
+        }
     }
 
+    #region Helper Methods
     public void UpdateUI(float current_cost, float max_cost)
     {
         m_cost_label.text = $"{NumberFormatter.FormatNumber(current_cost)}/{NumberFormatter.FormatNumber(max_cost)}";
@@ -78,6 +83,11 @@ public class CostView : MonoBehaviour, ICostView
 
             yield return null;
         }
+    }
+
+    public int GetCost()
+    {
+        return m_presenter.GetCost();
     }
     #endregion Helper Methods
 }

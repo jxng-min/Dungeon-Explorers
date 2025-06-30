@@ -11840,6 +11840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_stage_db: {fileID: 11400000, guid: 86a0fee9987879c478167b86edf1c0c6, type: 2}
   m_unit_db: {fileID: 11400000, guid: eea4ac5f03b6f8b41805b25ecd0a04f6, type: 2}
+  m_cost_view: {fileID: 1441770739}
   m_slot_root: {fileID: 1729422440}
 --- !u!1 &1792807338
 GameObject:
@@ -14206,6 +14207,9 @@ MonoBehaviour:
   m_cost_ctrl: {fileID: 0}
   m_upgrade_button: {fileID: 1197046800}
   m_cost_label: {fileID: 2087699035}
+  m_default_upgrade_cost: 10
+  m_upgrade_level: 0
+  m_upgrade_cost: 0
 --- !u!1 &2129218487
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,4 @@
 using Units;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class InstantiatorView : MonoBehaviour, IInstantiatorView
@@ -12,6 +11,9 @@ public class InstantiatorView : MonoBehaviour, IInstantiatorView
     [Header("유닛 데이터베이스")]
     [SerializeField] private UnitDataBase m_unit_db;
 
+    [Header("코스트 업데이터")]
+    [SerializeField] private CostView m_cost_view;
+
     [Space(50f)]
     [Header("UI 관련 컴포넌트")]
     [Header("생성자 슬롯의 부모 트랜스폼")]
@@ -23,7 +25,7 @@ public class InstantiatorView : MonoBehaviour, IInstantiatorView
 
     private void Awake()
     {
-        m_presenter = new InstantiatorPresenter(this, m_stage_db);
+        m_presenter = new InstantiatorPresenter(this, m_stage_db, m_cost_view);
     }
 
     private void Start()
@@ -51,7 +53,7 @@ public class InstantiatorView : MonoBehaviour, IInstantiatorView
 
         for (int i = 0; i < m_slots.Length; i++)
         {
-            m_slots[i].Initialize(deck[i], m_unit_db);
+            m_slots[i].Initialize(deck[i], m_unit_db, m_presenter.CostView);
         }
     }
     #endregion Helper Methods
