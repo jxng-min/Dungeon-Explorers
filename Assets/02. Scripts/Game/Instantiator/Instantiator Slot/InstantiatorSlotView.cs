@@ -90,15 +90,13 @@ public class InstantiatorSlotView : MonoBehaviour, IInstantiatorSlotView
         if (active)
         {
             m_cost_label.text = NumberFormatter.FormatNumber(unit_cost);
-
-            m_instantiation_button.interactable = true;
         }
         else
         {
             m_cost_label.text = $"<color=red>{NumberFormatter.FormatNumber(unit_cost)}</color>";
-
-            m_instantiation_button.interactable = false;
         }
+
+        m_instantiation_button.interactable = active;
     }
 
     private IEnumerator Co_CoolUI(float target_time)

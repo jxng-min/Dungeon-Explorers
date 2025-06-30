@@ -12,6 +12,7 @@ public class CostModel
     private int m_current_cost;
 
     private IReinforcementService m_reinforcement_system;
+    private IIntervalView m_interval_view;
     #endregion Variables
 
     #region Properties
@@ -29,14 +30,14 @@ public class CostModel
 
     public float Interval
     {
-        // TODO: 타워 레벨에 따라 수정 필요
         get => DEFAULT_INTERVAL
-                - GROWTH_INTERVAL * 0;
+                - GROWTH_INTERVAL * m_interval_view.GetUpgrade();
     }
     #endregion Properties
 
-    public CostModel(IReinforcementService reinforcement_system)
+    public CostModel(IReinforcementService reinforcement_system, IIntervalView interval_view)
     {
         m_reinforcement_system = reinforcement_system;
+        m_interval_view = interval_view;
     }
 }

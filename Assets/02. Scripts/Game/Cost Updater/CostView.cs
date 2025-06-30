@@ -6,7 +6,11 @@ using UnityEngine;
 public class CostView : MonoBehaviour, ICostView
 {
     #region Variables
-    [Header("UI 관련 컴포넌트")]
+    [Header("의존성 관련 컴포넌트")]
+    [Header("인터벌 업데이터")]
+    [SerializeField] private IntervalView m_interval_view;
+
+    [Space(50f)][Header("UI 관련 컴포넌트")]
     [SerializeField] private TMP_Text m_cost_label;
 
     private CostPresenter m_presenter;
@@ -17,7 +21,7 @@ public class CostView : MonoBehaviour, ICostView
     {
         m_reinforcement_system = ServiceLocator.Instance.ReinforceService;
 
-        m_presenter = new CostPresenter(this, m_reinforcement_system);
+        m_presenter = new CostPresenter(this, m_reinforcement_system, m_interval_view);
     }
 
     private void OnEnable()
@@ -62,12 +66,12 @@ public class CostView : MonoBehaviour, ICostView
         m_presenter.UpdateCost(cost);
     }
 
-    public void StartUI(float interval)
+    public void StartUI()
     {
-        StartCoroutine(Co_UpdateCost(interval));
+        StartCoroutine(Co_UpdateCost());
     }
 
-    private IEnumerator Co_UpdateCost(float interval)
+    private IEnumerator Co_UpdateCost()
     {
         float elapsed_time = 0f;
 
@@ -75,7 +79,7 @@ public class CostView : MonoBehaviour, ICostView
         {
             elapsed_time += Time.deltaTime;
 
-            if (elapsed_time >= interval)
+            if (elapsed_time >= m_presenter.GetInterval())
             {
                 m_presenter.UpdateCost(1);
                 elapsed_time = 0f;

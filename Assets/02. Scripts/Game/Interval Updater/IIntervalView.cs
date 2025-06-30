@@ -1,16 +1,6 @@
-using UnityEngine;
-
-public class IIntervalView : MonoBehaviour
+public interface IIntervalView
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    int GetUpgrade();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    void UpdateUI(bool active, int upgrade_cost);
 }

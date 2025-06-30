@@ -8,16 +8,16 @@ public class CostPresenter
     private readonly CostModel m_model;
     #endregion Variables
 
-    public CostPresenter(ICostView view, IReinforcementService reinforcement_system)
+    public CostPresenter(ICostView view, IReinforcementService reinforcement_system, IIntervalView interval_view)
     {
         m_view = view;
-        m_model = new CostModel(reinforcement_system);
+        m_model = new CostModel(reinforcement_system, interval_view);
     }
 
     #region Helper Methods
     public void Initialize()
     {
-        m_view.StartUI(m_model.Interval);
+        m_view.StartUI();
     }
     public void UpdateCost(int cost)
     {
@@ -33,6 +33,11 @@ public class CostPresenter
     public int GetCost()
     {
         return m_model.Cost;
+    }
+
+    public float GetInterval()
+    {
+        return m_model.Interval;
     }
     #endregion Helper Methods
 }
