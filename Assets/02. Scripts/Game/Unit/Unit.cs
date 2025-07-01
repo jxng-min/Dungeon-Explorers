@@ -22,6 +22,14 @@ namespace Units
         [SerializeField] private Sprite m_unit_sprite;
         public Sprite Image { get => m_unit_sprite; }
 
+        [Header("유닛이 적으로 인식할 레이어")]
+        [SerializeField] private int m_layer_mask;
+        public int EnemyLayer { get => m_layer_mask; }
+
+        [Header("유닛의 애니메이터")]
+        [SerializeField] private RuntimeAnimatorController m_animator;
+        public RuntimeAnimatorController Animator { get => m_animator; }
+
         [Header("유닛 공통 스탯 정보")]
         [Header("유닛의 체력")]
         [SerializeField] private float m_unit_hp;

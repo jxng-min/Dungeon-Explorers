@@ -157,7 +157,7 @@ public abstract class EnemyCtrl : MonoBehaviour
             Destroy(enemy);
         }
 
-        ObjectManager.Instance.ReturnObject(gameObject, ObjectType.ENEMY);
+        //ObjectManager.Instance.ReturnObject(gameObject, ObjectType.ENEMY);
     }
 
     public void KnockBack(Vector2 direction, float amount = 0.4f)

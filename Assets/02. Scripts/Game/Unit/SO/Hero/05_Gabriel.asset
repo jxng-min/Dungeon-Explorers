@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: 05_Gabriel
   m_EditorClassIdentifier: 
   m_unit_code: 5
-  m_unit_type: 0
+  m_unit_type: 1000
   m_unit_team: 0
   m_unit_sprite: {fileID: 5692671443236587484, guid: bb3216fb602d4aabba45083bc43cd61a, type: 3}
+  m_layer_mask: 6
+  m_animator: {fileID: 9100000, guid: 591b112ae720c3160ae2cd2142b726c9, type: 2}
   m_unit_hp: 100
   m_unit_atk: 35
   m_unit_spd: 1

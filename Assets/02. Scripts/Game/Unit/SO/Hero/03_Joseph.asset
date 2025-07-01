@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: 03_Joseph
   m_EditorClassIdentifier: 
   m_unit_code: 3
-  m_unit_type: 0
+  m_unit_type: 1000
   m_unit_team: 0
   m_unit_sprite: {fileID: -2178845191466743114, guid: cc0d1136dc044a60897d05e71065179b, type: 3}
+  m_layer_mask: 6
+  m_animator: {fileID: 9100000, guid: 89f5993f59c081897a68e4c2c348d225, type: 2}
   m_unit_hp: 250
   m_unit_atk: 25
   m_unit_spd: 0.75

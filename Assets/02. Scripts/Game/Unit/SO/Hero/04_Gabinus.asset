@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: 04_Gabinus
   m_EditorClassIdentifier: 
   m_unit_code: 4
-  m_unit_type: 0
+  m_unit_type: 1000
   m_unit_team: 0
   m_unit_sprite: {fileID: 3465079563596065642, guid: 8200e6efdabc0e511890bebb2cc4b2a0, type: 3}
+  m_layer_mask: 6
+  m_animator: {fileID: 9100000, guid: 62cce6b5afe85997abf8cde91618afdf, type: 2}
   m_unit_hp: 300
   m_unit_atk: 70
   m_unit_spd: 2

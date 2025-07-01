@@ -1,3 +1,5 @@
+using UnityEngine;
+using ObjectPool;
 using Units;
 
 public class InstantiatorSlotPresenter
@@ -36,8 +38,41 @@ public class InstantiatorSlotPresenter
     public void OnClickedInstantiation()
     {
         m_view.CoolUI(m_model.Cool);
-
-        // 유닛 소환
         m_model.UpdateCost(-m_model.UnitCost);
+
+        InstantiateUnit();
+    }
+
+    private void InstantiateUnit()
+    {
+        var object_type = GetObjectType();
+
+        var unit_obj = ObjectManager.Instance.GetObject(object_type);
+        unit_obj.transform.position = new Vector3(-8f, -2.1f, 0f);
+
+        var unit = unit_obj.GetComponent<BaseUnit>();
+        if (!unit)
+        {
+            ObjectManager.Instance.ReturnObject(unit_obj, object_type);
+            return;
+        }
+
+        unit.Initialize(m_model.Unit);
+    }
+
+    private ObjectType GetObjectType()
+    {
+        if (m_model.Unit.Type == UnitType.MELEE || m_model.Unit.Type == UnitType.GUARD)
+        {
+            return ObjectType.MELEE_UNIT;
+        }
+        else if (m_model.Unit.Type == UnitType.RANGED)
+        {
+            return ObjectType.RANGED_UNIT;
+        }
+        else
+        {
+            return ObjectType.MAGIC_UNIT;
+        }
     }
 }

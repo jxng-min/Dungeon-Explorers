@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: 00_Nick
   m_EditorClassIdentifier: 
   m_unit_code: 0
-  m_unit_type: 0
+  m_unit_type: 1000
   m_unit_team: 0
   m_unit_sprite: {fileID: -2875184811977189179, guid: 882a0489f684c82c09fe18e4cd2727aa, type: 3}
+  m_layer_mask: 6
+  m_animator: {fileID: 9100000, guid: fdcabd587b94f9a6f9b9ee6a11b79bf4, type: 2}
   m_unit_hp: 100
   m_unit_atk: 30
   m_unit_spd: 1

@@ -11,6 +11,7 @@ public class InstantiatorSlotModel
 
     #region Properties
     public UnitCode Code { get => m_unit_code; }
+    public Unit Unit { get => m_unit_db.GetUnit(m_unit_code); }
     public Sprite Image { get => m_unit_db.GetUnit(m_unit_code).Image; }
     public int UnitCost { get => (m_unit_db.GetUnit(m_unit_code) as Hero).Cost; }
     public int CurrentCost { get => m_cost_view.GetCost(); }

@@ -19,11 +19,8 @@ namespace ObjectPool
         [Header("UI 오브젝트 풀 목록")]
         [SerializeField] private List<Pool> m_ui_pool_list;
 
-        [Header("영웅 오브젝트 풀 목록")]
-        [SerializeField] private List<Pool> m_hero_pool_list;
-
-        [Header("몬스터 오브젝트 풀 목록")]
-        [SerializeField] private List<Pool> m_enemy_pool_list;
+        [Header("유닛 오브젝트 풀 목록")]
+        [SerializeField] private List<Pool> m_unit_pool_list;
 
         [Header("스킬 오브젝트 풀 목록")]
         [SerializeField] private List<Pool> m_skill_pool_list;
@@ -43,8 +40,7 @@ namespace ObjectPool
             m_pool_dict = new();
 
             InitializePool(m_ui_pool_list);
-            InitializePool(m_hero_pool_list);
-            InitializePool(m_enemy_pool_list);
+            InitializePool(m_unit_pool_list);
             InitializePool(m_skill_pool_list);
         }
 

@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: 02_Timothy
   m_EditorClassIdentifier: 
   m_unit_code: 2
-  m_unit_type: 2
+  m_unit_type: 1000
   m_unit_team: 0
   m_unit_sprite: {fileID: 941554769194238170, guid: 1e124ed6afc9fa2d9b5bb50898964422, type: 3}
+  m_layer_mask: 6
+  m_animator: {fileID: 9100000, guid: c0531f71a4b7e82dc90fbbc0d1e88f4e, type: 2}
   m_unit_hp: 150
   m_unit_atk: 50
   m_unit_spd: 1

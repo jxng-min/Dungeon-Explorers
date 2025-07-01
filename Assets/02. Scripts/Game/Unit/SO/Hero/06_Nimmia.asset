@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: 06_Nimmia
   m_EditorClassIdentifier: 
   m_unit_code: 6
-  m_unit_type: 3
+  m_unit_type: 1002
   m_unit_team: 0
   m_unit_sprite: {fileID: -5908238798454654921, guid: 3adbc4a6c3503d1a0836d4a425faf4de, type: 3}
+  m_layer_mask: 6
+  m_animator: {fileID: 9100000, guid: a350ac0a451ce9ca7bb547fa33e821cb, type: 2}
   m_unit_hp: 80
   m_unit_atk: 40
   m_unit_spd: 0.75
