@@ -5,21 +5,26 @@ using ObjectPool;
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class HolyCross : Skill
 {
+    #region Variables
     [field: SerializeField] public Rigidbody2D Rigidbody { get; private set; }
     [field: SerializeField] public Animator Animator { get; private set; }
 
     private float m_speed;
+    private float m_origin_speed;
+
+    private Vector2 m_origin_direction;
+    private Coroutine m_return_coroutine;
+
+    private int m_elastic_count;
+    #endregion Variables
+
+    #region Properties
     public float SPD
     {
         get => m_speed;
         set => m_speed = value;
     }
-
-    private float m_origin_speed;
-    private Vector2 m_origin_direction;
-    private Coroutine m_return_coroutine;
-
-    private int m_elastic_count;
+    #endregion Properties
 
     private void OnEnable()
     {
@@ -32,6 +37,7 @@ public class HolyCross : Skill
         m_return_coroutine = StartCoroutine(Co_Return());
     }
 
+    #region Helper Methods
     public void Initialize(int atk, float speed)
     {
         ATK = atk;
@@ -99,13 +105,13 @@ public class HolyCross : Skill
             Return();
         }
 
-        if (collision.CompareTag("Enemy"))
+        if (collision.gameObject.layer == Layer)
         {
-            CreateDamageIndicator(collision.transform.position); 
+            CreateDamageIndicator(collision.transform.position);
 
             m_elastic_count++;
 
-            collision.GetComponent<EnemyCtrl>().UpdateHP(-ATK); 
+            collision.GetComponent<BaseUnit>().Health.UpdateHP(-ATK);
 
             if (m_elastic_count == 5)
             {
@@ -113,4 +119,6 @@ public class HolyCross : Skill
             }
         }
     }
+    
+    #endregion Helper Methods
 }

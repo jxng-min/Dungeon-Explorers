@@ -4,8 +4,9 @@ namespace Units
     {
         MELEE = 1000,
         RANGED = 1001,
-        GUARD = 1000,
-        WIZARD = 1002,
+        GUARD = 1002,
+        NIMMIA = 1003,
+        LELIA = 1004,
     }
 
     public enum Team

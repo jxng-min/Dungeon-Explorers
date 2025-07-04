@@ -62,17 +62,22 @@ public class InstantiatorSlotPresenter
 
     private ObjectType GetObjectType()
     {
-        if (m_model.Unit.Type == UnitType.MELEE || m_model.Unit.Type == UnitType.GUARD)
+        switch (m_model.Unit.Type)
         {
-            return ObjectType.MELEE_UNIT;
+            case UnitType.MELEE:
+            case UnitType.GUARD:
+                return ObjectType.MELEE_UNIT;
+
+            case UnitType.RANGED:
+                return ObjectType.RANGED_UNIT;
+
+            case UnitType.NIMMIA:
+                return ObjectType.NIMMIA;
+
+            case UnitType.LELIA:
+                return ObjectType.LELIA;
         }
-        else if (m_model.Unit.Type == UnitType.RANGED)
-        {
-            return ObjectType.RANGED_UNIT;
-        }
-        else
-        {
-            return ObjectType.MAGIC_UNIT;
-        }
+
+        return ObjectType.NONE;
     }
 }

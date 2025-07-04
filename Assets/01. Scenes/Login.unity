@@ -3534,10 +3534,65 @@ MonoBehaviour:
     Prefab: {fileID: 7024734264850599607, guid: a8dacf739cc4596428d06d26cdb3876b, type: 3}
     Container: {fileID: 287525426}
   - Type: 1002
-    Count: 10
+    Count: 3
     Prefab: {fileID: 7024734264850599607, guid: 6a8e6f9b0c5e13943baf9d35bb953545, type: 3}
     Container: {fileID: 1451574740}
-  m_skill_pool_list: []
+  - Type: 1003
+    Count: 3
+    Prefab: {fileID: 7024734264850599607, guid: bbd643ccfca0af74e99cc51d57724870, type: 3}
+    Container: {fileID: 661658302}
+  m_skill_pool_list:
+  - Type: 2000
+    Count: 5
+    Prefab: {fileID: 3033382948785636817, guid: 175ff68e4a1d15a4983e20a2585668c2, type: 3}
+    Container: {fileID: 1019826277}
+  - Type: 2001
+    Count: 5
+    Prefab: {fileID: 8847380899999241195, guid: 809bd2a23cb78110a9de82ce30bee5e7, type: 3}
+    Container: {fileID: 209879243}
+  - Type: 2002
+    Count: 5
+    Prefab: {fileID: 1047825192272382694, guid: 4809b419024bd851b903cdef3aaf5c37, type: 3}
+    Container: {fileID: 1943830359}
+  - Type: 2003
+    Count: 5
+    Prefab: {fileID: 4396014059188710265, guid: 5677d6f719441ef4598295320b2e737e, type: 3}
+    Container: {fileID: 731599370}
+  - Type: 2004
+    Count: 5
+    Prefab: {fileID: 6789463135701507377, guid: 34bbce565dcb6c42a9665cc53c3834ac, type: 3}
+    Container: {fileID: 1098866738}
+--- !u!1 &661658301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 661658302}
+  m_Layer: 0
+  m_Name: '[Lelia Unit] Container'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &661658302
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661658301}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 692889941}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &692889940
 GameObject:
   m_ObjectHideFlags: 0
@@ -3570,6 +3625,7 @@ Transform:
   - {fileID: 150106219}
   - {fileID: 287525426}
   - {fileID: 1451574740}
+  - {fileID: 661658302}
   m_Father: {fileID: 548741607}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731599369
@@ -4131,7 +4187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1451574740}
   m_Layer: 0
-  m_Name: '[Magic Unit] Container'
+  m_Name: '[Nimmia Unit] Container'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

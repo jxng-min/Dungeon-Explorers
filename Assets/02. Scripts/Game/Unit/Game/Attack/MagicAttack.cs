@@ -1,10 +1,10 @@
 using System.Collections;
 using UnityEngine;
 
-public class MagicAttack : IAttack
+public abstract class MagicAttack : IAttack
 {
     #region Variables
-    private BaseUnit m_unit;
+    protected BaseUnit m_unit;
 
     private int m_current_atk;
     private float m_current_cooltime;
@@ -114,8 +114,8 @@ public class MagicAttack : IAttack
 
     public void Action(BaseUnit unit, float delay = 1f)
     {
-        m_unit.Invoke("Action", delay);
+        m_unit.StartCoroutine(Magic(unit, delay));
     }
 
-    public virtual void Magic() {}
+    public abstract IEnumerator Magic(BaseUnit unit, float delay);
 }

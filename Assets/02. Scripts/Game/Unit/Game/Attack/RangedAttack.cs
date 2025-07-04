@@ -1,5 +1,4 @@
 using System.Collections;
-using InventoryService;
 using ObjectPool;
 using UnityEngine;
 
@@ -35,6 +34,7 @@ public class RangedAttack : IAttack
         m_unit = unit;
     }
 
+    #region Helper Methods
     public void Initialize(int enemy_layer, int atk, float cool_time, float range)
     {
         m_current_atk = atk;
@@ -131,7 +131,8 @@ public class RangedAttack : IAttack
 
         var target_direction = (unit.transform.position - m_unit.transform.position).normalized;
 
-        // var arrow = arrow_obj.GetComponent<Arrow>();
-        // arrow.Initialize(m_current_atk, 8f, m_enemy_layer, target_direction);
+        var arrow = arrow_obj.GetComponent<Arrow>();
+        arrow.Initialize(m_current_atk, 8f, m_enemy_layer, target_direction);
     }
+    #endregion Helper Methods
 }

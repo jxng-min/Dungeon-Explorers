@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6527753812005035703}
   - component: {fileID: 6501739095268350484}
   - component: {fileID: 9110375892651575470}
-  - component: {fileID: -3039245878363627262}
+  - component: {fileID: 5480271081288090221}
   m_Layer: 0
-  m_Name: Magic Unit
+  m_Name: Lelia Unit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -186,7 +186,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.35, y: 0.37}
   m_EdgeRadius: 0
---- !u!114 &-3039245878363627262
+--- !u!114 &5480271081288090221
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7024734264850599607}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c93ccf84949b69145a580300178fbcb3, type: 3}
+  m_Script: {fileID: 11500000, guid: 11db4345ef1854a4998dffe6cc1867b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_unit: {fileID: 0}

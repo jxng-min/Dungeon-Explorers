@@ -4,13 +4,16 @@ using ObjectPool;
 [RequireComponent(typeof(Animator), typeof(BoxCollider2D))]
 public class HolyShield : Skill
 {
+    #region Variables
     private Animator m_animator;
+    #endregion Variables
 
     private void Awake()
     {
         m_animator = GetComponent<Animator>();
     }
 
+    #region Helper Methods
     public void Initialize(int atk, Vector3 position)
     {
         ATK = atk;
@@ -41,7 +44,7 @@ public class HolyShield : Skill
         {
             CreateDamageIndicator(hit.transform.position);
 
-            hit.GetComponent<EnemyCtrl>().UpdateHP(-ATK);
+            hit.GetComponent<BaseUnit>().Health.UpdateHP(-ATK);
         }
     }
 
@@ -49,4 +52,5 @@ public class HolyShield : Skill
     {
         ObjectManager.Instance.ReturnObject(gameObject, ObjectType.HOLY_SHIELD);
     }
+    #endregion Helper Methods
 }
