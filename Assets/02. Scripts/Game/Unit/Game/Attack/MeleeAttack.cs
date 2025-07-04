@@ -38,10 +38,17 @@ public class MeleeAttack : IAttack
         m_current_atk = atk;
         m_current_cooltime = cool_time;
         m_current_range = range;
-        m_enemy_layer = enemy_layer;
+        m_enemy_layer = 1 << enemy_layer;
 
         m_unit.gameObject.layer = (enemy_layer == LayerMask.NameToLayer("ENEMY"))
                                     ? LayerMask.NameToLayer("HERO") : LayerMask.NameToLayer("ENEMY");
+    }
+
+    public void ResetAttack()
+    {
+        m_enemy_layer = 0;
+        m_is_attack = false;
+        m_attack_coroutine = null;
     }
 
     public void Attack()

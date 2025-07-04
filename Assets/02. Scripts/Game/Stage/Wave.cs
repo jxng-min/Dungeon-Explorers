@@ -1,11 +1,12 @@
+using Units;
 using UnityEngine;
 
 [System.Serializable]
 public class Wave
 {
     [Header("웨이브에 스폰될 몬스터")]
-    [SerializeField] private Enemy m_enemy;
-    public Enemy Enemy { get => m_enemy; }
+    [SerializeField] private Unit m_enemy;
+    public Unit Enemy { get => m_enemy; }
 
     [Header("스폰 시간")]
     [SerializeField] private float m_spawn_time;

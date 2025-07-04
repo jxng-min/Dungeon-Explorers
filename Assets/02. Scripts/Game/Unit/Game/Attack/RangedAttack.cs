@@ -46,9 +46,16 @@ public class RangedAttack : IAttack
                                     ? LayerMask.NameToLayer("HERO") : LayerMask.NameToLayer("ENEMY");
     }
 
+    public void ResetAttack()
+    {
+        m_enemy_layer = 0;
+        m_is_attack = false;
+        m_attack_coroutine = null;
+    }
+
     public void Attack()
     {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(m_unit.transform.position, m_current_range, m_enemy_layer);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(m_unit.transform.position, m_current_range, 1 << m_enemy_layer);
         if (hits.Length == 0)
         {
             m_is_attack = false;
@@ -104,7 +111,7 @@ public class RangedAttack : IAttack
             if (!unit.Health.IsDead)
             {
                 m_unit.Animator.SetTrigger("Attack");
-                Action(unit, 0.8f);
+                Action(unit, 0.4f);
             }
 
             elapsed_time = 0f;
@@ -116,14 +123,24 @@ public class RangedAttack : IAttack
 
     public void Action(BaseUnit unit, float delay)
     {
-        m_unit.Invoke("CreateArrow", 0.8f);
+        m_unit.StartCoroutine(CreateArrow(unit, delay));
     }
 
-    public void CreateArrow(BaseUnit unit)
+    private IEnumerator CreateArrow(BaseUnit unit, float delay)
     {
         if (!m_is_attack)
         {
-            return;
+            yield break;
+        }
+
+        float elapsed_time = 0f;
+
+        while (elapsed_time <= delay)
+        {
+            yield return new WaitUntil(() => GameManager.Instance.GameState == GameEventType.PLAYING);
+
+            elapsed_time += Time.deltaTime;
+            yield return null;
         }
 
         var arrow_obj = ObjectManager.Instance.GetObject(ObjectType.ARROW);

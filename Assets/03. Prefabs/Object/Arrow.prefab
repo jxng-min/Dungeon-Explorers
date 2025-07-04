@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1256357029886768729}
   m_Layer: 8
   m_Name: Arrow
-  m_TagString: Friend
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,9 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa6969cd76d22468939c246e948ad23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enemy_layer:
-    serializedVersion: 2
-    m_Bits: 0
+  m_enemy_layer: 0
   <Rigidbody>k__BackingField: {fileID: 983413767346987729}
 --- !u!61 &1256357029886768729
 BoxCollider2D:

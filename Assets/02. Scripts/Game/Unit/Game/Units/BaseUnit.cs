@@ -13,6 +13,8 @@ public abstract class BaseUnit : MonoBehaviour
     protected IMovement m_movement;
     protected IHealth m_health;
     protected IAttack m_attack;
+
+    private bool m_is_inited;
     #endregion Variables
 
     #region Properties
@@ -46,6 +48,11 @@ public abstract class BaseUnit : MonoBehaviour
             return;
         }
 
+        if (!m_is_inited)
+        {
+            return;
+        }
+
         if (!m_health.IsDead && m_health.KnockBackCoroutine == null)
         {
             if (!m_attack.IsAttack)
@@ -57,8 +64,25 @@ public abstract class BaseUnit : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnEnable()
     {
+        Rigidbody.simulated = true;
+        Renderer.sortingOrder = 10;
+        Collider.enabled = true;
+    }
+
+    private void OnDisable()
+    {
+        m_is_inited = false;
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (!m_is_inited)
+        {
+            return;
+        }
+
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, m_attack.Range);
     }
@@ -73,6 +97,10 @@ public abstract class BaseUnit : MonoBehaviour
         m_movement.Initialize(unit.SPD);
         m_health.Initialize(unit.HP);
         m_attack.Initialize(unit.EnemyLayer, unit.ATK, unit.ATKCool, unit.Range);
+
+        Renderer.flipX = unit.EnemyLayer != LayerMask.NameToLayer("ENEMY");
+
+        m_is_inited = true;
     }
 
     public void CreateDamageIndicator(Vector2 position)

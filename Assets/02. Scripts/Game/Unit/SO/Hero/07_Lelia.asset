@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 07_Lelia
   m_EditorClassIdentifier: 
   m_unit_code: 7
-  m_unit_type: 1002
+  m_unit_type: 1004
   m_unit_team: 0
   m_unit_sprite: {fileID: -663804655798916631, guid: 69e5b05fa41683972925292540498b8c, type: 3}
   m_layer_mask: 6

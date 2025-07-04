@@ -15,19 +15,19 @@ MonoBehaviour:
   m_id: 2
   m_enemy_base_hp: 500
   m_enemy_waves:
-  - m_enemy: {fileID: 11400000, guid: 39bea71f0e42f524c9a581375802cd6f, type: 2}
+  - m_enemy: {fileID: 11400000, guid: 4d91882114ff57f4297485db1a39784b, type: 2}
     m_spawn_time: 0
     m_count: 5
     m_interval: 10
-  - m_enemy: {fileID: 11400000, guid: ce71d4d40a91853acadbee8dbd08d8ba, type: 2}
+  - m_enemy: {fileID: 11400000, guid: e564a0efc56f7cf4c9a5cc06a34782d7, type: 2}
     m_spawn_time: 20
     m_count: 5
     m_interval: 5
-  - m_enemy: {fileID: 11400000, guid: 39bea71f0e42f524c9a581375802cd6f, type: 2}
+  - m_enemy: {fileID: 11400000, guid: 4d91882114ff57f4297485db1a39784b, type: 2}
     m_spawn_time: 45
     m_count: 10
     m_interval: 5
-  - m_enemy: {fileID: 11400000, guid: 1af5c87f388533f38998b20fb853d3d7, type: 2}
+  - m_enemy: {fileID: 11400000, guid: 5fae5dea390d22c449a97492ceac55c8, type: 2}
     m_spawn_time: 95
     m_count: 2
     m_interval: 60

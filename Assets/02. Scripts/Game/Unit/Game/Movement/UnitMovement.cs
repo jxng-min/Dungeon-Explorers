@@ -26,7 +26,9 @@ public class UnitMovement : IMovement
     public virtual void Move()
     {
         m_unit.Animator.SetBool("IsMove", true);
-        m_unit.Rigidbody.linearVelocity = Vector2.right * m_current_speed;
+
+        m_unit.Rigidbody.linearVelocity = m_unit.Unit.EnemyLayer == LayerMask.NameToLayer("ENEMY")
+            ? Vector2.right * m_current_speed : Vector2.left * m_current_speed; 
     }
     #endregion Helper Methods
 }

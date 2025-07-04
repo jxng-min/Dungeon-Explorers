@@ -33,12 +33,19 @@ public abstract class MagicAttack : IAttack
         m_unit = unit;
     }
 
+    public void ResetAttack()
+    {
+        m_enemy_layer = 0;
+        m_is_attack = false;
+        m_attack_coroutine = null;
+    }
+
     public void Initialize(int enemy_layer, int atk, float cool_time, float range)
     {
         m_current_atk = atk;
         m_current_cooltime = cool_time;
         m_current_range = range;
-        m_enemy_layer = enemy_layer;
+        m_enemy_layer = 1 << enemy_layer;
 
         m_unit.gameObject.layer = (enemy_layer == LayerMask.NameToLayer("ENEMY"))
                                     ? LayerMask.NameToLayer("HERO") : LayerMask.NameToLayer("ENEMY");
@@ -112,7 +119,7 @@ public abstract class MagicAttack : IAttack
         m_attack_coroutine = null;
     }
 
-    public void Action(BaseUnit unit, float delay = 1f)
+    public void Action(BaseUnit unit, float delay = 0.7f)
     {
         m_unit.StartCoroutine(Magic(unit, delay));
     }

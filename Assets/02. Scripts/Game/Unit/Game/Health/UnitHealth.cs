@@ -9,7 +9,7 @@ public class UnitHealth : IHealth
 
     private float m_current_hp;
     private bool m_is_dead;
-    private bool m_can_knockback;
+    private bool m_can_knockback = true;
 
     private Coroutine m_knockback_coroutine;
     #endregion Variables
@@ -45,19 +45,19 @@ public class UnitHealth : IHealth
         }
 
         m_current_hp += amount;
-        if (m_can_knockback && m_current_hp / m_unit.Unit.HP <= 0.4f)
+        if (m_can_knockback && (m_current_hp / m_unit.Unit.HP) <= 0.4f)
         {
             m_can_knockback = false;
 
             m_unit.Animator.SetTrigger("Hurt");
 
-            if (m_unit.Unit.EnemyLayer == 6)
+            if (m_unit.Unit.EnemyLayer == LayerMask.NameToLayer("ENEMY"))
             {
-                m_knockback_coroutine = m_unit.StartCoroutine(Co_Knockback(new Vector2(1, 1)));
+                m_knockback_coroutine = m_unit.StartCoroutine(Co_Knockback(new Vector2(-1, 1)));
             }
             else
             {
-                m_knockback_coroutine = m_unit.StartCoroutine(Co_Knockback(new Vector2(-1, 1)));
+                m_knockback_coroutine = m_unit.StartCoroutine(Co_Knockback(new Vector2(1, 1)));
             }
         }
 
@@ -75,6 +75,8 @@ public class UnitHealth : IHealth
         }
         m_is_dead = true;
 
+        m_can_knockback = true;
+
         m_unit.Rigidbody.linearVelocity = Vector2.zero;
         m_unit.Rigidbody.simulated = false;
 
@@ -90,6 +92,8 @@ public class UnitHealth : IHealth
             m_unit.Attack.AttackCoroutine = null;
         }
 
+        m_unit.Attack.ResetAttack();
+
         m_unit.Renderer.sortingOrder = 9;
         m_unit.Animator.SetTrigger("Death");
 
@@ -100,7 +104,7 @@ public class UnitHealth : IHealth
     #endregion Helper Methods
 
     #region Coroutines
-    public IEnumerator Co_Knockback(Vector2 direction, float amount = 0.4f)
+    public IEnumerator Co_Knockback(Vector2 direction, float amount = 0.7f)
     {
         float elapsed_time = 0f;
         float target_time = 0.15f;

@@ -128,7 +128,7 @@ namespace InventoryService
 #if UNITY_EDITOR
                 Debug.Log($"<color=green>{m_local_data_path}가 없으므로 인벤토리 데이터를 새롭게 생성합니다.</color>");
 #endif
-                m_money = 1000;
+                m_money = 100000;
                 m_unit_list.Add(new(0, 1));
             }
         }

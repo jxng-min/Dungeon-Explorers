@@ -15,7 +15,7 @@ namespace Units
 
         #region Properties
         public List<Unit> List { get => m_unit_list; }
-        public int Count { get => m_unit_list.Count; }
+        public int Count { get => 8; }
         #endregion Properties
 
         private void OnEnable()

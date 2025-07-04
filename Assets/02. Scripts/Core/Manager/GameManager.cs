@@ -4,13 +4,23 @@ public class GameManager : Singleton<GameManager>
 
     private bool m_can_init;
 
-    private new void Awake()
+    public override void Awake()
     {
         base.Awake();
+    }
 
+    private void OnEnable()
+    {
         GameEventBus.Subscribe(GameEventType.LOGIN, Login);
         GameEventBus.Subscribe(GameEventType.LOADING, Loading);
         GameEventBus.Subscribe(GameEventType.WAITING, Waiting);
+    }
+
+    private void OnDisable()
+    {
+        GameEventBus.Unsubscribe(GameEventType.LOGIN, Login);
+        GameEventBus.Unsubscribe(GameEventType.LOADING, Loading);
+        GameEventBus.Unsubscribe(GameEventType.WAITING, Waiting);
     }
 
     private void Start()

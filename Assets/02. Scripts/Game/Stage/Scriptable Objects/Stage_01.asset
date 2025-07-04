@@ -15,7 +15,7 @@ MonoBehaviour:
   m_id: 1
   m_enemy_base_hp: 500
   m_enemy_waves:
-  - m_enemy: {fileID: 11400000, guid: 39bea71f0e42f524c9a581375802cd6f, type: 2}
+  - m_enemy: {fileID: 11400000, guid: 4d91882114ff57f4297485db1a39784b, type: 2}
     m_spawn_time: 5
     m_count: 60
     m_interval: 15

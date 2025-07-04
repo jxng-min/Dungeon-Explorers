@@ -47,6 +47,7 @@ public class GameSetterView : MonoBehaviour, ISetterView
     public void OpenUI()
     {
         m_animator.SetBool("Open", true);
+        GameEventBus.Publish(GameEventType.PAUSE);
 
         m_presenter.Updates();
     }
@@ -54,6 +55,7 @@ public class GameSetterView : MonoBehaviour, ISetterView
     public void CloseUI()
     {
         m_animator.SetBool("Open", false);
+        GameEventBus.Publish(GameEventType.PLAYING);
     }
     
     public void UpdateUI(bool bgm, float bgm_value, bool sfx, float sfx_value)

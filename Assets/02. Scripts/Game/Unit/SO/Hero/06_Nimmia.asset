@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 06_Nimmia
   m_EditorClassIdentifier: 
   m_unit_code: 6
-  m_unit_type: 1002
+  m_unit_type: 1003
   m_unit_team: 0
   m_unit_sprite: {fileID: -5908238798454654921, guid: 3adbc4a6c3503d1a0836d4a425faf4de, type: 3}
   m_layer_mask: 6

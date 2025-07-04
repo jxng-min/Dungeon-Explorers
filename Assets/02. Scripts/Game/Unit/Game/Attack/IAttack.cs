@@ -12,6 +12,7 @@ public interface IAttack
 
     void Initialize(int enemy_layer, int atk, float cool_time, float range);
     void Attack();
+    void ResetAttack();
 
     IEnumerator Co_Attack(GameObject obj);
     void Action(BaseUnit unit, float delay);
