@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35107f05548f40e33985c1f26ca1fe34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_enemy_layer: 6
   <Rigidbody>k__BackingField: {fileID: 8296041882848077275}
   <Animator>k__BackingField: {fileID: 743420242591618514}
 --- !u!58 &9038765923685468807
