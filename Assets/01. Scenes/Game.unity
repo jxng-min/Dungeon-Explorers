@@ -338,7 +338,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1458546687}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ResultCtrl, Assembly-CSharp
         m_MethodName: BUTTON_Title
         m_Mode: 1
@@ -9381,7 +9381,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1458546687}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ResultCtrl, Assembly-CSharp
         m_MethodName: BUTTON_Retry
         m_Mode: 1
@@ -10718,7 +10718,7 @@ GameObject:
   - component: {fileID: 1458546686}
   - component: {fileID: 1458546685}
   - component: {fileID: 1458546688}
-  - component: {fileID: 1458546687}
+  - component: {fileID: 1458546689}
   m_Layer: 5
   m_Name: Result UI
   m_TagString: Untagged
@@ -10784,22 +10784,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458546683}
   m_CullTransparentMesh: 1
---- !u!114 &1458546687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458546683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e4a46dac2ca56ec93684fdefa11398, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_factory: {fileID: 0}
-  m_result_label: {fileID: 1927690149}
-  m_gold_label: {fileID: 1415928341}
-  m_exp_label: {fileID: 1819765732}
 --- !u!95 &1458546688
 Animator:
   serializedVersion: 7
@@ -10822,6 +10806,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1458546689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458546683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0432f9d915a9fed45a5f6f150ea79a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_stage_db: {fileID: 11400000, guid: 86a0fee9987879c478167b86edf1c0c6, type: 2}
+  m_stage_system: {fileID: 1268608406}
+  m_result_label: {fileID: 1927690149}
+  m_gold_label: {fileID: 1415928341}
+  m_exp_label: {fileID: 1819765732}
+  m_retry_button: {fileID: 1239776220}
+  m_title_button: {fileID: 82063447}
 --- !u!1 &1565588816
 GameObject:
   m_ObjectHideFlags: 0
