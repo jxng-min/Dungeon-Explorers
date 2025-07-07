@@ -28,6 +28,12 @@ namespace ObjectPool
         private Dictionary<ObjectType, Pool> m_pool_dict;
         #endregion Variables
 
+        #region Properties
+        public List<GameObject> ActiveUnitObjects { get => GetActiveObjectsFromList(m_unit_pool_list); }
+
+        public List<GameObject> ActiveSkillObjects { get => GetActiveObjectsFromList(m_skill_pool_list); }
+        #endregion Properties
+
         public override void Awake()
         {
             base.Awake();
@@ -125,6 +131,25 @@ namespace ObjectPool
                     }
                 }
             }
+        }
+
+        private List<GameObject> GetActiveObjectsFromList(List<Pool> pool_list)
+        {
+            List<GameObject> active_objects = new();
+
+            foreach (var pool in pool_list)
+            {
+                for (int i = 0; i < pool.Container.childCount; i++)
+                {
+                    var child = pool.Container.GetChild(i).gameObject;
+                    if (child.activeSelf)
+                    {
+                        active_objects.Add(child);
+                    }
+                }
+            }
+
+            return active_objects;
         }
     }
 }

@@ -68,7 +68,8 @@ public class GameManager : Singleton<GameManager>
         }
         else
         {
-            // 애니메이션 동작
+            ToggleUnits(true);
+            ToggleSkills(true);
         }
     }
 
@@ -76,7 +77,8 @@ public class GameManager : Singleton<GameManager>
     {
         GameState = GameEventType.PAUSE;
 
-        // 애니메이션 정지
+        ToggleUnits(false);
+        ToggleSkills(false);
     }
 
     public void GameOver()
@@ -126,5 +128,29 @@ public class GameManager : Singleton<GameManager>
         ServiceLocator.Get<IDeckService>().Save();
         ServiceLocator.Get<ISettingService>().Save();
         ServiceLocator.Get<IUserDataService>().Save();
+    }
+
+    private void ToggleUnits(bool is_play)
+    {
+        var unit_list = ObjectManager.Instance.ActiveUnitObjects;
+        foreach (var unit_obj in unit_list)
+        {
+            var unit = unit_obj.GetComponent<BaseUnit>();
+            unit.Animator.speed = is_play ? 1f : 0f;
+        }
+    }
+
+    private void ToggleSkills(bool is_play)
+    {
+        var skill_list = ObjectManager.Instance.ActiveSkillObjects;
+        foreach (var skill_obj in skill_list)
+        {
+            var skill = skill_obj.GetComponent<Skill>();
+
+            if (is_play)
+                skill.Resume();
+            else
+                skill.Stop();
+        }
     }
 }
