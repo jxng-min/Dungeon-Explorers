@@ -27,9 +27,9 @@ public class MenuStatusView : MonoBehaviour, IStatusView
 
     private void Awake()
     {
-        m_user_data_system = ServiceLocator.Instance.UserDataService;
-        m_inventory_system = ServiceLocator.Instance.InvenService;
-        m_exp_system = ServiceLocator.Instance.EXPService;
+        m_user_data_system = ServiceLocator.Get<IUserDataService>();
+        m_inventory_system = ServiceLocator.Get<IInventoryService>();
+        m_exp_system = ServiceLocator.Get<IEXPService>();
 
         m_presenter = new StatusPresenter(this, m_user_data_system, m_inventory_system, m_exp_system);
     }

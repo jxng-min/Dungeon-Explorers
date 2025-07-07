@@ -33,7 +33,7 @@ public class CodexInfo : MonoBehaviour, ICodexInfoView
     private void Awake()
     {
         m_animator = GetComponent<Animator>();
-        m_unit_repo = ServiceLocator.Instance.UnitRepoService;
+        m_unit_repo = ServiceLocator.Get<IUnitRepository>();
 
         m_presenter = new CodexInfoPresenter(this, m_unit_db, m_unit_repo);
         m_close_button.onClick.AddListener(m_presenter.OnClickedCloseUI);

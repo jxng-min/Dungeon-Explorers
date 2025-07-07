@@ -48,7 +48,7 @@ public class InstantiatorSlotPresenter
         var object_type = GetObjectType();
 
         var unit_obj = ObjectManager.Instance.GetObject(object_type);
-        unit_obj.transform.position = new Vector3(-8f, -2.1f, 0f);
+        unit_obj.transform.position = new Vector3(-8f, -3f, 0f);
 
         var unit = unit_obj.GetComponent<BaseUnit>();
         if (!unit)

@@ -49,8 +49,8 @@ public class TrainerInfoView : MonoBehaviour, ITrainerInfoView
     {
         m_animator = GetComponent<Animator>();
 
-        m_inventory_system = ServiceLocator.Instance.InvenService;
-        m_unit_repo = ServiceLocator.Instance.UnitRepoService;
+        m_inventory_system = ServiceLocator.Get<IInventoryService>();
+        m_unit_repo = ServiceLocator.Get<IUnitRepository>();
 
         m_presenter = new TrainerInfoPresenter(this, m_unit_db, m_inventory_system);
 

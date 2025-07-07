@@ -41,7 +41,7 @@ public class StageView : MonoBehaviour, IStageView
     {
         m_animator = GetComponent<Animator>();
 
-        m_inventory_system = ServiceLocator.Instance.UserDataService;
+        m_inventory_system = ServiceLocator.Get<IUserDataService>();
 
         m_presenter = new StagePresenter(this, m_inventory_system, m_stage_db);
 

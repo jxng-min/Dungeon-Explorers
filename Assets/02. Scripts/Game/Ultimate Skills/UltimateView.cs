@@ -19,7 +19,7 @@ public class UltimateView : MonoBehaviour, IUltimateView
 
     private void Awake()
     {
-        m_reinforcement_system = ServiceLocator.Instance.ReinforceService;
+        m_reinforcement_system = ServiceLocator.Get<IReinforcementService>();
 
         m_presenter = new UltimatePresenter(this, m_reinforcement_system);
 

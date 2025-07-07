@@ -42,7 +42,7 @@ public class TrainerView : MonoBehaviour, ITrainerView
     {
         m_animator = GetComponent<Animator>();
 
-        m_inventory_system = ServiceLocator.Instance.InvenService;
+        m_inventory_system = ServiceLocator.Get<IInventoryService>();
 
         m_presenter = new TrainerPresenter(this, m_inventory_system);
 

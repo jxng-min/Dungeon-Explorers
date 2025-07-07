@@ -1,3 +1,10 @@
+using DeckService;
+using InventoryService;
+using ObjectPool;
+using ReinforcementService;
+using UnityEngine.Rendering.RenderGraphModule;
+using UserDataService;
+
 public class GameManager : Singleton<GameManager>
 {
     public GameEventType GameState { get; set; }
@@ -7,6 +14,7 @@ public class GameManager : Singleton<GameManager>
     public override void Awake()
     {
         base.Awake();
+        ServiceLocator.Initialize();
     }
 
     private void OnEnable()
@@ -38,6 +46,8 @@ public class GameManager : Singleton<GameManager>
     public void Loading()
     {
         GameState = GameEventType.LOADING;
+
+        ObjectManager.Instance.ReturnObjectsAll();
     }
 
     public void Waiting()
@@ -69,28 +79,26 @@ public class GameManager : Singleton<GameManager>
         GameState = GameEventType.GAMEOVER;
 
         OpenResult();
+        SaveData();
     }
 
     public void GameClear()
     {
         GameState = GameEventType.GAMECLEAR;
 
-        // if (DataManager.Instance.Data.Stage == StageManager.Instance.Current.ID)
-        // {
-        //     DataManager.Instance.Data.Stage++;
-        // }
         OpenResult();
+        SaveData();
     }
 
     private void OpenResult()
     {
-        // var result_ui = FindFirstObjectByType<ResultCtrl>();
-        // if (result_ui == null)
-        // {
-        //     return;
-        // }
+        var result_ui = FindFirstObjectByType<ResultViewer>();
+        if (result_ui == null)
+        {
+            return;
+        }
 
-        // result_ui.Open();
+        result_ui.OpenUI();
     }
 
     private void OnApplicationPause(bool pause)
@@ -108,7 +116,10 @@ public class GameManager : Singleton<GameManager>
 
     private void SaveData()
     {
-        // Inventory.Instance.SaveInventory();
-        // DataManager.Instance.SaveJson();
+        ServiceLocator.Get<IInventoryService>().Save();
+        ServiceLocator.Get<IReinforcementService>().Save();
+        ServiceLocator.Get<IDeckService>().Save();
+        ServiceLocator.Get<ISettingService>().Save();
+        ServiceLocator.Get<IUserDataService>().Save();
     }
 }

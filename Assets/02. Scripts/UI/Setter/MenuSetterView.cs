@@ -36,7 +36,7 @@ public class MenuSetterView : MonoBehaviour, ISetterView
     {
         m_animator = GetComponent<Animator>();
 
-        m_setting_system = ServiceLocator.Instance.SettingService;
+        m_setting_system = ServiceLocator.Get<ISettingService>();
 
         m_presenter = new SetterPresenter(this, m_setting_system);
 

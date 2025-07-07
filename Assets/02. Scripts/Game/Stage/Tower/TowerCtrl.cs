@@ -27,7 +27,7 @@ public class TowerInitializer : MonoBehaviour
 
     private void Awake()
     {
-        m_reinforcement_system = ServiceLocator.Instance.ReinforceService;
+        m_reinforcement_system = ServiceLocator.Get<IReinforcementService>();
     }
 
     private void Start()

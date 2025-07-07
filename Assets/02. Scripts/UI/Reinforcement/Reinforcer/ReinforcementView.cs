@@ -41,8 +41,8 @@ public class ReinforcementView : MonoBehaviour, IReinforcementView
 
         m_animator = GetComponent<Animator>();
 
-        m_model = ServiceLocator.Instance.ReinforceService;
-        m_inventory_service = ServiceLocator.Instance.InvenService;
+        m_model = ServiceLocator.Get<IReinforcementService>();
+        m_inventory_service = ServiceLocator.Get<IInventoryService>();
 
         m_presenter = new ReinforcementPresenter(this, m_model);
 

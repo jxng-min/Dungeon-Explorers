@@ -19,7 +19,7 @@ public class CostView : MonoBehaviour, ICostView
 
     private void Awake()
     {
-        m_reinforcement_system = ServiceLocator.Instance.ReinforceService;
+        m_reinforcement_system = ServiceLocator.Get<IReinforcementService>();
 
         m_presenter = new CostPresenter(this, m_reinforcement_system, m_interval_view);
     }

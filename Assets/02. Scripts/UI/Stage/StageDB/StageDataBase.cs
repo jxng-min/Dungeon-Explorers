@@ -36,7 +36,14 @@ public class StageDataBase : ScriptableObject
 
     private void OnEnable()
     {
-        deck_service = ServiceLocator.Instance.DeckService;
+#if UNITY_EDITOR
+        if (!Application.isPlaying)
+        {
+            return;
+        }
+#endif
+
+        deck_service = ServiceLocator.Get<IDeckService>();
         m_deck = deck_service.GetDeck().ToArray();
     }
 }

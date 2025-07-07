@@ -49,8 +49,8 @@ public class DeckView : MonoBehaviour, IDeckView
     {
         m_animator = GetComponent<Animator>();
 
-        m_deck_system = ServiceLocator.Instance.DeckService;
-        m_inven_system = ServiceLocator.Instance.InvenService;
+        m_deck_system = ServiceLocator.Get<IDeckService>();
+        m_inven_system = ServiceLocator.Get<IInventoryService>();
 
         m_presenter = new DeckPresenter(this, m_deck_system, m_stage_db);
 

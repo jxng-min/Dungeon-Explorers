@@ -30,15 +30,16 @@ public class ResultPresenter
         var final_money = success ? stage.Gold : stage.Gold / 4;
         var final_exp = success ? stage.EXP : stage.EXP / 4;
 
-        UpdateModel(final_money, final_exp);
+        UpdateModel(success, final_money, final_exp);
 
         m_view.UpdateUI(success, final_money, final_exp);
     }
 
-    private void UpdateModel(int money, int exp)
+    private void UpdateModel(bool success, int money, int exp)
     {
         m_inventory_service.Money += money;
         m_user_data_service.EXP += exp;
+        m_user_data_service.Stage = success ? m_user_data_service.Stage + 1 : m_user_data_service.Stage;
     }
 
     public void OnClickedRetry()

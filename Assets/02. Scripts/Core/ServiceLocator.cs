@@ -5,36 +5,38 @@ using UserDataService;
 using ReinforcementService;
 using DeckService;
 using SettingService;
+using System.Collections.Generic;
+using System;
+using UnityEngine;
 
-public class ServiceLocator : Singleton<ServiceLocator>
+public static class ServiceLocator
 {
-    public IUnitRepository UnitRepoService { get; private set; }
-    public IEXPService EXPService { get; private set; }
-    public IInventoryService InvenService { get; private set; }
-    public IUserDataService UserDataService { get; private set; }
-    public IReinforcementService ReinforceService { get; private set; }
-    public IDeckService DeckService { get; private set; }
-    public ISettingService SettingService { get; private set; }
+    private static Dictionary<Type, object> m_services = new();
 
-    private void OnEnable()
+    public static IDictionary<Type, object> Services { get => m_services; }
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    public static void Initialize()
     {
-        UnitRepoService = new LocalUnitRepository();
-        EXPService = new LocalEXPSystem();
-        InvenService = new LocalInventory();
-        UserDataService = new LocalUserDataSystem();
-        ReinforceService = new LocalReinforcementSystem();
-        DeckService = new LocalDeckSystem();
-        SettingService = new LocalSettingSystem();
+        Register<IUnitRepository>(new LocalUnitRepository());
+        Register<IEXPService>(new LocalEXPSystem());
+        Register<IInventoryService>(new LocalInventory());
+        Register<IUserDataService>(new LocalUserDataSystem());
+        Register<IReinforcementService>(new LocalReinforcementSystem());
+        Register<IDeckService>(new LocalDeckSystem());
+        Register<ISettingService>(new LocalSettingSystem());
     }
 
-    private void OnDisable()
+    public static void Register<T>(T service)
     {
-        UnitRepoService = null;
-        EXPService = null;
-        InvenService = null;
-        UserDataService = null;
-        ReinforceService = null;
-        DeckService = null;
-        SettingService = null;
+        if (!m_services.ContainsKey(typeof(T)))
+        {
+            m_services.Add(typeof(T), service);
+        }
+    }
+
+    public static T Get<T>()
+    {
+        return (T)m_services[typeof(T)];
     }
 }

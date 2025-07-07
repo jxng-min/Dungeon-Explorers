@@ -40,8 +40,8 @@ public class ShopView : MonoBehaviour, IShopView
     {
         m_animator = GetComponent<Animator>();
 
-        m_inventory = ServiceLocator.Instance.InvenService;
-        m_unit_repo = ServiceLocator.Instance.UnitRepoService;
+        m_inventory = ServiceLocator.Get<IInventoryService>();
+        m_unit_repo = ServiceLocator.Get<IUnitRepository>();
 
         m_presenter = new ShopPresenter(this, m_model);
 

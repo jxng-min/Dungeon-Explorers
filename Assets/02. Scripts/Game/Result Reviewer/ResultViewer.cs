@@ -42,8 +42,8 @@ public class ResultViewer : MonoBehaviour, IResultViewer
     {
         m_animator = GetComponent<Animator>();
 
-        m_inventory_service = ServiceLocator.Instance.InvenService;
-        m_user_data_system = ServiceLocator.Instance.UserDataService;
+        m_inventory_service = ServiceLocator.Get<IInventoryService>();
+        m_user_data_system = ServiceLocator.Get<IUserDataService>();
 
         m_presenter = new ResultPresenter(this, m_stage_db, m_stage_system, m_inventory_service, m_user_data_system);
 
