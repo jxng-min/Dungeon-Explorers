@@ -8,6 +8,8 @@
 
 Unity 6를 활용하여 **2D 플랫포머 모바일 디펜스 게임**을 제작하는 것이 목표입니다.
 
+2025.06.22 ~ 2025.07.07) DI와 MVP 패턴을 이용하여 로직을 리팩터링하였습니다.
+
 <br></br>
 
 ### 프로젝트 요약
@@ -33,7 +35,7 @@ Unity 6를 활용하여 **2D 플랫포머 모바일 디펜스 게임**을 제작
 
 ### 개발 과정
 
-<a href="https://jxngmin-resume.notion.site/Unity-Engine-5c02de338df64c84857b8f75b15db275?pvs=4"><img alt="Build" src ="https://img.shields.io/badge/Notion-000000.svg?&style=for-the-badge&logo=Notion&logoColor=white"/></a>
+<a href="https://jxngmin-resume.notion.site/20a7c5e83f2580e2bfa7d4d424baa6f4"><img alt="Build" src ="https://img.shields.io/badge/Notion-000000.svg?&style=for-the-badge&logo=Notion&logoColor=white"/></a>
 
 <br></br>
 
