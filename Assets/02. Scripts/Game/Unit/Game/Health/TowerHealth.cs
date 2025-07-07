@@ -27,6 +27,13 @@ public class TowerHealth : IHealth
     #region Helper Methods
     public void Death()
     {
+        if (m_is_dead)
+        {
+            return;
+        }
+        
+        m_is_dead = true;
+
         if ((m_unit as TowerUnit).IsHero)
         {
             GameEventBus.Publish(GameEventType.GAMEOVER);

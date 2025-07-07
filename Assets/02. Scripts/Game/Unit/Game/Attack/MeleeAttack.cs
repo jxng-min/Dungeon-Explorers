@@ -42,17 +42,35 @@ public class MeleeAttack : IAttack
 
         m_unit.gameObject.layer = (enemy_layer == LayerMask.NameToLayer("ENEMY"))
                                     ? LayerMask.NameToLayer("HERO") : LayerMask.NameToLayer("ENEMY");
+
+        m_is_attack = false;
+
+        if (m_attack_coroutine != null)
+        {
+            m_unit.StopCoroutine(m_attack_coroutine);
+            m_attack_coroutine = null;
+        }
     }
 
     public void ResetAttack()
     {
         m_enemy_layer = 0;
         m_is_attack = false;
-        m_attack_coroutine = null;
+
+        if (m_attack_coroutine != null)
+        {
+            m_unit.StopCoroutine(m_attack_coroutine);
+            m_attack_coroutine = null;
+        }
     }
 
     public void Attack()
     {
+        if (m_is_attack)
+        {
+            return;
+        }
+        
         Collider2D[] hits = Physics2D.OverlapCircleAll(m_unit.transform.position, m_current_range, m_enemy_layer);
         if (hits.Length == 0)
         {

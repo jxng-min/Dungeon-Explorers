@@ -96,7 +96,10 @@ public class InstantiatorSlotView : MonoBehaviour, IInstantiatorSlotView
             m_cost_label.text = $"<color=red>{NumberFormatter.FormatNumber(unit_cost)}</color>";
         }
 
-        m_instantiation_button.interactable = active;
+        if (m_cool_coroutine == null)
+        {
+            m_instantiation_button.interactable = active;
+        }
     }
 
     private IEnumerator Co_CoolUI(float target_time)

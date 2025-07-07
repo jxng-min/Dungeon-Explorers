@@ -39,7 +39,11 @@ public class ResultPresenter
     {
         m_inventory_service.Money += money;
         m_user_data_service.EXP += exp;
-        m_user_data_service.Stage = success ? m_user_data_service.Stage + 1 : m_user_data_service.Stage;
+
+        if (m_stage_db.Stage == m_user_data_service.Stage)
+        {
+            m_user_data_service.Stage = success ? m_user_data_service.Stage + 1 : m_user_data_service.Stage;
+        }
     }
 
     public void OnClickedRetry()

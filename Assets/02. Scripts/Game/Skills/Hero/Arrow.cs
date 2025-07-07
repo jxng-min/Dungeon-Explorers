@@ -9,6 +9,7 @@ public class Arrow : Skill
     private float m_speed;
     private float m_origin_speed;
     private Vector2 m_origin_direction;
+    private bool m_is_returned;
     #endregion Variables
 
     #region Properties
@@ -27,6 +28,7 @@ public class Arrow : Skill
         ATK = atk;
         SPD = speed;
         m_origin_speed = speed;
+        m_is_returned = false;
 
         Layer = layer;
 
@@ -68,12 +70,19 @@ public class Arrow : Skill
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.layer == Layer)
+        if (m_is_returned)
         {
+            return;
+        }
+        
+        if (collision.gameObject.layer == Layer)
+        {
+            m_is_returned = true;
+            
             CreateDamageIndicator(collision.transform.position);
             collision.GetComponent<BaseUnit>().Health.UpdateHP(-ATK);
 
-            Invoke("Return", 0.1f);
+            Return();
         }
     }
     #endregion Helper Methods

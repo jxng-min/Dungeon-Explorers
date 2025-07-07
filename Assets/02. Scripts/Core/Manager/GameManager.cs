@@ -2,7 +2,6 @@ using DeckService;
 using InventoryService;
 using ObjectPool;
 using ReinforcementService;
-using UnityEngine.Rendering.RenderGraphModule;
 using UserDataService;
 
 public class GameManager : Singleton<GameManager>
@@ -67,11 +66,17 @@ public class GameManager : Singleton<GameManager>
             m_can_init = false;
             SoundManager.Instance.PlayBGM("Game");
         }
+        else
+        {
+            // 애니메이션 동작
+        }
     }
 
     public void Pause()
     {
         GameState = GameEventType.PAUSE;
+
+        // 애니메이션 정지
     }
 
     public void GameOver()

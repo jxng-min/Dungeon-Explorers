@@ -17,7 +17,7 @@ public class UnitHealth : IHealth
     #region Properties
     public float HP { get => m_current_hp; }
     public bool IsDead { get => m_is_dead; }
-    
+
     public Coroutine KnockBackCoroutine
     {
         get => m_knockback_coroutine;
@@ -35,6 +35,15 @@ public class UnitHealth : IHealth
     public void Initialize(float hp)
     {
         m_current_hp = hp;
+
+        m_is_dead = false;
+        m_can_knockback = true;
+
+        if (m_knockback_coroutine != null)
+        {
+            m_unit.StopCoroutine(m_knockback_coroutine);
+            m_knockback_coroutine = null;
+        }
     }
 
     public void UpdateHP(int amount)
@@ -86,12 +95,6 @@ public class UnitHealth : IHealth
             m_knockback_coroutine = null;
         }
 
-        if (m_unit.Attack.AttackCoroutine != null)
-        {
-            m_unit.StopCoroutine(m_unit.Attack.AttackCoroutine);
-            m_unit.Attack.AttackCoroutine = null;
-        }
-
         m_unit.Attack.ResetAttack();
 
         m_unit.Renderer.sortingOrder = 9;
@@ -129,7 +132,30 @@ public class UnitHealth : IHealth
     public IEnumerator Co_ReturnUnit(float target_time)
     {
         yield return new WaitForSeconds(target_time);
-        ObjectManager.Instance.ReturnObject(m_unit.gameObject, ObjectType.MELEE_UNIT);
+
+        m_unit.gameObject.transform.localPosition = Vector3.zero;
+        ObjectManager.Instance.ReturnObject(m_unit.gameObject, GetObjectType());
+    }
+
+    private ObjectType GetObjectType()
+    {
+        switch (m_unit.Unit.Type)
+        {
+            case Units.UnitType.MELEE:
+            case Units.UnitType.GUARD:
+                return ObjectType.MELEE_UNIT;
+
+            case Units.UnitType.RANGED:
+                return ObjectType.RANGED_UNIT;
+
+            case Units.UnitType.NIMMIA:
+                return ObjectType.NIMMIA;
+
+            case Units.UnitType.LELIA:
+                return ObjectType.LELIA;
+        }
+
+        return ObjectType.NONE;
     }
     #endregion Coroutines
 }
