@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18cae87942bd57a4db478f7ad1f8ab15, type: 3}
+  m_Name: 05_Gabriel
+  m_EditorClassIdentifier: 
+  m_unit_code: 5
+  m_unit_type: 1000
+  m_unit_team: 0
+  m_unit_sprite: {fileID: 5692671443236587484, guid: bb3216fb602d4aabba45083bc43cd61a, type: 3}
+  m_layer_mask: 6
+  m_animator: {fileID: 9100000, guid: 591b112ae720c3160ae2cd2142b726c9, type: 2}
+  m_unit_hp: 100
+  m_unit_atk: 35
+  m_unit_spd: 1
+  m_atk_range: 0.9
+  m_atk_cool: 1.2
+  m_max_upgrade_count: 30
+  m_upgrade_cost: 100
+  m_explorer_price: 2000
+  m_growth_hp: 10
+  m_growth_atk: 1
+  m_cost: 35
+  m_cooltime: 2

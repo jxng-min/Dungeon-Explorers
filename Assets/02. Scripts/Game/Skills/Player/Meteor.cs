@@ -1,18 +1,10 @@
 using UnityEngine;
+using ObjectPool;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
-public class Meteor : MonoBehaviour
+public class Meteor : Skill
 {
-    [field: SerializeField] public Rigidbody2D Rigidbody { get; private set; }
-    [field: SerializeField] public Animator Animator { get; private set; }
-
-    private int m_atk;
-    public int ATK
-    {
-        get => m_atk;
-        set => m_atk = value;
-    }
-
+    #region Variables
     private float m_speed;
     public float SPD
     {
@@ -22,7 +14,14 @@ public class Meteor : MonoBehaviour
 
     private float m_origin_speed;
     private Vector2 m_origin_direction;
+    #endregion Variables
 
+    #region Properties
+    [field: SerializeField] public Rigidbody2D Rigidbody { get; private set; }
+    [field: SerializeField] public Animator Animator { get; private set; }
+    #endregion Properties
+
+    #region Helper Methods
     public void Initialize(int atk, float spd)
     {
         ATK = atk;
@@ -35,12 +34,12 @@ public class Meteor : MonoBehaviour
         RotateTowardsDirection(m_origin_direction);
     }
 
-    public void Stop()
+    public override void Stop()
     {
         SPD = 0;
     }
 
-    public void Resume()
+    public override void Resume()
     {
         SPD = m_origin_speed;
 
@@ -73,20 +72,26 @@ public class Meteor : MonoBehaviour
 
         var explosion = obj.GetComponent<Explosion>();
         explosion.Animator.SetFloat("Pattern", Random.Range(0, 4));
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.gameObject.layer == Layer)
         {
-            collision.GetComponent<EnemyCtrl>().UpdateHP(-ATK);
+            collision.GetComponent<BaseUnit>().Health.UpdateHP(-ATK);
+            CreateDamageIndicator(collision.transform.position);
         }
 
         if (collision.CompareTag("Ground"))
         {
             CreateExplosions();
-            ObjectManager.Instance.ReturnObject(gameObject, ObjectType.METEOR);
+            Return();
         }
     }
+
+    protected override void Return()
+    {
+        ObjectManager.Instance.ReturnObject(gameObject, ObjectType.METEOR);
+    }
+    #endregion Helper Methods
 }

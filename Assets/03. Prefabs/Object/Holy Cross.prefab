@@ -198,8 +198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf575abbef9bc04abd2f8ae6c3b094e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enemy_layer:
-    serializedVersion: 2
-    m_Bits: 0
+  m_enemy_layer: 6
   <Rigidbody>k__BackingField: {fileID: 8787918026291692301}
   <Animator>k__BackingField: {fileID: 6439736389627897424}

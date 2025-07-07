@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc967370912df1c4ab03d97556d16f5d, type: 3}
+  m_Name: 06_Increase Get EXP
+  m_EditorClassIdentifier: 
+  m_type: 6
+  m_name: "\uACBD\uD5D8\uCE58 \uD68D\uB4DD\uB7C9 \uC99D\uAC00"
+  m_image: {fileID: 1753133036, guid: 72e099935ed56c74590a740a6651c3f8, type: 3}
+  m_default_cost: 50
+  m_growth_cost: 5

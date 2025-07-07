@@ -1,10 +1,11 @@
 using UnityEngine;
+using ObjectPool;
 
 public abstract class Skill : MonoBehaviour
 {
     [Header("적들의 레이어")]
-    [SerializeField] private LayerMask m_enemy_layer;
-    protected LayerMask Layer
+    [SerializeField] private int m_enemy_layer;
+    protected int Layer
     {
         get => m_enemy_layer;
         set => m_enemy_layer = value;
@@ -17,18 +18,17 @@ public abstract class Skill : MonoBehaviour
         set => m_atk = value;
     }
 
+    public abstract void Stop();
+    public abstract void Resume();
+
+    protected abstract void Return();
+
     protected virtual void CreateDamageIndicator(Vector3 position)
     {
         var obj = ObjectManager.Instance.GetObject(ObjectType.DAMAGE_INDICATOR);
         obj.transform.position = position + Vector3.up * 0.5f;
 
-
         var damage_indicator = obj.GetComponent<DamageIndicator>();
         damage_indicator.Initialize($"<color=#F6BB43>{NumberFormatter.FormatNumber(ATK)}</color>");
     }
-
-    public abstract void Stop();
-    public abstract void Resume();
-
-    protected abstract void Return();
 }

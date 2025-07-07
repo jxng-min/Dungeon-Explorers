@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d134c2ed0c7e13c92428510d7a8465, type: 3}
+  m_Name: Stage_02
+  m_EditorClassIdentifier: 
+  m_id: 2
+  m_enemy_base_hp: 500
+  m_enemy_waves:
+  - m_enemy: {fileID: 11400000, guid: 4d91882114ff57f4297485db1a39784b, type: 2}
+    m_spawn_time: 0
+    m_count: 5
+    m_interval: 10
+  - m_enemy: {fileID: 11400000, guid: e564a0efc56f7cf4c9a5cc06a34782d7, type: 2}
+    m_spawn_time: 20
+    m_count: 5
+    m_interval: 5
+  - m_enemy: {fileID: 11400000, guid: 4d91882114ff57f4297485db1a39784b, type: 2}
+    m_spawn_time: 45
+    m_count: 10
+    m_interval: 5
+  - m_enemy: {fileID: 11400000, guid: 5fae5dea390d22c449a97492ceac55c8, type: 2}
+    m_spawn_time: 95
+    m_count: 2
+    m_interval: 60
+  m_reward_gold: 30
+  m_reward_exp: 30

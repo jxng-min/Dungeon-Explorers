@@ -4,9 +4,7 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Enemy
   - Ground
-  - Friend
   layers:
   - Default
   - TransparentFX
@@ -15,7 +13,7 @@ TagManager:
   - Water
   - UI
   - ENEMY
-  - EXPLORER
+  - HERO
   - SKILL
   - 
   - 
