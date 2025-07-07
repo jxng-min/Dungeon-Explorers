@@ -36,13 +36,17 @@ public class Meteor : Skill
 
     public override void Stop()
     {
+        Animator.speed = 0f;
+
         SPD = 0;
+        Move(Vector2.zero);
     }
 
     public override void Resume()
     {
-        SPD = m_origin_speed;
+        Animator.speed = 1f;
 
+        SPD = m_origin_speed;
         Move(m_origin_direction);
     }
 

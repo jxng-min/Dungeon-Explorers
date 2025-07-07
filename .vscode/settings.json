@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Dungeon-Explorers.sln"
+    "dotnet.defaultSolution": "Dungeon-Explorers.sln",
+    "C_Cpp.default.compilerPath": "d:\\Project\\BOJ\\14889.cpp"
 }
