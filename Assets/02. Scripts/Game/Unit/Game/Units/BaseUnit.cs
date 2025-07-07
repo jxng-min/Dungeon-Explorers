@@ -8,7 +8,7 @@ public abstract class BaseUnit : MonoBehaviour
     #region Variables
     [Header("의존성 관련 컴포넌트")]
     [Header("유닛 스크립터블 오브젝트")]
-    [SerializeField] private Unit m_unit;
+    [SerializeField] protected Unit m_unit;
 
     protected IMovement m_movement;
     protected IHealth m_health;
@@ -67,7 +67,7 @@ public abstract class BaseUnit : MonoBehaviour
     private void OnEnable()
     {
         Rigidbody.simulated = true;
-        Renderer.sortingOrder = 10;
+        Renderer.sortingOrder = 8;
         Collider.enabled = true;
     }
 
@@ -88,7 +88,7 @@ public abstract class BaseUnit : MonoBehaviour
     }
 
     #region Helper Methods
-    public void Initialize(Unit unit)
+    public virtual void Initialize(Unit unit)
     {
         m_unit = unit;
 
@@ -101,6 +101,8 @@ public abstract class BaseUnit : MonoBehaviour
         Renderer.flipX = unit.EnemyLayer != LayerMask.NameToLayer("ENEMY");
 
         m_is_inited = true;
+
+        Renderer.sortingOrder = 10 + (int)m_unit.Code;
     }
 
     public void CreateDamageIndicator(Vector2 position)

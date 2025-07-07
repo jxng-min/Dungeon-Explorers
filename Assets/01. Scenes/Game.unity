@@ -6025,8 +6025,7 @@ Transform:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 202470926}
-  - {fileID: 1268608401}
-  - {fileID: 2142490298}
+  - {fileID: 976923476}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &588808236
@@ -8498,6 +8497,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976666139}
   m_CullTransparentMesh: 1
+--- !u!1 &976923475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 976923476}
+  - component: {fileID: 976923477}
+  m_Layer: 0
+  m_Name: Portals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &976923476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976923475}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1268608401}
+  - {fileID: 2142490298}
+  m_Father: {fileID: 558844332}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &976923477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976923475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 417b77b8d4920104fbce7379e86ca7cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_stage_db: {fileID: 11400000, guid: 86a0fee9987879c478167b86edf1c0c6, type: 2}
+  m_stage_service: {fileID: 1268608406}
+  m_hero_tower_unit: {fileID: 2142490303}
+  m_enemy_tower_unit: {fileID: 1268608408}
 --- !u!1 &1054565098
 GameObject:
   m_ObjectHideFlags: 0
@@ -9583,6 +9632,7 @@ GameObject:
   - component: {fileID: 1268608404}
   - component: {fileID: 1268608406}
   - component: {fileID: 1268608407}
+  - component: {fileID: 1268608408}
   m_Layer: 6
   m_Name: Enemy Portal
   m_TagString: Untagged
@@ -9653,13 +9703,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268608399}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 34, y: -1.95, z: 0}
   m_LocalScale: {x: 3.5, y: 3.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1565588817}
-  m_Father: {fileID: 558844332}
+  m_Father: {fileID: 976923476}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1268608402
 BoxCollider2D:
@@ -9788,6 +9838,20 @@ MonoBehaviour:
   m_stage_db: {fileID: 11400000, guid: 86a0fee9987879c478167b86edf1c0c6, type: 2}
   m_stage_service: {fileID: 1268608406}
   m_base_transform: {fileID: 1268608401}
+--- !u!114 &1268608408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268608399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0787f5206d82f7e4b8a3f73367b0ce4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_unit: {fileID: 0}
+  m_tower_view: {fileID: 1565588821}
 --- !u!1 &1300218645
 GameObject:
   m_ObjectHideFlags: 0
@@ -10837,6 +10901,7 @@ GameObject:
   - component: {fileID: 1565588820}
   - component: {fileID: 1565588819}
   - component: {fileID: 1565588818}
+  - component: {fileID: 1565588821}
   m_Layer: 6
   m_Name: HP UI
   m_TagString: Untagged
@@ -10929,6 +10994,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1565588821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565588816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25dfa7f7fbe52c847911f57337a47f31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_hp_label: {fileID: 45446432}
+  m_max_hp_label: {fileID: 2129218489}
 --- !u!1 &1595376841
 GameObject:
   m_ObjectHideFlags: 0
@@ -12424,6 +12503,7 @@ GameObject:
   - component: {fileID: 1890615248}
   - component: {fileID: 1890615247}
   - component: {fileID: 1890615246}
+  - component: {fileID: 1890615249}
   m_Layer: 6
   m_Name: HP UI
   m_TagString: Untagged
@@ -12516,6 +12596,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1890615249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890615244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25dfa7f7fbe52c847911f57337a47f31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_hp_label: {fileID: 1860661878}
+  m_max_hp_label: {fileID: 552616913}
 --- !u!1 &1896037949
 GameObject:
   m_ObjectHideFlags: 0
@@ -14109,6 +14203,7 @@ GameObject:
   - component: {fileID: 2142490299}
   - component: {fileID: 2142490302}
   - component: {fileID: 2142490301}
+  - component: {fileID: 2142490303}
   m_Layer: 7
   m_Name: Hero Portal
   m_TagString: Untagged
@@ -14185,7 +14280,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1890615245}
-  m_Father: {fileID: 558844332}
+  m_Father: {fileID: 976923476}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2142490299
 BoxCollider2D:
@@ -14282,6 +14377,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2142490303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142490296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0787f5206d82f7e4b8a3f73367b0ce4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_unit: {fileID: 0}
+  m_tower_view: {fileID: 1890615249}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
