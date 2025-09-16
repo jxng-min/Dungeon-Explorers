@@ -1,5 +1,4 @@
 using InventoryService;
-using UserDataService;
 
 public class ResultPresenter
 {
@@ -8,7 +7,7 @@ public class ResultPresenter
     //private StageDataBase m_stage_db;
     private StageService m_stage_service;
     private IInventoryService m_inventory_service;
-    private IUserDataService m_user_data_service;
+    //private IUserDataService m_user_data_service;
     #endregion Variables
 
     //public ResultPresenter(IResultViewer view, StageDataBase stage_db, StageService stage_service, IInventoryService inventory_service, IUserDataService user_data_service)
@@ -37,8 +36,8 @@ public class ResultPresenter
 
     private void UpdateModel(bool success, int money, int exp)
     {
-        m_inventory_service.Money += money;
-        m_user_data_service.EXP += exp;
+        //m_inventory_service.Money += money;
+        //m_user_data_service.EXP += exp;
 
         //if (m_stage_db.Stage == m_user_data_service.Stage)
         //{

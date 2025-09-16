@@ -2,7 +2,7 @@ using DeckService;
 using InventoryService;
 using ObjectPool;
 using ReinforcementService;
-using UserDataService;
+using UserService;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -127,7 +127,7 @@ public class GameManager : Singleton<GameManager>
         ServiceLocator.Get<IReinforcementService>().Save();
         ServiceLocator.Get<IDeckService>().Save();
         ServiceLocator.Get<ISettingService>().Save();
-        ServiceLocator.Get<IUserDataService>().Save();
+        ServiceLocator.Get<IUserService>().Save();
     }
 
     private void ToggleUnits(bool is_play)

@@ -2,7 +2,7 @@ using InventoryService;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UserDataService;
+//using UserDataService;
 
 [RequireComponent(typeof(Animator))]
 public class ResultViewer : MonoBehaviour, IResultViewer
@@ -35,7 +35,7 @@ public class ResultViewer : MonoBehaviour, IResultViewer
     private Animator m_animator;
     private ResultPresenter m_presenter;
     private IInventoryService m_inventory_service;
-    private IUserDataService m_user_data_system;
+    //private IUserDataService m_user_data_system;
     #endregion Variables
 
     private void Awake()
@@ -43,7 +43,7 @@ public class ResultViewer : MonoBehaviour, IResultViewer
         m_animator = GetComponent<Animator>();
 
         m_inventory_service = ServiceLocator.Get<IInventoryService>();
-        m_user_data_system = ServiceLocator.Get<IUserDataService>();
+        //m_user_data_system = ServiceLocator.Get<IUserDataService>();
 
         //m_presenter = new ResultPresenter(this, m_stage_db, m_stage_system, m_inventory_service, m_user_data_system);
 

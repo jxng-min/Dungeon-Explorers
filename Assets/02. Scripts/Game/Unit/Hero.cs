@@ -14,10 +14,6 @@ namespace Units
         [SerializeField] private int m_upgrade_cost;
         public int UpgradeCost { get => m_upgrade_cost; } 
 
-        [Header("탐험가의 구매가")]
-        [SerializeField] private int m_explorer_price;
-        public int Price { get => m_explorer_price; }
-
         [Space(50f)]
         [Header("영웅 스탯 정보 관련")]
         [Header("영웅의 성장 체력")]
