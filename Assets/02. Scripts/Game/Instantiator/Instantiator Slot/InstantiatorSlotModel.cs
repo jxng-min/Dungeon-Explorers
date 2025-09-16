@@ -1,11 +1,12 @@
-using Units;
+using UnitService;
 using UnityEngine;
+using Units;
 
 public class InstantiatorSlotModel
 {
     #region Variables
     private UnitCode m_unit_code;
-    private UnitDataBase m_unit_db;
+    private IUnitDataBase m_unit_db;
     private ICostView m_cost_view;
     #endregion Variables
 
@@ -18,7 +19,7 @@ public class InstantiatorSlotModel
     public float Cool { get => (m_unit_db.GetUnit(m_unit_code) as Hero).SpawnCool; }
     #endregion Properties
 
-    public void Initialize(UnitCode code, UnitDataBase unit_db, ICostView cost_view)
+    public void Initialize(UnitCode code, IUnitDataBase unit_db, ICostView cost_view)
     {
         m_unit_code = code;
         m_unit_db = unit_db;

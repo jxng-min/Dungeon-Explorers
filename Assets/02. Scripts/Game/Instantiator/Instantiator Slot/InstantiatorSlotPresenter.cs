@@ -1,6 +1,6 @@
 using UnityEngine;
 using ObjectPool;
-using Units;
+using UnitService;
 
 public class InstantiatorSlotPresenter
 {
@@ -15,7 +15,7 @@ public class InstantiatorSlotPresenter
         m_model = new InstantiatorSlotModel();
     }
 
-    public void Initialize(UnitCode code, UnitDataBase unit_db, ICostView cost_view)
+    public void Initialize(UnitCode code, IUnitDataBase unit_db, ICostView cost_view)
     {
         m_model.Initialize(code, unit_db, cost_view);
 

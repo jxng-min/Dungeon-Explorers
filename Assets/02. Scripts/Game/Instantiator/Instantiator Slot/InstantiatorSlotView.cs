@@ -1,6 +1,6 @@
 using System.Collections;
 using TMPro;
-using Units;
+using UnitService;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -34,7 +34,7 @@ public class InstantiatorSlotView : MonoBehaviour, IInstantiatorSlotView
         m_instantiation_button.onClick.AddListener(m_presenter.OnClickedInstantiation);
     }
 
-    public void Initialize(UnitCode code, UnitDataBase unit_db, ICostView cost_view)
+    public void Initialize(UnitCode code, IUnitDataBase unit_db, ICostView cost_view)
     {
         m_presenter.Initialize(code, unit_db, cost_view);
     }

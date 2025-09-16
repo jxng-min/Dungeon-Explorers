@@ -141,17 +141,17 @@ public class UnitHealth : IHealth
     {
         switch (m_unit.Unit.Type)
         {
-            case Units.UnitType.MELEE:
-            case Units.UnitType.GUARD:
+            case UnitType.MELEE:
+            case UnitType.GUARD:
                 return ObjectType.MELEE_UNIT;
 
-            case Units.UnitType.RANGED:
+            case UnitType.RANGED:
                 return ObjectType.RANGED_UNIT;
 
-            case Units.UnitType.NIMMIA:
+            case UnitType.NIMMIA:
                 return ObjectType.NIMMIA;
 
-            case Units.UnitType.LELIA:
+            case UnitType.LELIA:
                 return ObjectType.LELIA;
         }
 

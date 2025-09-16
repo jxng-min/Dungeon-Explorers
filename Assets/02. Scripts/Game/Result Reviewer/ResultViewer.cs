@@ -9,8 +9,8 @@ public class ResultViewer : MonoBehaviour, IResultViewer
 {
     #region Variables
     [Header("의존성 관련 컴포넌트")]
-    [Header("스테이지 데이터베이스")]
-    [SerializeField] private StageDataBase m_stage_db;
+    //[Header("스테이지 데이터베이스")]
+    //[SerializeField] private StageDataBase m_stage_db;
 
     [Header("스테이지 서비스")]
     [SerializeField] private StageService m_stage_system;
@@ -45,7 +45,7 @@ public class ResultViewer : MonoBehaviour, IResultViewer
         m_inventory_service = ServiceLocator.Get<IInventoryService>();
         m_user_data_system = ServiceLocator.Get<IUserDataService>();
 
-        m_presenter = new ResultPresenter(this, m_stage_db, m_stage_system, m_inventory_service, m_user_data_system);
+        //m_presenter = new ResultPresenter(this, m_stage_db, m_stage_system, m_inventory_service, m_user_data_system);
 
         m_retry_button.onClick.AddListener(m_presenter.OnClickedRetry);
         m_title_button.onClick.AddListener(m_presenter.OnClickedTitle);

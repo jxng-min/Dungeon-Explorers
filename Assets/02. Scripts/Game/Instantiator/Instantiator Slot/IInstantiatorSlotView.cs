@@ -1,9 +1,9 @@
-using Units;
+using UnitService;
 using UnityEngine;
 
 public interface IInstantiatorSlotView
 {
-    void Initialize(UnitCode code, UnitDataBase unit_db, ICostView cost_view);
+    void Initialize(UnitCode code, IUnitDataBase unit_db, ICostView cost_view);
 
     void ClearUI();
     void InitUI(Sprite unit_sprite, int cost);

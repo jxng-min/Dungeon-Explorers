@@ -1,12 +1,12 @@
-using Units;
+using UnitService;
 using UnityEngine;
 
 public class InstantiatorView : MonoBehaviour, IInstantiatorView
 {
     #region Variables
     [Header("의존성 관련 컴포넌트")]
-    [Header("스테이지 데이터베이스")]
-    [SerializeField] private StageDataBase m_stage_db;
+    //[Header("스테이지 데이터베이스")]
+    //[SerializeField] private StageDataBase m_stage_db;
 
     [Header("유닛 데이터베이스")]
     [SerializeField] private UnitDataBase m_unit_db;
@@ -25,7 +25,7 @@ public class InstantiatorView : MonoBehaviour, IInstantiatorView
 
     private void Awake()
     {
-        m_presenter = new InstantiatorPresenter(this, m_stage_db, m_cost_view);
+        //m_presenter = new InstantiatorPresenter(this, m_stage_db, m_cost_view);
     }
 
     private void Start()

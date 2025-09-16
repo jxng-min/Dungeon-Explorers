@@ -8,8 +8,8 @@ public class TowerInitializer : MonoBehaviour
     private readonly int GROWTH_HP = 10;
 
     [Header("의존성 관련 컴포넌트")]
-    [Header("스테이지 데이터베이스")]
-    [SerializeField] private StageDataBase m_stage_db;
+    //[Header("스테이지 데이터베이스")]
+    //[SerializeField] private StageDataBase m_stage_db;
 
     [Header("스테이지 서비스")]
     [SerializeField] private StageService m_stage_service;
@@ -39,7 +39,7 @@ public class TowerInitializer : MonoBehaviour
     #region Helper Methods
     private void InitializeEnemyTower()
     {
-        var current_stage_index = m_stage_db.Stage;
+        var current_stage_index = /*m_stage_db.Stage*/0;
         var current_stage = m_stage_service.GetStage(current_stage_index);
         if (current_stage == null)
         {

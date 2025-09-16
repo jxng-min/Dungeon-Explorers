@@ -7,8 +7,8 @@ public class StageCtrl : MonoBehaviour
 {
     #region Variables
     [Header("의존성 관련 컴포넌트")]
-    [Header("스테이지 데이터베이스")]
-    [SerializeField] private StageDataBase m_stage_db;
+    //[Header("스테이지 데이터베이스")]
+    //[SerializeField] private StageDataBase m_stage_db;
 
     [Header("스테이지 서비스")]
     [SerializeField] private StageService m_stage_service;
@@ -32,7 +32,7 @@ public class StageCtrl : MonoBehaviour
     private void Start()
     {
         m_base_position = (Vector2)m_base_transform.position + Vector2.down * 0.9f;
-        m_stage = m_stage_service.GetStage(m_stage_db.Stage);
+        //m_stage = m_stage_service.GetStage(m_stage_db.Stage);
     }
 
     private void Update()

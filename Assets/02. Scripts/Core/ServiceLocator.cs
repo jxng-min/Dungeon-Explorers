@@ -1,4 +1,3 @@
-using UnitRepository;
 using EXPService;
 using InventoryService;
 using UserDataService;
@@ -8,6 +7,7 @@ using SettingService;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnitService;
 
 public static class ServiceLocator
 {
@@ -18,7 +18,7 @@ public static class ServiceLocator
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     public static void Initialize()
     {
-        Register<IUnitRepository>(new LocalUnitRepository());
+        Register<IUnitService>(new LocalUnitService());
         Register<IEXPService>(new LocalEXPSystem());
         Register<IInventoryService>(new LocalInventory());
         Register<IUserDataService>(new LocalUserDataSystem());
