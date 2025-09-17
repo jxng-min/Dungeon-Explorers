@@ -91,6 +91,18 @@ namespace InventoryService
             return true;
         }
 
+        public void UpgradeUnit(UnitCode code, int upgrade_count = 1)
+        {
+            foreach(var unit_data in m_unit_list)
+            {
+                if(unit_data.Code == code)
+                {
+                    unit_data.Upgrade += upgrade_count;
+                    OnUpdatedUnit?.Invoke(unit_data);
+                }
+            }
+        }
+
         public UnitData GetUnit(UnitCode code)
         {
             foreach (var unit in m_unit_list)

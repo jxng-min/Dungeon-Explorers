@@ -15,6 +15,7 @@ namespace InventoryService
 
         bool HasUnit(UnitCode code);
         bool AddUnit(UnitCode code, int upgrade_count = 1);
+        void UpgradeUnit(UnitCode code, int upgrade_count = 1);
         UnitData GetUnit(UnitCode code);
 
         void UpdateMoney(int amount);

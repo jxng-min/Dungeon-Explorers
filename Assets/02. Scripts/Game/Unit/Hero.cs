@@ -5,15 +5,6 @@ namespace Units
     [CreateAssetMenu(fileName = "New Hero", menuName = "SO/Create Hero")]
     public class Hero : Unit
     {
-        [Space(50f)][Header("영웅 기본 정보 관련")]
-        [Header("최대 훈련 횟수")]
-        [SerializeField] private int m_max_upgrade_count;
-        public int MaxUpgrade { get => m_max_upgrade_count; }
-
-        [Header("탐험가의 기본 훈련 비용")]
-        [SerializeField] private int m_upgrade_cost;
-        public int UpgradeCost { get => m_upgrade_cost; } 
-
         [Space(50f)]
         [Header("영웅 스탯 정보 관련")]
         [Header("영웅의 성장 체력")]
