@@ -30,6 +30,7 @@ public class ShopSlotPresenter : IDisposable
     {
         m_view.UpdateUI(m_unit_service.GetName(m_shop_data.Hero.Code), m_shop_data.Hero.Image);
 
+        UpdateMoney(m_inventory_service.Money);
         m_view.UpdateAquire(m_inventory_service.HasUnit(m_shop_data.Hero.Code));
     }
 

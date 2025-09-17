@@ -1,4 +1,4 @@
-using ReinforcementService;
+using ReinforcerService;
 
 public class UltimatePresenter
 {
@@ -7,7 +7,7 @@ public class UltimatePresenter
     private readonly UltimateModel m_model;
     #endregion Variables
 
-    public UltimatePresenter(IUltimateView view, IReinforcementService reinforcement_system)
+    public UltimatePresenter(IUltimateView view, IReinforcerService reinforcement_system)
     {
         m_view = view;
         m_model = new UltimateModel(reinforcement_system);

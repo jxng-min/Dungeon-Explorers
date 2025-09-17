@@ -1,4 +1,4 @@
-using ReinforcementService;
+using ReinforcerService;
 using UnityEngine;
 
 public class TowerInitializer : MonoBehaviour
@@ -22,12 +22,12 @@ public class TowerInitializer : MonoBehaviour
     [Header("적군 타워 유닛")]
     [SerializeField] private TowerUnit m_enemy_tower_unit;
 
-    private IReinforcementService m_reinforcement_system;
+    private IReinforcerService m_reinforcement_system;
     #endregion Variables
 
     private void Awake()
     {
-        m_reinforcement_system = ServiceLocator.Get<IReinforcementService>();
+        m_reinforcement_system = ServiceLocator.Get<IReinforcerService>();
     }
 
     private void Start()

@@ -1,4 +1,4 @@
-using ReinforcementService;
+using ReinforcerService;
 using UnityEngine;
 
 public class CostPresenter
@@ -8,7 +8,7 @@ public class CostPresenter
     private readonly CostModel m_model;
     #endregion Variables
 
-    public CostPresenter(ICostView view, IReinforcementService reinforcement_system, IIntervalView interval_view)
+    public CostPresenter(ICostView view, IReinforcerService reinforcement_system, IIntervalView interval_view)
     {
         m_view = view;
         m_model = new CostModel(reinforcement_system, interval_view);

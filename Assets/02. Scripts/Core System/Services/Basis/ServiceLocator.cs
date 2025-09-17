@@ -1,6 +1,6 @@
 using EXPService;
 using InventoryService;
-using ReinforcementService;
+using ReinforcerService;
 using DeckService;
 using SettingService;
 using System.Collections.Generic;
@@ -20,7 +20,7 @@ public static class ServiceLocator
         Register<IEXPService>(new LocalEXPService());
         Register<IInventoryService>(new LocalInventoryService());
         Register<IUserService>(new LocalUserService());
-        Register<IReinforcementService>(new LocalReinforcementSystem());
+        Register<IReinforcerService>(new LocalReinforcerService());
         Register<IDeckService>(new LocalDeckSystem());
         Register<ISettingService>(new LocalSettingSystem());
     }

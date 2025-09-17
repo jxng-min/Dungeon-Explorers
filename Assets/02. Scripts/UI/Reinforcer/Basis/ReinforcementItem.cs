@@ -22,4 +22,8 @@ public class ReinforcementItem : ScriptableObject
     [Header("성장 가격")]
     [SerializeField] private int m_growth_cost;
     public int GrowthCost { get => m_growth_cost; } 
+
+    [Header("최대 강화")]
+    [SerializeField] private int m_max_limit;
+    public int Limit => m_max_limit;
 }

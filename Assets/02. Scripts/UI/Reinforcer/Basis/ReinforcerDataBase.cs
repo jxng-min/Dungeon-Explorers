@@ -1,24 +1,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New ReinforceDataBase", menuName = "SO/DB/Create ReinforceDataBase")]
-public class ReinforceDataBase : ScriptableObject
+[CreateAssetMenu(fileName = "Reinforcement DataBase", menuName = "SO/DB/Create Reinforcement DataBase")]
+public class ReinforcerDataBase : ScriptableObject, IReinforcerDataBase
 {
-    #region Variables
-    [Header("강화 목록에 포함될 요소")]
+    [Header("강화 목록")]
     [SerializeField] private List<ReinforcementItem> m_reinforcement_list;
 
     private Dictionary<ReinforcementType, ReinforcementItem> m_reinforcement_dict;
-    #endregion Variables
 
-    #region Properties
-    public int Count { get => m_reinforcement_list.Count; }
-    #endregion Properties
+    public List<ReinforcementItem> List => m_reinforcement_list;
 
+#if UNITY_EDITOR
     private void OnEnable()
     {
-        m_reinforcement_dict = new();
+        Initialize();
+    }
+#endif
 
+    private void Initialize()
+    {
+        if(m_reinforcement_list == null)
+        {
+            return;
+        }
+
+        m_reinforcement_dict = new();
         foreach (var element in m_reinforcement_list)
         {
             if (!m_reinforcement_dict.TryAdd(element.Type, element))
@@ -32,6 +39,11 @@ public class ReinforceDataBase : ScriptableObject
 
     public ReinforcementItem GetItem(ReinforcementType type)
     {
+        if(m_reinforcement_dict == null)
+        {
+            Initialize();
+        }
+
         return m_reinforcement_dict.TryGetValue(type, out var item) ? item : null;
     }
 }

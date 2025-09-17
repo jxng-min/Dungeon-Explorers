@@ -1,4 +1,4 @@
-using ReinforcementService;
+using ReinforcerService;
 
 public class UltimateModel
 {
@@ -8,7 +8,7 @@ public class UltimateModel
     private readonly float DEFAULT_INTERVAL = 1f;
     private readonly float DEFAULT_COOLTIME = 60f;
 
-    private IReinforcementService m_reinforcement_system;
+    private IReinforcerService m_reinforcement_system;
     #endregion Variables
 
     #region Properties
@@ -30,7 +30,7 @@ public class UltimateModel
     }
     #endregion Properties
 
-    public UltimateModel(IReinforcementService reinforcement_system)
+    public UltimateModel(IReinforcerService reinforcement_system)
     {
         m_reinforcement_system = reinforcement_system;
     }

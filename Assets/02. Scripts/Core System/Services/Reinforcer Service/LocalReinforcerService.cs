@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 
-namespace ReinforcementService
+namespace ReinforcerService
 {
     #region Serialization
     public class ReinforcementData
@@ -29,7 +29,7 @@ namespace ReinforcementService
 
             foreach (ReinforcementType type in Enum.GetValues(typeof(ReinforcementType)))
             {
-                temp_data_list.Add(new(type, 0));
+                temp_data_list.Add(new(type, 1));
             }
 
             Data = temp_data_list.ToArray();
@@ -42,25 +42,19 @@ namespace ReinforcementService
     }
     #endregion Serialization
 
-    public class LocalReinforcementSystem : IReinforcementService
+    public class LocalReinforcerService : IReinforcerService
     {
-        #region Variables
         private string m_local_data_path;
 
         private Dictionary<ReinforcementType, int> m_reinforcement_dict;
-        #endregion Variables
 
-        public LocalReinforcementSystem()
+        public event Action<ReinforcementType, int> OnUpdatedReinforcement;
+
+        public LocalReinforcerService()
         {
             m_reinforcement_dict = new();
 
             Load();
-        }
-
-        #region Helper Methods
-        public Dictionary<ReinforcementType, int> GetDict()
-        {
-            return m_reinforcement_dict;
         }
         
         public int GetField(ReinforcementType type)
@@ -73,12 +67,14 @@ namespace ReinforcementService
             if (m_reinforcement_dict.ContainsKey(type))
             {
                 m_reinforcement_dict[type] += amount;
+
+                OnUpdatedReinforcement?.Invoke(type, m_reinforcement_dict[type]);
             }
         }
 
-        public void Load()
+        public bool Load()
         {
-            m_local_data_path = Path.Combine(Application.persistentDataPath, "ReinforcementData.json");
+            m_local_data_path = Path.Combine(Application.persistentDataPath, "ReinforcerData.json");
 
             DataWrapper reinforcement_data;
             if (File.Exists(m_local_data_path))
@@ -102,8 +98,11 @@ namespace ReinforcementService
 #if UNITY_EDITOR
                     Debug.LogWarning($"{data.Type}을 딕셔너리에 추가하는 과정에서 동일한 데이터가 존재했습니다.");
 #endif
+                    return false;
                 }
             }
+
+            return true;
         }
 
         public void Save()
@@ -116,6 +115,5 @@ namespace ReinforcementService
             var json_data = JsonUtility.ToJson(data_wrapper, true);
             File.WriteAllText(m_local_data_path, json_data);
         }
-        #endregion Helper Methods
     }
 }

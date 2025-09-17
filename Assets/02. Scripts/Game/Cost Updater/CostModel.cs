@@ -1,4 +1,4 @@
-using ReinforcementService;
+using ReinforcerService;
 
 public class CostModel
 {
@@ -11,7 +11,7 @@ public class CostModel
 
     private int m_current_cost;
 
-    private IReinforcementService m_reinforcement_system;
+    private IReinforcerService m_reinforcement_system;
     private IIntervalView m_interval_view;
     #endregion Variables
 
@@ -35,7 +35,7 @@ public class CostModel
     }
     #endregion Properties
 
-    public CostModel(IReinforcementService reinforcement_system, IIntervalView interval_view)
+    public CostModel(IReinforcerService reinforcement_system, IIntervalView interval_view)
     {
         m_reinforcement_system = reinforcement_system;
         m_interval_view = interval_view;

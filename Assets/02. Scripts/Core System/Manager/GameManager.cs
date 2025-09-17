@@ -1,7 +1,7 @@
 using DeckService;
 using InventoryService;
 using ObjectPool;
-using ReinforcementService;
+using ReinforcerService;
 using UserService;
 
 public class GameManager : Singleton<GameManager>
@@ -124,7 +124,7 @@ public class GameManager : Singleton<GameManager>
     private void SaveData()
     {
         ServiceLocator.Get<IInventoryService>().Save();
-        ServiceLocator.Get<IReinforcementService>().Save();
+        ServiceLocator.Get<IReinforcerService>().Save();
         ServiceLocator.Get<IDeckService>().Save();
         ServiceLocator.Get<ISettingService>().Save();
         ServiceLocator.Get<IUserService>().Save();

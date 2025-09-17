@@ -1,5 +1,5 @@
 using System.Collections;
-using ReinforcementService;
+using ReinforcerService;
 using TMPro;
 using UnityEngine;
 
@@ -14,12 +14,12 @@ public class CostView : MonoBehaviour, ICostView
     [SerializeField] private TMP_Text m_cost_label;
 
     private CostPresenter m_presenter;
-    private IReinforcementService m_reinforcement_system;
+    private IReinforcerService m_reinforcement_system;
     #endregion Variables
 
     private void Awake()
     {
-        m_reinforcement_system = ServiceLocator.Get<IReinforcementService>();
+        m_reinforcement_system = ServiceLocator.Get<IReinforcerService>();
 
         m_presenter = new CostPresenter(this, m_reinforcement_system, m_interval_view);
     }

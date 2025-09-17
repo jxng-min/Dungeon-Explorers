@@ -1,6 +1,6 @@
 using System.Collections;
 using ObjectPool;
-using ReinforcementService;
+using ReinforcerService;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,12 +14,12 @@ public class UltimateView : MonoBehaviour, IUltimateView
     [SerializeField] private Image m_cooldown_image;
 
     private UltimatePresenter m_presenter;
-    private IReinforcementService m_reinforcement_system;
+    private IReinforcerService m_reinforcement_system;
     #endregion Variables
 
     private void Awake()
     {
-        m_reinforcement_system = ServiceLocator.Get<IReinforcementService>();
+        m_reinforcement_system = ServiceLocator.Get<IReinforcerService>();
 
         m_presenter = new UltimatePresenter(this, m_reinforcement_system);
 
