@@ -9,6 +9,8 @@ public class ShopDataBase : ScriptableObject, IShopDataBase
 
     private Dictionary<UnitCode, ShopData> m_data_dict;
 
+    public ShopData[] List => m_data_list;
+
 #if UNITY_EDITOR
     private void OnEnable()
     {

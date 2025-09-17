@@ -19,14 +19,12 @@ namespace EXPService
     }
     #endregion Serialization
 
-    public class LocalEXPSystem : IEXPService
+    public class LocalEXPService : IEXPService
     {
-        #region Variables
         private Dictionary<int, int> m_exp_dict;
         private const int MAX_LEVEL = 10;
-        #endregion Variables
 
-        public LocalEXPSystem()
+        public LocalEXPService()
         {
             m_exp_dict = new();
 

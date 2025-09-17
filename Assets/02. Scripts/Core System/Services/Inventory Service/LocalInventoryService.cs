@@ -56,6 +56,11 @@ namespace InventoryService
         public void Initialize()
         {
             OnUpdatedMoney?.Invoke(Money);
+
+            foreach(var unit_data in m_unit_list)
+            {
+                OnUpdatedUnit?.Invoke(unit_data);
+            }
         }
 
         public bool HasUnit(UnitCode code)
@@ -109,7 +114,7 @@ namespace InventoryService
 
         public bool Load()
         {
-            m_local_data_path = Path.Combine(Application.persistentDataPath, "InvenData.json");
+            m_local_data_path = Path.Combine(Application.persistentDataPath, "InventoryData.json");
 
             if (File.Exists(m_local_data_path))
             {

@@ -5,7 +5,6 @@ using DeckService;
 using SettingService;
 using System.Collections.Generic;
 using System;
-using UnityEngine;
 using UnitService;
 using UserService;
 
@@ -18,7 +17,7 @@ public static class ServiceLocator
     public static void Initialize()
     {
         Register<IUnitService>(new LocalUnitService());
-        Register<IEXPService>(new LocalEXPSystem());
+        Register<IEXPService>(new LocalEXPService());
         Register<IInventoryService>(new LocalInventoryService());
         Register<IUserService>(new LocalUserService());
         Register<IReinforcementService>(new LocalReinforcementSystem());

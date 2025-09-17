@@ -1,16 +1,9 @@
-using UnityEngine;
-
-public class IShopView : MonoBehaviour
+public interface IShopView
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    void Inject(ShopPresenter presenter);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    IShopSlotView InstantiateSlot();
+
+    void OpenUI();
+    void CloseUI();
 }

@@ -12,7 +12,6 @@ namespace UserService
         event Action<int> OnUpdatedStage;
 
         void Initialize();
-        
         void UpdateLevel(int exp);
         void UpdateStage(int stage);
     }

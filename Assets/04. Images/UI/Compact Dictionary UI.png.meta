@@ -119,7 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Compact Panel
+      name: Compact Codex Panel
       rect:
         serializedVersion: 2
         x: 523
@@ -166,7 +166,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 527c8a86d27cf4a4ba2c568bf90b5a6b
+    spriteID: 17e6e13967284a74399ac7a5babd459c
     internalID: 0
     vertices: []
     indices: 
@@ -176,8 +176,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      Compact Codex Panel: 8314644251829068914
       Compact Dictionary UI_0: -5826666059570261764
-      Compact Panel: 8314644251829068914
       Description Panel: 2159071710258367929
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

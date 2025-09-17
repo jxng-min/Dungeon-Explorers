@@ -3,20 +3,20 @@ guid: 1b81c0c4198d11341ac28f6f08615685
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6373758855689250401
-    second: Dictionary UI 1_0
+      213: 5091740965637317654
+    second: Dictionary UI_0
   - first:
-      213: 5012095252527968752
-    second: Dictionary UI 1_1
+      213: 6122918085707070270
+    second: Dictionary UI_1
   - first:
-      213: 2666445440840551063
-    second: Dictionary UI 1_2
+      213: -2180512168765703857
+    second: Dictionary UI_2
   - first:
-      213: -145599245010184119
-    second: Dictionary UI 1_3
+      213: -2529675942130527842
+    second: Dictionary UI_3
   - first:
-      213: -4040925805568712020
-    second: Dictionary UI 1_4
+      213: 3750470451678430535
+    second: Dictionary UI_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,7 +125,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dictionary Panel
+      name: Codex Panel
       rect:
         serializedVersion: 2
         x: 1565
@@ -140,18 +140,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f1f953b31a8e8540800000000000000
-      internalID: 5012095252527968752
+      spriteID: e3b726fee89f8f450800000000000000
+      internalID: 6122918085707070270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Base Panel
+      name: Base UI Panel
       rect:
         serializedVersion: 2
         x: 0
-        y: 4
+        y: 0
         width: 1480
         height: 570
       alignment: 0
@@ -162,8 +162,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79ac242400e110520800000000000000
-      internalID: 2666445440840551063
+      spriteID: f49bd404cb34db1e0800000000000000
+      internalID: -2180512168765703857
       vertices: []
       indices: 
       edges: []
@@ -172,9 +172,9 @@ TextureImporter:
       name: Grid Panel
       rect:
         serializedVersion: 2
-        x: 1566
+        x: 1565
         y: 150
-        width: 1228
+        width: 1226
         height: 420
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9485a91124abafdf0800000000000000
-      internalID: -145599245010184119
+      spriteID: e9155782229c4ecd0800000000000000
+      internalID: -2529675942130527842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dictionary Slot
+      name: Codex Slot
       rect:
         serializedVersion: 2
         x: 1565
@@ -206,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca22e5bb36fbbe7c0800000000000000
-      internalID: -4040925805568712020
+      spriteID: 74544e441095c0430800000000000000
+      internalID: 3750470451678430535
       vertices: []
       indices: 
       edges: []
@@ -216,7 +216,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: adaf04a02aa9d8d41bf575d41397a801
+    spriteID: add9e2d31128142438c12abe8a75051e
     internalID: 0
     vertices: []
     indices: 
@@ -224,13 +224,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Base Panel: 2666445440840551063
-      Dictionary Panel: 5012095252527968752
-      Dictionary Slot: -4040925805568712020
-      Dictionary UI 1_0: -6373758855689250401
-      Grid Panel: -145599245010184119
+      Base UI Panel: -2180512168765703857
+      Codex Panel: 6122918085707070270
+      Codex Slot: 3750470451678430535
+      Dictionary UI_0: 5091740965637317654
+      Grid Panel: -2529675942130527842
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
