@@ -8,6 +8,8 @@ public class TrainerPresenter
 
     private readonly CompactTrainerPresenter m_compact_trainer_presenter;
 
+    private bool m_is_open;
+
     public TrainerPresenter(ITrainerView view,
                             ITrainerDataBase trainer_db,
                             IInventoryService inventory_service,
@@ -35,12 +37,20 @@ public class TrainerPresenter
 
     public void OpenUI()
     {
+        if(m_is_open)
+        {
+            return;
+        }
+
+        m_is_open = true;
+
         m_view.OpenUI();
         Initialize();
     }
 
     public void CloseUI()
     {
+        m_is_open = false;
         m_view.CloseUI();
         m_compact_trainer_presenter.CloseUI();
     }

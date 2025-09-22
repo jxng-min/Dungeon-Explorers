@@ -678,7 +678,7 @@ MonoBehaviour:
   m_ui_pool_list:
   - Type: 1
     Count: 8
-    Prefab: {fileID: 303644966135761578, guid: 65fe402ab998a06bcad314fe5c02e931, type: 3}
+    Prefab: {fileID: 8862408083527168155, guid: 65fe402ab998a06bcad314fe5c02e931, type: 3}
     Container: {fileID: 1467423615}
   - Type: 2
     Count: 8

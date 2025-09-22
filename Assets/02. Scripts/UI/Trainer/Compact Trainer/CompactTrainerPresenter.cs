@@ -48,6 +48,11 @@ public class CompactTrainerPresenter : IDisposable
 
     public void UpdateMoney(int money)
     {
+        if(m_trainer_data == null)
+        {
+            return;
+        }
+
         var unit_data = m_inventory_service.GetUnit(m_trainer_data.Hero.Code);
         
         var total_cost = m_trainer_data.DefaultCost
@@ -60,7 +65,7 @@ public class CompactTrainerPresenter : IDisposable
 
     public void UpdateLevel(UnitData unit_data)
     {
-        if(m_trainer_data != null && m_trainer_data.Hero.Code != unit_data.Code)
+        if(m_trainer_data == null || m_trainer_data.Hero.Code != unit_data.Code)
         {
             return;
         }

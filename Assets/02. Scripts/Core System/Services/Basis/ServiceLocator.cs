@@ -21,7 +21,7 @@ public static class ServiceLocator
         Register<IInventoryService>(new LocalInventoryService());
         Register<IUserService>(new LocalUserService());
         Register<IReinforcerService>(new LocalReinforcerService());
-        Register<IDeckService>(new LocalDeckSystem());
+        Register<IDeckService>(new LocalDeckService());
         Register<ISettingService>(new LocalSettingSystem());
     }
 
