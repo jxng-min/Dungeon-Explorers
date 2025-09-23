@@ -38,9 +38,7 @@ public class ReinforcerView : MonoBehaviour, IReinforcerView
         foreach(var close_button in m_close_buttons)
         {
             close_button.onClick.RemoveListener(m_presenter.CloseUI);
-        } 
-
-        m_presenter.Initialize();        
+        }   
     }
 
     public void Inject(ReinforcerPresenter presenter)

@@ -2,6 +2,7 @@ using DeckService;
 using InventoryService;
 using ObjectPool;
 using ReinforcerService;
+using UnityEngine;
 using UserService;
 
 public class GameManager : Singleton<GameManager>
@@ -21,6 +22,8 @@ public class GameManager : Singleton<GameManager>
         GameEventBus.Subscribe(GameEventType.LOGIN, Login);
         GameEventBus.Subscribe(GameEventType.LOADING, Loading);
         GameEventBus.Subscribe(GameEventType.WAITING, Waiting);
+
+        GameEventBus.Publish(GameEventType.LOGIN);
     }
 
     private void OnDisable()
@@ -28,11 +31,6 @@ public class GameManager : Singleton<GameManager>
         GameEventBus.Unsubscribe(GameEventType.LOGIN, Login);
         GameEventBus.Unsubscribe(GameEventType.LOADING, Loading);
         GameEventBus.Unsubscribe(GameEventType.WAITING, Waiting);
-    }
-
-    private void Start()
-    {
-        GameEventBus.Publish(GameEventType.LOGIN);
     }
 
     public void Login()
@@ -47,6 +45,7 @@ public class GameManager : Singleton<GameManager>
         GameState = GameEventType.LOADING;
 
         ObjectManager.Instance.ReturnObjectsAll();
+        Time.timeScale = 1f;
     }
 
     public void Waiting()
@@ -55,6 +54,8 @@ public class GameManager : Singleton<GameManager>
 
         SoundManager.Instance.PlayBGM("Title");
         m_can_init = true;
+
+        Time.timeScale = 1f;
     }
 
     public void Playing()
@@ -66,19 +67,15 @@ public class GameManager : Singleton<GameManager>
             m_can_init = false;
             SoundManager.Instance.PlayBGM("Game");
         }
-        else
-        {
-            ToggleUnits(true);
-            ToggleSkills(true);
-        }
+
+        Time.timeScale = 1f;
     }
 
     public void Pause()
     {
         GameState = GameEventType.PAUSE;
 
-        ToggleUnits(false);
-        ToggleSkills(false);
+        Time.timeScale = 0f;
     }
 
     public void GameOver()
@@ -87,6 +84,8 @@ public class GameManager : Singleton<GameManager>
 
         OpenResult();
         SaveData();
+
+        Time.timeScale = 0f;
     }
 
     public void GameClear()
@@ -95,6 +94,8 @@ public class GameManager : Singleton<GameManager>
 
         OpenResult();
         SaveData();
+
+        Time.timeScale = 0f;
     }
 
     private void OpenResult()
@@ -128,29 +129,5 @@ public class GameManager : Singleton<GameManager>
         ServiceLocator.Get<IDeckService>().Save();
         ServiceLocator.Get<ISettingService>().Save();
         ServiceLocator.Get<IUserService>().Save();
-    }
-
-    private void ToggleUnits(bool is_play)
-    {
-        var unit_list = ObjectManager.Instance.ActiveUnitObjects;
-        foreach (var unit_obj in unit_list)
-        {
-            var unit = unit_obj.GetComponent<BaseUnit>();
-            unit.Animator.speed = is_play ? 1f : 0f;
-        }
-    }
-
-    private void ToggleSkills(bool is_play)
-    {
-        var skill_list = ObjectManager.Instance.ActiveSkillObjects;
-        foreach (var skill_obj in skill_list)
-        {
-            var skill = skill_obj.GetComponent<Skill>();
-
-            if (is_play)
-                skill.Resume();
-            else
-                skill.Stop();
-        }
     }
 }

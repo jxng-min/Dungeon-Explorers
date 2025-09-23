@@ -31,7 +31,7 @@ public class CompactTrainerView : MonoBehaviour, ICompactTrainerView
     private void OnDestroy()
     {
         m_train_button.onClick.RemoveListener(m_presenter.OnClickedTrain);
-        m_presenter.Dispose();
+        m_presenter?.Dispose();
     }
 
     public void Inject(CompactTrainerPresenter presenter)

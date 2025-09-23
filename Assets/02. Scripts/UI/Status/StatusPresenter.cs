@@ -11,7 +11,6 @@ public class StatusPresenter : IDisposable
     private readonly IUserService m_user_service;
     private readonly IEXPService m_exp_service;
 
-
     public StatusPresenter(IStatusView view,
                            IInventoryService inventory_service,
                            IUserService user_service,

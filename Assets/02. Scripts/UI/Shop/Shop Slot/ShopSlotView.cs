@@ -24,7 +24,7 @@ public class ShopSlotView : MonoBehaviour, IShopSlotView
 
     private void OnDestroy()
     {
-        m_presenter.Dispose();
+        m_presenter?.Dispose();
     }
 
     public void Inject(ShopSlotPresenter presenter)

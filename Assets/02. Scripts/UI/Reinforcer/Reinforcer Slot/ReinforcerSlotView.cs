@@ -27,7 +27,7 @@ public class ReinforcerSlotView : MonoBehaviour, IReinforcerSlotView
 
     private void OnDestroy()
     {
-        m_presenter.Dispose();
+        m_presenter?.Dispose();
     }
 
     public void Inject(ReinforcerSlotPresenter presenter)

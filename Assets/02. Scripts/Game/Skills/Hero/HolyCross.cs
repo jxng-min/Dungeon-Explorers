@@ -10,9 +10,6 @@ public class HolyCross : Skill
     [field: SerializeField] public Animator Animator { get; private set; }
 
     private float m_speed;
-    private float m_origin_speed;
-
-    private Vector2 m_origin_direction;
     private Coroutine m_return_coroutine;
 
     private int m_elastic_count;
@@ -37,42 +34,21 @@ public class HolyCross : Skill
         m_return_coroutine = StartCoroutine(Co_Return());
     }
 
-    #region Helper Methods
-    public void Initialize(int atk, float speed)
+    public void Initialize(int atk, 
+                           float speed)
     {
         ATK = atk;
         SPD = speed;
-        m_origin_speed = speed;
+
         Animator.speed = 1f;
         m_elastic_count = 0;
 
         MoveTowardsTarget();
     }
 
-    public override void Stop()
-    {
-        SPD = 0;
-        Animator.speed = 0f;
-    }
-
-    public override void Resume()
-    {
-        SPD = m_origin_speed;
-        Animator.speed = 1f;
-
-        MoveTowardsTarget(m_origin_direction);
-    }
-
     public void MoveTowardsTarget()
     {
-        m_origin_direction = Vector2.right;
-
-        MoveTowardsTarget(Vector2.right);
-    }
-
-    public void MoveTowardsTarget(Vector2 direction)
-    {
-        Rigidbody.linearVelocity = direction * SPD;
+        Rigidbody.linearVelocity = Vector3.right * SPD;
     }
 
     private IEnumerator Co_Return()
@@ -118,6 +94,4 @@ public class HolyCross : Skill
             }
         }
     }
-    
-    #endregion Helper Methods
 }

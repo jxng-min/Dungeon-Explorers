@@ -5,7 +5,7 @@ public class ResultPresenter
     #region Variables
     private readonly IResultViewer m_view;
     //private StageDataBase m_stage_db;
-    private StageService m_stage_service;
+    private IStageDataBase m_stage_service;
     private IInventoryService m_inventory_service;
     //private IUserDataService m_user_data_service;
     #endregion Variables

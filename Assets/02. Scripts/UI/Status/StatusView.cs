@@ -18,7 +18,7 @@ public class StatusView : MonoBehaviour, IStatusView
 
     private void OnDestroy()
     {
-        m_presenter.Dispose();
+        m_presenter?.Dispose();
     }
 
     public void Inject(StatusPresenter presenter)

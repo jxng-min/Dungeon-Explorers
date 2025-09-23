@@ -43,11 +43,6 @@ public abstract class BaseUnit : MonoBehaviour
 
     protected virtual void FixedUpdate()
     {
-        if (GameManager.Instance.GameState != GameEventType.PLAYING)
-        {
-            return;
-        }
-
         if (!m_is_inited)
         {
             return;

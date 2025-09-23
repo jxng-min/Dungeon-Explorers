@@ -13,7 +13,7 @@ public class ResultViewer : MonoBehaviour, IResultViewer
     //[SerializeField] private StageDataBase m_stage_db;
 
     [Header("스테이지 서비스")]
-    [SerializeField] private StageService m_stage_system;
+    [SerializeField] private IStageDataBase m_stage_system;
 
     [Space(50f)]
     [Header("UI 관련 컴포넌트")]

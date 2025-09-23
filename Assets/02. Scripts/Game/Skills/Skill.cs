@@ -18,9 +18,6 @@ public abstract class Skill : MonoBehaviour
         set => m_atk = value;
     }
 
-    public abstract void Stop();
-    public abstract void Resume();
-
     protected abstract void Return();
 
     protected virtual void CreateDamageIndicator(Vector3 position)

@@ -27,7 +27,7 @@ public class DeckSlotView : MonoBehaviour, IDeckSlotView, IPointerClickHandler
             return;
         }
 
-        m_presenter.Dispose();
+        m_presenter?.Dispose();
     }
 
     public void Inject(DeckSlotPresenter presenter)

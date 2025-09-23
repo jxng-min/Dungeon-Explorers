@@ -30,7 +30,7 @@ public class SelectedDeckSlotView : MonoBehaviour, ISelectedDeckSlotView, IPoint
 
     private void OnDestroy()
     {
-        m_presenter.Dispose();
+        m_presenter?.Dispose();
     }
 
     public void Inject(SelectedDeckSlotPresenter presenter)
