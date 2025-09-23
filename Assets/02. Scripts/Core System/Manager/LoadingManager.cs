@@ -26,6 +26,7 @@ public class LoadingManager : Singleton<LoadingManager>
     public void LoadScene(string scene_name)
     {
         GameEventBus.Publish(GameEventType.LOADING);
+        DIContainer.Clear();
 
         gameObject.SetActive(true);
 

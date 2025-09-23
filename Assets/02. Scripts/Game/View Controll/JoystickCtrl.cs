@@ -3,7 +3,6 @@ using UnityEngine.EventSystems;
 
 public class JoystickCtrl : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
 {
-    #region Variables
     [Header("터치 패널의 트랜스폼")]
     [SerializeField] private RectTransform m_joystick_panel;
 
@@ -14,7 +13,6 @@ public class JoystickCtrl : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
 
     private Vector2 m_start_position;
     private Vector2 m_input;
-    #endregion Variables
 
     private void Start()
     {
@@ -22,14 +20,11 @@ public class JoystickCtrl : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
         m_joystick_panel.gameObject.SetActive(false);
     }
 
-    #region Helper Methods
     public Vector2 GetInput()
     {
         return m_input != null ? m_input.normalized : Vector2.zero;
     }
-    #endregion Helper Methods
 
-    #region Event Methods
     public void OnPointerDown(PointerEventData eventData)
     {
         m_start_position = eventData.position;
@@ -54,5 +49,4 @@ public class JoystickCtrl : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
         m_joystick_handle.anchoredPosition = Vector2.zero;
         m_joystick_panel.gameObject.SetActive(false);
     }
-    #endregion Event Methods
 }

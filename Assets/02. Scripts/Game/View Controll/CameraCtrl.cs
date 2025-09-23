@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class CameraCtrl : MonoBehaviour
 {
-    #region Variables
     [Header("조이스틱")]
     [SerializeField] private JoystickCtrl m_joystick;
 
@@ -14,25 +13,19 @@ public class CameraCtrl : MonoBehaviour
 
     [Header("X축의 최대 범위")]
     [Range(0f, 100f)][SerializeField] private float m_max_x = 100f;
-    #endregion Variables 
 
     private void Start()
     {
-        transform.position = Vector2.zero;
+        transform.position = new Vector3(0f, 0f, transform.position.z);
     }
 
     private void Update()
     {
-        if(GameManager.Instance.GameState != GameEventType.PLAYING)
-        {
-            return;
-        }
-
         Vector2 input = m_joystick.GetInput();
 
         float delta_x = input.x * m_speed * Time.deltaTime;
         float new_x = Mathf.Clamp(transform.position.x + delta_x, m_min_x, m_max_x);
 
-        transform.position = new Vector3(new_x, transform.position.y, -10);
+        transform.position = new Vector3(new_x, transform.position.y, transform.position.z);
     }
 }

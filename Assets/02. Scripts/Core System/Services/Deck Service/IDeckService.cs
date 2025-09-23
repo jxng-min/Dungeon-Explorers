@@ -4,6 +4,8 @@ namespace DeckService
 {
     public interface IDeckService : ISaveable
     {
+        UnitCode[] Deck { get; }
+
         event Action<int, UnitCode, UnitCode> OnUpdatedDeck;
 
         void Initialize();

@@ -1,33 +1,44 @@
-public class IntervalPresenter
+using System;
+
+public class IntervalPresenter : IDisposable
 {
-    #region Variables
     private readonly IIntervalView m_view;
     private readonly IntervalModel m_model;
-    #endregion Variables
 
-    public IntervalPresenter(IIntervalView view, ICostView cost_view)
+    private CostPresenter m_cost_presenter;
+
+    public int Upgrade => m_model.Upgrade;
+
+    public IntervalPresenter(IIntervalView view, 
+                             IntervalModel model)
     {
         m_view = view;
-        m_model = new IntervalModel(cost_view);
+        m_model = model;
+
+        m_view.Inject(this);
     }
 
-    #region Helper Methods
-    public int GetUpgrade()
+    public void Inject(CostPresenter cost_presenter)
     {
-        return m_model.Upgrade;
-    }
+        m_cost_presenter = cost_presenter;
 
-    public void UpdateView()
-    {
-        m_view.UpdateUI(m_model.UpgradeCost <= m_model.CurrentCost, m_model.UpgradeCost);
+        m_cost_presenter.OnUpdatedCost += UpdateUI;
     }
 
     public void OnClickedUpgrade()
     {
-        m_model.UpdateCost(m_model.UpgradeCost);
+        m_cost_presenter.UpdateCost(-m_model.UpgradeCost);
         m_model.Upgrade++;
-
-        m_view.UpdateUI(m_model.UpgradeCost <= m_model.CurrentCost, m_model.UpgradeCost);
     }
-    #endregion Helper Methods
+
+    public void UpdateUI(int cost)
+    {
+        var active = m_model.UpgradeCost <= cost;
+        m_view.UpdateUI(active, m_model.UpgradeCost);
+    }
+
+    public void Dispose()
+    {
+        m_cost_presenter.OnUpdatedCost -= UpdateUI;
+    }
 }

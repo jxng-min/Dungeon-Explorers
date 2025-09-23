@@ -1,12 +1,10 @@
 using System.Collections;
 using TMPro;
-using UnitService;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class InstantiatorSlotView : MonoBehaviour, IInstantiatorSlotView
 {
-    #region Variables
     [Header("UI 관련 컴포넌트")]
     [Header("생성자 슬롯 버튼")]
     [SerializeField] private Button m_instantiation_button;
@@ -23,20 +21,21 @@ public class InstantiatorSlotView : MonoBehaviour, IInstantiatorSlotView
     [Header("코스트 라벨")]
     [SerializeField] private TMP_Text m_cost_label;
 
-    private InstantiatorSlotPresenter m_presenter;
     private Coroutine m_cool_coroutine;
-    #endregion Variables
 
-    private void Awake()
+    private InstantiatorSlotPresenter m_presenter;
+
+    private void OnDestroy()
     {
-        m_presenter = new InstantiatorSlotPresenter(this);
-
-        m_instantiation_button.onClick.AddListener(m_presenter.OnClickedInstantiation);
+        m_instantiation_button.onClick.RemoveListener(m_presenter.ClickUI);
+        m_presenter.Dispose();
     }
 
-    public void Initialize(UnitCode code, IUnitDataBase unit_db, ICostView cost_view)
+    public void Inject(InstantiatorSlotPresenter presenter)
     {
-        m_presenter.Initialize(code, unit_db, cost_view);
+        m_presenter = presenter;
+
+        m_instantiation_button.onClick.AddListener(m_presenter.ClickUI);
     }
 
     public void ClearUI()
@@ -47,7 +46,7 @@ public class InstantiatorSlotView : MonoBehaviour, IInstantiatorSlotView
         m_cooldown_image.gameObject.SetActive(false);
 
         m_cost_frame.SetActive(false);
-        m_cost_label.text = "";
+        m_cost_label.text = string.Empty;
 
         m_instantiation_button.interactable = false;
     }
@@ -63,13 +62,6 @@ public class InstantiatorSlotView : MonoBehaviour, IInstantiatorSlotView
         m_instantiation_button.interactable = true;
     }
 
-    private void SetAlpha(float alpha)
-    {
-        var color = m_unit_image.color;
-        color.a = alpha;
-        m_unit_image.color = color;
-    }
-
     public void CoolUI(float target_time)
     {
         if (m_cool_coroutine != null)
@@ -80,12 +72,7 @@ public class InstantiatorSlotView : MonoBehaviour, IInstantiatorSlotView
         m_cool_coroutine = StartCoroutine(Co_CoolUI(target_time));
     }
 
-    public void UpdateUI()
-    {
-        m_presenter.UpdateView();
-    }
-
-    public void ToggleUI(bool active, float unit_cost)
+    public void UpdateUI(bool active, float unit_cost)
     {
         if (active)
         {
@@ -126,5 +113,12 @@ public class InstantiatorSlotView : MonoBehaviour, IInstantiatorSlotView
         m_instantiation_button.interactable = true;
 
         m_cool_coroutine = null;
+    }
+
+    private void SetAlpha(float alpha)
+    {
+        var color = m_unit_image.color;
+        color.a = alpha;
+        m_unit_image.color = color;
     }
 }

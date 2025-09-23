@@ -39,6 +39,8 @@ namespace DeckService
 
         public event Action<int, UnitCode, UnitCode> OnUpdatedDeck;
 
+        public UnitCode[] Deck => m_deck_list.ToArray();
+
         public LocalDeckService()
         {
             m_deck_list = new();
