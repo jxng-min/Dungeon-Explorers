@@ -22,7 +22,7 @@ public static class ServiceLocator
         Register<IUserService>(new LocalUserService());
         Register<IReinforcerService>(new LocalReinforcerService());
         Register<IDeckService>(new LocalDeckService());
-        Register<ISettingService>(new LocalSettingSystem());
+        Register<ISettingService>(new LocalSettingService());
     }
 
     public static void Register<T>(T service)

@@ -22,14 +22,12 @@ namespace SettingService
     }
     #endregion Serialization
 
-    public class LocalSettingSystem : ISettingService
+    public class LocalSettingService : ISettingService
     {
-        #region Variables
         private string m_local_data_path;
-        private SettingData m_setting_data;
-        #endregion Variables
 
-        #region Properties
+        private SettingData m_setting_data;
+
         public bool BGM
         {
             get => m_setting_data.BGM;
@@ -53,15 +51,13 @@ namespace SettingService
             get => m_setting_data.SFXRate;
             set => m_setting_data.SFXRate = value;
         }
-        #endregion Properties
 
-        public LocalSettingSystem()
+        public LocalSettingService()
         {
             Load();
         }
 
-        #region Helper Methods
-        public void Load()
+        public bool Load()
         {
             m_local_data_path = Path.Combine(Application.persistentDataPath, "SettingData.json");
 
@@ -74,6 +70,7 @@ namespace SettingService
 #if UNITY_EDITOR
                     Debug.LogWarning($"{m_local_data_path}의 형식에 오류가 있습니다.");
 #endif
+                    return false;
                 }
             }
             else
@@ -83,6 +80,8 @@ namespace SettingService
 #endif
                 m_setting_data = new SettingData();
             }
+
+            return true;
         }
 
         public void Save()
@@ -90,6 +89,5 @@ namespace SettingService
             var json_data = JsonUtility.ToJson(m_setting_data, true);
             File.WriteAllText(m_local_data_path, json_data);
         }
-        #endregion Helper Methods
     }
 }
