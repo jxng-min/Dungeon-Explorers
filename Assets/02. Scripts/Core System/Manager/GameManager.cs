@@ -36,8 +36,6 @@ public class GameManager : Singleton<GameManager>
     public void Login()
     {
         GameState = GameEventType.LOGIN;
-
-        SoundManager.Instance.PlayBGM("Login");
     }
 
     public void Loading()
@@ -52,9 +50,7 @@ public class GameManager : Singleton<GameManager>
     {
         GameState = GameEventType.WAITING;
 
-        SoundManager.Instance.PlayBGM("Title");
         m_can_init = true;
-
         Time.timeScale = 1f;
     }
 
@@ -65,7 +61,6 @@ public class GameManager : Singleton<GameManager>
         if (m_can_init)
         {
             m_can_init = false;
-            SoundManager.Instance.PlayBGM("Game");
         }
 
         Time.timeScale = 1f;
@@ -82,9 +77,7 @@ public class GameManager : Singleton<GameManager>
     {
         GameState = GameEventType.GAMEOVER;
 
-        OpenResult();
         SaveData();
-
         Time.timeScale = 0f;
     }
 
@@ -92,23 +85,9 @@ public class GameManager : Singleton<GameManager>
     {
         GameState = GameEventType.GAMECLEAR;
 
-        OpenResult();
         SaveData();
-
         Time.timeScale = 0f;
     }
-
-    private void OpenResult()
-    {
-        var result_ui = FindFirstObjectByType<ResultViewer>();
-        if (result_ui == null)
-        {
-            return;
-        }
-
-        result_ui.OpenUI();
-    }
-
     private void OnApplicationPause(bool pause)
     {
         if (pause)

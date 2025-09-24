@@ -19,5 +19,6 @@ public class TrainerSlotPresenter
     public void OnClickedCompact()
     {
         m_compact_trainer_presenter.OpenUI(m_trainer_data);
+        m_view.PlaySFX("Button Click");
     }
 }

@@ -9,4 +9,6 @@ public interface ISettingView
 
     void ToggleBGMRateHandle(bool isOn);
     void ToggleSFXRateHandle(bool isOn);
+
+    void PlaySFX(string sfx_name);
 }

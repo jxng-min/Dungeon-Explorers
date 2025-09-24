@@ -26,6 +26,8 @@ public class StagePresenter
     {
         m_view.OpenUI();
         UpdateUI(m_user_service.Stage);
+
+        m_view.PlaySFX("Button Click");
     }
 
     public void UpdateUI(int stage)
@@ -58,17 +60,23 @@ public class StagePresenter
     {
         var prev_stage = ((m_stage - 2 + m_stage_db.Count) % m_stage_db.Count) + 1;
         UpdateUI(prev_stage);
+
+        m_view.PlaySFX("Button Click");
     }
 
     public void OnClickRight()
     {
         var next_stage = (m_stage % m_stage_db.Count) + 1;
         UpdateUI(next_stage);
+
+        m_view.PlaySFX("Button Click");
     }
 
     public void OnClickStart()
     {
         m_stage_db.Current = m_stage;
         LoadingManager.Instance.LoadScene("Game");
+
+        m_view.PlaySFX("Button Click");
     }
 }

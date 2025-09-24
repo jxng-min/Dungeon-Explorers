@@ -6,4 +6,5 @@ public interface IDeckView
 
     void OpenUI();
     void CloseUI();
+    void PlaySFX(string sfx_name);
 }

@@ -6,4 +6,5 @@ public interface IDeckSlotView
 
     void UpdateUI(Sprite unit_image, int unit_cost);
     void UpdateState(bool is_selected);
+    void PlaySFX(string sfx_name);
 }

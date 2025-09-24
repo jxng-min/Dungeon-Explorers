@@ -15,7 +15,7 @@ public class IntervalView : MonoBehaviour, IIntervalView
 
     private void OnDestroy()
     {
-        m_presenter.Dispose();
+        m_presenter?.Dispose();
     }
 
     public void Inject(IntervalPresenter presenter)

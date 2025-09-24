@@ -67,6 +67,8 @@ public class ReinforcerSlotPresenter : IDisposable
         
         m_inventory_service.UpdateMoney(-total_cost);
         m_reinforcer_service.UpgradeField(m_reinforcement_item.Type);
+
+        m_view.PlaySFX("Button Click");
     }
 
     public void Dispose()

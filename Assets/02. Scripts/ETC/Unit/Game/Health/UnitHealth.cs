@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using ObjectPool;
 using UnityEngine;
@@ -12,6 +13,8 @@ public class UnitHealth : IHealth
     private bool m_can_knockback = true;
 
     private Coroutine m_knockback_coroutine;
+
+    public event Action OnDead;
     #endregion Variables
 
     #region Properties
@@ -73,6 +76,7 @@ public class UnitHealth : IHealth
         if (m_current_hp <= 0f)
         {
             Death();
+            OnDead?.Invoke();
         }
     }
 

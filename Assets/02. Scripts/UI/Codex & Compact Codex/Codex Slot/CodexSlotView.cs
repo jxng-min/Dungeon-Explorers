@@ -28,4 +28,9 @@ public class CodexSlotView : MonoBehaviour, ICodexSlotView
     {
         m_unit_image.sprite = unit_image;
     }
+
+    public void PlaySFX(string sfx_name)
+    {
+        SoundManager.Instance.PlaySFX(sfx_name);
+    }
 }

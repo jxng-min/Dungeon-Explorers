@@ -9,4 +9,6 @@ public interface ICompactTrainerView
     void CloseUI();
     void UpdateLevel(int current_level, int max_level, bool is_limit);
     void UpdateCost(int cost, bool can_train);
+
+    void PlaySFX(string sfx_name);
 }

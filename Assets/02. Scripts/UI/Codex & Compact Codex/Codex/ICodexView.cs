@@ -6,4 +6,6 @@ public interface ICodexView
     void OpenUI();
     void CloseUI();
     ICodexSlotView InstantiateSlot();
+
+    void PlaySFX(string sfx_name);
 }

@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class LoadingManager : Singleton<LoadingManager>
 {
-    #region Variables
     [Header("로딩 UI의 캔버스 그룹")]
     [SerializeField] private CanvasGroup m_canvas_group;
 
@@ -13,16 +12,12 @@ public class LoadingManager : Singleton<LoadingManager>
     [SerializeField] private TMP_Text m_loading_label;
 
     private string m_target_scene_name;
-    #endregion Variables
 
-    #region Properties
     public string Scene
     {
         get { return m_target_scene_name; }
     }
-    #endregion Properties
 
-    #region Helper Methods
     public void LoadScene(string scene_name)
     {
         GameEventBus.Publish(GameEventType.LOADING);
@@ -105,5 +100,4 @@ public class LoadingManager : Singleton<LoadingManager>
             SceneManager.sceneLoaded -= OnSceneLoaded;
         }
     }
-    #endregion Helper Methods
 }

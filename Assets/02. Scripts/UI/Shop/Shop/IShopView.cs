@@ -6,4 +6,6 @@ public interface IShopView
 
     void OpenUI();
     void CloseUI();
+
+    void PlaySFX(string sfx_name);
 }

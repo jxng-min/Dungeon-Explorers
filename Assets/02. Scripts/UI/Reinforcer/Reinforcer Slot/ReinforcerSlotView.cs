@@ -58,4 +58,9 @@ public class ReinforcerSlotView : MonoBehaviour, IReinforcerSlotView
                                           $"<color=white>{NumberFormatter.FormatNumber(cost)}</color>" :
                                           $"<color=red>{NumberFormatter.FormatNumber(cost)}</color>"; 
     }
+
+    public void PlaySFX(string sfx_name)
+    {
+        SoundManager.Instance.PlaySFX(sfx_name);
+    }
 }

@@ -90,6 +90,11 @@ public class DeckView : MonoBehaviour, IDeckView
         m_slot_list.Clear();
     }
 
+    public void PlaySFX(string sfx_name)
+    {
+        SoundManager.Instance.PlaySFX(sfx_name);
+    }
+
     private void ToggleCoroutine(bool is_open)
     {
         if(m_toggle_coroutine != null)

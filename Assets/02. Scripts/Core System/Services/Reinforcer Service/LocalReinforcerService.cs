@@ -7,6 +7,7 @@ using UnityEngine;
 namespace ReinforcerService
 {
     #region Serialization
+    [System.Serializable]
     public class ReinforcementData
     {
         public ReinforcementType Type;
@@ -19,6 +20,7 @@ namespace ReinforcerService
         }
     }
 
+    [System.Serializable]
     public class DataWrapper
     {
         public ReinforcementData[] Data;

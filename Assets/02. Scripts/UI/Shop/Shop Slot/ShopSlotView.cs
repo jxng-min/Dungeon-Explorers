@@ -63,4 +63,9 @@ public class ShopSlotView : MonoBehaviour, IShopSlotView
             m_disabled_panel.SetActive(false);
         }
     }
+
+    public void PlaySFX(string sfx_name)
+    {
+        SoundManager.Instance.PlaySFX(sfx_name);
+    }
 }

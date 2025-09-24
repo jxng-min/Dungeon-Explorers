@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class TitleBootstrapper : Bootstrapper
 {
-    protected override void Awake()
+    protected override void Start()
     {
-        ServiceLocator.Initialize();
-        base.Awake();
+        base.Start();
+        SoundManager.Instance.PlayBGM("Title BGM");
     }
 }

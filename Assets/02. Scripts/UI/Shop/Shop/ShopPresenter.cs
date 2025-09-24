@@ -43,6 +43,7 @@ public class ShopPresenter
     public void OpenUI()
     {
         m_view.OpenUI();
+        m_view.PlaySFX("Button Click");
     }
 
     public void CloseUI()

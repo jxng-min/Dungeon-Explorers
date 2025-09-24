@@ -71,6 +71,11 @@ public class CompactTrainerView : MonoBehaviour, ICompactTrainerView
         m_train_button.gameObject.SetActive(!is_limit);
     }
 
+    public void PlaySFX(string sfx_name)
+    {
+        SoundManager.Instance.PlaySFX(sfx_name);
+    }
+
     private void Fade(bool is_in)
     {
         if(m_fade_coroutine != null)

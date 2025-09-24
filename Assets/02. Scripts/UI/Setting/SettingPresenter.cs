@@ -19,28 +19,44 @@ public class SettingPresenter
                           m_setting_service.SFX,
                           m_setting_service.SFXRate);
         m_view.OpenUI();
+        m_view.PlaySFX("Button Click");
     }
 
     public void CloseUI()
     {
         m_view.CloseUI();
+        m_view.PlaySFX("Buton Click");
     }
 
     public void OnValueChangedBGM(bool isOn)
     {
         m_setting_service.BGM = isOn;
         m_view.ToggleBGMRateHandle(isOn);
+
+        m_view.PlaySFX("Button Click");
+
+        if(!isOn)
+        {
+            SoundManager.Instance.BGM.volume = 0f;
+        }
+        else
+        {
+            SoundManager.Instance.BGM.volume = m_setting_service.BGMRate;
+        }
     }
 
     public void OnValueChangedBGMRate(float value)
     {
         m_setting_service.BGMRate = value;
+        SoundManager.Instance.BGM.volume = value;
     }
 
     public void OnValueChangedSFX(bool isOn)
     {
         m_setting_service.SFX = isOn;
         m_view.ToggleSFXRateHandle(isOn);
+
+        m_view.PlaySFX("Button Click");
     }
 
     public void OnValueChangedSFXRate(float value)
@@ -50,10 +66,22 @@ public class SettingPresenter
 
     public void OnClickedExit()
     {
+        m_view.PlaySFX("Button Click");
+
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
         Application.Quit();
 #endif
+    }
+
+    public void OnClickedRetry()
+    {
+        LoadingManager.Instance.LoadScene("Game");
+    }
+
+    public void OnClickedTitle()
+    {
+        LoadingManager.Instance.LoadScene("Title");
     }
 }

@@ -82,4 +82,9 @@ public class SelectorView : MonoBehaviour, ISelectorView
     {
         m_close_button.gameObject.SetActive(active);
     }
+
+    public void PlaySFX(string sfx_name)
+    {
+        SoundManager.Instance.PlaySFX(sfx_name);
+    }
 }

@@ -62,6 +62,11 @@ public class SelectedDeckSlotView : MonoBehaviour, ISelectedDeckSlotView, IPoint
         m_animator.SetBool("Highlight", active);
     }
 
+    public void PlaySFX(string sfx_name)
+    {
+        SoundManager.Instance.PlaySFX(sfx_name);
+    }
+
     private void SetAlpha(float alpha)
     {
         var color = m_unit_image.color;

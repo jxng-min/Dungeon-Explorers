@@ -46,6 +46,11 @@ public class DeckSlotView : MonoBehaviour, IDeckSlotView, IPointerClickHandler
         m_state_text.SetActive(is_selected);
     }
 
+    public void PlaySFX(string sfx_name)
+    {
+        SoundManager.Instance.PlaySFX(sfx_name);
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         var mouse_position = new System.Numerics.Vector2(eventData.position.x, 

@@ -82,8 +82,10 @@ public class CompactTrainerPresenter : IDisposable
         var total_cost = m_trainer_data.DefaultCost
                             + m_trainer_data.GrowthCost * (unit_data.Upgrade - 1);
 
-        m_inventory_service.UpdateMoney(-total_cost);
         m_inventory_service.UpgradeUnit(m_trainer_data.Hero.Code);
+        m_inventory_service.UpdateMoney(-total_cost);
+
+        m_view.PlaySFX("Button Click");
     }
 
     public void Dispose()

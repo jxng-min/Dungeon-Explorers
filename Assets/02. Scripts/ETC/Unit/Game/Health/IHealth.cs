@@ -1,8 +1,11 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public interface IHealth
 {
+    event Action OnDead;
+
     float HP { get; }
     bool IsDead { get; }
     Coroutine KnockBackCoroutine { get; set; }

@@ -73,6 +73,8 @@ public class SelectedDeckSlotPresenter : IDisposable
             m_deck_service.SetDeck(m_index, m_selector_presenter.UnitCode);
             m_selector_presenter.CloseUI();
         }
+
+        m_view.PlaySFX("Button Click");
     }
 
     public void Dispose()

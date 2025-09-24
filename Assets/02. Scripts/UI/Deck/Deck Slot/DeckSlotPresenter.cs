@@ -42,6 +42,8 @@ public class DeckSlotPresenter : IDisposable
     {
         m_selector_presenter.OpenUI(m_unit_code);
         m_selector_presenter.SetPosition(mouse_position);
+
+        SoundManager.Instance.PlaySFX("Button Click");
     }
 
     public void UpdateUI()

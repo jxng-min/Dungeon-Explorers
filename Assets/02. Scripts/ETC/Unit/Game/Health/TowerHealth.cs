@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -15,6 +16,8 @@ public class TowerHealth : IHealth
     public bool IsDead { get => m_is_dead; }
     public Coroutine KnockBackCoroutine { get; set; }
     #endregion Properties
+
+    public event Action OnDead;
 
     public TowerHealth(BaseUnit unit)
     {
@@ -42,6 +45,8 @@ public class TowerHealth : IHealth
         {
             GameEventBus.Publish(GameEventType.GAMECLEAR);
         }
+
+        OnDead?.Invoke();
     }
 
     public void Initialize(float hp = 0)

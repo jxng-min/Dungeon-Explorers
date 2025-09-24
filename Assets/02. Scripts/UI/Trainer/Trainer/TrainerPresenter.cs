@@ -46,6 +46,8 @@ public class TrainerPresenter
 
         m_view.OpenUI();
         Initialize();
+
+        m_view.PlaySFX("Button Click");
     }
 
     public void CloseUI()

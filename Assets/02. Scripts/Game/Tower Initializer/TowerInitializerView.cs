@@ -17,7 +17,7 @@ public class TowerInitializerView : MonoBehaviour, ITowerInitializerView
         }
         else
         {
-            m_enemy_tower_unit.Initialize(!is_hero, hp);
+            m_enemy_tower_unit.Initialize(is_hero, hp);
         }
     }
 }

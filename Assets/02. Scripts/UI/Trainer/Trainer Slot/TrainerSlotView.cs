@@ -31,4 +31,9 @@ public class TrainerSlotView : MonoBehaviour, ITrainerSlotView
     {
         m_unit_image.sprite = unit_image;
     }
+
+    public void PlaySFX(string sfx_name)
+    {
+        SoundManager.Instance.PlaySFX(sfx_name);
+    }
 }

@@ -38,6 +38,8 @@ public class ShopSlotPresenter : IDisposable
     {
         m_inventory_service.UpdateMoney(-m_shop_data.Cost);
         m_inventory_service.AddUnit(m_shop_data.Hero.Code);
+
+        m_view.PlaySFX("Button Click");
     }
 
     private void UpdateMoney(int money)

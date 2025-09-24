@@ -74,6 +74,11 @@ public class ShopView : MonoBehaviour, IShopView
         ToggleCoroutine(false);
     }
 
+    public void PlaySFX(string sfx_name)
+    {
+        SoundManager.Instance.PlaySFX(sfx_name);
+    }
+
     private void ToggleCoroutine(bool is_open)
     {
         if(m_toggle_coroutine != null)

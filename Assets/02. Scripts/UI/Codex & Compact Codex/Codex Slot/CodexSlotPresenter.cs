@@ -28,5 +28,6 @@ public class CodexSlotPresenter
     public void OpenCompactUI()
     {
         m_compact_presenter.OpenUI(m_unit);
+        m_view.PlaySFX("Button Click");
     }
 }

@@ -1,147 +1,192 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using ObjectPool;
+using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
 public class SoundManager : Singleton<SoundManager>
 {
-    [Header("BGM 목록")]
-    [SerializeField] private List<AudioClip> m_bgm_list;
-
-    [Header("SFX 목록")]
-    [SerializeField] private List<AudioClip> m_sfx_list;
-
     private AudioSource m_bgm_source;
-    public AudioSource BGM { get => m_bgm_source; }
 
-    private string m_last_bgm_name;
-    public string LastBGM { get => m_last_bgm_name; }
+    [SerializeField] private SoundData[] m_bgm_clips;
+    [SerializeField] private SoundData[] m_sfx_clips;
 
-    private new void Awake()
+    private Dictionary<string, SoundData> m_bgm_dict;
+    private Dictionary<string, SoundData> m_sfx_dict;
+
+    private Dictionary<string, int> m_bgm_channel_dict;
+    private Dictionary<string, int> m_sfx_channel_dict;
+
+    private string m_last_bgm_key;
+    private ISettingService m_setting_service;
+
+    public AudioSource BGM => m_bgm_source;
+
+    public override void Awake()
     {
         base.Awake();
+        Initialize();
+    }
 
+    public void Start()
+    {
+        m_setting_service = ServiceLocator.Get<ISettingService>();
+    }
+
+    private void Initialize()
+    {
         m_bgm_source = GetComponent<AudioSource>();
-    }
 
-    public void PlayBGM(string clip_name)
-    {
-        // if (!SettingManager.Instance.Data.BGM)
-        // {
-        //     return;
-        // }
-
-        StartCoroutine(ChangeBGM(clip_name));
-    }
-
-    private IEnumerator ChangeBGM(string clip_name)
-    {
-        int target_index = -1;
-        for (int i = 0; i < m_bgm_list.Count; i++)
+        m_bgm_dict = new();
+        foreach (var bgm_data in m_bgm_clips)
         {
-            if (m_bgm_list[i].name == clip_name)
-            {
-                target_index = i;
-                break;
-            }
+            m_bgm_dict.Add(bgm_data.Clip.name, bgm_data);
         }
 
-        if (target_index != -1)
+        m_sfx_dict = new();
+        foreach (var sfx_data in m_sfx_clips)
         {
+            m_sfx_dict.Add(sfx_data.Clip.name, sfx_data);
+        }
+
+        m_bgm_channel_dict = new();
+        m_sfx_channel_dict = new();
+    }
+
+    #region BGM
+    public void PlayBGM(string bgm_name)
+    {
+        if (m_last_bgm_key == bgm_name)
+        {
+            UnityEngine.Debug.Log($"BGM: {bgm_name}이 여기에 빠짐");
+            return;
+        }
+
+        UnityEngine.Debug.Log($"BGM: {bgm_name}이 정상적 실행됨");
+
+        StartCoroutine(Co_ChangeBGM(bgm_name));
+    }
+
+    private IEnumerator Co_ChangeBGM(string bgm_name)
+    {
+        if (m_bgm_dict.TryGetValue(bgm_name, out var bgm_data))
+        {
+            m_last_bgm_key = bgm_name;
+            
             if (BGM.isPlaying)
             {
-                if (BGM.clip != null)
+                if (BGM.clip)
                 {
-                    m_last_bgm_name = BGM.clip.name;
+                    if (!string.IsNullOrEmpty(m_last_bgm_key) && m_bgm_channel_dict.ContainsKey(m_last_bgm_key))
+                    {
+                        m_bgm_channel_dict[m_last_bgm_key] = Mathf.Max(0, m_bgm_channel_dict[m_last_bgm_key] - 1);
+                    }
+
+                    m_last_bgm_key = bgm_name;
                 }
 
-                yield return StartCoroutine(Fade(true));
+                yield return StartCoroutine(Co_Fade(BGM, true));
+                yield return new WaitForSeconds(0.3f);
             }
 
-            BGM.clip = m_bgm_list[target_index];
-            BGM.Play();
-
-            yield return StartCoroutine(Fade(false));
-        }
-    }
-
-    private IEnumerator Fade(bool is_out)
-    {
-        float elapsed_time = 0f;
-        float target_time = 0.4f;
-
-        while (elapsed_time <= target_time)
-        {
-            float time = elapsed_time / target_time;
-
-            if (is_out)
+            if (m_bgm_channel_dict.TryGetValue(bgm_name, out var channel))
             {
-                BGM.volume = Mathf.Lerp(0.4f, 0f, time);
+                if (channel < bgm_data.Channel)
+                {
+                    m_bgm_channel_dict[bgm_name]++;
+
+                    BGM.clip = bgm_data.Clip;
+                    BGM.Play();
+
+                    yield return StartCoroutine(Co_Fade(BGM, false));
+                }
             }
             else
             {
-                BGM.volume = Mathf.Lerp(0.4f, 0f, time);
+                m_bgm_channel_dict[bgm_name] = 1;
+
+                BGM.clip = bgm_data.Clip;
+                BGM.Play();
+
+                yield return StartCoroutine(Co_Fade(BGM, false));
             }
-
-            elapsed_time += Time.deltaTime;
-            yield return null;
-        }
-
-        if (is_out)
-        {
-            BGM.volume = 0f;
         }
         else
         {
-            BGM.volume = 0.4f;
+            yield break;
         }
     }
 
-    public void PlaySFX(string clip_name)
+    private IEnumerator Co_Fade(AudioSource bgm_source, bool is_out)
     {
-        int target_index = -1;
-        for (int i = 0; i < m_sfx_list.Count; i++)
+        var elapsed_time = 0f;
+        var target_time = 0.4f;
+
+        if (m_setting_service.BGM)
         {
-            if (m_sfx_list[i].name == clip_name)
+            while (elapsed_time <= target_time)
             {
-                target_index = i;
-                break;
+                var delta = elapsed_time / target_time;
+                bgm_source.volume = is_out ? Mathf.Lerp(m_setting_service.BGMRate, 0f, delta) : Mathf.Lerp(0f, m_setting_service.BGMRate, delta);
+
+                elapsed_time += Time.deltaTime;
+                yield return null;
             }
+
+            bgm_source.volume = is_out ? 0f : m_setting_service.BGMRate;
         }
-
-        if (target_index != -1)
+        else
         {
-            var effect_source = ObjectManager.Instance.GetObject(ObjectType.SFX).GetComponent<AudioSource>();
+            bgm_source.volume = 0f;
+        }
+    }
+    #endregion BGM
 
-            // if (SettingManager.Instance.Data.SFX)
-            // {
-            //     effect_source.volume = Random.Range(0.7f, 1.0f);
-            //     effect_source.pitch = Random.Range(0.8f, 1.1f);
-            // }
-            // else
-            // {
-            //     effect_source.volume = 0f;
-            // }
+    #region SFX
+    public void PlaySFX(string sfx_name)
+    {
+        if (!m_setting_service.SFX)
+        {
+            return;
+        }
+        
+        if (m_sfx_dict.TryGetValue(sfx_name, out var sfx_data))
+        {
+            if (m_sfx_channel_dict.TryGetValue(sfx_name, out var channel))
+            {
+                if (channel >= sfx_data.Channel)
+                {
+                    return;
+                }
+                else
+                {
+                    m_sfx_channel_dict[sfx_name]++;
+                }
+            }
+            else
+            {
+                m_sfx_channel_dict[sfx_name] = 1;
+            }
 
-            effect_source.clip = m_sfx_list[target_index];
-            effect_source.Play();
+            var sfx_obj = ObjectManager.Instance.GetObject(ObjectType.SFX);
+            var sfx_source = sfx_obj.GetComponent<AudioSource>();
 
-            StartCoroutine(ReturnEffect(effect_source));
+            sfx_source.clip = sfx_data.Clip;
+            sfx_source.volume = m_setting_service.SFXRate;
+            sfx_source.Play();
+
+            StartCoroutine(ReturnSFX(sfx_name, sfx_source));
         }
     }
 
-    private IEnumerator ReturnEffect(AudioSource target_source)
+    private IEnumerator ReturnSFX(string sfx_name, AudioSource sfx_source)
     {
-        float elapsed_time = 0f;
-        float target_time = target_source.clip.length;
-
-        while (elapsed_time < target_time)
+        while (sfx_source.isPlaying)
         {
-            elapsed_time += Time.deltaTime;
             yield return null;
         }
 
-        ObjectManager.Instance.ReturnObject(target_source.gameObject, ObjectType.SFX);
+        m_sfx_channel_dict[sfx_name]--;
+        ObjectManager.Instance.ReturnObject(sfx_source.gameObject, ObjectType.SFX);
     }
+    #endregion SFX
 }

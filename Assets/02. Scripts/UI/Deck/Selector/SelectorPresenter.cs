@@ -53,6 +53,8 @@ public class SelectorPresenter
     {
         HightlightToggle(true);
         m_view.ToggleCloseButton(false);
+
+        m_view.PlaySFX("Button Click");
     }
 
     public void OnClickDisable()
@@ -65,6 +67,7 @@ public class SelectorPresenter
         }
 
         CloseUI();
+        m_view.PlaySFX("Button Click");
     }
 
     private void HightlightToggle(bool active)
