@@ -1,6 +1,10 @@
 public interface IStageView
 {
+    void Inject(StagePresenter presenter);
+
     void OpenUI();
+    void UpdateUI(int stage, string state_text);
     void CloseUI();
-    void UpdateUI(int stage, StageState stage_status);
+
+    void PlaySFX(string sfx_name);
 }

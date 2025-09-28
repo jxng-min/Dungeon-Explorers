@@ -2,25 +2,58 @@ using InventoryService;
 
 public class TrainerPresenter
 {
-    #region Variables
     private readonly ITrainerView m_view;
-    private readonly TrainerModel m_model;
-    #endregion Variables
+    private readonly ITrainerDataBase m_trainer_db;
+    private readonly IInventoryService m_inventory_service;
 
-    public TrainerPresenter(ITrainerView view, IInventoryService inventory_system)
+    private readonly CompactTrainerPresenter m_compact_trainer_presenter;
+
+    private bool m_is_open;
+
+    public TrainerPresenter(ITrainerView view,
+                            ITrainerDataBase trainer_db,
+                            IInventoryService inventory_service,
+                            CompactTrainerPresenter compact_trainer_presenter)
     {
         m_view = view;
-        m_model = new TrainerModel(inventory_system);
+        m_trainer_db = trainer_db;
+        m_inventory_service = inventory_service;
+        m_compact_trainer_presenter = compact_trainer_presenter;  
+
+        m_view.Inject(this);
     }
 
-    public void OnClickedOpenUI()
+    private void Initialize()
     {
-        m_view.InstantiateSlots(m_model.InventorySystem.Units);
+        foreach(var unit_data in m_inventory_service.Units)
+        {
+            var trainer_slot_view = m_view.InstantiateSlot();
+
+            var trainer_slot_presenter = new TrainerSlotPresenter(trainer_slot_view,
+                                                                  m_trainer_db.GetTrainerData(unit_data.Code),
+                                                                  m_compact_trainer_presenter);
+        }
+    } 
+
+    public void OpenUI()
+    {
+        if(m_is_open)
+        {
+            return;
+        }
+
+        m_is_open = true;
+
         m_view.OpenUI();
+        Initialize();
+
+        m_view.PlaySFX("Button Click");
     }
 
-    public void OnClickedCloseUI()
+    public void CloseUI()
     {
+        m_is_open = false;
         m_view.CloseUI();
+        m_compact_trainer_presenter.CloseUI();
     }
 }

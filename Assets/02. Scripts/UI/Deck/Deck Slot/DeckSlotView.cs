@@ -1,106 +1,60 @@
-using System;
-using DeckService;
 using TMPro;
-using Units;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Animator))]
-public class DeckSlotView : MonoBehaviour, IDeckSlotView
+public class DeckSlotView : MonoBehaviour, IDeckSlotView, IPointerClickHandler
 {
-    #region Variables
     [Header("UI 관련 컴포넌트")]
+    [Header("슬롯 버튼")]
+    [SerializeField] private Button m_slot_button;
+
     [Header("유닛 이미지")]
     [SerializeField] private Image m_unit_image;
 
-    [Header("비용 프레임 오브젝트")]
-    [SerializeField] private GameObject m_cost_frame;
+    [Header("유닛 상태")]
+    [SerializeField] private GameObject m_state_text;
 
-    [Header("비용 라벨")]
-    [SerializeField] private TMP_Text m_cost_label;
+    [Header("유닛 코스트")]
+    [SerializeField] private TMP_Text m_cost_label; 
 
-    [Header("선택 공지 오브젝트")]
-    [SerializeField] private GameObject m_selected_object;
-
-    private Animator m_animator;
     private DeckSlotPresenter m_presenter;
 
-    #endregion Variables
-
-    private void Awake()
+    private void OnDisable()
     {
-        m_animator = GetComponent<Animator>();
+        if(m_presenter == null)
+        {
+            return;
+        }
 
-        m_presenter = new DeckSlotPresenter(this);
+        m_presenter?.Dispose();
     }
 
-    #region Helper Methods
-    public void Initialize(UnitDataBase unit_db, IDeckService deck_system, IDeckView deck_view, ISelectorView selector_view, UnitCode code)
+    public void Inject(DeckSlotPresenter presenter)
     {
-        m_presenter.Initialize(unit_db, deck_system, deck_view, selector_view, code);
-        ClearUI();
+        m_presenter = presenter;
     }
 
-    public void Swap(UnitCode code)
+    public void UpdateUI(Sprite unit_image, int unit_cost)
     {
-        m_presenter.Swap(code);
+        m_unit_image.sprite = unit_image;
+        m_cost_label.text = NumberFormatter.FormatNumber(unit_cost);
     }
 
-    public void Clear()
+    public void UpdateState(bool is_selected)
     {
-        m_presenter.ClearView();
+        m_state_text.SetActive(is_selected);
     }
 
-    public void ClearUI()
+    public void PlaySFX(string sfx_name)
     {
-        m_unit_image.sprite = null;
-        SetAlpha(0f);
-
-        m_cost_label.text = "";
-        m_cost_frame.SetActive(false);
-
-        m_selected_object.SetActive(false);
+        SoundManager.Instance.PlaySFX(sfx_name);
     }
 
-    private void SetAlpha(float alpha)
-    {
-        var color = m_unit_image.color;
-        color.a = alpha;
-        m_unit_image.color = color;
-    }
-
-    public void Updates()
-    {
-        m_presenter.UpdateView();
-    }
-
-    public void UpdateUI(Sprite unit_sprite, int cost, bool is_selected)
-    {
-        m_unit_image.sprite = unit_sprite;
-        SetAlpha(1f);
-
-        m_cost_frame.SetActive(true);
-        m_cost_label.text = NumberFormatter.FormatNumber(cost);
-
-        m_selected_object.SetActive(is_selected);
-    }
-
-    public void SetHighlight(bool flag)
-    {
-        m_animator.SetBool("Glow", flag);
-    }
-
-    public UnitCode GetCode()
-    {
-        return m_presenter.GetCode();
-    }
-    #endregion Helper Methods
-
-    #region Event Methods
     public void OnPointerClick(PointerEventData eventData)
     {
-        m_presenter.OnClickedSlot(eventData.position);
+        var mouse_position = new System.Numerics.Vector2(eventData.position.x, 
+                                                         eventData.position.y);
+        m_presenter.OnClickSlot(mouse_position);
     }
-    #endregion Event Methods
 }

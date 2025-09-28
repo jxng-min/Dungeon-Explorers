@@ -1,43 +1,35 @@
-using ReinforcementService;
-using UnityEngine;
+using System;
 
 public class CostPresenter
 {
-    #region Variables
     private readonly ICostView m_view;
     private readonly CostModel m_model;
-    #endregion Variables
 
-    public CostPresenter(ICostView view, IReinforcementService reinforcement_system, IIntervalView interval_view)
+    public event Action<int> OnUpdatedCost;
+
+    public float Interval => m_model.Interval;
+
+    public CostPresenter(ICostView view,
+                         CostModel model)
     {
         m_view = view;
-        m_model = new CostModel(reinforcement_system, interval_view);
-    }
+        m_model = model;
 
-    #region Helper Methods
-    public void Initialize()
-    {
+        m_view.Inject(this);
         m_view.StartUI();
     }
+
     public void UpdateCost(int cost)
     {
         m_model.Cost += cost;
-        m_model.Cost = Mathf.Clamp(m_model.Cost, 0, m_model.MaxCost);
+        m_model.Cost = UnityEngine.Mathf.Clamp(m_model.Cost, 0, m_model.MaxCost);
+
+        OnUpdatedCost?.Invoke(m_model.Cost);
+        m_view.UpdateUI(m_model.Cost, m_model.MaxCost);
     }
 
     public void UpdateView()
     {
         m_view.UpdateUI(m_model.Cost, m_model.MaxCost);
     }
-
-    public int GetCost()
-    {
-        return m_model.Cost;
-    }
-
-    public float GetInterval()
-    {
-        return m_model.Interval;
-    }
-    #endregion Helper Methods
 }

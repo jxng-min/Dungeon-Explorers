@@ -1,12 +1,10 @@
 public interface IDeckView
 {
-    void Initialize();
+    void Inject(DeckPresenter presenter);
+
+    IDeckSlotView InstantiateSlot(); 
 
     void OpenUI();
     void CloseUI();
-    void ResetUI();
-    void UpdateUI();
-    
-    IDeckSlotView GetSlotView(int index);
-    void SetHighlightSlots(bool flag);
+    void PlaySFX(string sfx_name);
 }

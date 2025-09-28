@@ -1,83 +1,75 @@
+using System;
 using DeckService;
 using Units;
-using UnityEngine;
+using UnitService;
 
-public class DeckSlotPresenter
+public class DeckSlotPresenter : IDisposable
 {
-    #region Variables
     private readonly IDeckSlotView m_view;
-    private readonly DeckSlotModel m_model;
-    #endregion Variables
+    private readonly IUnitDataBase m_unit_db; 
+    private readonly IDeckService m_deck_service;
+    private readonly SelectorPresenter m_selector_presenter;
+    private readonly UnitCode m_unit_code;
 
-    public DeckSlotPresenter(IDeckSlotView view)
+    private bool m_is_selected;
+
+    public DeckSlotPresenter(IDeckSlotView view,
+                             IUnitDataBase unit_db,
+                             IDeckService deck_service,
+                             SelectorPresenter selector_presenter,
+                             UnitCode unit_code)
     {
         m_view = view;
-        m_model = new DeckSlotModel();
+
+        m_unit_db = unit_db;
+        m_deck_service = deck_service;
+        m_selector_presenter = selector_presenter;
+
+        m_unit_code = unit_code;
+
+        m_deck_service.OnUpdatedDeck += UpdateSelectedSlot; 
+
+        m_view.Inject(this);
+        Initialize();
     }
 
-    public void Initialize(UnitDataBase unit_db, IDeckService deck_system, IDeckView deck_view, ISelectorView selector_view, UnitCode code)
+    private void Initialize()
     {
-        m_model.Initialize(unit_db, deck_system, deck_view, selector_view, code);
+        UpdateUI();
     }
 
-    public void Swap(UnitCode code)
+    public void OnClickSlot(System.Numerics.Vector2 mouse_position)
     {
-        m_model.Code = code;
+        m_selector_presenter.OpenUI(m_unit_code);
+        m_selector_presenter.SetPosition(mouse_position);
 
-        for (int i = 0; i < m_model.Deck.Count; i++)
+        SoundManager.Instance.PlaySFX("Button Click");
+    }
+
+    public void UpdateUI()
+    {
+        var unit = m_unit_db.GetUnit(m_unit_code);
+        m_view.UpdateUI(unit.Image, (unit as Hero).Cost);
+    }
+
+    public void UpdateSelectedSlot(int index, 
+                                   UnitCode legacy_unit_code, 
+                                   UnitCode new_unit_code)
+    {
+        if(m_unit_code == new_unit_code)
         {
-            if (m_model.Code == m_model.DeckView.GetSlotView(i).GetCode())
-            {
-                m_model.DeckSystem.SetDeck(i, m_model.Code);
-            }
+            m_is_selected = true;
         }
-    }
-
-    public void UpdateView()
-    {
-        if (m_model.Unit == null || m_model.Unit.Code == UnitCode.EMPTY)
+        else if(m_unit_code == legacy_unit_code)
         {
-            m_view.ClearUI();
-            return;
-        }
-
-        var deck = m_model.Deck;
-        var is_selected = deck.Contains(m_model.Unit.Code);
-
-        m_view.UpdateUI(m_model.Image, m_model.Cost, is_selected);
-    }
-
-    public void ClearView()
-    {
-        for (int i = 0; i < m_model.Deck.Count; i++)
-        {
-            if (m_model.Unit != null && m_model.Deck[i] == m_model.Unit.Code)
-            {
-                m_model.Code = UnitCode.EMPTY;
-                m_model.DeckSystem.SetDeck(i, UnitCode.EMPTY);
-                break;
-            }
+            m_is_selected = false;
         }
 
-        m_view.ClearUI();
+        m_view.UpdateState(m_is_selected);
     }
 
-    public void OnClickedSlot(Vector2 touch_position)
+    public void Dispose()
     {
-        for (int i = 0; i < m_model.Deck.Count; i++)
-        {
-            if (m_model.Unit != null && m_model.Deck[i] == m_model.Unit.Code)
-            {
-                m_model.SelectorView.Initialize(m_model.DeckView.GetSlotView(i), m_model.Unit, touch_position, false);
-                return;
-            }
-        }
-
-        m_model.SelectorView.Initialize(m_view, m_model.Unit, touch_position, true);
-    }
-
-    public UnitCode GetCode()
-    {
-        return m_model.Code;
+        m_deck_service.OnUpdatedDeck -= UpdateSelectedSlot;
     }
 }

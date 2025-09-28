@@ -1,9 +1,9 @@
-using Units;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public interface ITrainerSlotView : IPointerClickHandler
+public interface ITrainerSlotView
 {
-    void Initialize(UnitDataBase unit_db, ITrainerInfoView trainer_info_view, InventoryService.Unit unit);
-    void UpdateUI(Sprite unit_sprite, int cost);
+    void Inject(TrainerSlotPresenter presenter);
+
+    void UpdateUI(Sprite unit_image);
+    void PlaySFX(string sfx_name);
 }

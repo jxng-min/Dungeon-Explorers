@@ -1,33 +1,24 @@
-using Units;
-
 public class TrainerSlotPresenter
 {
-    #region Variables
     private readonly ITrainerSlotView m_view;
-    private readonly TrainerSlotModel m_model;
-    #endregion Variables
+    private readonly CompactTrainerPresenter m_compact_trainer_presenter;
+    private readonly TrainerData m_trainer_data;
 
-    public TrainerSlotPresenter(ITrainerSlotView view)
+    public TrainerSlotPresenter(ITrainerSlotView view,
+                                TrainerData trainer_data,
+                                CompactTrainerPresenter compact_trainer_presenter)
     {
         m_view = view;
-        m_model = new TrainerSlotModel();
+        m_trainer_data = trainer_data;
+        m_compact_trainer_presenter = compact_trainer_presenter;
+
+        m_view.Inject(this);
+        m_view.UpdateUI(m_trainer_data.Hero.Image);
     }
 
-    #region Helper Methods
-    public void Initialize(UnitDataBase unit_db, ITrainerInfoView trainer_info_view, InventoryService.Unit unit)
+    public void OnClickedCompact()
     {
-        m_model.Initialize(unit_db, trainer_info_view, unit);
+        m_compact_trainer_presenter.OpenUI(m_trainer_data);
+        m_view.PlaySFX("Button Click");
     }
-
-    public void UpdateView()
-    {
-        m_view.UpdateUI(m_model.Image, m_model.Cost);
-    }
-
-    public void OnClickedTrainerSlot()
-    {
-        m_model.InfoView.Initialize(m_model.Unit);
-        m_model.InfoView.OpenUI();
-    }
-    #endregion Helper Methods
 }

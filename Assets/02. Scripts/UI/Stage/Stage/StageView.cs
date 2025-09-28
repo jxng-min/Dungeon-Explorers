@@ -1,90 +1,136 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UserDataService;
 
-[RequireComponent(typeof(Animator))]
 public class StageView : MonoBehaviour, IStageView
 {
-    #region Variables
-    [Header("의존성 관련 컴포넌트")]
-    [SerializeField] StageDataBase m_stage_db;
+    [Header("UI 관련 컴포넌트")]
+    [Header("캔버스 그룹")]
+    [SerializeField] private CanvasGroup m_canvas_group;
 
-    [Space(50f)][Header("UI 관련 컴포넌트")]
-    [Header("스테이지 표기 라벨")]
+    [Header("스테이지 텍스트")]
     [SerializeField] private TMP_Text m_stage_label;
 
-    [Header("스테이지 상태 라벨")]
-    [SerializeField] private TMP_Text m_status_label;
+    [Header("상태 텍스트")]
+    [SerializeField] private TMP_Text m_state_label;
 
-    [Header("이전 스테이지 버튼")]
-    [SerializeField] private Button m_previous_button;
+    [Header("왼쪽 버튼")]
+    [SerializeField] private Button m_left_button;
 
-    [Header("다음 스테이지 버튼")]
-    [SerializeField] private Button m_next_button;
+    [Header("오른쪽 버튼")]
+    [SerializeField] private Button m_right_button;
 
-    [Header("게임 시작 버튼")]
+    [Header("시작 버튼")]
     [SerializeField] private Button m_start_button;
 
-    [Header("UI 열기 버튼")]
+    [Header("열기 버튼")]
     [SerializeField] private Button m_open_button;
 
-    [Header("UI 닫기 버튼")]
-    [SerializeField] private Button m_close_button;
+    [Header("닫기 버튼")]
+    [SerializeField] private Button[] m_close_buttons;
 
-    private Animator m_animator;
+    [Header("버튼의 이미지")]
+    [SerializeField] private Image m_button_image;    
+
+    private Coroutine m_toggle_coroutine;
+    
     private StagePresenter m_presenter;
-    private IUserDataService m_inventory_system;
-    #endregion Variables
-
-    private void Awake()
+    
+    private void OnDestroy()
     {
-        m_animator = GetComponent<Animator>();
+        m_left_button.onClick.RemoveListener(m_presenter.OnClickLeft);
+        m_right_button.onClick.RemoveListener(m_presenter.OnClickRight);
 
-        m_inventory_system = ServiceLocator.Get<IUserDataService>();
+        m_start_button.onClick.RemoveListener(m_presenter.OnClickStart);
 
-        m_presenter = new StagePresenter(this, m_inventory_system, m_stage_db);
+        m_open_button.onClick.RemoveListener(m_presenter.OpenUI);
 
-        m_previous_button.onClick.AddListener(m_presenter.OnClickedPreviousButton);
-        m_next_button.onClick.AddListener(m_presenter.OnClickedNextButton);
-
-        m_start_button.onClick.AddListener(m_presenter.OnClickGameStart);
-
-        m_open_button.onClick.AddListener(m_presenter.OnClickedOpenUI);
-        m_close_button.onClick.AddListener(m_presenter.OnClickedCloseUI);
+        foreach(var close_button in m_close_buttons)
+        {
+            close_button.onClick.RemoveListener(m_presenter.CloseUI);
+        } 
     }
 
-    #region Helper Methods
+    public void Inject(StagePresenter presenter)
+    {
+        m_presenter = presenter;
+
+        m_left_button.onClick.AddListener(m_presenter.OnClickLeft);
+        m_right_button.onClick.AddListener(m_presenter.OnClickRight);
+
+        m_start_button.onClick.AddListener(m_presenter.OnClickStart);
+
+        m_open_button.onClick.AddListener(m_presenter.OpenUI);
+
+        foreach(var close_button in m_close_buttons)
+        {
+            close_button.onClick.AddListener(m_presenter.CloseUI);
+        } 
+    }
+
     public void OpenUI()
     {
-        m_animator.SetBool("Open", true);
+        m_button_image.color = Color.yellow;
+        ToggleCoroutine(true);
+    }
+
+    public void UpdateUI(int stage, string state_text)
+    {
+        m_stage_label.text = $"스테이지 {stage}";
+        m_state_label.text = state_text;
     }
 
     public void CloseUI()
     {
-        m_animator.SetBool("Open", false);
+        m_button_image.color = Color.white;
+        ToggleCoroutine(false);
     }
 
-    public void UpdateUI(int stage, StageState stage_status)
+    public void PlaySFX(string sfx_name)
     {
-        m_stage_label.text = $"지하 던전 {stage}층";
-
-        m_start_button.interactable = true;
-        switch (stage_status)
-        {
-            case StageState.CLEARED:
-                m_status_label.text = "<color=green>토벌 완료</color>";
-                break;
-
-            case StageState.CHALLENGE:
-                m_status_label.text = "<color=yellow>토벌 가능</color>";
-                break;
-
-            case StageState.DENY:
-                m_status_label.text = "<color=red>토벌 불가</color>";
-                m_start_button.interactable = false;
-                break;
-        }
+        SoundManager.Instance.PlaySFX(sfx_name);
     }
-    #endregion Helper Methods
+
+    private void ToggleCoroutine(bool is_open)
+    {
+        if(m_toggle_coroutine != null)
+        {
+            StopCoroutine(m_toggle_coroutine);
+            m_toggle_coroutine = null;
+        }
+
+        m_toggle_coroutine = StartCoroutine(Co_ToggleUI(is_open));
+    }
+
+    private IEnumerator Co_ToggleUI(bool is_open)
+    {
+        m_canvas_group.blocksRaycasts = is_open;
+        m_canvas_group.interactable = is_open;
+
+        float elapsed_time = 0f;
+        float target_time = 0.5f;
+
+        if(is_open && m_canvas_group.alpha >= 0.9f)
+        {
+            yield break;
+        }
+
+        if(!is_open && m_canvas_group.alpha <= 0.1f)
+        {
+            yield break;
+        }
+
+        while(elapsed_time < target_time)
+        {
+            elapsed_time += Time.deltaTime;
+
+            var alpha_delta = elapsed_time / target_time; 
+            m_canvas_group.alpha = is_open ? alpha_delta : 1f - alpha_delta;
+
+            yield return null;
+        }
+
+        m_canvas_group.alpha = is_open ? 1f : 0f;
+    }
 }

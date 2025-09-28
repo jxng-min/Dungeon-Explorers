@@ -1,11 +1,11 @@
-using System.Collections.Generic;
-using Units;
-
 public interface IShopView
 {
-    void Initialize(List<Unit> unit);
+    void Inject(ShopPresenter presenter);
+
+    IShopSlotView InstantiateSlot();
+
     void OpenUI();
     void CloseUI();
-    void ResetUI();
-    void UpdateUI();
+
+    void PlaySFX(string sfx_name);
 }

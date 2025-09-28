@@ -1,153 +1,144 @@
-using DeckService;
-using InventoryService;
+using System.Collections;
+using System.Collections.Generic;
+using ObjectPool;
 using UnityEngine;
 using UnityEngine.UI;
-using ObjectPool;
-using System.Collections.Generic;
-using Units;
 
-[RequireComponent(typeof(Animator))]
 public class DeckView : MonoBehaviour, IDeckView
 {
-    #region Variables
-    [Header("의존성 관련 컴포넌트")]
-    [Header("유닛 데이터베이스")]
-    [SerializeField] private UnitDataBase m_unit_db;
-
-    [Header("스테이지 데이터베이스")]
-    [SerializeField] private StageDataBase m_stage_db;
-
-    [Header("덱 편성 도우미")]
-    [SerializeField] private SelectorView m_selector_view;
-
-    [Space(50f)]
     [Header("UI 관련 컴포넌트")]
-    [Header("선택된 슬롯의 부모 트랜스폼")]
-    [SerializeField] private Transform m_selected_slot_root;
-    private IDeckSlotView[] m_selected_slots;
+    [Header("캔버스 그룹")]
+    [SerializeField] private CanvasGroup m_canvas_group;
 
-    [Header("후보 슬롯의 부모 트랜스폼")]
-    [SerializeField] private Transform m_candidate_slot_root;
-    private List<GameObject> m_candidate_slots;
+    [Header("슬롯의 부모 트랜스폼")]
+    [SerializeField] private Transform m_slot_root;
 
-    [Header("편성 UI 스크롤 바")]
+    [Header("스크롤 뷰 슬라이더")]
     [SerializeField] private Scrollbar m_scroll_bar;
 
-    [Header("UI 열기 버튼")]
+    [Header("열기 버튼")]
     [SerializeField] private Button m_open_button;
 
-    [Header("UI 닫기 버튼")]
-    [SerializeField] private Button m_close_button;
+    [Header("닫기 버튼")]
+    [SerializeField] private Button[] m_close_buttons;
 
-    private Animator m_animator;
+    [Header("버튼의 이미지")]
+    [SerializeField] private Image m_button_image;
+
+    private List<GameObject> m_slot_list = new();
+    private Coroutine m_toggle_coroutine;
+
     private DeckPresenter m_presenter;
-    private IDeckService m_deck_system;
-    private IInventoryService m_inven_system;
-    #endregion Variables
 
-    private void Awake()
+    private void OnDestroy()
     {
-        m_animator = GetComponent<Animator>();
+        m_open_button.onClick.RemoveListener(m_presenter.OpenUI);
 
-        m_deck_system = ServiceLocator.Get<IDeckService>();
-        m_inven_system = ServiceLocator.Get<IInventoryService>();
-
-        m_presenter = new DeckPresenter(this, m_deck_system, m_stage_db);
-
-        m_open_button.onClick.AddListener(m_presenter.OnClickedOpenUI);
-        m_close_button.onClick.AddListener(m_presenter.OnClickedCloseUI);
-    }
-
-    #region Helper Methods
-    public void Initialize()
-    {
-        ConfigureSelecteds();
-        ConfigureCandidates();
-    }
-
-    private void ConfigureSelecteds()
-    {
-        m_selected_slots = m_selected_slot_root.GetComponentsInChildren<IDeckSlotView>();
-
-        var deck = m_deck_system.GetDeck();
-        for (int i = 0; i < m_selected_slots.Length; i++)
+        foreach(var close_button in m_close_buttons)
         {
-            m_selected_slots[i].Initialize(m_unit_db, m_deck_system, this, m_selector_view, deck[i]);
-        }
+            close_button.onClick.RemoveListener(m_presenter.CloseUI);
+        }      
     }
 
-    private void ConfigureCandidates()
+    public void Inject(DeckPresenter presenter)
     {
-        m_candidate_slots = new();
+        m_presenter = presenter;
 
-        var deck = m_inven_system.Units;
-        for (int i = 0; i < deck.Count; i++)
+        m_open_button.onClick.AddListener(m_presenter.OpenUI);
+
+        foreach(var close_button in m_close_buttons)
         {
-            var deck_slot_obj = ObjectManager.Instance.GetObject(ObjectType.DECK_SLOT);
-            deck_slot_obj.transform.SetParent(m_candidate_slot_root, false);
+            close_button.onClick.AddListener(m_presenter.CloseUI);
+        } 
+    }
 
-            var deck_slot = deck_slot_obj.GetComponent<IDeckSlotView>();
-            deck_slot.Initialize(m_unit_db, m_deck_system, this, m_selector_view, deck[i].Code);
+    public IDeckSlotView InstantiateSlot()
+    {
+        var slot_obj = ObjectManager.Instance.GetObject(ObjectType.DECK_SLOT);
+        slot_obj.transform.SetParent(m_slot_root, false);
+        m_slot_list.Add(slot_obj);
 
-            m_candidate_slots.Add(deck_slot_obj);
+        return slot_obj.GetComponent<IDeckSlotView>();
+    }
+
+    public void ReturnSlots()
+    {
+        var container = ObjectManager.Instance.GetPool(ObjectType.DECK_SLOT).Container;
+
+        foreach(var slot_obj in m_slot_list)
+        {
+            slot_obj.transform.SetParent(container, false);
+
+            ObjectManager.Instance.ReturnObject(slot_obj, ObjectType.DECK_SLOT);
         }
     }
 
     public void OpenUI()
     {
-        m_animator.SetBool("Open", true);
+        m_slot_list.Clear();
 
-        m_presenter.Initialize();
-        UpdateUI();
+        m_button_image.color = Color.yellow;
+        ToggleCoroutine(true);
     }
 
     public void CloseUI()
     {
-        m_animator.SetBool("Open", false);
+        m_button_image.color = Color.white;
+        ToggleCoroutine(false);
+
+        ReturnSlots();
+        m_slot_list.Clear();
     }
 
-    public void UpdateUI()
+    public void PlaySFX(string sfx_name)
     {
-        foreach (var selected_slot in m_selected_slots)
+        SoundManager.Instance.PlaySFX(sfx_name);
+    }
+
+    private void ToggleCoroutine(bool is_open)
+    {
+        if(m_toggle_coroutine != null)
         {
-            selected_slot.Updates();
+            StopCoroutine(m_toggle_coroutine);
+            m_toggle_coroutine = null;
         }
 
-        foreach (var deck_slot_obj in m_candidate_slots)
+        m_toggle_coroutine = StartCoroutine(Co_ToggleUI(is_open));
+    }
+
+    private IEnumerator Co_ToggleUI(bool is_open)
+    {
+        m_canvas_group.blocksRaycasts = is_open;
+        m_canvas_group.interactable = is_open;
+
+        float elapsed_time = 0f;
+        float target_time = 0.5f;
+
+        if(is_open && m_canvas_group.alpha >= 0.9f)
         {
-            var deck_slot = deck_slot_obj.GetComponent<IDeckSlotView>();
-            deck_slot.Updates();
+            yield break;
+        }
+
+        if(!is_open && m_canvas_group.alpha <= 0.1f)
+        {
+            yield break;
+        }
+
+        while(elapsed_time < target_time)
+        {
+            elapsed_time += Time.deltaTime;
+
+            var alpha_delta = elapsed_time / target_time; 
+            m_canvas_group.alpha = is_open ? alpha_delta : 1f - alpha_delta;
+
+            yield return null;
+        }
+
+        m_canvas_group.alpha = is_open ? 1f : 0f;
+
+        if(!is_open)
+        {
+            m_scroll_bar.value = 0f;
         }
     }
-
-    public void ResetUI()
-    {
-        ReturnCandidateSlotsToPool();
-        m_scroll_bar.value = 0f;
-    }
-
-    private void ReturnCandidateSlotsToPool()
-    {
-        foreach (var deck_slot in m_candidate_slots)
-        {
-            var origin_slot_root = ObjectManager.Instance.GetPool(ObjectType.DECK_SLOT).Container;
-            deck_slot.transform.SetParent(origin_slot_root, false);
-
-            ObjectManager.Instance.ReturnObject(deck_slot, ObjectType.DECK_SLOT);
-        }
-    }
-
-    public void SetHighlightSlots(bool flag)
-    {
-        foreach (var slot in m_selected_slots)
-        {
-            slot.SetHighlight(flag);
-        }
-    }
-
-    public IDeckSlotView GetSlotView(int index)
-    {
-        return m_selected_slots[index];
-    }
-    #endregion Helper Methods
 }

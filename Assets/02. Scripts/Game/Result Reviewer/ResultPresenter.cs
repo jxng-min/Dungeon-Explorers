@@ -1,49 +1,57 @@
+using System;
 using InventoryService;
-using UserDataService;
+using UserService;
 
-public class ResultPresenter
+public class ResultPresenter : IDisposable
 {
-    #region Variables
-    private readonly IResultViewer m_view;
-    private StageDataBase m_stage_db;
-    private StageService m_stage_service;
-    private IInventoryService m_inventory_service;
-    private IUserDataService m_user_data_service;
-    #endregion Variables
+    private readonly IResultView m_view;
+    
+    private readonly IStageDataBase m_stage_db;
 
-    public ResultPresenter(IResultViewer view, StageDataBase stage_db, StageService stage_service, IInventoryService inventory_service, IUserDataService user_data_service)
+    private readonly IInventoryService m_inventory_service;
+    private readonly IUserService m_user_service;
+
+    private TowerUnit m_enemy_tower;
+    private TowerUnit m_hero_tower;
+
+    public ResultPresenter(IResultView view, 
+                           IStageDataBase stage_db, 
+                           IInventoryService inventory_service, 
+                           IUserService user_service)
     {
         m_view = view;
+
         m_stage_db = stage_db;
-        m_stage_service = stage_service;
+
         m_inventory_service = inventory_service;
-        m_user_data_service = user_data_service;
+        m_user_service = user_service;
+
+        m_view.Inject(this);
     }
 
-    public void OpenView()
+    public void Inject(TowerUnit hero_tower,
+                       TowerUnit enemy_tower)
     {
-        m_view.OpenView();
+        m_hero_tower = hero_tower;
+        m_hero_tower.Health.OnDead += OpenUI;        
+        
+        m_enemy_tower = enemy_tower;
+        m_enemy_tower.Health.OnDead += OpenUI;
+    }
 
+    public void OpenUI()
+    {
         var success = GameManager.Instance.GameState == GameEventType.GAMECLEAR;
 
-        var stage = m_stage_service.GetStage(m_stage_db.Stage);
+        var stage = m_stage_db.GetStage(m_stage_db.Current);
         var final_money = success ? stage.Gold : stage.Gold / 4;
         var final_exp = success ? stage.EXP : stage.EXP / 4;
 
-        UpdateModel(success, final_money, final_exp);
+        m_inventory_service.UpdateMoney(final_money);
+        m_user_service.UpdateLevel(final_exp);
 
+        m_view.OpenUI();
         m_view.UpdateUI(success, final_money, final_exp);
-    }
-
-    private void UpdateModel(bool success, int money, int exp)
-    {
-        m_inventory_service.Money += money;
-        m_user_data_service.EXP += exp;
-
-        if (m_stage_db.Stage == m_user_data_service.Stage)
-        {
-            m_user_data_service.Stage = success ? m_user_data_service.Stage + 1 : m_user_data_service.Stage;
-        }
     }
 
     public void OnClickedRetry()
@@ -54,5 +62,11 @@ public class ResultPresenter
     public void OnClickedTitle()
     {
         LoadingManager.Instance.LoadScene("Title");
+    }
+
+    public void Dispose()
+    {
+        m_hero_tower.Health.OnDead -= OpenUI;  
+        m_enemy_tower.Health.OnDead -= OpenUI;
     }
 }

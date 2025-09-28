@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 5853149349350031650}
   - component: {fileID: 4511426257115793367}
   - component: {fileID: 4106289165174793809}
-  - component: {fileID: 3262105187657860785}
+  - component: {fileID: 7479907867071157885}
   m_Layer: 5
   m_Name: Codex Slot
   m_TagString: Untagged
@@ -144,8 +144,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3468632726360731539, guid: a30936d8995c5bc5a8881f5150b0b312, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 3750470451678430535, guid: 1b81c0c4198d11341ac28f6f08615685, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -220,7 +220,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3262105187657860785
+--- !u!114 &7479907867071157885
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -229,8 +229,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6075645490933064748}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0a94ca58add433538db76f8fb5a7907, type: 3}
+  m_Script: {fileID: 11500000, guid: a160775eaee532344b6cd88d48bee412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_codex_image: {fileID: 1517258343293624346}
-  m_codex_button: {fileID: 4511426257115793367}
+  m_slot_button: {fileID: 4511426257115793367}
+  m_unit_image: {fileID: 1517258343293624346}

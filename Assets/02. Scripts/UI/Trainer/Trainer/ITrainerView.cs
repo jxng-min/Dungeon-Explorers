@@ -1,10 +1,11 @@
-using System.Collections.Generic;
-using InventoryService;
-
 public interface ITrainerView
 {
-    void InstantiateSlots(List<Unit> unit_list);
+    void Inject(TrainerPresenter presenter);
+
+    ITrainerSlotView InstantiateSlot();
+
     void OpenUI();
     void CloseUI();
-    void ResetUI();
+
+    void PlaySFX(string sfx_name);
 }

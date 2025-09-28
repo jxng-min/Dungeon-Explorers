@@ -1,6 +1,7 @@
 public interface IStatusView
 {
-    void SetLV(int lv);
-    void SetEXP(float normalized_exp);
-    void SetMoney(string money);
+    void Inject(StatusPresenter presenter);
+
+    void UpdateLevel(int level, float exp_rate);
+    void UpdateMoney(int money);
 }

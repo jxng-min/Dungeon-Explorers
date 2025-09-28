@@ -1,38 +1,65 @@
+using System;
 using InventoryService;
+using UnitService;
 
-public class ShopSlotPresenter
+public class ShopSlotPresenter : IDisposable
 {
-    #region Variables
     private readonly IShopSlotView m_view;
-    private readonly ShopSlotModel m_model;
-    #endregion Variables
+    private readonly IInventoryService m_inventory_service;
+    private readonly IUnitService m_unit_service;
+    private readonly ShopData m_shop_data;
 
-    public ShopSlotPresenter(IShopSlotView view)
+    public ShopSlotPresenter(IShopSlotView view,
+                             IInventoryService inventory_service,
+                             IUnitService unit_service,
+                             ShopData shop_data)
     {
         m_view = view;
-        m_model = new ShopSlotModel();
+        m_inventory_service = inventory_service;
+        m_unit_service = unit_service;
+        m_shop_data = shop_data;
+
+        m_inventory_service.OnUpdatedMoney += UpdateMoney;
+        m_inventory_service.OnUpdatedUnit += UpdateUnit;
+
+        m_view.Inject(this);
+        Initialize();
     }
 
-    #region Helper Methods
-    public void Initialize(IShopView shop_view, IUnitRepository unit_repo, IInventoryService inventory, Units.Unit unit)
+    private void Initialize()
     {
-        m_model.Initialize(shop_view, unit_repo, inventory, unit);
+        m_view.UpdateUI(m_unit_service.GetName(m_shop_data.Hero.Code), m_shop_data.Hero.Image);
 
-        UpdateView();
+        UpdateMoney(m_inventory_service.Money);
+        m_view.UpdateAquire(m_inventory_service.HasUnit(m_shop_data.Hero.Code));
     }
 
-    public void UpdateView()
+    public void PurchaseUnit()
     {
-        m_view.UpdateUI(m_model.HasUnit, m_model.Money, m_model.Cost);
+        m_inventory_service.UpdateMoney(-m_shop_data.Cost);
+        m_inventory_service.AddUnit(m_shop_data.Hero.Code);
+
+        m_view.PlaySFX("Button Click");
     }
 
-    public void OnClickedPurchase()
+    private void UpdateMoney(int money)
     {
-        m_model.Money -= m_model.Cost;
-        m_model.AddUnit();
-
-        m_view.Purchase();
-        m_model.ShopView.UpdateUI();
+        m_view.UpdatePurchase(m_shop_data.Cost, m_shop_data.Cost <= money);
     }
-    #endregion Helper Methods
+
+    private void UpdateUnit(UnitData unit)
+    {
+        if(unit.Code != m_shop_data.Hero.Code)
+        {
+            return;
+        }
+        
+        m_view.UpdateAquire(m_inventory_service.HasUnit(unit.Code));
+    }
+
+    public void Dispose()
+    {
+        m_inventory_service.OnUpdatedMoney -= UpdateMoney;
+        m_inventory_service.OnUpdatedUnit -= UpdateUnit;        
+    }
 }

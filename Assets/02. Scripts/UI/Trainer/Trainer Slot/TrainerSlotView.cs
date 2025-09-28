@@ -1,50 +1,39 @@
-using TMPro;
-using Units;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class TrainerSlotView : MonoBehaviour, ITrainerSlotView
 {
-    #region Variables
     [Header("UI 관련 컴포넌트")]
     [Header("유닛 이미지")]
     [SerializeField] private Image m_unit_image;
 
-    [Header("유닛 소환 비용 라벨")]
-    [SerializeField] private TMP_Text m_cost_label;
+    [Header("유닛 버튼")]
+    [SerializeField] private Button m_unit_button;
 
     private TrainerSlotPresenter m_presenter;
-    #endregion Variables
 
-    private void Awake()
+    private void OnDisable()
     {
-        m_presenter = new TrainerSlotPresenter(this);
+        if(m_presenter != null)
+        {
+            m_unit_button.onClick.RemoveListener(m_presenter.OnClickedCompact);
+        }
     }
 
-    #region Helper Methods
-    public void Initialize(UnitDataBase unit_db, ITrainerInfoView trainer_info_view, InventoryService.Unit unit)
+    public void Inject(TrainerSlotPresenter presenter)
     {
-        m_presenter.Initialize(unit_db, trainer_info_view, unit);
-        Updates();
+        m_presenter = presenter;
+
+        m_unit_button.onClick.AddListener(m_presenter.OnClickedCompact);
     }
 
-    public void Updates()
+    public void UpdateUI(Sprite unit_image)
     {
-        m_presenter.UpdateView();
+        m_unit_image.sprite = unit_image;
     }
 
-    public void UpdateUI(Sprite unit_sprite, int cost)
+    public void PlaySFX(string sfx_name)
     {
-        m_unit_image.sprite = unit_sprite;
-        m_cost_label.text = NumberFormatter.FormatNumber(cost);
+        SoundManager.Instance.PlaySFX(sfx_name);
     }
-    #endregion Helper Methods
-
-    #region Event Methods
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        m_presenter.OnClickedTrainerSlot();
-    }
-    #endregion Event Methods
 }

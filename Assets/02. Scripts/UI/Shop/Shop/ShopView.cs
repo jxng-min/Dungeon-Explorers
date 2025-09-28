@@ -1,95 +1,128 @@
-using System.Collections.Generic;
-using InventoryService;
-using Units;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Animator))]
 public class ShopView : MonoBehaviour, IShopView
 {
-    #region Variables
-    [Header("의존성 관련 컴포넌트")]
-    [SerializeField] private UnitDataBase m_model;
-
-    [Space(50f)]
     [Header("UI 관련 컴포넌트")]
-    [Header("상점 슬롯들의 부모 트랜스폼")]
+    [Header("캔버스 그룹")]
+    [SerializeField] private CanvasGroup m_canvas_group;
+
+    [Header("슬롯의 부모 트랜스폼")]
     [SerializeField] private Transform m_slot_root;
 
-    [Header("상점 슬롯의 프리펩")]
-    [SerializeField] private GameObject m_slot_prefab;
-
-    [Header("상점 UI 스크롤 바")]
+    [Header("스크롤 뷰 슬라이더")]
     [SerializeField] private Scrollbar m_scroll_bar;
 
-    [Header("상점 열기 버튼")]
+    [Header("열기 버튼")]
     [SerializeField] private Button m_open_button;
 
-    [Header("상점 닫기 버튼")]
-    [SerializeField] private Button m_close_button;
+    [Header("닫기 버튼")]
+    [SerializeField] private Button[] m_close_buttons;
 
-    private Animator m_animator;
+    [Header("버튼의 이미지")]
+    [SerializeField] private Image m_button_image;
+
+    [Space(20f)]
+    [Header("슬롯의 프리펩")]
+    [SerializeField] private GameObject m_slot_prefab;   
+
+    private Coroutine m_toggle_coroutine;
+
     private ShopPresenter m_presenter;
-    private List<IShopSlotView> m_slots;
 
-    private IInventoryService m_inventory;
-    private IUnitRepository m_unit_repo;
-    #endregion Variables
-
-    private void Awake()
+    private void OnDestroy()
     {
-        m_animator = GetComponent<Animator>();
+        m_open_button.onClick.RemoveListener(m_presenter.OpenUI);
 
-        m_inventory = ServiceLocator.Get<IInventoryService>();
-        m_unit_repo = ServiceLocator.Get<IUnitRepository>();
+        foreach(var close_button in m_close_buttons)
+        {
+            close_button.onClick.RemoveListener(m_presenter.CloseUI);
+        } 
+    } 
 
-        m_presenter = new ShopPresenter(this, m_model);
-
-        m_open_button.onClick.AddListener(m_presenter.OnClickedOpenUI);
-        m_close_button.onClick.AddListener(m_presenter.OnClickedCloseUI);
-
-        m_slots = new();
-    }
-
-    private void Start()
+    public void Inject(ShopPresenter presenter)
     {
+        m_presenter = presenter;
+
+        m_open_button.onClick.AddListener(m_presenter.OpenUI);
+
+        foreach(var close_button in m_close_buttons)
+        {
+            close_button.onClick.AddListener(m_presenter.CloseUI);
+        } 
+
         m_presenter.Initialize();
     }
 
-    #region Helper Methods
-    public void Initialize(List<Units.Unit> units)
+    public IShopSlotView InstantiateSlot()
     {
-        foreach (var unit in units)
-        {
-            var shop_slot = Instantiate(m_slot_prefab, m_slot_root).GetComponent<ShopSlotView>();
-            m_slots.Add(shop_slot);
+        var slot_obj = Instantiate(m_slot_prefab, m_slot_root);
 
-            shop_slot.Initialize(this, m_unit_repo, m_inventory, unit);
-        }
-    }
-
-    public void CloseUI()
-    {
-        m_animator.SetBool("Open", false);
+        return slot_obj.GetComponent<IShopSlotView>();
     }
 
     public void OpenUI()
     {
-        m_animator.SetBool("Open", true);
-        UpdateUI();
+        m_button_image.color = Color.yellow;
+        ToggleCoroutine(true);
     }
 
-    public void ResetUI()
+    public void CloseUI()
     {
-        m_scroll_bar.value = 0f;
+        m_button_image.color = Color.white;
+        ToggleCoroutine(false);
     }
 
-    public void UpdateUI()
+    public void PlaySFX(string sfx_name)
     {
-        foreach (var slot in m_slots)
+        SoundManager.Instance.PlaySFX(sfx_name);
+    }
+
+    private void ToggleCoroutine(bool is_open)
+    {
+        if(m_toggle_coroutine != null)
         {
-            slot.Updates();
+            StopCoroutine(m_toggle_coroutine);
+            m_toggle_coroutine = null;
+        }
+
+        m_toggle_coroutine = StartCoroutine(Co_ToggleUI(is_open));
+    }
+
+    private IEnumerator Co_ToggleUI(bool is_open)
+    {
+        m_canvas_group.blocksRaycasts = is_open;
+        m_canvas_group.interactable = is_open;
+
+        float elapsed_time = 0f;
+        float target_time = 0.5f;
+
+        if(is_open && m_canvas_group.alpha >= 0.9f)
+        {
+            yield break;
+        }
+
+        if(!is_open && m_canvas_group.alpha <= 0.1f)
+        {
+            yield break;
+        }
+
+        while(elapsed_time < target_time)
+        {
+            elapsed_time += Time.deltaTime;
+
+            var alpha_delta = elapsed_time / target_time; 
+            m_canvas_group.alpha = is_open ? alpha_delta : 1f - alpha_delta;
+
+            yield return null;
+        }
+
+        m_canvas_group.alpha = is_open ? 1f : 0f;
+
+        if(!is_open)
+        {
+            m_scroll_bar.value = 0f;
         }
     }
-    #endregion Helper Methods
 }

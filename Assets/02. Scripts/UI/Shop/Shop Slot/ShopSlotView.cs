@@ -1,74 +1,71 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using InventoryService;
 
 public class ShopSlotView : MonoBehaviour, IShopSlotView
 {
-    #region Variables
     [Header("UI 관련 컴포넌트")]
+    [Header("유닛 이름")]
+    [SerializeField] private TMP_Text m_name_label;
+
     [Header("유닛 이미지")]
     [SerializeField] private Image m_unit_image;
 
-    [Header("유닛 이름")]
-    [SerializeField] private TMP_Text m_unit_name;
-
     [Header("유닛 가격")]
-    [SerializeField] private TMP_Text m_unit_cost;
+    [SerializeField] private TMP_Text m_cost_label;
 
     [Header("구매 버튼")]
     [SerializeField] private Button m_purchase_button;
 
-    [Header("비활성화 이미지")]
-    [SerializeField] private GameObject m_disabled_object;
+    [Header("비활성화 패널")]
+    [SerializeField] private GameObject m_disabled_panel;
 
     private ShopSlotPresenter m_presenter;
-    #endregion Variables
 
-    private void Awake()
+    private void OnDestroy()
     {
-        m_presenter = new ShopSlotPresenter(this);
-
-        m_purchase_button.onClick.AddListener(m_presenter.OnClickedPurchase);
+        m_presenter?.Dispose();
     }
 
-    #region Helper Methods
-    public void Initialize(IShopView shop_view, IUnitRepository unit_repo, IInventoryService inventory, Units.Unit unit)
+    public void Inject(ShopSlotPresenter presenter)
     {
-        m_presenter.Initialize(shop_view, unit_repo, inventory, unit);
+        m_presenter = presenter;
 
-        m_unit_image.sprite = unit.Image;
-        m_unit_name.text = unit_repo.GetName(unit.Code);
+        m_purchase_button.onClick.AddListener(m_presenter.PurchaseUnit);
     }
 
-    public void Updates()
+    public void UpdateUI(string unit_name, 
+                         Sprite unit_image)
     {
-        m_presenter.UpdateView();
+        m_name_label.text = unit_name;
+        m_unit_image.sprite = unit_image;
     }
 
-    public void UpdateUI(bool has_unit, int money, int cost)
+    public void UpdatePurchase(int cost, bool can_purchase)
     {
-        m_unit_cost.text = NumberFormatter.FormatNumber(cost);
-        m_disabled_object.SetActive(false);
+        m_purchase_button.interactable = can_purchase;
 
-        if (has_unit)
+        m_cost_label.text = can_purchase ?
+                            $"<color=white>{NumberFormatter.FormatNumber(cost)}</color>" :
+                            $"<color=red>{NumberFormatter.FormatNumber(cost)}</color>";
+    }
+
+    public void UpdateAquire(bool has_unit)
+    {
+        if(has_unit)
         {
-            m_disabled_object.SetActive(true);
-            m_purchase_button.interactable = false;
-            return;
+            m_purchase_button.gameObject.SetActive(false);
+            m_disabled_panel.SetActive(true);
         }
-
-        if (money < cost)
+        else
         {
-            m_unit_cost.text = $"<color=red>{NumberFormatter.FormatNumber(cost)}</color>";
-            m_purchase_button.interactable = false;
-            return;
+            m_purchase_button.gameObject.SetActive(true);
+            m_disabled_panel.SetActive(false);
         }
     }
 
-    public void Purchase()
+    public void PlaySFX(string sfx_name)
     {
-        m_disabled_object.SetActive(true);
+        SoundManager.Instance.PlaySFX(sfx_name);
     }
-    #endregion Helper Methods
 }

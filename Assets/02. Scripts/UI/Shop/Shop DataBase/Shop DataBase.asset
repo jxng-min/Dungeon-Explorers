@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac0353473dcabb40ad0c2e0b1c73769, type: 3}
+  m_Name: Shop DataBase
+  m_EditorClassIdentifier: 
+  m_data_list:
+  - m_hero: {fileID: 11400000, guid: 0ca3966f1399fb6448f7423720350867, type: 2}
+    m_cost: 50
+  - m_hero: {fileID: 11400000, guid: 45208f8d3f997e944a93a90f87813e65, type: 2}
+    m_cost: 100
+  - m_hero: {fileID: 11400000, guid: 7d0257a7b939b8347a24e1383cee9a61, type: 2}
+    m_cost: 300
+  - m_hero: {fileID: 11400000, guid: f84592f133147344abd82b6c16ab1e8c, type: 2}
+    m_cost: 300
+  - m_hero: {fileID: 11400000, guid: 4bb98d168652d5a4ea3e5c82f1423af7, type: 2}
+    m_cost: 600
+  - m_hero: {fileID: 11400000, guid: 3aa6c4371b6baa54b9fdd18090ff312b, type: 2}
+    m_cost: 2000
+  - m_hero: {fileID: 11400000, guid: 9c4dbd2a76a57d44b8c652a2ca96a85c, type: 2}
+    m_cost: 2500
+  - m_hero: {fileID: 11400000, guid: 95379caa4272b2743b702fa752ec8f1d, type: 2}
+    m_cost: 2500

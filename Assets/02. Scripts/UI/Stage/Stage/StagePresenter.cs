@@ -1,75 +1,82 @@
-using UserDataService;
+using UserService;
 
 public class StagePresenter
 {
-    #region Variables
     private readonly IStageView m_view;
-    private readonly StageModel m_model;
-    #endregion Variables
+    private readonly IStageDataBase m_stage_db;
+    private readonly IUserService m_user_service;
 
-    public StagePresenter(IStageView view, IUserDataService user_data_system, StageDataBase stage_db)
+    private int m_stage;
+
+    public StagePresenter(IStageView view,
+                          IStageDataBase stage_db,
+                          IUserService user_service)
     {
         m_view = view;
-        m_model = new StageModel(user_data_system, stage_db);
+        m_stage_db = stage_db;
+        m_user_service = user_service;
+
+        m_user_service.OnUpdatedStage += UpdateUI;
+
+        m_view.Inject(this);
+        OpenUI();
     }
 
-    #region Helper Methods
-    public void OnClickedPreviousButton()
+    public void OpenUI()
     {
-        m_model.Stage--;
-        if (m_model.Stage < 1)
-        {
-            m_model.Stage = m_model.MaxStage;
-        }
-
-        m_view.UpdateUI(m_model.Stage, CheckState());
-    }
-
-    public void OnClickedNextButton()
-    {
-        m_model.Stage++;
-        if (m_model.Stage > m_model.MaxStage)
-        {
-            m_model.Stage = 1;
-        }
-
-        m_view.UpdateUI(m_model.Stage, CheckState());
-    }
-
-    public void OnClickGameStart()
-    {
-        m_model.StageDataBase.Stage = m_model.Stage;
-        
-        LoadingManager.Instance.LoadScene("Game");
-    }
-
-    public void OnClickedOpenUI()
-    {
-        m_model.Initialize();
-
         m_view.OpenUI();
-        m_view.UpdateUI(m_model.Stage, CheckState());
+        UpdateUI(m_user_service.Stage);
+
+        m_view.PlaySFX("Button Click");
     }
 
-    public void OnClickedCloseUI()
+    public void UpdateUI(int stage)
+    {
+        m_stage = stage;
+        string state_text;
+
+        if(m_user_service.Stage > stage)
+        {
+            state_text = "<color=green>완료</color>";
+        }
+        else if(m_user_service.Stage == stage)
+        {
+            state_text = "<color=yellow>진행 중</color>";
+        }
+        else
+        {
+            state_text = "<color=red>잠김</color>";
+        }
+
+        m_view.UpdateUI(stage, state_text);
+    }
+
+    public void CloseUI()
     {
         m_view.CloseUI();
     }
 
-    private StageState CheckState()
+    public void OnClickLeft()
     {
-        if (m_model.Stage < m_model.Record)
-        {
-            return StageState.CLEARED;
-        }
-        else if (m_model.Stage == m_model.Record)
-        {
-            return StageState.CHALLENGE;
-        }
-        else
-        {
-            return StageState.DENY;
-        }
+        var prev_stage = ((m_stage - 2 + m_stage_db.Count) % m_stage_db.Count) + 1;
+        UpdateUI(prev_stage);
+
+        m_view.PlaySFX("Button Click");
     }
-    #endregion Helper Methods
+
+    public void OnClickRight()
+    {
+        var next_stage = (m_stage % m_stage_db.Count) + 1;
+        UpdateUI(next_stage);
+
+        m_view.PlaySFX("Button Click");
+    }
+
+    public void OnClickStart()
+    {
+        m_stage_db.Current = m_stage;
+        LoadingManager.Instance.LoadScene("Game");
+
+        m_view.PlaySFX("Button Click");
+    }
 }

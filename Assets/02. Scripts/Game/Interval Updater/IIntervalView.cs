@@ -1,6 +1,6 @@
 public interface IIntervalView
 {
-    int GetUpgrade();
+    void Inject(IntervalPresenter presenter);
 
     void UpdateUI(bool active, int upgrade_cost);
 }
