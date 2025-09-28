@@ -40,6 +40,10 @@ public class DamageIndicator : MonoBehaviour
 
     public void Return()
     {
+        var container = ObjectManager.Instance.GetPool(ObjectType.DAMAGE_INDICATOR).Container;
+        gameObject.transform.SetParent(container);
+        gameObject.transform.localPosition = Vector2.zero;
+
         ObjectManager.Instance.ReturnObject(gameObject, ObjectType.DAMAGE_INDICATOR);
     }
 }

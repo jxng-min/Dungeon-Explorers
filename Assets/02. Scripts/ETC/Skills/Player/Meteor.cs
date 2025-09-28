@@ -43,7 +43,7 @@ public class Meteor : Skill
         if (collision.gameObject.layer == Layer)
         {
             collision.GetComponent<BaseUnit>().Health.UpdateHP(-ATK);
-            CreateDamageIndicator(collision.transform.position);
+            CreateDamageIndicator(collision.transform);
         }
 
         if (collision.CompareTag("Ground"))

@@ -82,7 +82,7 @@ public class HolyCross : Skill
 
         if (collision.gameObject.layer == Layer)
         {
-            CreateDamageIndicator(collision.transform.position);
+            CreateDamageIndicator(collision.transform);
 
             m_elastic_count++;
 

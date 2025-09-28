@@ -22,7 +22,7 @@ public class HolyShield : Skill
 
         foreach (var hit in hits)
         {
-            CreateDamageIndicator(hit.transform.position);
+            CreateDamageIndicator(hit.transform);
 
             hit.GetComponent<BaseUnit>().Health.UpdateHP(-ATK);
         }

@@ -85,10 +85,17 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0.35
+    functionName: MagicToTarget
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: d1d57c3fc45a3a14f969f7187e1f6deb, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.5833333
     functionName: ChangeState
     data: 
-    objectReferenceParameter: {fileID: 11500000, guid: 97b809a72c8a373419deee30281416a0, type: 3}
+    objectReferenceParameter: {fileID: 11500000, guid: d1d57c3fc45a3a14f969f7187e1f6deb, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

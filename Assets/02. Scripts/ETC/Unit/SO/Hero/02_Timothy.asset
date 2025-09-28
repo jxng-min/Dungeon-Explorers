@@ -25,5 +25,5 @@ MonoBehaviour:
   m_atk_cool: 2.5
   m_growth_hp: 20
   m_growth_atk: 3
-  m_cost: 10
+  m_cost: 80
   m_cooltime: 10

@@ -20,12 +20,13 @@ public abstract class Skill : MonoBehaviour
 
     protected abstract void Return();
 
-    protected virtual void CreateDamageIndicator(Vector3 position)
+    protected virtual void CreateDamageIndicator(Transform target)
     {
-        var obj = ObjectManager.Instance.GetObject(ObjectType.DAMAGE_INDICATOR);
-        obj.transform.position = position + Vector3.up * 0.5f;
+        var indicator_obj = ObjectManager.Instance.GetObject(ObjectType.DAMAGE_INDICATOR);
+        indicator_obj.transform.SetParent(target.transform);
+        indicator_obj.transform.localPosition = Vector3.up * 0.2f;
 
-        var damage_indicator = obj.GetComponent<DamageIndicator>();
+        var damage_indicator = indicator_obj.GetComponent<DamageIndicator>();
         damage_indicator.Initialize($"<color=#F6BB43>{NumberFormatter.FormatNumber(ATK)}</color>");
     }
 }

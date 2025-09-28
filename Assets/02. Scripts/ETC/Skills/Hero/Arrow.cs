@@ -60,7 +60,7 @@ public class Arrow : Skill
         {
             m_is_returned = true;
             
-            CreateDamageIndicator(collision.transform.position);
+            CreateDamageIndicator(collision.transform);
             collision.GetComponent<BaseUnit>().Health.UpdateHP(-ATK);
 
             Return();

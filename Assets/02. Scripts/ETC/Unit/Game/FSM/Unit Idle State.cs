@@ -45,7 +45,20 @@ public class UnitIdleState : MonoBehaviour, IState<BaseUnit>
 
     private IEnumerator Co_Idle(float idle_time)
     {
-        yield return new WaitForSeconds(idle_time);
+        float elapsed_time = 0f;
+        
+        while(elapsed_time < idle_time)
+        {
+            elapsed_time += Time.deltaTime;
+
+            if(!m_unit.Attack.CanAttack())
+            {
+                m_unit.ChangeState(UnitState.MOVE);
+                yield break;
+            }
+
+            yield return null;
+        }
 
         m_unit.ChangeState(UnitState.MOVE);
     }
