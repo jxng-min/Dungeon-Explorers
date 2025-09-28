@@ -22,10 +22,7 @@ MonoBehaviour:
   m_unit_atk: 70
   m_unit_spd: 2
   m_atk_range: 1.2
-  m_atk_cool: 2
-  m_max_upgrade_count: 20
-  m_upgrade_cost: 150
-  m_explorer_price: 600
+  m_atk_cool: 2.5
   m_growth_hp: 25
   m_growth_atk: 5
   m_cost: 160

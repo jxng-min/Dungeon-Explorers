@@ -22,4 +22,4 @@ MonoBehaviour:
   m_unit_atk: 30
   m_unit_spd: 0.75
   m_atk_range: 1
-  m_atk_cool: 1
+  m_atk_cool: 1.5

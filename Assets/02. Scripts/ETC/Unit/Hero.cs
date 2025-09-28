@@ -8,8 +8,8 @@ namespace Units
         [Space(50f)]
         [Header("영웅 스탯 정보 관련")]
         [Header("영웅의 성장 체력")]
-        [SerializeField] private float m_growth_hp;
-        public float GrowthHP { get => m_growth_hp; }
+        [SerializeField] private int m_growth_hp;
+        public int GrowthHP { get => m_growth_hp; }
 
         [Header("영웅의 성장 공격력")]
         [SerializeField] private int m_growth_atk;

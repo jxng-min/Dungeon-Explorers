@@ -9717,6 +9717,7 @@ GameObject:
   - component: {fileID: 1268608405}
   - component: {fileID: 1268608404}
   - component: {fileID: 1268608408}
+  - component: {fileID: 1268608409}
   m_Layer: 6
   m_Name: Enemy Portal
   m_TagString: Untagged
@@ -9903,8 +9904,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0787f5206d82f7e4b8a3f73367b0ce4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_unit: {fileID: 0}
   m_tower_view: {fileID: 1565588821}
+--- !u!114 &1268608409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268608399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e7d9364ca39134a862e85dd43802a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1300218645
 GameObject:
   m_ObjectHideFlags: 0
@@ -14148,6 +14160,7 @@ GameObject:
   - component: {fileID: 2142490302}
   - component: {fileID: 2142490301}
   - component: {fileID: 2142490303}
+  - component: {fileID: 2142490304}
   m_Layer: 7
   m_Name: Hero Portal
   m_TagString: Untagged
@@ -14333,8 +14346,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0787f5206d82f7e4b8a3f73367b0ce4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_unit: {fileID: 0}
   m_tower_view: {fileID: 1890615249}
+--- !u!114 &2142490304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142490296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e7d9364ca39134a862e85dd43802a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

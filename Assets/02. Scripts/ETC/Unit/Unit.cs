@@ -30,8 +30,8 @@ public class Unit : ScriptableObject
 
     [Header("유닛 공통 스탯 정보")]
     [Header("유닛의 체력")]
-    [SerializeField] private float m_unit_hp;
-    public float HP { get => m_unit_hp; }
+    [SerializeField] private int m_unit_hp;
+    public int HP { get => m_unit_hp; }
 
     [Header("유닛의 공격력")]
     [SerializeField] private int m_unit_atk;

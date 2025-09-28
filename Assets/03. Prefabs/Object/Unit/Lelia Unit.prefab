@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 6501739095268350484}
   - component: {fileID: 9110375892651575470}
   - component: {fileID: 5480271081288090221}
+  - component: {fileID: 6608473269530644170}
+  - component: {fileID: 5340908559960101522}
   m_Layer: 0
   m_Name: Lelia Unit
   m_TagString: Untagged
@@ -198,4 +200,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11db4345ef1854a4998dffe6cc1867b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_unit: {fileID: 0}
+--- !u!114 &6608473269530644170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7024734264850599607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546256ebb6bc17e4dacb6c98008fb69a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5340908559960101522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7024734264850599607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466060b26c05f924595d9c90c191dee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
