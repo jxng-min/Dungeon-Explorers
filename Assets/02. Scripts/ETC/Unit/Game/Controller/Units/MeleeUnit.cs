@@ -1,3 +1,6 @@
+using UnityEngine;
+
+[RequireComponent(typeof(IAttack))]
 public class MeleeUnit : BaseUnit
 {
     protected override void Awake()

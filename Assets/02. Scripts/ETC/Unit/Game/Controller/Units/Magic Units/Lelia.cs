@@ -1,3 +1,6 @@
+using UnityEngine;
+
+[RequireComponent(typeof(IAttack))]
 public class Lelia : BaseUnit
 {
     protected override void Awake()

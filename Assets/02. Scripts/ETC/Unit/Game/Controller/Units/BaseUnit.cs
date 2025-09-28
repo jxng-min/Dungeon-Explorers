@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent(typeof(IAttack), typeof(IHealth))]
+[RequireComponent(typeof(IHealth))]
 public abstract class BaseUnit : MonoBehaviour
 {
     #region Unit States

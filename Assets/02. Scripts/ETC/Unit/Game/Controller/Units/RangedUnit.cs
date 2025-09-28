@@ -1,3 +1,6 @@
+using UnityEngine;
+
+[RequireComponent(typeof(IAttack))]
 public class RangedUnit : BaseUnit
 {
     protected override void Awake()

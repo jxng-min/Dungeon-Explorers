@@ -1,3 +1,6 @@
+using UnityEngine;
+
+[RequireComponent(typeof(IAttack))]
 public class Nimmia : BaseUnit
 {
     protected override void Awake()
